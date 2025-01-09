@@ -15,6 +15,17 @@ namespace TetrisClone
         public Form1()
         {
             InitializeComponent();
+            this.tableLayoutPanel1.CellPaint += tableLayoutPanel1_CellPaint;
+        }
+
+        private void tableLayoutPanel1_CellPaint(object sender, TableLayoutCellPaintEventArgs e)
+        {
+            e.Graphics.DrawRectangle(
+                Pens.Black,
+                e.CellBounds.Location.X-1,
+                e.CellBounds.Location.Y-1,
+                e.CellBounds.Width+1,
+                e.CellBounds.Height+1);
         }
     }
 }
