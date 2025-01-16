@@ -1,23 +1,22 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Data.SqlClient;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace TetrisClone
 {
     public partial class Form1 : Form
     {
+        // Global variables
+        TimeSpan timeLeft = new TimeSpan(0, 5, 0);
+        Color[] colorArray = { Color.CornflowerBlue, Color.Yellow, Color.Crimson,
+            Color.Magenta, Color.Cyan, Color.SpringGreen, Color.BlueViolet };
+        Control[] pieceArray = {null, null, null, null };
+
         public Form1()
         {
             InitializeComponent();
             this.tableLayoutPanel1.CellPaint += tableLayoutPanel1_CellPaint;
-            DropPiece();
+            startLabelFlash.Start();
         }
 
         private void tableLayoutPanel1_CellPaint(object sender, TableLayoutCellPaintEventArgs e)
@@ -32,76 +31,103 @@ namespace TetrisClone
 
         public void DropPiece()
         {
+            gameTimer.Start();
+            Control[,] pieceArray =
+            {
+                { BoxH1, BoxH2, BoxH3, BoxH4 }, // I piece
+                { BoxH1, BoxH2, BoxI1, BoxI2 }, // O piece
+                { BoxH1, BoxH2, BoxI1, BoxG2 }, // S piece
+                { BoxH1, BoxI1, BoxI2, BoxJ2 }, // Z piece
+                { BoxH1, BoxH2, BoxH3, BoxI3 }, // L piece
+                { BoxI1, BoxI2, BoxI3, BoxH3 }, // J piece
+                { BoxH1, BoxH2, BoxH3, BoxI2 }  // T piece
+
+            };
+
             // I piece
-            //BoxH1.BackColor = Color.CornflowerBlue;
-            //BoxH2.BackColor = Color.CornflowerBlue;
-            //BoxH3.BackColor = Color.CornflowerBlue;
-            //BoxH4.BackColor = Color.CornflowerBlue;
-            BoxA1.BackColor = Color.CornflowerBlue;
-            BoxA2.BackColor = Color.CornflowerBlue;
-            BoxA3.BackColor = Color.CornflowerBlue;
-            BoxA4.BackColor = Color.CornflowerBlue;
+            //BoxB2.BackColor = Color.CornflowerBlue;
+            //BoxB3.BackColor = Color.CornflowerBlue;
+            //BoxB4.BackColor = Color.CornflowerBlue;
+            //BoxB5.BackColor = Color.CornflowerBlue;
 
             // O piece
-            //BoxH1.BackColor = Color.Yellow;
-            //BoxH2.BackColor = Color.Yellow;
-            //BoxI1.BackColor = Color.Yellow;
-            //BoxI2.BackColor = Color.Yellow;
-            BoxC1.BackColor = Color.Yellow;
-            BoxC2.BackColor = Color.Yellow;
-            BoxD1.BackColor = Color.Yellow;
-            BoxD2.BackColor = Color.Yellow;
+            //BoxD2.BackColor = Color.Yellow;
+            //BoxD3.BackColor = Color.Yellow;
+            //BoxE2.BackColor = Color.Yellow;
+            //BoxE3.BackColor = Color.Yellow;
 
             // S piece
-            //BoxH1.BackColor = Color.Crimson;
             //BoxH2.BackColor = Color.Crimson;
-            //BoxI1.BackColor = Color.Crimson;
-            //BoxG2.BackColor = Color.Crimson;
-            BoxG1.BackColor = Color.Crimson;
-            BoxG2.BackColor = Color.Crimson;
-            BoxH1.BackColor = Color.Crimson;
-            BoxF2.BackColor = Color.Crimson;
+            //BoxH3.BackColor = Color.Crimson;
+            //BoxI2.BackColor = Color.Crimson;
+            //BoxG3.BackColor = Color.Crimson;
 
 
             // Z piece
-            //BoxH1.BackColor = Color.Magenta;
-            //BoxI1.BackColor = Color.Magenta;
-            //BoxI2.BackColor = Color.Magenta;
-            //BoxJ2.BackColor = Color.Magenta;
-            BoxJ1.BackColor = Color.Magenta;
-            BoxK1.BackColor = Color.Magenta;
-            BoxK2.BackColor = Color.Magenta;
-            BoxL2.BackColor = Color.Magenta;
+            //BoxK2.BackColor = Color.Magenta;
+            //BoxL2.BackColor = Color.Magenta;
+            //BoxL3.BackColor = Color.Magenta;
+            //BoxM3.BackColor = Color.Magenta;
 
             // L piece
-            //BoxH1.BackColor = Color.Cyan;
-            //BoxH2.BackColor = Color.Cyan;
-            //BoxH3.BackColor = Color.Cyan;
-            //BoxI3.BackColor = Color.Cyan;
-            BoxN1.BackColor = Color.Cyan;
-            BoxN2.BackColor = Color.Cyan;
-            BoxN3.BackColor = Color.Cyan;
-            BoxO3.BackColor = Color.Cyan;
+            //BoxB7.BackColor = Color.Cyan;
+            //BoxB8.BackColor = Color.Cyan;
+            //BoxB9.BackColor = Color.Cyan;
+            //BoxC9.BackColor = Color.Cyan;
 
             // J piece
-            //BoxI1.BackColor = Color.SpringGreen;
-            //BoxI2.BackColor = Color.SpringGreen;
-            //BoxI3.BackColor = Color.SpringGreen;
-            //BoxH3.BackColor = Color.SpringGreen;
-            BoxB6.BackColor = Color.SpringGreen;
-            BoxB7.BackColor = Color.SpringGreen;
-            BoxB8.BackColor = Color.SpringGreen;
-            BoxA8.BackColor = Color.SpringGreen;
+            //BoxF7.BackColor = Color.SpringGreen;
+            //BoxF8.BackColor = Color.SpringGreen;
+            //BoxF9.BackColor = Color.SpringGreen;
+            //BoxE9.BackColor = Color.SpringGreen;
 
             // T piece
-            //BoxH1.BackColor = Color.BlueViolet;
-            //BoxH2.BackColor = Color.BlueViolet;
-            //BoxH3.BackColor = Color.BlueViolet;
-            //BoxI2.BackColor = Color.BlueViolet;
-            BoxD6.BackColor = Color.BlueViolet;
-            BoxD7.BackColor = Color.BlueViolet;
-            BoxD8.BackColor = Color.BlueViolet;
-            BoxE7.BackColor = Color.BlueViolet;
+            //BoxH7.BackColor = Color.BlueViolet;
+            //BoxH8.BackColor = Color.BlueViolet;
+            //BoxH9.BackColor = Color.BlueViolet;
+            //BoxI8.BackColor = Color.BlueViolet;
+        }
+
+        private void pieceTimer_Tick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gameTimer_Tick(object sender, EventArgs e)
+        {            
+            timeLeft = timeLeft - new TimeSpan(0, 0, 1);
+            countdownLabel.Text = timeLeft.ToString("mm\\:ss");
+            
+            if(timeLeft == TimeSpan.Zero)
+            {
+                gameTimer.Stop();
+                MessageBox.Show("You scored: x", "Time's up!");
+                Close();
+            }
+        }
+
+        // Makes the startGameLabel visible/invisible every 0,4 second
+        private void startLabelFlash_Tick(object sender, EventArgs e)
+        {
+            if(startGameLabel.ForeColor == Color.WhiteSmoke)
+            {
+                startGameLabel.ForeColor = Color.Black;
+            }
+            else
+            {
+                startGameLabel.ForeColor = Color.WhiteSmoke;
+            }
+        }
+
+        // Starts the game
+        // Hides and disables the button
+        private void Form1_Enter(object sender, EventArgs e)
+        {
+            startLabelFlash.Stop();
+            startGameLabel.Visible = false;
+            gameTimer.Start();
+            DropPiece();
+
         }
     }
 }

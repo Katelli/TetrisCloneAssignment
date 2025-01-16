@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.BoxP20 = new System.Windows.Forms.PictureBox();
             this.BoxO20 = new System.Windows.Forms.PictureBox();
@@ -349,6 +350,12 @@
             this.BoxC1 = new System.Windows.Forms.PictureBox();
             this.BoxB1 = new System.Windows.Forms.PictureBox();
             this.BoxA1 = new System.Windows.Forms.PictureBox();
+            this.pieceTimer = new System.Windows.Forms.Timer(this.components);
+            this.gameTimer = new System.Windows.Forms.Timer(this.components);
+            this.startLabelFlash = new System.Windows.Forms.Timer(this.components);
+            this.countdownLabel = new System.Windows.Forms.Label();
+            this.startGameLabel = new System.Windows.Forms.Label();
+            this.hiddenBtn = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BoxP20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BoxO20)).BeginInit();
@@ -1224,11 +1231,11 @@
             this.BoxM19.TabIndex = 372;
             this.BoxM19.TabStop = false;
             // 
-            // pictureBox372
+            // BoxL19
             // 
             this.BoxL19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxL19.Location = new System.Drawing.Point(377, 615);
-            this.BoxL19.Name = "pictureBox372";
+            this.BoxL19.Name = "BoxL19";
             this.BoxL19.Size = new System.Drawing.Size(28, 28);
             this.BoxL19.TabIndex = 371;
             this.BoxL19.TabStop = false;
@@ -1242,92 +1249,92 @@
             this.BoxK19.TabIndex = 370;
             this.BoxK19.TabStop = false;
             // 
-            // pictureBox370
+            // BoxJ19
             // 
             this.BoxJ19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxJ19.Location = new System.Drawing.Point(309, 615);
-            this.BoxJ19.Name = "pictureBox370";
+            this.BoxJ19.Name = "BoxJ19";
             this.BoxJ19.Size = new System.Drawing.Size(28, 28);
             this.BoxJ19.TabIndex = 369;
             this.BoxJ19.TabStop = false;
             // 
-            // pictureBox369
+            // BoxI19
             // 
             this.BoxI19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxI19.Location = new System.Drawing.Point(275, 615);
-            this.BoxI19.Name = "pictureBox369";
+            this.BoxI19.Name = "BoxI19";
             this.BoxI19.Size = new System.Drawing.Size(28, 28);
             this.BoxI19.TabIndex = 368;
             this.BoxI19.TabStop = false;
             // 
-            // pictureBox368
+            // BoxH19
             // 
             this.BoxH19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxH19.Location = new System.Drawing.Point(241, 615);
-            this.BoxH19.Name = "pictureBox368";
+            this.BoxH19.Name = "BoxH19";
             this.BoxH19.Size = new System.Drawing.Size(28, 28);
             this.BoxH19.TabIndex = 367;
             this.BoxH19.TabStop = false;
             // 
-            // pictureBox367
+            // BoxG19
             // 
             this.BoxG19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxG19.Location = new System.Drawing.Point(207, 615);
-            this.BoxG19.Name = "pictureBox367";
+            this.BoxG19.Name = "BoxG19";
             this.BoxG19.Size = new System.Drawing.Size(28, 28);
             this.BoxG19.TabIndex = 366;
             this.BoxG19.TabStop = false;
             // 
-            // pictureBox366
+            // BoxF19
             // 
             this.BoxF19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxF19.Location = new System.Drawing.Point(173, 615);
-            this.BoxF19.Name = "pictureBox366";
+            this.BoxF19.Name = "BoxF19";
             this.BoxF19.Size = new System.Drawing.Size(28, 28);
             this.BoxF19.TabIndex = 365;
             this.BoxF19.TabStop = false;
             // 
-            // pictureBox365
+            // BoxE19
             // 
             this.BoxE19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxE19.Location = new System.Drawing.Point(139, 615);
-            this.BoxE19.Name = "pictureBox365";
+            this.BoxE19.Name = "BoxE19";
             this.BoxE19.Size = new System.Drawing.Size(28, 28);
             this.BoxE19.TabIndex = 364;
             this.BoxE19.TabStop = false;
             // 
-            // pictureBox364
+            // BoxD19
             // 
             this.BoxD19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxD19.Location = new System.Drawing.Point(105, 615);
-            this.BoxD19.Name = "pictureBox364";
+            this.BoxD19.Name = "BoxD19";
             this.BoxD19.Size = new System.Drawing.Size(28, 28);
             this.BoxD19.TabIndex = 363;
             this.BoxD19.TabStop = false;
             // 
-            // pictureBox363
+            // BoxC19
             // 
             this.BoxC19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxC19.Location = new System.Drawing.Point(71, 615);
-            this.BoxC19.Name = "pictureBox363";
+            this.BoxC19.Name = "BoxC19";
             this.BoxC19.Size = new System.Drawing.Size(28, 28);
             this.BoxC19.TabIndex = 362;
             this.BoxC19.TabStop = false;
             // 
-            // pictureBox362
+            // BoxB19
             // 
             this.BoxB19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxB19.Location = new System.Drawing.Point(37, 615);
-            this.BoxB19.Name = "pictureBox362";
+            this.BoxB19.Name = "BoxB19";
             this.BoxB19.Size = new System.Drawing.Size(28, 28);
             this.BoxB19.TabIndex = 361;
             this.BoxB19.TabStop = false;
             // 
-            // pictureBox361
+            // BoxA19
             // 
             this.BoxA19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxA19.Location = new System.Drawing.Point(3, 615);
-            this.BoxA19.Name = "pictureBox361";
+            this.BoxA19.Name = "BoxA19";
             this.BoxA19.Size = new System.Drawing.Size(28, 28);
             this.BoxA19.TabIndex = 360;
             this.BoxA19.TabStop = false;
@@ -1368,11 +1375,11 @@
             this.BoxM18.TabIndex = 352;
             this.BoxM18.TabStop = false;
             // 
-            // pictureBox352
+            // BoxL18
             // 
             this.BoxL18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxL18.Location = new System.Drawing.Point(377, 581);
-            this.BoxL18.Name = "pictureBox352";
+            this.BoxL18.Name = "BoxL18";
             this.BoxL18.Size = new System.Drawing.Size(28, 28);
             this.BoxL18.TabIndex = 351;
             this.BoxL18.TabStop = false;
@@ -1386,92 +1393,92 @@
             this.BoxK18.TabIndex = 350;
             this.BoxK18.TabStop = false;
             // 
-            // pictureBox350
+            // BoxJ18
             // 
             this.BoxJ18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxJ18.Location = new System.Drawing.Point(309, 581);
-            this.BoxJ18.Name = "pictureBox350";
+            this.BoxJ18.Name = "BoxJ18";
             this.BoxJ18.Size = new System.Drawing.Size(28, 28);
             this.BoxJ18.TabIndex = 349;
             this.BoxJ18.TabStop = false;
             // 
-            // pictureBox349
+            // BoxI18
             // 
             this.BoxI18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxI18.Location = new System.Drawing.Point(275, 581);
-            this.BoxI18.Name = "pictureBox349";
+            this.BoxI18.Name = "BoxI18";
             this.BoxI18.Size = new System.Drawing.Size(28, 28);
             this.BoxI18.TabIndex = 348;
             this.BoxI18.TabStop = false;
             // 
-            // pictureBox348
+            // BoxH18
             // 
             this.BoxH18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxH18.Location = new System.Drawing.Point(241, 581);
-            this.BoxH18.Name = "pictureBox348";
+            this.BoxH18.Name = "BoxH18";
             this.BoxH18.Size = new System.Drawing.Size(28, 28);
             this.BoxH18.TabIndex = 347;
             this.BoxH18.TabStop = false;
             // 
-            // pictureBox347
+            // BoxG18
             // 
             this.BoxG18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxG18.Location = new System.Drawing.Point(207, 581);
-            this.BoxG18.Name = "pictureBox347";
+            this.BoxG18.Name = "BoxG18";
             this.BoxG18.Size = new System.Drawing.Size(28, 28);
             this.BoxG18.TabIndex = 346;
             this.BoxG18.TabStop = false;
             // 
-            // pictureBox346
+            // BoxF18
             // 
             this.BoxF18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxF18.Location = new System.Drawing.Point(173, 581);
-            this.BoxF18.Name = "pictureBox346";
+            this.BoxF18.Name = "BoxF18";
             this.BoxF18.Size = new System.Drawing.Size(28, 28);
             this.BoxF18.TabIndex = 345;
             this.BoxF18.TabStop = false;
             // 
-            // pictureBox345
+            // BoxE18
             // 
             this.BoxE18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxE18.Location = new System.Drawing.Point(139, 581);
-            this.BoxE18.Name = "pictureBox345";
+            this.BoxE18.Name = "BoxE18";
             this.BoxE18.Size = new System.Drawing.Size(28, 28);
             this.BoxE18.TabIndex = 344;
             this.BoxE18.TabStop = false;
             // 
-            // pictureBox344
+            // BoxD18
             // 
             this.BoxD18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxD18.Location = new System.Drawing.Point(105, 581);
-            this.BoxD18.Name = "pictureBox344";
+            this.BoxD18.Name = "BoxD18";
             this.BoxD18.Size = new System.Drawing.Size(28, 28);
             this.BoxD18.TabIndex = 343;
             this.BoxD18.TabStop = false;
             // 
-            // pictureBox343
+            // BoxC18
             // 
             this.BoxC18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxC18.Location = new System.Drawing.Point(71, 581);
-            this.BoxC18.Name = "pictureBox343";
+            this.BoxC18.Name = "BoxC18";
             this.BoxC18.Size = new System.Drawing.Size(28, 28);
             this.BoxC18.TabIndex = 342;
             this.BoxC18.TabStop = false;
             // 
-            // pictureBox342
+            // BoxB18
             // 
             this.BoxB18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxB18.Location = new System.Drawing.Point(37, 581);
-            this.BoxB18.Name = "pictureBox342";
+            this.BoxB18.Name = "BoxB18";
             this.BoxB18.Size = new System.Drawing.Size(28, 28);
             this.BoxB18.TabIndex = 341;
             this.BoxB18.TabStop = false;
             // 
-            // pictureBox341
+            // BoxA18
             // 
             this.BoxA18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxA18.Location = new System.Drawing.Point(3, 581);
-            this.BoxA18.Name = "pictureBox341";
+            this.BoxA18.Name = "BoxA18";
             this.BoxA18.Size = new System.Drawing.Size(28, 28);
             this.BoxA18.TabIndex = 340;
             this.BoxA18.TabStop = false;
@@ -1512,11 +1519,11 @@
             this.BoxM17.TabIndex = 332;
             this.BoxM17.TabStop = false;
             // 
-            // pictureBox332
+            // BoxL17
             // 
             this.BoxL17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxL17.Location = new System.Drawing.Point(377, 547);
-            this.BoxL17.Name = "pictureBox332";
+            this.BoxL17.Name = "BoxL17";
             this.BoxL17.Size = new System.Drawing.Size(28, 28);
             this.BoxL17.TabIndex = 331;
             this.BoxL17.TabStop = false;
@@ -1530,92 +1537,92 @@
             this.BoxK17.TabIndex = 330;
             this.BoxK17.TabStop = false;
             // 
-            // pictureBox330
+            // BoxJ17
             // 
             this.BoxJ17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxJ17.Location = new System.Drawing.Point(309, 547);
-            this.BoxJ17.Name = "pictureBox330";
+            this.BoxJ17.Name = "BoxJ17";
             this.BoxJ17.Size = new System.Drawing.Size(28, 28);
             this.BoxJ17.TabIndex = 329;
             this.BoxJ17.TabStop = false;
             // 
-            // pictureBox329
+            // BoxI17
             // 
             this.BoxI17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxI17.Location = new System.Drawing.Point(275, 547);
-            this.BoxI17.Name = "pictureBox329";
+            this.BoxI17.Name = "BoxI17";
             this.BoxI17.Size = new System.Drawing.Size(28, 28);
             this.BoxI17.TabIndex = 328;
             this.BoxI17.TabStop = false;
             // 
-            // pictureBox328
+            // BoxH17
             // 
             this.BoxH17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxH17.Location = new System.Drawing.Point(241, 547);
-            this.BoxH17.Name = "pictureBox328";
+            this.BoxH17.Name = "BoxH17";
             this.BoxH17.Size = new System.Drawing.Size(28, 28);
             this.BoxH17.TabIndex = 327;
             this.BoxH17.TabStop = false;
             // 
-            // pictureBox327
+            // BoxG17
             // 
             this.BoxG17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxG17.Location = new System.Drawing.Point(207, 547);
-            this.BoxG17.Name = "pictureBox327";
+            this.BoxG17.Name = "BoxG17";
             this.BoxG17.Size = new System.Drawing.Size(28, 28);
             this.BoxG17.TabIndex = 326;
             this.BoxG17.TabStop = false;
             // 
-            // pictureBox326
+            // BoxF17
             // 
             this.BoxF17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxF17.Location = new System.Drawing.Point(173, 547);
-            this.BoxF17.Name = "pictureBox326";
+            this.BoxF17.Name = "BoxF17";
             this.BoxF17.Size = new System.Drawing.Size(28, 28);
             this.BoxF17.TabIndex = 325;
             this.BoxF17.TabStop = false;
             // 
-            // pictureBox325
+            // BoxE17
             // 
             this.BoxE17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxE17.Location = new System.Drawing.Point(139, 547);
-            this.BoxE17.Name = "pictureBox325";
+            this.BoxE17.Name = "BoxE17";
             this.BoxE17.Size = new System.Drawing.Size(28, 28);
             this.BoxE17.TabIndex = 324;
             this.BoxE17.TabStop = false;
             // 
-            // pictureBox324
+            // BoxD17
             // 
             this.BoxD17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxD17.Location = new System.Drawing.Point(105, 547);
-            this.BoxD17.Name = "pictureBox324";
+            this.BoxD17.Name = "BoxD17";
             this.BoxD17.Size = new System.Drawing.Size(28, 28);
             this.BoxD17.TabIndex = 323;
             this.BoxD17.TabStop = false;
             // 
-            // pictureBox323
+            // BoxC17
             // 
             this.BoxC17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxC17.Location = new System.Drawing.Point(71, 547);
-            this.BoxC17.Name = "pictureBox323";
+            this.BoxC17.Name = "BoxC17";
             this.BoxC17.Size = new System.Drawing.Size(28, 28);
             this.BoxC17.TabIndex = 322;
             this.BoxC17.TabStop = false;
             // 
-            // pictureBox322
+            // BoxB17
             // 
             this.BoxB17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxB17.Location = new System.Drawing.Point(37, 547);
-            this.BoxB17.Name = "pictureBox322";
+            this.BoxB17.Name = "BoxB17";
             this.BoxB17.Size = new System.Drawing.Size(28, 28);
             this.BoxB17.TabIndex = 321;
             this.BoxB17.TabStop = false;
             // 
-            // pictureBox321
+            // BoxA17
             // 
             this.BoxA17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxA17.Location = new System.Drawing.Point(3, 547);
-            this.BoxA17.Name = "pictureBox321";
+            this.BoxA17.Name = "BoxA17";
             this.BoxA17.Size = new System.Drawing.Size(28, 28);
             this.BoxA17.TabIndex = 320;
             this.BoxA17.TabStop = false;
@@ -1656,11 +1663,11 @@
             this.BoxM16.TabIndex = 312;
             this.BoxM16.TabStop = false;
             // 
-            // pictureBox312
+            // BoxL16
             // 
             this.BoxL16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxL16.Location = new System.Drawing.Point(377, 513);
-            this.BoxL16.Name = "pictureBox312";
+            this.BoxL16.Name = "BoxL16";
             this.BoxL16.Size = new System.Drawing.Size(28, 28);
             this.BoxL16.TabIndex = 311;
             this.BoxL16.TabStop = false;
@@ -1674,92 +1681,92 @@
             this.BoxK16.TabIndex = 310;
             this.BoxK16.TabStop = false;
             // 
-            // pictureBox310
+            // BoxJ16
             // 
             this.BoxJ16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxJ16.Location = new System.Drawing.Point(309, 513);
-            this.BoxJ16.Name = "pictureBox310";
+            this.BoxJ16.Name = "BoxJ16";
             this.BoxJ16.Size = new System.Drawing.Size(28, 28);
             this.BoxJ16.TabIndex = 309;
             this.BoxJ16.TabStop = false;
             // 
-            // pictureBox309
+            // BoxI16
             // 
             this.BoxI16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxI16.Location = new System.Drawing.Point(275, 513);
-            this.BoxI16.Name = "pictureBox309";
+            this.BoxI16.Name = "BoxI16";
             this.BoxI16.Size = new System.Drawing.Size(28, 28);
             this.BoxI16.TabIndex = 308;
             this.BoxI16.TabStop = false;
             // 
-            // pictureBox308
+            // BoxH16
             // 
             this.BoxH16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxH16.Location = new System.Drawing.Point(241, 513);
-            this.BoxH16.Name = "pictureBox308";
+            this.BoxH16.Name = "BoxH16";
             this.BoxH16.Size = new System.Drawing.Size(28, 28);
             this.BoxH16.TabIndex = 307;
             this.BoxH16.TabStop = false;
             // 
-            // pictureBox307
+            // BoxG16
             // 
             this.BoxG16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxG16.Location = new System.Drawing.Point(207, 513);
-            this.BoxG16.Name = "pictureBox307";
+            this.BoxG16.Name = "BoxG16";
             this.BoxG16.Size = new System.Drawing.Size(28, 28);
             this.BoxG16.TabIndex = 306;
             this.BoxG16.TabStop = false;
             // 
-            // pictureBox306
+            // BoxF16
             // 
             this.BoxF16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxF16.Location = new System.Drawing.Point(173, 513);
-            this.BoxF16.Name = "pictureBox306";
+            this.BoxF16.Name = "BoxF16";
             this.BoxF16.Size = new System.Drawing.Size(28, 28);
             this.BoxF16.TabIndex = 305;
             this.BoxF16.TabStop = false;
             // 
-            // pictureBox305
+            // BoxE16
             // 
             this.BoxE16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxE16.Location = new System.Drawing.Point(139, 513);
-            this.BoxE16.Name = "pictureBox305";
+            this.BoxE16.Name = "BoxE16";
             this.BoxE16.Size = new System.Drawing.Size(28, 28);
             this.BoxE16.TabIndex = 304;
             this.BoxE16.TabStop = false;
             // 
-            // pictureBox304
+            // BoxD16
             // 
             this.BoxD16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxD16.Location = new System.Drawing.Point(105, 513);
-            this.BoxD16.Name = "pictureBox304";
+            this.BoxD16.Name = "BoxD16";
             this.BoxD16.Size = new System.Drawing.Size(28, 28);
             this.BoxD16.TabIndex = 303;
             this.BoxD16.TabStop = false;
             // 
-            // pictureBox303
+            // BoxC16
             // 
             this.BoxC16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxC16.Location = new System.Drawing.Point(71, 513);
-            this.BoxC16.Name = "pictureBox303";
+            this.BoxC16.Name = "BoxC16";
             this.BoxC16.Size = new System.Drawing.Size(28, 28);
             this.BoxC16.TabIndex = 302;
             this.BoxC16.TabStop = false;
             // 
-            // pictureBox302
+            // BoxB16
             // 
             this.BoxB16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxB16.Location = new System.Drawing.Point(37, 513);
-            this.BoxB16.Name = "pictureBox302";
+            this.BoxB16.Name = "BoxB16";
             this.BoxB16.Size = new System.Drawing.Size(28, 28);
             this.BoxB16.TabIndex = 301;
             this.BoxB16.TabStop = false;
             // 
-            // pictureBox301
+            // BoxA16
             // 
             this.BoxA16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxA16.Location = new System.Drawing.Point(3, 513);
-            this.BoxA16.Name = "pictureBox301";
+            this.BoxA16.Name = "BoxA16";
             this.BoxA16.Size = new System.Drawing.Size(28, 28);
             this.BoxA16.TabIndex = 300;
             this.BoxA16.TabStop = false;
@@ -1800,11 +1807,11 @@
             this.BoxM15.TabIndex = 292;
             this.BoxM15.TabStop = false;
             // 
-            // pictureBox292
+            // BoxL15
             // 
             this.BoxL15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxL15.Location = new System.Drawing.Point(377, 479);
-            this.BoxL15.Name = "pictureBox292";
+            this.BoxL15.Name = "BoxL15";
             this.BoxL15.Size = new System.Drawing.Size(28, 28);
             this.BoxL15.TabIndex = 291;
             this.BoxL15.TabStop = false;
@@ -1818,92 +1825,92 @@
             this.BoxK15.TabIndex = 290;
             this.BoxK15.TabStop = false;
             // 
-            // pictureBox290
+            // BoxJ15
             // 
             this.BoxJ15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxJ15.Location = new System.Drawing.Point(309, 479);
-            this.BoxJ15.Name = "pictureBox290";
+            this.BoxJ15.Name = "BoxJ15";
             this.BoxJ15.Size = new System.Drawing.Size(28, 28);
             this.BoxJ15.TabIndex = 289;
             this.BoxJ15.TabStop = false;
             // 
-            // pictureBox289
+            // BoxI15
             // 
             this.BoxI15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxI15.Location = new System.Drawing.Point(275, 479);
-            this.BoxI15.Name = "pictureBox289";
+            this.BoxI15.Name = "BoxI15";
             this.BoxI15.Size = new System.Drawing.Size(28, 28);
             this.BoxI15.TabIndex = 288;
             this.BoxI15.TabStop = false;
             // 
-            // pictureBox288
+            // BoxH15
             // 
             this.BoxH15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxH15.Location = new System.Drawing.Point(241, 479);
-            this.BoxH15.Name = "pictureBox288";
+            this.BoxH15.Name = "BoxH15";
             this.BoxH15.Size = new System.Drawing.Size(28, 28);
             this.BoxH15.TabIndex = 287;
             this.BoxH15.TabStop = false;
             // 
-            // pictureBox287
+            // BoxG15
             // 
             this.BoxG15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxG15.Location = new System.Drawing.Point(207, 479);
-            this.BoxG15.Name = "pictureBox287";
+            this.BoxG15.Name = "BoxG15";
             this.BoxG15.Size = new System.Drawing.Size(28, 28);
             this.BoxG15.TabIndex = 286;
             this.BoxG15.TabStop = false;
             // 
-            // pictureBox286
+            // BoxF15
             // 
             this.BoxF15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxF15.Location = new System.Drawing.Point(173, 479);
-            this.BoxF15.Name = "pictureBox286";
+            this.BoxF15.Name = "BoxF15";
             this.BoxF15.Size = new System.Drawing.Size(28, 28);
             this.BoxF15.TabIndex = 285;
             this.BoxF15.TabStop = false;
             // 
-            // pictureBox285
+            // BoxE15
             // 
             this.BoxE15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxE15.Location = new System.Drawing.Point(139, 479);
-            this.BoxE15.Name = "pictureBox285";
+            this.BoxE15.Name = "BoxE15";
             this.BoxE15.Size = new System.Drawing.Size(28, 28);
             this.BoxE15.TabIndex = 284;
             this.BoxE15.TabStop = false;
             // 
-            // pictureBox284
+            // BoxD15
             // 
             this.BoxD15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxD15.Location = new System.Drawing.Point(105, 479);
-            this.BoxD15.Name = "pictureBox284";
+            this.BoxD15.Name = "BoxD15";
             this.BoxD15.Size = new System.Drawing.Size(28, 28);
             this.BoxD15.TabIndex = 283;
             this.BoxD15.TabStop = false;
             // 
-            // pictureBox283
+            // BoxC15
             // 
             this.BoxC15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxC15.Location = new System.Drawing.Point(71, 479);
-            this.BoxC15.Name = "pictureBox283";
+            this.BoxC15.Name = "BoxC15";
             this.BoxC15.Size = new System.Drawing.Size(28, 28);
             this.BoxC15.TabIndex = 282;
             this.BoxC15.TabStop = false;
             // 
-            // pictureBox282
+            // BoxB15
             // 
             this.BoxB15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxB15.Location = new System.Drawing.Point(37, 479);
-            this.BoxB15.Name = "pictureBox282";
+            this.BoxB15.Name = "BoxB15";
             this.BoxB15.Size = new System.Drawing.Size(28, 28);
             this.BoxB15.TabIndex = 281;
             this.BoxB15.TabStop = false;
             // 
-            // pictureBox281
+            // BoxA15
             // 
             this.BoxA15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxA15.Location = new System.Drawing.Point(3, 479);
-            this.BoxA15.Name = "pictureBox281";
+            this.BoxA15.Name = "BoxA15";
             this.BoxA15.Size = new System.Drawing.Size(28, 28);
             this.BoxA15.TabIndex = 280;
             this.BoxA15.TabStop = false;
@@ -1944,11 +1951,11 @@
             this.BoxM14.TabIndex = 272;
             this.BoxM14.TabStop = false;
             // 
-            // pictureBox272
+            // BoxL14
             // 
             this.BoxL14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxL14.Location = new System.Drawing.Point(377, 445);
-            this.BoxL14.Name = "pictureBox272";
+            this.BoxL14.Name = "BoxL14";
             this.BoxL14.Size = new System.Drawing.Size(28, 28);
             this.BoxL14.TabIndex = 271;
             this.BoxL14.TabStop = false;
@@ -1962,92 +1969,92 @@
             this.BoxK14.TabIndex = 270;
             this.BoxK14.TabStop = false;
             // 
-            // pictureBox270
+            // BoxJ14
             // 
             this.BoxJ14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxJ14.Location = new System.Drawing.Point(309, 445);
-            this.BoxJ14.Name = "pictureBox270";
+            this.BoxJ14.Name = "BoxJ14";
             this.BoxJ14.Size = new System.Drawing.Size(28, 28);
             this.BoxJ14.TabIndex = 269;
             this.BoxJ14.TabStop = false;
             // 
-            // pictureBox269
+            // BoxI14
             // 
             this.BoxI14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxI14.Location = new System.Drawing.Point(275, 445);
-            this.BoxI14.Name = "pictureBox269";
+            this.BoxI14.Name = "BoxI14";
             this.BoxI14.Size = new System.Drawing.Size(28, 28);
             this.BoxI14.TabIndex = 268;
             this.BoxI14.TabStop = false;
             // 
-            // pictureBox268
+            // BoxH14
             // 
             this.BoxH14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxH14.Location = new System.Drawing.Point(241, 445);
-            this.BoxH14.Name = "pictureBox268";
+            this.BoxH14.Name = "BoxH14";
             this.BoxH14.Size = new System.Drawing.Size(28, 28);
             this.BoxH14.TabIndex = 267;
             this.BoxH14.TabStop = false;
             // 
-            // pictureBox267
+            // BoxG14
             // 
             this.BoxG14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxG14.Location = new System.Drawing.Point(207, 445);
-            this.BoxG14.Name = "pictureBox267";
+            this.BoxG14.Name = "BoxG14";
             this.BoxG14.Size = new System.Drawing.Size(28, 28);
             this.BoxG14.TabIndex = 266;
             this.BoxG14.TabStop = false;
             // 
-            // pictureBox266
+            // BoxF14
             // 
             this.BoxF14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxF14.Location = new System.Drawing.Point(173, 445);
-            this.BoxF14.Name = "pictureBox266";
+            this.BoxF14.Name = "BoxF14";
             this.BoxF14.Size = new System.Drawing.Size(28, 28);
             this.BoxF14.TabIndex = 265;
             this.BoxF14.TabStop = false;
             // 
-            // pictureBox265
+            // BoxE14
             // 
             this.BoxE14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxE14.Location = new System.Drawing.Point(139, 445);
-            this.BoxE14.Name = "pictureBox265";
+            this.BoxE14.Name = "BoxE14";
             this.BoxE14.Size = new System.Drawing.Size(28, 28);
             this.BoxE14.TabIndex = 264;
             this.BoxE14.TabStop = false;
             // 
-            // pictureBox264
+            // BoxD14
             // 
             this.BoxD14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxD14.Location = new System.Drawing.Point(105, 445);
-            this.BoxD14.Name = "pictureBox264";
+            this.BoxD14.Name = "BoxD14";
             this.BoxD14.Size = new System.Drawing.Size(28, 28);
             this.BoxD14.TabIndex = 263;
             this.BoxD14.TabStop = false;
             // 
-            // pictureBox263
+            // BoxC14
             // 
             this.BoxC14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxC14.Location = new System.Drawing.Point(71, 445);
-            this.BoxC14.Name = "pictureBox263";
+            this.BoxC14.Name = "BoxC14";
             this.BoxC14.Size = new System.Drawing.Size(28, 28);
             this.BoxC14.TabIndex = 262;
             this.BoxC14.TabStop = false;
             // 
-            // pictureBox262
+            // BoxB14
             // 
             this.BoxB14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxB14.Location = new System.Drawing.Point(37, 445);
-            this.BoxB14.Name = "pictureBox262";
+            this.BoxB14.Name = "BoxB14";
             this.BoxB14.Size = new System.Drawing.Size(28, 28);
             this.BoxB14.TabIndex = 261;
             this.BoxB14.TabStop = false;
             // 
-            // pictureBox261
+            // BoxA14
             // 
             this.BoxA14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxA14.Location = new System.Drawing.Point(3, 445);
-            this.BoxA14.Name = "pictureBox261";
+            this.BoxA14.Name = "BoxA14";
             this.BoxA14.Size = new System.Drawing.Size(28, 28);
             this.BoxA14.TabIndex = 260;
             this.BoxA14.TabStop = false;
@@ -2088,11 +2095,11 @@
             this.BoxM13.TabIndex = 252;
             this.BoxM13.TabStop = false;
             // 
-            // pictureBox252
+            // BoxL13
             // 
             this.BoxL13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxL13.Location = new System.Drawing.Point(377, 411);
-            this.BoxL13.Name = "pictureBox252";
+            this.BoxL13.Name = "BoxL13";
             this.BoxL13.Size = new System.Drawing.Size(28, 28);
             this.BoxL13.TabIndex = 251;
             this.BoxL13.TabStop = false;
@@ -2106,92 +2113,92 @@
             this.BoxK13.TabIndex = 250;
             this.BoxK13.TabStop = false;
             // 
-            // pictureBox250
+            // BoxJ13
             // 
             this.BoxJ13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxJ13.Location = new System.Drawing.Point(309, 411);
-            this.BoxJ13.Name = "pictureBox250";
+            this.BoxJ13.Name = "BoxJ13";
             this.BoxJ13.Size = new System.Drawing.Size(28, 28);
             this.BoxJ13.TabIndex = 249;
             this.BoxJ13.TabStop = false;
             // 
-            // pictureBox249
+            // BoxI13
             // 
             this.BoxI13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxI13.Location = new System.Drawing.Point(275, 411);
-            this.BoxI13.Name = "pictureBox249";
+            this.BoxI13.Name = "BoxI13";
             this.BoxI13.Size = new System.Drawing.Size(28, 28);
             this.BoxI13.TabIndex = 248;
             this.BoxI13.TabStop = false;
             // 
-            // pictureBox248
+            // BoxH13
             // 
             this.BoxH13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxH13.Location = new System.Drawing.Point(241, 411);
-            this.BoxH13.Name = "pictureBox248";
+            this.BoxH13.Name = "BoxH13";
             this.BoxH13.Size = new System.Drawing.Size(28, 28);
             this.BoxH13.TabIndex = 247;
             this.BoxH13.TabStop = false;
             // 
-            // pictureBox247
+            // BoxG13
             // 
             this.BoxG13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxG13.Location = new System.Drawing.Point(207, 411);
-            this.BoxG13.Name = "pictureBox247";
+            this.BoxG13.Name = "BoxG13";
             this.BoxG13.Size = new System.Drawing.Size(28, 28);
             this.BoxG13.TabIndex = 246;
             this.BoxG13.TabStop = false;
             // 
-            // pictureBox246
+            // BoxF13
             // 
             this.BoxF13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxF13.Location = new System.Drawing.Point(173, 411);
-            this.BoxF13.Name = "pictureBox246";
+            this.BoxF13.Name = "BoxF13";
             this.BoxF13.Size = new System.Drawing.Size(28, 28);
             this.BoxF13.TabIndex = 245;
             this.BoxF13.TabStop = false;
             // 
-            // pictureBox245
+            // BoxE13
             // 
             this.BoxE13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxE13.Location = new System.Drawing.Point(139, 411);
-            this.BoxE13.Name = "pictureBox245";
+            this.BoxE13.Name = "BoxE13";
             this.BoxE13.Size = new System.Drawing.Size(28, 28);
             this.BoxE13.TabIndex = 244;
             this.BoxE13.TabStop = false;
             // 
-            // pictureBox244
+            // BoxD13
             // 
             this.BoxD13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxD13.Location = new System.Drawing.Point(105, 411);
-            this.BoxD13.Name = "pictureBox244";
+            this.BoxD13.Name = "BoxD13";
             this.BoxD13.Size = new System.Drawing.Size(28, 28);
             this.BoxD13.TabIndex = 243;
             this.BoxD13.TabStop = false;
             // 
-            // pictureBox243
+            // BoxC13
             // 
             this.BoxC13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxC13.Location = new System.Drawing.Point(71, 411);
-            this.BoxC13.Name = "pictureBox243";
+            this.BoxC13.Name = "BoxC13";
             this.BoxC13.Size = new System.Drawing.Size(28, 28);
             this.BoxC13.TabIndex = 242;
             this.BoxC13.TabStop = false;
             // 
-            // pictureBox242
+            // BoxB13
             // 
             this.BoxB13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxB13.Location = new System.Drawing.Point(37, 411);
-            this.BoxB13.Name = "pictureBox242";
+            this.BoxB13.Name = "BoxB13";
             this.BoxB13.Size = new System.Drawing.Size(28, 28);
             this.BoxB13.TabIndex = 241;
             this.BoxB13.TabStop = false;
             // 
-            // pictureBox241
+            // BoxA13
             // 
             this.BoxA13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxA13.Location = new System.Drawing.Point(3, 411);
-            this.BoxA13.Name = "pictureBox241";
+            this.BoxA13.Name = "BoxA13";
             this.BoxA13.Size = new System.Drawing.Size(28, 28);
             this.BoxA13.TabIndex = 240;
             this.BoxA13.TabStop = false;
@@ -2232,11 +2239,11 @@
             this.BoxM12.TabIndex = 232;
             this.BoxM12.TabStop = false;
             // 
-            // pictureBox232
+            // BoxL12
             // 
             this.BoxL12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxL12.Location = new System.Drawing.Point(377, 377);
-            this.BoxL12.Name = "pictureBox232";
+            this.BoxL12.Name = "BoxL12";
             this.BoxL12.Size = new System.Drawing.Size(28, 28);
             this.BoxL12.TabIndex = 231;
             this.BoxL12.TabStop = false;
@@ -2250,92 +2257,92 @@
             this.BoxK12.TabIndex = 230;
             this.BoxK12.TabStop = false;
             // 
-            // pictureBox230
+            // BoxJ12
             // 
             this.BoxJ12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxJ12.Location = new System.Drawing.Point(309, 377);
-            this.BoxJ12.Name = "pictureBox230";
+            this.BoxJ12.Name = "BoxJ12";
             this.BoxJ12.Size = new System.Drawing.Size(28, 28);
             this.BoxJ12.TabIndex = 229;
             this.BoxJ12.TabStop = false;
             // 
-            // pictureBox229
+            // BoxI12
             // 
             this.BoxI12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxI12.Location = new System.Drawing.Point(275, 377);
-            this.BoxI12.Name = "pictureBox229";
+            this.BoxI12.Name = "BoxI12";
             this.BoxI12.Size = new System.Drawing.Size(28, 28);
             this.BoxI12.TabIndex = 228;
             this.BoxI12.TabStop = false;
             // 
-            // pictureBox228
+            // BoxH12
             // 
             this.BoxH12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxH12.Location = new System.Drawing.Point(241, 377);
-            this.BoxH12.Name = "pictureBox228";
+            this.BoxH12.Name = "BoxH12";
             this.BoxH12.Size = new System.Drawing.Size(28, 28);
             this.BoxH12.TabIndex = 227;
             this.BoxH12.TabStop = false;
             // 
-            // pictureBox227
+            // BoxG12
             // 
             this.BoxG12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxG12.Location = new System.Drawing.Point(207, 377);
-            this.BoxG12.Name = "pictureBox227";
+            this.BoxG12.Name = "BoxG12";
             this.BoxG12.Size = new System.Drawing.Size(28, 28);
             this.BoxG12.TabIndex = 226;
             this.BoxG12.TabStop = false;
             // 
-            // pictureBox226
+            // BoxF12
             // 
             this.BoxF12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxF12.Location = new System.Drawing.Point(173, 377);
-            this.BoxF12.Name = "pictureBox226";
+            this.BoxF12.Name = "BoxF12";
             this.BoxF12.Size = new System.Drawing.Size(28, 28);
             this.BoxF12.TabIndex = 225;
             this.BoxF12.TabStop = false;
             // 
-            // pictureBox225
+            // BoxE12
             // 
             this.BoxE12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxE12.Location = new System.Drawing.Point(139, 377);
-            this.BoxE12.Name = "pictureBox225";
+            this.BoxE12.Name = "BoxE12";
             this.BoxE12.Size = new System.Drawing.Size(28, 28);
             this.BoxE12.TabIndex = 224;
             this.BoxE12.TabStop = false;
             // 
-            // pictureBox224
+            // BoxD12
             // 
             this.BoxD12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxD12.Location = new System.Drawing.Point(105, 377);
-            this.BoxD12.Name = "pictureBox224";
+            this.BoxD12.Name = "BoxD12";
             this.BoxD12.Size = new System.Drawing.Size(28, 28);
             this.BoxD12.TabIndex = 223;
             this.BoxD12.TabStop = false;
             // 
-            // pictureBox223
+            // BoxC12
             // 
             this.BoxC12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxC12.Location = new System.Drawing.Point(71, 377);
-            this.BoxC12.Name = "pictureBox223";
+            this.BoxC12.Name = "BoxC12";
             this.BoxC12.Size = new System.Drawing.Size(28, 28);
             this.BoxC12.TabIndex = 222;
             this.BoxC12.TabStop = false;
             // 
-            // pictureBox222
+            // BoxB12
             // 
             this.BoxB12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxB12.Location = new System.Drawing.Point(37, 377);
-            this.BoxB12.Name = "pictureBox222";
+            this.BoxB12.Name = "BoxB12";
             this.BoxB12.Size = new System.Drawing.Size(28, 28);
             this.BoxB12.TabIndex = 221;
             this.BoxB12.TabStop = false;
             // 
-            // pictureBox221
+            // BoxA12
             // 
             this.BoxA12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxA12.Location = new System.Drawing.Point(3, 377);
-            this.BoxA12.Name = "pictureBox221";
+            this.BoxA12.Name = "BoxA12";
             this.BoxA12.Size = new System.Drawing.Size(28, 28);
             this.BoxA12.TabIndex = 220;
             this.BoxA12.TabStop = false;
@@ -2376,11 +2383,11 @@
             this.BoxM11.TabIndex = 212;
             this.BoxM11.TabStop = false;
             // 
-            // pictureBox212
+            // BoxL11
             // 
             this.BoxL11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxL11.Location = new System.Drawing.Point(377, 343);
-            this.BoxL11.Name = "pictureBox212";
+            this.BoxL11.Name = "BoxL11";
             this.BoxL11.Size = new System.Drawing.Size(28, 28);
             this.BoxL11.TabIndex = 211;
             this.BoxL11.TabStop = false;
@@ -2394,92 +2401,92 @@
             this.BoxK11.TabIndex = 210;
             this.BoxK11.TabStop = false;
             // 
-            // pictureBox210
+            // BoxJ11
             // 
             this.BoxJ11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxJ11.Location = new System.Drawing.Point(309, 343);
-            this.BoxJ11.Name = "pictureBox210";
+            this.BoxJ11.Name = "BoxJ11";
             this.BoxJ11.Size = new System.Drawing.Size(28, 28);
             this.BoxJ11.TabIndex = 209;
             this.BoxJ11.TabStop = false;
             // 
-            // pictureBox209
+            // BoxI11
             // 
             this.BoxI11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxI11.Location = new System.Drawing.Point(275, 343);
-            this.BoxI11.Name = "pictureBox209";
+            this.BoxI11.Name = "BoxI11";
             this.BoxI11.Size = new System.Drawing.Size(28, 28);
             this.BoxI11.TabIndex = 208;
             this.BoxI11.TabStop = false;
             // 
-            // pictureBox208
+            // BoxH11
             // 
             this.BoxH11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxH11.Location = new System.Drawing.Point(241, 343);
-            this.BoxH11.Name = "pictureBox208";
+            this.BoxH11.Name = "BoxH11";
             this.BoxH11.Size = new System.Drawing.Size(28, 28);
             this.BoxH11.TabIndex = 207;
             this.BoxH11.TabStop = false;
             // 
-            // pictureBox207
+            // BoxG11
             // 
             this.BoxG11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxG11.Location = new System.Drawing.Point(207, 343);
-            this.BoxG11.Name = "pictureBox207";
+            this.BoxG11.Name = "BoxG11";
             this.BoxG11.Size = new System.Drawing.Size(28, 28);
             this.BoxG11.TabIndex = 206;
             this.BoxG11.TabStop = false;
             // 
-            // pictureBox206
+            // BoxF11
             // 
             this.BoxF11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxF11.Location = new System.Drawing.Point(173, 343);
-            this.BoxF11.Name = "pictureBox206";
+            this.BoxF11.Name = "BoxF11";
             this.BoxF11.Size = new System.Drawing.Size(28, 28);
             this.BoxF11.TabIndex = 205;
             this.BoxF11.TabStop = false;
             // 
-            // pictureBox205
+            // BoxE11
             // 
             this.BoxE11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxE11.Location = new System.Drawing.Point(139, 343);
-            this.BoxE11.Name = "pictureBox205";
+            this.BoxE11.Name = "BoxE11";
             this.BoxE11.Size = new System.Drawing.Size(28, 28);
             this.BoxE11.TabIndex = 204;
             this.BoxE11.TabStop = false;
             // 
-            // pictureBox204
+            // BoxD11
             // 
             this.BoxD11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxD11.Location = new System.Drawing.Point(105, 343);
-            this.BoxD11.Name = "pictureBox204";
+            this.BoxD11.Name = "BoxD11";
             this.BoxD11.Size = new System.Drawing.Size(28, 28);
             this.BoxD11.TabIndex = 203;
             this.BoxD11.TabStop = false;
             // 
-            // pictureBox203
+            // BoxC11
             // 
             this.BoxC11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxC11.Location = new System.Drawing.Point(71, 343);
-            this.BoxC11.Name = "pictureBox203";
+            this.BoxC11.Name = "BoxC11";
             this.BoxC11.Size = new System.Drawing.Size(28, 28);
             this.BoxC11.TabIndex = 202;
             this.BoxC11.TabStop = false;
             // 
-            // pictureBox202
+            // BoxB11
             // 
             this.BoxB11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxB11.Location = new System.Drawing.Point(37, 343);
-            this.BoxB11.Name = "pictureBox202";
+            this.BoxB11.Name = "BoxB11";
             this.BoxB11.Size = new System.Drawing.Size(28, 28);
             this.BoxB11.TabIndex = 201;
             this.BoxB11.TabStop = false;
             // 
-            // pictureBox201
+            // BoxA11
             // 
             this.BoxA11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxA11.Location = new System.Drawing.Point(3, 343);
-            this.BoxA11.Name = "pictureBox201";
+            this.BoxA11.Name = "BoxA11";
             this.BoxA11.Size = new System.Drawing.Size(28, 28);
             this.BoxA11.TabIndex = 200;
             this.BoxA11.TabStop = false;
@@ -2520,11 +2527,11 @@
             this.BoxM10.TabIndex = 192;
             this.BoxM10.TabStop = false;
             // 
-            // pictureBox192
+            // BoxL10
             // 
             this.BoxL10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxL10.Location = new System.Drawing.Point(377, 309);
-            this.BoxL10.Name = "pictureBox192";
+            this.BoxL10.Name = "BoxL10";
             this.BoxL10.Size = new System.Drawing.Size(28, 28);
             this.BoxL10.TabIndex = 191;
             this.BoxL10.TabStop = false;
@@ -2538,92 +2545,92 @@
             this.BoxK10.TabIndex = 190;
             this.BoxK10.TabStop = false;
             // 
-            // pictureBox190
+            // BoxJ10
             // 
             this.BoxJ10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxJ10.Location = new System.Drawing.Point(309, 309);
-            this.BoxJ10.Name = "pictureBox190";
+            this.BoxJ10.Name = "BoxJ10";
             this.BoxJ10.Size = new System.Drawing.Size(28, 28);
             this.BoxJ10.TabIndex = 189;
             this.BoxJ10.TabStop = false;
             // 
-            // pictureBox189
+            // BoxI10
             // 
             this.BoxI10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxI10.Location = new System.Drawing.Point(275, 309);
-            this.BoxI10.Name = "pictureBox189";
+            this.BoxI10.Name = "BoxI10";
             this.BoxI10.Size = new System.Drawing.Size(28, 28);
             this.BoxI10.TabIndex = 188;
             this.BoxI10.TabStop = false;
             // 
-            // pictureBox188
+            // BoxH10
             // 
             this.BoxH10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxH10.Location = new System.Drawing.Point(241, 309);
-            this.BoxH10.Name = "pictureBox188";
+            this.BoxH10.Name = "BoxH10";
             this.BoxH10.Size = new System.Drawing.Size(28, 28);
             this.BoxH10.TabIndex = 187;
             this.BoxH10.TabStop = false;
             // 
-            // pictureBox187
+            // BoxG10
             // 
             this.BoxG10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxG10.Location = new System.Drawing.Point(207, 309);
-            this.BoxG10.Name = "pictureBox187";
+            this.BoxG10.Name = "BoxG10";
             this.BoxG10.Size = new System.Drawing.Size(28, 28);
             this.BoxG10.TabIndex = 186;
             this.BoxG10.TabStop = false;
             // 
-            // pictureBox186
+            // BoxF10
             // 
             this.BoxF10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxF10.Location = new System.Drawing.Point(173, 309);
-            this.BoxF10.Name = "pictureBox186";
+            this.BoxF10.Name = "BoxF10";
             this.BoxF10.Size = new System.Drawing.Size(28, 28);
             this.BoxF10.TabIndex = 185;
             this.BoxF10.TabStop = false;
             // 
-            // pictureBox185
+            // BoxE10
             // 
             this.BoxE10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxE10.Location = new System.Drawing.Point(139, 309);
-            this.BoxE10.Name = "pictureBox185";
+            this.BoxE10.Name = "BoxE10";
             this.BoxE10.Size = new System.Drawing.Size(28, 28);
             this.BoxE10.TabIndex = 184;
             this.BoxE10.TabStop = false;
             // 
-            // pictureBox184
+            // BoxD10
             // 
             this.BoxD10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxD10.Location = new System.Drawing.Point(105, 309);
-            this.BoxD10.Name = "pictureBox184";
+            this.BoxD10.Name = "BoxD10";
             this.BoxD10.Size = new System.Drawing.Size(28, 28);
             this.BoxD10.TabIndex = 183;
             this.BoxD10.TabStop = false;
             // 
-            // pictureBox183
+            // BoxC10
             // 
             this.BoxC10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxC10.Location = new System.Drawing.Point(71, 309);
-            this.BoxC10.Name = "pictureBox183";
+            this.BoxC10.Name = "BoxC10";
             this.BoxC10.Size = new System.Drawing.Size(28, 28);
             this.BoxC10.TabIndex = 182;
             this.BoxC10.TabStop = false;
             // 
-            // pictureBox182
+            // BoxB10
             // 
             this.BoxB10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxB10.Location = new System.Drawing.Point(37, 309);
-            this.BoxB10.Name = "pictureBox182";
+            this.BoxB10.Name = "BoxB10";
             this.BoxB10.Size = new System.Drawing.Size(28, 28);
             this.BoxB10.TabIndex = 181;
             this.BoxB10.TabStop = false;
             // 
-            // pictureBox181
+            // BoxA10
             // 
             this.BoxA10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxA10.Location = new System.Drawing.Point(3, 309);
-            this.BoxA10.Name = "pictureBox181";
+            this.BoxA10.Name = "BoxA10";
             this.BoxA10.Size = new System.Drawing.Size(28, 28);
             this.BoxA10.TabIndex = 180;
             this.BoxA10.TabStop = false;
@@ -2664,11 +2671,11 @@
             this.BoxM9.TabIndex = 172;
             this.BoxM9.TabStop = false;
             // 
-            // pictureBox172
+            // BoxL9
             // 
             this.BoxL9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxL9.Location = new System.Drawing.Point(377, 275);
-            this.BoxL9.Name = "pictureBox172";
+            this.BoxL9.Name = "BoxL9";
             this.BoxL9.Size = new System.Drawing.Size(28, 28);
             this.BoxL9.TabIndex = 171;
             this.BoxL9.TabStop = false;
@@ -2682,92 +2689,92 @@
             this.BoxK9.TabIndex = 170;
             this.BoxK9.TabStop = false;
             // 
-            // pictureBox170
+            // BoxJ9
             // 
             this.BoxJ9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxJ9.Location = new System.Drawing.Point(309, 275);
-            this.BoxJ9.Name = "pictureBox170";
+            this.BoxJ9.Name = "BoxJ9";
             this.BoxJ9.Size = new System.Drawing.Size(28, 28);
             this.BoxJ9.TabIndex = 169;
             this.BoxJ9.TabStop = false;
             // 
-            // pictureBox169
+            // BoxI9
             // 
             this.BoxI9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxI9.Location = new System.Drawing.Point(275, 275);
-            this.BoxI9.Name = "pictureBox169";
+            this.BoxI9.Name = "BoxI9";
             this.BoxI9.Size = new System.Drawing.Size(28, 28);
             this.BoxI9.TabIndex = 168;
             this.BoxI9.TabStop = false;
             // 
-            // pictureBox168
+            // BoxH9
             // 
             this.BoxH9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxH9.Location = new System.Drawing.Point(241, 275);
-            this.BoxH9.Name = "pictureBox168";
+            this.BoxH9.Name = "BoxH9";
             this.BoxH9.Size = new System.Drawing.Size(28, 28);
             this.BoxH9.TabIndex = 167;
             this.BoxH9.TabStop = false;
             // 
-            // pictureBox167
+            // BoxG9
             // 
             this.BoxG9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxG9.Location = new System.Drawing.Point(207, 275);
-            this.BoxG9.Name = "pictureBox167";
+            this.BoxG9.Name = "BoxG9";
             this.BoxG9.Size = new System.Drawing.Size(28, 28);
             this.BoxG9.TabIndex = 166;
             this.BoxG9.TabStop = false;
             // 
-            // pictureBox166
+            // BoxF9
             // 
             this.BoxF9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxF9.Location = new System.Drawing.Point(173, 275);
-            this.BoxF9.Name = "pictureBox166";
+            this.BoxF9.Name = "BoxF9";
             this.BoxF9.Size = new System.Drawing.Size(28, 28);
             this.BoxF9.TabIndex = 165;
             this.BoxF9.TabStop = false;
             // 
-            // pictureBox165
+            // BoxE9
             // 
             this.BoxE9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxE9.Location = new System.Drawing.Point(139, 275);
-            this.BoxE9.Name = "pictureBox165";
+            this.BoxE9.Name = "BoxE9";
             this.BoxE9.Size = new System.Drawing.Size(28, 28);
             this.BoxE9.TabIndex = 164;
             this.BoxE9.TabStop = false;
             // 
-            // pictureBox164
+            // BoxD9
             // 
             this.BoxD9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxD9.Location = new System.Drawing.Point(105, 275);
-            this.BoxD9.Name = "pictureBox164";
+            this.BoxD9.Name = "BoxD9";
             this.BoxD9.Size = new System.Drawing.Size(28, 28);
             this.BoxD9.TabIndex = 163;
             this.BoxD9.TabStop = false;
             // 
-            // pictureBox163
+            // BoxC9
             // 
             this.BoxC9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxC9.Location = new System.Drawing.Point(71, 275);
-            this.BoxC9.Name = "pictureBox163";
+            this.BoxC9.Name = "BoxC9";
             this.BoxC9.Size = new System.Drawing.Size(28, 28);
             this.BoxC9.TabIndex = 162;
             this.BoxC9.TabStop = false;
             // 
-            // pictureBox162
+            // BoxB9
             // 
             this.BoxB9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxB9.Location = new System.Drawing.Point(37, 275);
-            this.BoxB9.Name = "pictureBox162";
+            this.BoxB9.Name = "BoxB9";
             this.BoxB9.Size = new System.Drawing.Size(28, 28);
             this.BoxB9.TabIndex = 161;
             this.BoxB9.TabStop = false;
             // 
-            // pictureBox161
+            // BoxA9
             // 
             this.BoxA9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxA9.Location = new System.Drawing.Point(3, 275);
-            this.BoxA9.Name = "pictureBox161";
+            this.BoxA9.Name = "BoxA9";
             this.BoxA9.Size = new System.Drawing.Size(28, 28);
             this.BoxA9.TabIndex = 160;
             this.BoxA9.TabStop = false;
@@ -2808,11 +2815,11 @@
             this.BoxM8.TabIndex = 152;
             this.BoxM8.TabStop = false;
             // 
-            // pictureBox152
+            // BoxL8
             // 
             this.BoxL8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxL8.Location = new System.Drawing.Point(377, 241);
-            this.BoxL8.Name = "pictureBox152";
+            this.BoxL8.Name = "BoxL8";
             this.BoxL8.Size = new System.Drawing.Size(28, 28);
             this.BoxL8.TabIndex = 151;
             this.BoxL8.TabStop = false;
@@ -2826,92 +2833,92 @@
             this.BoxK8.TabIndex = 150;
             this.BoxK8.TabStop = false;
             // 
-            // pictureBox150
+            // BoxJ8
             // 
             this.BoxJ8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxJ8.Location = new System.Drawing.Point(309, 241);
-            this.BoxJ8.Name = "pictureBox150";
+            this.BoxJ8.Name = "BoxJ8";
             this.BoxJ8.Size = new System.Drawing.Size(28, 28);
             this.BoxJ8.TabIndex = 149;
             this.BoxJ8.TabStop = false;
             // 
-            // pictureBox149
+            // BoxI8
             // 
             this.BoxI8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxI8.Location = new System.Drawing.Point(275, 241);
-            this.BoxI8.Name = "pictureBox149";
+            this.BoxI8.Name = "BoxI8";
             this.BoxI8.Size = new System.Drawing.Size(28, 28);
             this.BoxI8.TabIndex = 148;
             this.BoxI8.TabStop = false;
             // 
-            // pictureBox148
+            // BoxH8
             // 
             this.BoxH8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxH8.Location = new System.Drawing.Point(241, 241);
-            this.BoxH8.Name = "pictureBox148";
+            this.BoxH8.Name = "BoxH8";
             this.BoxH8.Size = new System.Drawing.Size(28, 28);
             this.BoxH8.TabIndex = 147;
             this.BoxH8.TabStop = false;
             // 
-            // pictureBox147
+            // BoxG8
             // 
             this.BoxG8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxG8.Location = new System.Drawing.Point(207, 241);
-            this.BoxG8.Name = "pictureBox147";
+            this.BoxG8.Name = "BoxG8";
             this.BoxG8.Size = new System.Drawing.Size(28, 28);
             this.BoxG8.TabIndex = 146;
             this.BoxG8.TabStop = false;
             // 
-            // pictureBox146
+            // BoxF8
             // 
             this.BoxF8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxF8.Location = new System.Drawing.Point(173, 241);
-            this.BoxF8.Name = "pictureBox146";
+            this.BoxF8.Name = "BoxF8";
             this.BoxF8.Size = new System.Drawing.Size(28, 28);
             this.BoxF8.TabIndex = 145;
             this.BoxF8.TabStop = false;
             // 
-            // pictureBox145
+            // BoxE8
             // 
             this.BoxE8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxE8.Location = new System.Drawing.Point(139, 241);
-            this.BoxE8.Name = "pictureBox145";
+            this.BoxE8.Name = "BoxE8";
             this.BoxE8.Size = new System.Drawing.Size(28, 28);
             this.BoxE8.TabIndex = 144;
             this.BoxE8.TabStop = false;
             // 
-            // pictureBox144
+            // BoxD8
             // 
             this.BoxD8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxD8.Location = new System.Drawing.Point(105, 241);
-            this.BoxD8.Name = "pictureBox144";
+            this.BoxD8.Name = "BoxD8";
             this.BoxD8.Size = new System.Drawing.Size(28, 28);
             this.BoxD8.TabIndex = 143;
             this.BoxD8.TabStop = false;
             // 
-            // pictureBox143
+            // BoxC8
             // 
             this.BoxC8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxC8.Location = new System.Drawing.Point(71, 241);
-            this.BoxC8.Name = "pictureBox143";
+            this.BoxC8.Name = "BoxC8";
             this.BoxC8.Size = new System.Drawing.Size(28, 28);
             this.BoxC8.TabIndex = 142;
             this.BoxC8.TabStop = false;
             // 
-            // pictureBox142
+            // BoxB8
             // 
             this.BoxB8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxB8.Location = new System.Drawing.Point(37, 241);
-            this.BoxB8.Name = "pictureBox142";
+            this.BoxB8.Name = "BoxB8";
             this.BoxB8.Size = new System.Drawing.Size(28, 28);
             this.BoxB8.TabIndex = 141;
             this.BoxB8.TabStop = false;
             // 
-            // pictureBox141
+            // BoxA8
             // 
             this.BoxA8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxA8.Location = new System.Drawing.Point(3, 241);
-            this.BoxA8.Name = "pictureBox141";
+            this.BoxA8.Name = "BoxA8";
             this.BoxA8.Size = new System.Drawing.Size(28, 28);
             this.BoxA8.TabIndex = 140;
             this.BoxA8.TabStop = false;
@@ -2952,11 +2959,11 @@
             this.BoxM7.TabIndex = 132;
             this.BoxM7.TabStop = false;
             // 
-            // pictureBox132
+            // BoxL7
             // 
             this.BoxL7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxL7.Location = new System.Drawing.Point(377, 207);
-            this.BoxL7.Name = "pictureBox132";
+            this.BoxL7.Name = "BoxL7";
             this.BoxL7.Size = new System.Drawing.Size(28, 28);
             this.BoxL7.TabIndex = 131;
             this.BoxL7.TabStop = false;
@@ -2970,92 +2977,92 @@
             this.BoxK7.TabIndex = 130;
             this.BoxK7.TabStop = false;
             // 
-            // pictureBox130
+            // BoxJ7
             // 
             this.BoxJ7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxJ7.Location = new System.Drawing.Point(309, 207);
-            this.BoxJ7.Name = "pictureBox130";
+            this.BoxJ7.Name = "BoxJ7";
             this.BoxJ7.Size = new System.Drawing.Size(28, 28);
             this.BoxJ7.TabIndex = 129;
             this.BoxJ7.TabStop = false;
             // 
-            // pictureBox129
+            // BoxI7
             // 
             this.BoxI7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxI7.Location = new System.Drawing.Point(275, 207);
-            this.BoxI7.Name = "pictureBox129";
+            this.BoxI7.Name = "BoxI7";
             this.BoxI7.Size = new System.Drawing.Size(28, 28);
             this.BoxI7.TabIndex = 128;
             this.BoxI7.TabStop = false;
             // 
-            // pictureBox128
+            // BoxH7
             // 
             this.BoxH7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxH7.Location = new System.Drawing.Point(241, 207);
-            this.BoxH7.Name = "pictureBox128";
+            this.BoxH7.Name = "BoxH7";
             this.BoxH7.Size = new System.Drawing.Size(28, 28);
             this.BoxH7.TabIndex = 127;
             this.BoxH7.TabStop = false;
             // 
-            // pictureBox127
+            // BoxG7
             // 
             this.BoxG7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxG7.Location = new System.Drawing.Point(207, 207);
-            this.BoxG7.Name = "pictureBox127";
+            this.BoxG7.Name = "BoxG7";
             this.BoxG7.Size = new System.Drawing.Size(28, 28);
             this.BoxG7.TabIndex = 126;
             this.BoxG7.TabStop = false;
             // 
-            // pictureBox126
+            // BoxF7
             // 
             this.BoxF7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxF7.Location = new System.Drawing.Point(173, 207);
-            this.BoxF7.Name = "pictureBox126";
+            this.BoxF7.Name = "BoxF7";
             this.BoxF7.Size = new System.Drawing.Size(28, 28);
             this.BoxF7.TabIndex = 125;
             this.BoxF7.TabStop = false;
             // 
-            // pictureBox125
+            // BoxE7
             // 
             this.BoxE7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxE7.Location = new System.Drawing.Point(139, 207);
-            this.BoxE7.Name = "pictureBox125";
+            this.BoxE7.Name = "BoxE7";
             this.BoxE7.Size = new System.Drawing.Size(28, 28);
             this.BoxE7.TabIndex = 124;
             this.BoxE7.TabStop = false;
             // 
-            // pictureBox124
+            // BoxD7
             // 
             this.BoxD7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxD7.Location = new System.Drawing.Point(105, 207);
-            this.BoxD7.Name = "pictureBox124";
+            this.BoxD7.Name = "BoxD7";
             this.BoxD7.Size = new System.Drawing.Size(28, 28);
             this.BoxD7.TabIndex = 123;
             this.BoxD7.TabStop = false;
             // 
-            // pictureBox123
+            // BoxC7
             // 
             this.BoxC7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxC7.Location = new System.Drawing.Point(71, 207);
-            this.BoxC7.Name = "pictureBox123";
+            this.BoxC7.Name = "BoxC7";
             this.BoxC7.Size = new System.Drawing.Size(28, 28);
             this.BoxC7.TabIndex = 122;
             this.BoxC7.TabStop = false;
             // 
-            // pictureBox122
+            // BoxB7
             // 
             this.BoxB7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxB7.Location = new System.Drawing.Point(37, 207);
-            this.BoxB7.Name = "pictureBox122";
+            this.BoxB7.Name = "BoxB7";
             this.BoxB7.Size = new System.Drawing.Size(28, 28);
             this.BoxB7.TabIndex = 121;
             this.BoxB7.TabStop = false;
             // 
-            // pictureBox121
+            // BoxA7
             // 
             this.BoxA7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxA7.Location = new System.Drawing.Point(3, 207);
-            this.BoxA7.Name = "pictureBox121";
+            this.BoxA7.Name = "BoxA7";
             this.BoxA7.Size = new System.Drawing.Size(28, 28);
             this.BoxA7.TabIndex = 120;
             this.BoxA7.TabStop = false;
@@ -3096,11 +3103,11 @@
             this.BoxM6.TabIndex = 112;
             this.BoxM6.TabStop = false;
             // 
-            // pictureBox112
+            // BoxL6
             // 
             this.BoxL6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxL6.Location = new System.Drawing.Point(377, 173);
-            this.BoxL6.Name = "pictureBox112";
+            this.BoxL6.Name = "BoxL6";
             this.BoxL6.Size = new System.Drawing.Size(28, 28);
             this.BoxL6.TabIndex = 111;
             this.BoxL6.TabStop = false;
@@ -3114,92 +3121,92 @@
             this.BoxK6.TabIndex = 110;
             this.BoxK6.TabStop = false;
             // 
-            // pictureBox110
+            // BoxJ6
             // 
             this.BoxJ6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxJ6.Location = new System.Drawing.Point(309, 173);
-            this.BoxJ6.Name = "pictureBox110";
+            this.BoxJ6.Name = "BoxJ6";
             this.BoxJ6.Size = new System.Drawing.Size(28, 28);
             this.BoxJ6.TabIndex = 109;
             this.BoxJ6.TabStop = false;
             // 
-            // pictureBox109
+            // BoxI6
             // 
             this.BoxI6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxI6.Location = new System.Drawing.Point(275, 173);
-            this.BoxI6.Name = "pictureBox109";
+            this.BoxI6.Name = "BoxI6";
             this.BoxI6.Size = new System.Drawing.Size(28, 28);
             this.BoxI6.TabIndex = 108;
             this.BoxI6.TabStop = false;
             // 
-            // pictureBox108
+            // BoxH6
             // 
             this.BoxH6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxH6.Location = new System.Drawing.Point(241, 173);
-            this.BoxH6.Name = "pictureBox108";
+            this.BoxH6.Name = "BoxH6";
             this.BoxH6.Size = new System.Drawing.Size(28, 28);
             this.BoxH6.TabIndex = 107;
             this.BoxH6.TabStop = false;
             // 
-            // pictureBox107
+            // BoxG6
             // 
             this.BoxG6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxG6.Location = new System.Drawing.Point(207, 173);
-            this.BoxG6.Name = "pictureBox107";
+            this.BoxG6.Name = "BoxG6";
             this.BoxG6.Size = new System.Drawing.Size(28, 28);
             this.BoxG6.TabIndex = 106;
             this.BoxG6.TabStop = false;
             // 
-            // pictureBox106
+            // BoxF6
             // 
             this.BoxF6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxF6.Location = new System.Drawing.Point(173, 173);
-            this.BoxF6.Name = "pictureBox106";
+            this.BoxF6.Name = "BoxF6";
             this.BoxF6.Size = new System.Drawing.Size(28, 28);
             this.BoxF6.TabIndex = 105;
             this.BoxF6.TabStop = false;
             // 
-            // pictureBox105
+            // BoxE6
             // 
             this.BoxE6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxE6.Location = new System.Drawing.Point(139, 173);
-            this.BoxE6.Name = "pictureBox105";
+            this.BoxE6.Name = "BoxE6";
             this.BoxE6.Size = new System.Drawing.Size(28, 28);
             this.BoxE6.TabIndex = 104;
             this.BoxE6.TabStop = false;
             // 
-            // pictureBox104
+            // BoxD6
             // 
             this.BoxD6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxD6.Location = new System.Drawing.Point(105, 173);
-            this.BoxD6.Name = "pictureBox104";
+            this.BoxD6.Name = "BoxD6";
             this.BoxD6.Size = new System.Drawing.Size(28, 28);
             this.BoxD6.TabIndex = 103;
             this.BoxD6.TabStop = false;
             // 
-            // pictureBox103
+            // BoxC6
             // 
             this.BoxC6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxC6.Location = new System.Drawing.Point(71, 173);
-            this.BoxC6.Name = "pictureBox103";
+            this.BoxC6.Name = "BoxC6";
             this.BoxC6.Size = new System.Drawing.Size(28, 28);
             this.BoxC6.TabIndex = 102;
             this.BoxC6.TabStop = false;
             // 
-            // pictureBox102
+            // BoxB6
             // 
             this.BoxB6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxB6.Location = new System.Drawing.Point(37, 173);
-            this.BoxB6.Name = "pictureBox102";
+            this.BoxB6.Name = "BoxB6";
             this.BoxB6.Size = new System.Drawing.Size(28, 28);
             this.BoxB6.TabIndex = 101;
             this.BoxB6.TabStop = false;
             // 
-            // pictureBox101
+            // BoxA6
             // 
             this.BoxA6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxA6.Location = new System.Drawing.Point(3, 173);
-            this.BoxA6.Name = "pictureBox101";
+            this.BoxA6.Name = "BoxA6";
             this.BoxA6.Size = new System.Drawing.Size(28, 28);
             this.BoxA6.TabIndex = 100;
             this.BoxA6.TabStop = false;
@@ -3240,11 +3247,11 @@
             this.BoxM5.TabIndex = 92;
             this.BoxM5.TabStop = false;
             // 
-            // pictureBox92
+            // BoxL5
             // 
             this.BoxL5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxL5.Location = new System.Drawing.Point(377, 139);
-            this.BoxL5.Name = "pictureBox92";
+            this.BoxL5.Name = "BoxL5";
             this.BoxL5.Size = new System.Drawing.Size(28, 28);
             this.BoxL5.TabIndex = 91;
             this.BoxL5.TabStop = false;
@@ -3258,92 +3265,92 @@
             this.BoxK5.TabIndex = 90;
             this.BoxK5.TabStop = false;
             // 
-            // pictureBox74
+            // BoxJ5
             // 
             this.BoxJ5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxJ5.Location = new System.Drawing.Point(309, 139);
-            this.BoxJ5.Name = "pictureBox74";
+            this.BoxJ5.Name = "BoxJ5";
             this.BoxJ5.Size = new System.Drawing.Size(28, 28);
             this.BoxJ5.TabIndex = 89;
             this.BoxJ5.TabStop = false;
             // 
-            // pictureBox73
+            // BoxI5
             // 
             this.BoxI5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxI5.Location = new System.Drawing.Point(275, 139);
-            this.BoxI5.Name = "pictureBox73";
+            this.BoxI5.Name = "BoxI5";
             this.BoxI5.Size = new System.Drawing.Size(28, 28);
             this.BoxI5.TabIndex = 88;
             this.BoxI5.TabStop = false;
             // 
-            // pictureBox72
+            // BoxH5
             // 
             this.BoxH5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxH5.Location = new System.Drawing.Point(241, 139);
-            this.BoxH5.Name = "pictureBox72";
+            this.BoxH5.Name = "BoxH5";
             this.BoxH5.Size = new System.Drawing.Size(28, 28);
             this.BoxH5.TabIndex = 87;
             this.BoxH5.TabStop = false;
             // 
-            // pictureBox71
+            // BoxG5
             // 
             this.BoxG5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxG5.Location = new System.Drawing.Point(207, 139);
-            this.BoxG5.Name = "pictureBox71";
+            this.BoxG5.Name = "BoxG5";
             this.BoxG5.Size = new System.Drawing.Size(28, 28);
             this.BoxG5.TabIndex = 86;
             this.BoxG5.TabStop = false;
             // 
-            // pictureBox70
+            // BoxF5
             // 
             this.BoxF5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxF5.Location = new System.Drawing.Point(173, 139);
-            this.BoxF5.Name = "pictureBox70";
+            this.BoxF5.Name = "BoxF5";
             this.BoxF5.Size = new System.Drawing.Size(28, 28);
             this.BoxF5.TabIndex = 85;
             this.BoxF5.TabStop = false;
             // 
-            // pictureBox69
+            // BoxE5
             // 
             this.BoxE5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxE5.Location = new System.Drawing.Point(139, 139);
-            this.BoxE5.Name = "pictureBox69";
+            this.BoxE5.Name = "BoxE5";
             this.BoxE5.Size = new System.Drawing.Size(28, 28);
             this.BoxE5.TabIndex = 84;
             this.BoxE5.TabStop = false;
             // 
-            // pictureBox68
+            // BoxD5
             // 
             this.BoxD5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxD5.Location = new System.Drawing.Point(105, 139);
-            this.BoxD5.Name = "pictureBox68";
+            this.BoxD5.Name = "BoxD5";
             this.BoxD5.Size = new System.Drawing.Size(28, 28);
             this.BoxD5.TabIndex = 83;
             this.BoxD5.TabStop = false;
             // 
-            // pictureBox67
+            // BoxC5
             // 
             this.BoxC5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxC5.Location = new System.Drawing.Point(71, 139);
-            this.BoxC5.Name = "pictureBox67";
+            this.BoxC5.Name = "BoxC5";
             this.BoxC5.Size = new System.Drawing.Size(28, 28);
             this.BoxC5.TabIndex = 82;
             this.BoxC5.TabStop = false;
             // 
-            // pictureBox66
+            // BoxB5
             // 
             this.BoxB5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxB5.Location = new System.Drawing.Point(37, 139);
-            this.BoxB5.Name = "pictureBox66";
+            this.BoxB5.Name = "BoxB5";
             this.BoxB5.Size = new System.Drawing.Size(28, 28);
             this.BoxB5.TabIndex = 81;
             this.BoxB5.TabStop = false;
             // 
-            // pictureBox65
+            // BoxA5
             // 
             this.BoxA5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxA5.Location = new System.Drawing.Point(3, 139);
-            this.BoxA5.Name = "pictureBox65";
+            this.BoxA5.Name = "BoxA5";
             this.BoxA5.Size = new System.Drawing.Size(28, 28);
             this.BoxA5.TabIndex = 80;
             this.BoxA5.TabStop = false;
@@ -3384,11 +3391,11 @@
             this.BoxM4.TabIndex = 72;
             this.BoxM4.TabStop = false;
             // 
-            // pictureBox60
+            // BoxL4
             // 
             this.BoxL4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxL4.Location = new System.Drawing.Point(377, 105);
-            this.BoxL4.Name = "pictureBox60";
+            this.BoxL4.Name = "BoxL4";
             this.BoxL4.Size = new System.Drawing.Size(28, 28);
             this.BoxL4.TabIndex = 71;
             this.BoxL4.TabStop = false;
@@ -3402,92 +3409,92 @@
             this.BoxK4.TabIndex = 70;
             this.BoxK4.TabStop = false;
             // 
-            // pictureBox58
+            // BoxJ4
             // 
             this.BoxJ4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxJ4.Location = new System.Drawing.Point(309, 105);
-            this.BoxJ4.Name = "pictureBox58";
+            this.BoxJ4.Name = "BoxJ4";
             this.BoxJ4.Size = new System.Drawing.Size(28, 28);
             this.BoxJ4.TabIndex = 69;
             this.BoxJ4.TabStop = false;
             // 
-            // pictureBox57
+            // BoxI4
             // 
             this.BoxI4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxI4.Location = new System.Drawing.Point(275, 105);
-            this.BoxI4.Name = "pictureBox57";
+            this.BoxI4.Name = "BoxI4";
             this.BoxI4.Size = new System.Drawing.Size(28, 28);
             this.BoxI4.TabIndex = 68;
             this.BoxI4.TabStop = false;
             // 
-            // pictureBox56
+            // BoxH4
             // 
             this.BoxH4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxH4.Location = new System.Drawing.Point(241, 105);
-            this.BoxH4.Name = "pictureBox56";
+            this.BoxH4.Name = "BoxH4";
             this.BoxH4.Size = new System.Drawing.Size(28, 28);
             this.BoxH4.TabIndex = 67;
             this.BoxH4.TabStop = false;
             // 
-            // pictureBox55
+            // BoxG4
             // 
             this.BoxG4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxG4.Location = new System.Drawing.Point(207, 105);
-            this.BoxG4.Name = "pictureBox55";
+            this.BoxG4.Name = "BoxG4";
             this.BoxG4.Size = new System.Drawing.Size(28, 28);
             this.BoxG4.TabIndex = 66;
             this.BoxG4.TabStop = false;
             // 
-            // pictureBox54
+            // BoxF4
             // 
             this.BoxF4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxF4.Location = new System.Drawing.Point(173, 105);
-            this.BoxF4.Name = "pictureBox54";
+            this.BoxF4.Name = "BoxF4";
             this.BoxF4.Size = new System.Drawing.Size(28, 28);
             this.BoxF4.TabIndex = 65;
             this.BoxF4.TabStop = false;
             // 
-            // pictureBox53
+            // BoxE4
             // 
             this.BoxE4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxE4.Location = new System.Drawing.Point(139, 105);
-            this.BoxE4.Name = "pictureBox53";
+            this.BoxE4.Name = "BoxE4";
             this.BoxE4.Size = new System.Drawing.Size(28, 28);
             this.BoxE4.TabIndex = 64;
             this.BoxE4.TabStop = false;
             // 
-            // pictureBox52
+            // BoxD4
             // 
             this.BoxD4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxD4.Location = new System.Drawing.Point(105, 105);
-            this.BoxD4.Name = "pictureBox52";
+            this.BoxD4.Name = "BoxD4";
             this.BoxD4.Size = new System.Drawing.Size(28, 28);
             this.BoxD4.TabIndex = 63;
             this.BoxD4.TabStop = false;
             // 
-            // pictureBox51
+            // BoxC4
             // 
             this.BoxC4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxC4.Location = new System.Drawing.Point(71, 105);
-            this.BoxC4.Name = "pictureBox51";
+            this.BoxC4.Name = "BoxC4";
             this.BoxC4.Size = new System.Drawing.Size(28, 28);
             this.BoxC4.TabIndex = 62;
             this.BoxC4.TabStop = false;
             // 
-            // pictureBox50
+            // BoxB4
             // 
             this.BoxB4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxB4.Location = new System.Drawing.Point(37, 105);
-            this.BoxB4.Name = "pictureBox50";
+            this.BoxB4.Name = "BoxB4";
             this.BoxB4.Size = new System.Drawing.Size(28, 28);
             this.BoxB4.TabIndex = 61;
             this.BoxB4.TabStop = false;
             // 
-            // pictureBox49
+            // BoxA4
             // 
             this.BoxA4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxA4.Location = new System.Drawing.Point(3, 105);
-            this.BoxA4.Name = "pictureBox49";
+            this.BoxA4.Name = "BoxA4";
             this.BoxA4.Size = new System.Drawing.Size(28, 28);
             this.BoxA4.TabIndex = 60;
             this.BoxA4.TabStop = false;
@@ -3528,11 +3535,11 @@
             this.BoxM3.TabIndex = 52;
             this.BoxM3.TabStop = false;
             // 
-            // pictureBox44
+            // BoxL3
             // 
             this.BoxL3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxL3.Location = new System.Drawing.Point(377, 71);
-            this.BoxL3.Name = "pictureBox44";
+            this.BoxL3.Name = "BoxL3";
             this.BoxL3.Size = new System.Drawing.Size(28, 28);
             this.BoxL3.TabIndex = 51;
             this.BoxL3.TabStop = false;
@@ -3546,92 +3553,92 @@
             this.BoxK3.TabIndex = 50;
             this.BoxK3.TabStop = false;
             // 
-            // pictureBox42
+            // BoxJ3
             // 
             this.BoxJ3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxJ3.Location = new System.Drawing.Point(309, 71);
-            this.BoxJ3.Name = "pictureBox42";
+            this.BoxJ3.Name = "BoxJ3";
             this.BoxJ3.Size = new System.Drawing.Size(28, 28);
             this.BoxJ3.TabIndex = 49;
             this.BoxJ3.TabStop = false;
             // 
-            // pictureBox41
+            // BoxI3
             // 
             this.BoxI3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxI3.Location = new System.Drawing.Point(275, 71);
-            this.BoxI3.Name = "pictureBox41";
+            this.BoxI3.Name = "BoxI3";
             this.BoxI3.Size = new System.Drawing.Size(28, 28);
             this.BoxI3.TabIndex = 48;
             this.BoxI3.TabStop = false;
             // 
-            // pictureBox40
+            // BoxH3
             // 
             this.BoxH3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxH3.Location = new System.Drawing.Point(241, 71);
-            this.BoxH3.Name = "pictureBox40";
+            this.BoxH3.Name = "BoxH3";
             this.BoxH3.Size = new System.Drawing.Size(28, 28);
             this.BoxH3.TabIndex = 47;
             this.BoxH3.TabStop = false;
             // 
-            // pictureBox39
+            // BoxG3
             // 
             this.BoxG3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxG3.Location = new System.Drawing.Point(207, 71);
-            this.BoxG3.Name = "pictureBox39";
+            this.BoxG3.Name = "BoxG3";
             this.BoxG3.Size = new System.Drawing.Size(28, 28);
             this.BoxG3.TabIndex = 46;
             this.BoxG3.TabStop = false;
             // 
-            // pictureBox38
+            // BoxF3
             // 
             this.BoxF3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxF3.Location = new System.Drawing.Point(173, 71);
-            this.BoxF3.Name = "pictureBox38";
+            this.BoxF3.Name = "BoxF3";
             this.BoxF3.Size = new System.Drawing.Size(28, 28);
             this.BoxF3.TabIndex = 45;
             this.BoxF3.TabStop = false;
             // 
-            // pictureBox37
+            // BoxE3
             // 
             this.BoxE3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxE3.Location = new System.Drawing.Point(139, 71);
-            this.BoxE3.Name = "pictureBox37";
+            this.BoxE3.Name = "BoxE3";
             this.BoxE3.Size = new System.Drawing.Size(28, 28);
             this.BoxE3.TabIndex = 44;
             this.BoxE3.TabStop = false;
             // 
-            // pictureBox36
+            // BoxD3
             // 
             this.BoxD3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxD3.Location = new System.Drawing.Point(105, 71);
-            this.BoxD3.Name = "pictureBox36";
+            this.BoxD3.Name = "BoxD3";
             this.BoxD3.Size = new System.Drawing.Size(28, 28);
             this.BoxD3.TabIndex = 43;
             this.BoxD3.TabStop = false;
             // 
-            // pictureBox35
+            // BoxC3
             // 
             this.BoxC3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxC3.Location = new System.Drawing.Point(71, 71);
-            this.BoxC3.Name = "pictureBox35";
+            this.BoxC3.Name = "BoxC3";
             this.BoxC3.Size = new System.Drawing.Size(28, 28);
             this.BoxC3.TabIndex = 42;
             this.BoxC3.TabStop = false;
             // 
-            // pictureBox34
+            // BoxB3
             // 
             this.BoxB3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxB3.Location = new System.Drawing.Point(37, 71);
-            this.BoxB3.Name = "pictureBox34";
+            this.BoxB3.Name = "BoxB3";
             this.BoxB3.Size = new System.Drawing.Size(28, 28);
             this.BoxB3.TabIndex = 41;
             this.BoxB3.TabStop = false;
             // 
-            // pictureBox33
+            // BoxA3
             // 
             this.BoxA3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxA3.Location = new System.Drawing.Point(3, 71);
-            this.BoxA3.Name = "pictureBox33";
+            this.BoxA3.Name = "BoxA3";
             this.BoxA3.Size = new System.Drawing.Size(28, 28);
             this.BoxA3.TabIndex = 40;
             this.BoxA3.TabStop = false;
@@ -3672,11 +3679,11 @@
             this.BoxM2.TabIndex = 32;
             this.BoxM2.TabStop = false;
             // 
-            // pictureBox28
+            // BoxL2
             // 
             this.BoxL2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxL2.Location = new System.Drawing.Point(377, 37);
-            this.BoxL2.Name = "pictureBox28";
+            this.BoxL2.Name = "BoxL2";
             this.BoxL2.Size = new System.Drawing.Size(28, 28);
             this.BoxL2.TabIndex = 31;
             this.BoxL2.TabStop = false;
@@ -3690,83 +3697,83 @@
             this.BoxK2.TabIndex = 30;
             this.BoxK2.TabStop = false;
             // 
-            // pictureBox26
+            // BoxJ2
             // 
             this.BoxJ2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxJ2.Location = new System.Drawing.Point(309, 37);
-            this.BoxJ2.Name = "pictureBox26";
+            this.BoxJ2.Name = "BoxJ2";
             this.BoxJ2.Size = new System.Drawing.Size(28, 28);
             this.BoxJ2.TabIndex = 29;
             this.BoxJ2.TabStop = false;
             // 
-            // pictureBox25
+            // BoxI2
             // 
             this.BoxI2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxI2.Location = new System.Drawing.Point(275, 37);
-            this.BoxI2.Name = "pictureBox25";
+            this.BoxI2.Name = "BoxI2";
             this.BoxI2.Size = new System.Drawing.Size(28, 28);
             this.BoxI2.TabIndex = 28;
             this.BoxI2.TabStop = false;
             // 
-            // pictureBox24
+            // BoxH2
             // 
             this.BoxH2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxH2.Location = new System.Drawing.Point(241, 37);
-            this.BoxH2.Name = "pictureBox24";
+            this.BoxH2.Name = "BoxH2";
             this.BoxH2.Size = new System.Drawing.Size(28, 28);
             this.BoxH2.TabIndex = 27;
             this.BoxH2.TabStop = false;
             // 
-            // pictureBox23
+            // BoxG2
             // 
             this.BoxG2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxG2.Location = new System.Drawing.Point(207, 37);
-            this.BoxG2.Name = "pictureBox23";
+            this.BoxG2.Name = "BoxG2";
             this.BoxG2.Size = new System.Drawing.Size(28, 28);
             this.BoxG2.TabIndex = 26;
             this.BoxG2.TabStop = false;
             // 
-            // pictureBox22
+            // BoxF2
             // 
             this.BoxF2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxF2.Location = new System.Drawing.Point(173, 37);
-            this.BoxF2.Name = "pictureBox22";
+            this.BoxF2.Name = "BoxF2";
             this.BoxF2.Size = new System.Drawing.Size(28, 28);
             this.BoxF2.TabIndex = 25;
             this.BoxF2.TabStop = false;
             // 
-            // pictureBox21
+            // BoxE2
             // 
             this.BoxE2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxE2.Location = new System.Drawing.Point(139, 37);
-            this.BoxE2.Name = "pictureBox21";
+            this.BoxE2.Name = "BoxE2";
             this.BoxE2.Size = new System.Drawing.Size(28, 28);
             this.BoxE2.TabIndex = 24;
             this.BoxE2.TabStop = false;
             // 
-            // pictureBox20
+            // BoxD2
             // 
             this.BoxD2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxD2.Location = new System.Drawing.Point(105, 37);
-            this.BoxD2.Name = "pictureBox20";
+            this.BoxD2.Name = "BoxD2";
             this.BoxD2.Size = new System.Drawing.Size(28, 28);
             this.BoxD2.TabIndex = 23;
             this.BoxD2.TabStop = false;
             // 
-            // pictureBox19
+            // BoxC2
             // 
             this.BoxC2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxC2.Location = new System.Drawing.Point(71, 37);
-            this.BoxC2.Name = "pictureBox19";
+            this.BoxC2.Name = "BoxC2";
             this.BoxC2.Size = new System.Drawing.Size(28, 28);
             this.BoxC2.TabIndex = 22;
             this.BoxC2.TabStop = false;
             // 
-            // pictureBox18
+            // BoxB2
             // 
             this.BoxB2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxB2.Location = new System.Drawing.Point(37, 37);
-            this.BoxB2.Name = "pictureBox18";
+            this.BoxB2.Name = "BoxB2";
             this.BoxB2.Size = new System.Drawing.Size(28, 28);
             this.BoxB2.TabIndex = 21;
             this.BoxB2.TabStop = false;
@@ -3915,14 +3922,67 @@
             this.BoxB1.TabIndex = 1;
             this.BoxB1.TabStop = false;
             // 
-            // Box1A
+            // BoxA1
             // 
             this.BoxA1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxA1.Location = new System.Drawing.Point(3, 3);
-            this.BoxA1.Name = "Box1A";
+            this.BoxA1.Name = "BoxA1";
             this.BoxA1.Size = new System.Drawing.Size(28, 28);
             this.BoxA1.TabIndex = 0;
             this.BoxA1.TabStop = false;
+            // 
+            // pieceTimer
+            // 
+            this.pieceTimer.Interval = 1000;
+            this.pieceTimer.Tick += new System.EventHandler(this.pieceTimer_Tick);
+            // 
+            // gameTimer
+            // 
+            this.gameTimer.Interval = 1000;
+            this.gameTimer.Tick += new System.EventHandler(this.gameTimer_Tick);
+            // 
+            // startLabelFlash
+            // 
+            this.startLabelFlash.Enabled = true;
+            this.startLabelFlash.Interval = 500;
+            this.startLabelFlash.Tick += new System.EventHandler(this.startLabelFlash_Tick);
+            // 
+            // countdownLabel
+            // 
+            this.countdownLabel.BackColor = System.Drawing.Color.DimGray;
+            this.countdownLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.countdownLabel.Location = new System.Drawing.Point(984, 151);
+            this.countdownLabel.Name = "countdownLabel";
+            this.countdownLabel.Size = new System.Drawing.Size(100, 50);
+            this.countdownLabel.TabIndex = 1;
+            this.countdownLabel.Text = "5:00";
+            this.countdownLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // startGameLabel
+            // 
+            this.startGameLabel.BackColor = System.Drawing.Color.SlateGray;
+            this.startGameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.startGameLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.startGameLabel.Location = new System.Drawing.Point(430, 300);
+            this.startGameLabel.Name = "startGameLabel";
+            this.startGameLabel.Size = new System.Drawing.Size(185, 50);
+            this.startGameLabel.TabIndex = 1;
+            this.startGameLabel.Text = "Press Enter";
+            this.startGameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.startGameLabel.Enter += new System.EventHandler(this.Form1_Enter);
+            // 
+            // hiddenBtn
+            // 
+            this.hiddenBtn.BackColor = System.Drawing.Color.Black;
+            this.hiddenBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.hiddenBtn.FlatAppearance.BorderSize = 0;
+            this.hiddenBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.hiddenBtn.Location = new System.Drawing.Point(999, 54);
+            this.hiddenBtn.Name = "hiddenBtn";
+            this.hiddenBtn.Size = new System.Drawing.Size(75, 23);
+            this.hiddenBtn.TabIndex = 2;
+            this.hiddenBtn.UseVisualStyleBackColor = false;
+            this.hiddenBtn.Click += new System.EventHandler(this.Form1_Enter);
             // 
             // Form1
             // 
@@ -3930,9 +3990,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1178, 744);
+            this.Controls.Add(this.hiddenBtn);
+            this.Controls.Add(this.startGameLabel);
+            this.Controls.Add(this.countdownLabel);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Form1";
             this.Text = "TetrisClone";
+            this.Enter += new System.EventHandler(this.Form1_Enter);
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.BoxP20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BoxO20)).EndInit();
@@ -4581,6 +4645,12 @@
         private System.Windows.Forms.PictureBox BoxD1;
         private System.Windows.Forms.PictureBox BoxC1;
         private System.Windows.Forms.PictureBox BoxB1;
+        private System.Windows.Forms.Timer pieceTimer;
+        private System.Windows.Forms.Timer gameTimer;
+        private System.Windows.Forms.Timer startLabelFlash;
+        private System.Windows.Forms.Label countdownLabel;
+        private System.Windows.Forms.Label startGameLabel;
+        private System.Windows.Forms.Button hiddenBtn;
     }
 }
 
