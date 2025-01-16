@@ -11,7 +11,6 @@ namespace TetrisClone
         TimeSpan timeLeft = new TimeSpan(0, 5, 0);
         Color[] colorArray = { Color.CornflowerBlue, Color.Yellow, Color.Crimson,
             Color.Magenta, Color.Cyan, Color.SpringGreen, Color.BlueViolet };
-        Control[] pieceArray = {null, null, null, null };
         Control[] currentPiece = { null, null, null, null };
         Control[] movingPieceHolder = { null, null, null, null };
         int currentPieceInt;
@@ -24,6 +23,8 @@ namespace TetrisClone
             startLabelFlash.Start();
         }
 
+        // Draws the black border between the cells.
+        // I didn't like the default color, and there wasn't an easier way (that I found) to change it
         private void tableLayoutPanel1_CellPaint(object sender, TableLayoutCellPaintEventArgs e)
         {
             e.Graphics.DrawRectangle(
@@ -62,81 +63,39 @@ namespace TetrisClone
             {
                 box.BackColor = colorArray[currentPieceInt];
             }
-
-            // I piece
-            //BoxB2.BackColor = Color.CornflowerBlue;
-            //BoxB3.BackColor = Color.CornflowerBlue;
-            //BoxB4.BackColor = Color.CornflowerBlue;
-            //BoxB5.BackColor = Color.CornflowerBlue;
-
-            // O piece
-            //BoxD2.BackColor = Color.Yellow;
-            //BoxD3.BackColor = Color.Yellow;
-            //BoxE2.BackColor = Color.Yellow;
-            //BoxE3.BackColor = Color.Yellow;
-
-            // S piece
-            //BoxH2.BackColor = Color.Crimson;
-            //BoxH3.BackColor = Color.Crimson;
-            //BoxI2.BackColor = Color.Crimson;
-            //BoxG3.BackColor = Color.Crimson;
-
-
-            // Z piece
-            //BoxK2.BackColor = Color.Magenta;
-            //BoxL2.BackColor = Color.Magenta;
-            //BoxL3.BackColor = Color.Magenta;
-            //BoxM3.BackColor = Color.Magenta;
-
-            // L piece
-            //BoxB7.BackColor = Color.Cyan;
-            //BoxB8.BackColor = Color.Cyan;
-            //BoxB9.BackColor = Color.Cyan;
-            //BoxC9.BackColor = Color.Cyan;
-
-            // J piece
-            //BoxF7.BackColor = Color.SpringGreen;
-            //BoxF8.BackColor = Color.SpringGreen;
-            //BoxF9.BackColor = Color.SpringGreen;
-            //BoxE9.BackColor = Color.SpringGreen;
-
-            // T piece
-            //BoxH7.BackColor = Color.BlueViolet;
-            //BoxH8.BackColor = Color.BlueViolet;
-            //BoxH9.BackColor = Color.BlueViolet;
-            //BoxI8.BackColor = Color.BlueViolet;
         }
 
         // Determines whether the move(right/left/down)/rotation(up) would put the piece outside the grid
         // or collide with another piece
         public bool TestMove(string direction)
         {
-            int maxTopRow = 0;
-            int maxBottomRow = 19;
-            int maxLeftCol = 0;
-            int maxRightCol = 15;
+            // The outer bounds of the grid
+            int currentTopRow = 0;
+            int currentBottomRow = 19;
+            int currentLeftCol = 0;
+            int currentRightCol = 15;
 
             int nextBox = 0;
             Control newBox = new Control();
 
-            // Determine the outer bounds of the grid
+            // Determine how high, low, left or right the piece can potentially move
             foreach(Control box in currentPiece)
             {
-                if(grid.GetRow(box) > maxTopRow)
+                if(grid.GetRow(box) > currentTopRow)
                 {
-                    maxTopRow = grid.GetRow(box);
+                    currentTopRow = grid.GetRow(box);
                 }
-                if(grid.GetRow(box) < maxBottomRow)
+                if(grid.GetRow(box) < currentBottomRow)
                 {
-                    maxBottomRow = grid.GetRow(box);
+                    currentBottomRow = grid.GetRow(box);
                 }
-                if(grid.GetColumn(box) > maxLeftCol)
+                if(grid.GetColumn(box) > currentLeftCol)
                 {
-                    maxLeftCol = grid.GetColumn(box);
+                    currentLeftCol = grid.GetColumn(box);
                 }
-                if(grid.GetColumn(box) < maxRightCol)
+                if(grid.GetColumn(box) < currentRightCol)
                 {
-                    maxRightCol = grid.GetColumn(box);
+                    currentRightCol = grid.GetColumn(box);
                 }
             }
 
@@ -152,7 +111,7 @@ namespace TetrisClone
                         if (boxCol > 0)
                         {
                             newBox = grid.GetControlFromPosition(boxCol - 1, boxRow);
-                            nextBox = maxLeftCol;
+                            nextBox = currentLeftCol;
                         }
                         else if(boxCol == 0)
                         {
@@ -165,7 +124,7 @@ namespace TetrisClone
                         if (boxCol < 15)
                         {
                             newBox = grid.GetControlFromPosition(boxCol + 1, boxRow);
-                            nextBox = maxRightCol;
+                            nextBox = currentRightCol;
                         }
                         else if(boxCol == 15)
                         {
@@ -177,7 +136,7 @@ namespace TetrisClone
                     // I think I might add a seperate function for rotating.
                     // I at least need to think som more on this one before I add it in.
                     //case "up":
-                    //    if (nextSquare < maxLeftCol || nextSquare > maxRightCol || nextSquare < maxTopRow || nextSquare > maxBottomRow)
+                    //    if (nextSquare < currentLeftCol || nextSquare > currentRightCol || nextSquare < currentTopRow || nextSquare > currentBottomRow)
                     //    {
                     //        return false;
                     //    }
@@ -187,7 +146,7 @@ namespace TetrisClone
                         if (boxRow < 19)
                         {
                             newBox = grid.GetControlFromPosition(boxCol, boxRow + 1);
-                            nextBox = maxBottomRow;
+                            nextBox = currentBottomRow;
                         }
                         else if(boxRow == 19)
                         {
@@ -214,9 +173,14 @@ namespace TetrisClone
             int x = 0;
             foreach(PictureBox box in currentPiece)
             {
+                // Erases the piece by replacing the background color with the grid's color
                 box.BackColor = Color.DarkSlateGray;
+
+                // Gets the current row and column of each box in the currentPiece
                 int boxRow = grid.GetRow(box);
                 int boxCol = grid.GetColumn(box);
+
+                // Holds the new position of the boxes in the piece
                 int newBoxRow = 0;
                 int newBoxCol = 0;
 
@@ -264,14 +228,17 @@ namespace TetrisClone
 
         }
 
+        // Moves the current piece down one row every second
         private void pieceTimer_Tick(object sender, EventArgs e)
         {
+            // Check if the current piece can move down
             if(TestMove("down") == true)
             {
                 MovePiece("down");
             }
             else
             {
+                // If the piece can't move down anymore, then it stops the timer and restarts the DropPiece function.
                 pieceTimer.Stop();
                 DropPiece();
             }
@@ -279,9 +246,11 @@ namespace TetrisClone
 
         private void gameTimer_Tick(object sender, EventArgs e)
         {            
+            // Decrease the time left by 1 second and update the displayed countdown 
             timeLeft = timeLeft - new TimeSpan(0, 0, 1);
             countdownLabel.Text = timeLeft.ToString("mm\\:ss");
             
+            // Stops the game if there is zero seconds left
             if(timeLeft == TimeSpan.Zero)
             {
                 gameTimer.Stop();
@@ -304,7 +273,7 @@ namespace TetrisClone
         }
 
         // Starts the game
-        // Hides and disables the button
+        // Hides and disables the flashing startLabel
         private void Form1_Enter(object sender, EventArgs e)
         {
             startLabelFlash.Stop();
