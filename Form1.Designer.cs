@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.grid = new System.Windows.Forms.TableLayoutPanel();
             this.BoxP20 = new System.Windows.Forms.PictureBox();
             this.BoxO20 = new System.Windows.Forms.PictureBox();
             this.BoxN20 = new System.Windows.Forms.PictureBox();
@@ -356,7 +356,7 @@
             this.countdownLabel = new System.Windows.Forms.Label();
             this.startGameLabel = new System.Windows.Forms.Label();
             this.hiddenBtn = new System.Windows.Forms.Button();
-            this.tableLayoutPanel1.SuspendLayout();
+            this.grid.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BoxP20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BoxO20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BoxN20)).BeginInit();
@@ -679,380 +679,381 @@
             ((System.ComponentModel.ISupportInitialize)(this.BoxA1)).BeginInit();
             this.SuspendLayout();
             // 
-            // tableLayoutPanel1
+            // grid
             // 
-            this.tableLayoutPanel1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.tableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(36)))));
-            this.tableLayoutPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.tableLayoutPanel1.ColumnCount = 16;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Controls.Add(this.BoxP20, 15, 19);
-            this.tableLayoutPanel1.Controls.Add(this.BoxO20, 14, 19);
-            this.tableLayoutPanel1.Controls.Add(this.BoxN20, 13, 19);
-            this.tableLayoutPanel1.Controls.Add(this.BoxM20, 12, 19);
-            this.tableLayoutPanel1.Controls.Add(this.BoxL20, 11, 19);
-            this.tableLayoutPanel1.Controls.Add(this.BoxK20, 10, 19);
-            this.tableLayoutPanel1.Controls.Add(this.BoxJ20, 9, 19);
-            this.tableLayoutPanel1.Controls.Add(this.BoxI20, 8, 19);
-            this.tableLayoutPanel1.Controls.Add(this.BoxH20, 7, 19);
-            this.tableLayoutPanel1.Controls.Add(this.BoxG20, 6, 19);
-            this.tableLayoutPanel1.Controls.Add(this.BoxF20, 5, 19);
-            this.tableLayoutPanel1.Controls.Add(this.BoxE20, 4, 19);
-            this.tableLayoutPanel1.Controls.Add(this.BoxD20, 3, 19);
-            this.tableLayoutPanel1.Controls.Add(this.BoxC20, 2, 19);
-            this.tableLayoutPanel1.Controls.Add(this.BoxB20, 1, 19);
-            this.tableLayoutPanel1.Controls.Add(this.BoxA20, 0, 19);
-            this.tableLayoutPanel1.Controls.Add(this.BoxP19, 15, 18);
-            this.tableLayoutPanel1.Controls.Add(this.BoxO19, 14, 18);
-            this.tableLayoutPanel1.Controls.Add(this.BoxN19, 13, 18);
-            this.tableLayoutPanel1.Controls.Add(this.BoxM19, 12, 18);
-            this.tableLayoutPanel1.Controls.Add(this.BoxL19, 11, 18);
-            this.tableLayoutPanel1.Controls.Add(this.BoxK19, 10, 18);
-            this.tableLayoutPanel1.Controls.Add(this.BoxJ19, 9, 18);
-            this.tableLayoutPanel1.Controls.Add(this.BoxI19, 8, 18);
-            this.tableLayoutPanel1.Controls.Add(this.BoxH19, 7, 18);
-            this.tableLayoutPanel1.Controls.Add(this.BoxG19, 6, 18);
-            this.tableLayoutPanel1.Controls.Add(this.BoxF19, 5, 18);
-            this.tableLayoutPanel1.Controls.Add(this.BoxE19, 4, 18);
-            this.tableLayoutPanel1.Controls.Add(this.BoxD19, 3, 18);
-            this.tableLayoutPanel1.Controls.Add(this.BoxC19, 2, 18);
-            this.tableLayoutPanel1.Controls.Add(this.BoxB19, 1, 18);
-            this.tableLayoutPanel1.Controls.Add(this.BoxA19, 0, 18);
-            this.tableLayoutPanel1.Controls.Add(this.BoxP18, 15, 17);
-            this.tableLayoutPanel1.Controls.Add(this.BoxO18, 14, 17);
-            this.tableLayoutPanel1.Controls.Add(this.BoxN18, 13, 17);
-            this.tableLayoutPanel1.Controls.Add(this.BoxM18, 12, 17);
-            this.tableLayoutPanel1.Controls.Add(this.BoxL18, 11, 17);
-            this.tableLayoutPanel1.Controls.Add(this.BoxK18, 10, 17);
-            this.tableLayoutPanel1.Controls.Add(this.BoxJ18, 9, 17);
-            this.tableLayoutPanel1.Controls.Add(this.BoxI18, 8, 17);
-            this.tableLayoutPanel1.Controls.Add(this.BoxH18, 7, 17);
-            this.tableLayoutPanel1.Controls.Add(this.BoxG18, 6, 17);
-            this.tableLayoutPanel1.Controls.Add(this.BoxF18, 5, 17);
-            this.tableLayoutPanel1.Controls.Add(this.BoxE18, 4, 17);
-            this.tableLayoutPanel1.Controls.Add(this.BoxD18, 3, 17);
-            this.tableLayoutPanel1.Controls.Add(this.BoxC18, 2, 17);
-            this.tableLayoutPanel1.Controls.Add(this.BoxB18, 1, 17);
-            this.tableLayoutPanel1.Controls.Add(this.BoxA18, 0, 17);
-            this.tableLayoutPanel1.Controls.Add(this.BoxP17, 15, 16);
-            this.tableLayoutPanel1.Controls.Add(this.BoxO17, 14, 16);
-            this.tableLayoutPanel1.Controls.Add(this.BoxN17, 13, 16);
-            this.tableLayoutPanel1.Controls.Add(this.BoxM17, 12, 16);
-            this.tableLayoutPanel1.Controls.Add(this.BoxL17, 11, 16);
-            this.tableLayoutPanel1.Controls.Add(this.BoxK17, 10, 16);
-            this.tableLayoutPanel1.Controls.Add(this.BoxJ17, 9, 16);
-            this.tableLayoutPanel1.Controls.Add(this.BoxI17, 8, 16);
-            this.tableLayoutPanel1.Controls.Add(this.BoxH17, 7, 16);
-            this.tableLayoutPanel1.Controls.Add(this.BoxG17, 6, 16);
-            this.tableLayoutPanel1.Controls.Add(this.BoxF17, 5, 16);
-            this.tableLayoutPanel1.Controls.Add(this.BoxE17, 4, 16);
-            this.tableLayoutPanel1.Controls.Add(this.BoxD17, 3, 16);
-            this.tableLayoutPanel1.Controls.Add(this.BoxC17, 2, 16);
-            this.tableLayoutPanel1.Controls.Add(this.BoxB17, 1, 16);
-            this.tableLayoutPanel1.Controls.Add(this.BoxA17, 0, 16);
-            this.tableLayoutPanel1.Controls.Add(this.BoxP16, 15, 15);
-            this.tableLayoutPanel1.Controls.Add(this.BoxO16, 14, 15);
-            this.tableLayoutPanel1.Controls.Add(this.BoxN16, 13, 15);
-            this.tableLayoutPanel1.Controls.Add(this.BoxM16, 12, 15);
-            this.tableLayoutPanel1.Controls.Add(this.BoxL16, 11, 15);
-            this.tableLayoutPanel1.Controls.Add(this.BoxK16, 10, 15);
-            this.tableLayoutPanel1.Controls.Add(this.BoxJ16, 9, 15);
-            this.tableLayoutPanel1.Controls.Add(this.BoxI16, 8, 15);
-            this.tableLayoutPanel1.Controls.Add(this.BoxH16, 7, 15);
-            this.tableLayoutPanel1.Controls.Add(this.BoxG16, 6, 15);
-            this.tableLayoutPanel1.Controls.Add(this.BoxF16, 5, 15);
-            this.tableLayoutPanel1.Controls.Add(this.BoxE16, 4, 15);
-            this.tableLayoutPanel1.Controls.Add(this.BoxD16, 3, 15);
-            this.tableLayoutPanel1.Controls.Add(this.BoxC16, 2, 15);
-            this.tableLayoutPanel1.Controls.Add(this.BoxB16, 1, 15);
-            this.tableLayoutPanel1.Controls.Add(this.BoxA16, 0, 15);
-            this.tableLayoutPanel1.Controls.Add(this.BoxP15, 15, 14);
-            this.tableLayoutPanel1.Controls.Add(this.BoxO15, 14, 14);
-            this.tableLayoutPanel1.Controls.Add(this.BoxN15, 13, 14);
-            this.tableLayoutPanel1.Controls.Add(this.BoxM15, 12, 14);
-            this.tableLayoutPanel1.Controls.Add(this.BoxL15, 11, 14);
-            this.tableLayoutPanel1.Controls.Add(this.BoxK15, 10, 14);
-            this.tableLayoutPanel1.Controls.Add(this.BoxJ15, 9, 14);
-            this.tableLayoutPanel1.Controls.Add(this.BoxI15, 8, 14);
-            this.tableLayoutPanel1.Controls.Add(this.BoxH15, 7, 14);
-            this.tableLayoutPanel1.Controls.Add(this.BoxG15, 6, 14);
-            this.tableLayoutPanel1.Controls.Add(this.BoxF15, 5, 14);
-            this.tableLayoutPanel1.Controls.Add(this.BoxE15, 4, 14);
-            this.tableLayoutPanel1.Controls.Add(this.BoxD15, 3, 14);
-            this.tableLayoutPanel1.Controls.Add(this.BoxC15, 2, 14);
-            this.tableLayoutPanel1.Controls.Add(this.BoxB15, 1, 14);
-            this.tableLayoutPanel1.Controls.Add(this.BoxA15, 0, 14);
-            this.tableLayoutPanel1.Controls.Add(this.BoxP14, 15, 13);
-            this.tableLayoutPanel1.Controls.Add(this.BoxO14, 14, 13);
-            this.tableLayoutPanel1.Controls.Add(this.BoxN14, 13, 13);
-            this.tableLayoutPanel1.Controls.Add(this.BoxM14, 12, 13);
-            this.tableLayoutPanel1.Controls.Add(this.BoxL14, 11, 13);
-            this.tableLayoutPanel1.Controls.Add(this.BoxK14, 10, 13);
-            this.tableLayoutPanel1.Controls.Add(this.BoxJ14, 9, 13);
-            this.tableLayoutPanel1.Controls.Add(this.BoxI14, 8, 13);
-            this.tableLayoutPanel1.Controls.Add(this.BoxH14, 7, 13);
-            this.tableLayoutPanel1.Controls.Add(this.BoxG14, 6, 13);
-            this.tableLayoutPanel1.Controls.Add(this.BoxF14, 5, 13);
-            this.tableLayoutPanel1.Controls.Add(this.BoxE14, 4, 13);
-            this.tableLayoutPanel1.Controls.Add(this.BoxD14, 3, 13);
-            this.tableLayoutPanel1.Controls.Add(this.BoxC14, 2, 13);
-            this.tableLayoutPanel1.Controls.Add(this.BoxB14, 1, 13);
-            this.tableLayoutPanel1.Controls.Add(this.BoxA14, 0, 13);
-            this.tableLayoutPanel1.Controls.Add(this.BoxP13, 15, 12);
-            this.tableLayoutPanel1.Controls.Add(this.BoxO13, 14, 12);
-            this.tableLayoutPanel1.Controls.Add(this.BoxN13, 13, 12);
-            this.tableLayoutPanel1.Controls.Add(this.BoxM13, 12, 12);
-            this.tableLayoutPanel1.Controls.Add(this.BoxL13, 11, 12);
-            this.tableLayoutPanel1.Controls.Add(this.BoxK13, 10, 12);
-            this.tableLayoutPanel1.Controls.Add(this.BoxJ13, 9, 12);
-            this.tableLayoutPanel1.Controls.Add(this.BoxI13, 8, 12);
-            this.tableLayoutPanel1.Controls.Add(this.BoxH13, 7, 12);
-            this.tableLayoutPanel1.Controls.Add(this.BoxG13, 6, 12);
-            this.tableLayoutPanel1.Controls.Add(this.BoxF13, 5, 12);
-            this.tableLayoutPanel1.Controls.Add(this.BoxE13, 4, 12);
-            this.tableLayoutPanel1.Controls.Add(this.BoxD13, 3, 12);
-            this.tableLayoutPanel1.Controls.Add(this.BoxC13, 2, 12);
-            this.tableLayoutPanel1.Controls.Add(this.BoxB13, 1, 12);
-            this.tableLayoutPanel1.Controls.Add(this.BoxA13, 0, 12);
-            this.tableLayoutPanel1.Controls.Add(this.BoxP12, 15, 11);
-            this.tableLayoutPanel1.Controls.Add(this.BoxO12, 14, 11);
-            this.tableLayoutPanel1.Controls.Add(this.BoxN12, 13, 11);
-            this.tableLayoutPanel1.Controls.Add(this.BoxM12, 12, 11);
-            this.tableLayoutPanel1.Controls.Add(this.BoxL12, 11, 11);
-            this.tableLayoutPanel1.Controls.Add(this.BoxK12, 10, 11);
-            this.tableLayoutPanel1.Controls.Add(this.BoxJ12, 9, 11);
-            this.tableLayoutPanel1.Controls.Add(this.BoxI12, 8, 11);
-            this.tableLayoutPanel1.Controls.Add(this.BoxH12, 7, 11);
-            this.tableLayoutPanel1.Controls.Add(this.BoxG12, 6, 11);
-            this.tableLayoutPanel1.Controls.Add(this.BoxF12, 5, 11);
-            this.tableLayoutPanel1.Controls.Add(this.BoxE12, 4, 11);
-            this.tableLayoutPanel1.Controls.Add(this.BoxD12, 3, 11);
-            this.tableLayoutPanel1.Controls.Add(this.BoxC12, 2, 11);
-            this.tableLayoutPanel1.Controls.Add(this.BoxB12, 1, 11);
-            this.tableLayoutPanel1.Controls.Add(this.BoxA12, 0, 11);
-            this.tableLayoutPanel1.Controls.Add(this.BoxP11, 15, 10);
-            this.tableLayoutPanel1.Controls.Add(this.BoxO11, 14, 10);
-            this.tableLayoutPanel1.Controls.Add(this.BoxN11, 13, 10);
-            this.tableLayoutPanel1.Controls.Add(this.BoxM11, 12, 10);
-            this.tableLayoutPanel1.Controls.Add(this.BoxL11, 11, 10);
-            this.tableLayoutPanel1.Controls.Add(this.BoxK11, 10, 10);
-            this.tableLayoutPanel1.Controls.Add(this.BoxJ11, 9, 10);
-            this.tableLayoutPanel1.Controls.Add(this.BoxI11, 8, 10);
-            this.tableLayoutPanel1.Controls.Add(this.BoxH11, 7, 10);
-            this.tableLayoutPanel1.Controls.Add(this.BoxG11, 6, 10);
-            this.tableLayoutPanel1.Controls.Add(this.BoxF11, 5, 10);
-            this.tableLayoutPanel1.Controls.Add(this.BoxE11, 4, 10);
-            this.tableLayoutPanel1.Controls.Add(this.BoxD11, 3, 10);
-            this.tableLayoutPanel1.Controls.Add(this.BoxC11, 2, 10);
-            this.tableLayoutPanel1.Controls.Add(this.BoxB11, 1, 10);
-            this.tableLayoutPanel1.Controls.Add(this.BoxA11, 0, 10);
-            this.tableLayoutPanel1.Controls.Add(this.BoxP10, 15, 9);
-            this.tableLayoutPanel1.Controls.Add(this.BoxO10, 14, 9);
-            this.tableLayoutPanel1.Controls.Add(this.BoxN10, 13, 9);
-            this.tableLayoutPanel1.Controls.Add(this.BoxM10, 12, 9);
-            this.tableLayoutPanel1.Controls.Add(this.BoxL10, 11, 9);
-            this.tableLayoutPanel1.Controls.Add(this.BoxK10, 10, 9);
-            this.tableLayoutPanel1.Controls.Add(this.BoxJ10, 9, 9);
-            this.tableLayoutPanel1.Controls.Add(this.BoxI10, 8, 9);
-            this.tableLayoutPanel1.Controls.Add(this.BoxH10, 7, 9);
-            this.tableLayoutPanel1.Controls.Add(this.BoxG10, 6, 9);
-            this.tableLayoutPanel1.Controls.Add(this.BoxF10, 5, 9);
-            this.tableLayoutPanel1.Controls.Add(this.BoxE10, 4, 9);
-            this.tableLayoutPanel1.Controls.Add(this.BoxD10, 3, 9);
-            this.tableLayoutPanel1.Controls.Add(this.BoxC10, 2, 9);
-            this.tableLayoutPanel1.Controls.Add(this.BoxB10, 1, 9);
-            this.tableLayoutPanel1.Controls.Add(this.BoxA10, 0, 9);
-            this.tableLayoutPanel1.Controls.Add(this.BoxP9, 15, 8);
-            this.tableLayoutPanel1.Controls.Add(this.BoxO9, 14, 8);
-            this.tableLayoutPanel1.Controls.Add(this.BoxN9, 13, 8);
-            this.tableLayoutPanel1.Controls.Add(this.BoxM9, 12, 8);
-            this.tableLayoutPanel1.Controls.Add(this.BoxL9, 11, 8);
-            this.tableLayoutPanel1.Controls.Add(this.BoxK9, 10, 8);
-            this.tableLayoutPanel1.Controls.Add(this.BoxJ9, 9, 8);
-            this.tableLayoutPanel1.Controls.Add(this.BoxI9, 8, 8);
-            this.tableLayoutPanel1.Controls.Add(this.BoxH9, 7, 8);
-            this.tableLayoutPanel1.Controls.Add(this.BoxG9, 6, 8);
-            this.tableLayoutPanel1.Controls.Add(this.BoxF9, 5, 8);
-            this.tableLayoutPanel1.Controls.Add(this.BoxE9, 4, 8);
-            this.tableLayoutPanel1.Controls.Add(this.BoxD9, 3, 8);
-            this.tableLayoutPanel1.Controls.Add(this.BoxC9, 2, 8);
-            this.tableLayoutPanel1.Controls.Add(this.BoxB9, 1, 8);
-            this.tableLayoutPanel1.Controls.Add(this.BoxA9, 0, 8);
-            this.tableLayoutPanel1.Controls.Add(this.BoxP8, 15, 7);
-            this.tableLayoutPanel1.Controls.Add(this.BoxO8, 14, 7);
-            this.tableLayoutPanel1.Controls.Add(this.BoxN8, 13, 7);
-            this.tableLayoutPanel1.Controls.Add(this.BoxM8, 12, 7);
-            this.tableLayoutPanel1.Controls.Add(this.BoxL8, 11, 7);
-            this.tableLayoutPanel1.Controls.Add(this.BoxK8, 10, 7);
-            this.tableLayoutPanel1.Controls.Add(this.BoxJ8, 9, 7);
-            this.tableLayoutPanel1.Controls.Add(this.BoxI8, 8, 7);
-            this.tableLayoutPanel1.Controls.Add(this.BoxH8, 7, 7);
-            this.tableLayoutPanel1.Controls.Add(this.BoxG8, 6, 7);
-            this.tableLayoutPanel1.Controls.Add(this.BoxF8, 5, 7);
-            this.tableLayoutPanel1.Controls.Add(this.BoxE8, 4, 7);
-            this.tableLayoutPanel1.Controls.Add(this.BoxD8, 3, 7);
-            this.tableLayoutPanel1.Controls.Add(this.BoxC8, 2, 7);
-            this.tableLayoutPanel1.Controls.Add(this.BoxB8, 1, 7);
-            this.tableLayoutPanel1.Controls.Add(this.BoxA8, 0, 7);
-            this.tableLayoutPanel1.Controls.Add(this.BoxP7, 15, 6);
-            this.tableLayoutPanel1.Controls.Add(this.BoxO7, 14, 6);
-            this.tableLayoutPanel1.Controls.Add(this.BoxN7, 13, 6);
-            this.tableLayoutPanel1.Controls.Add(this.BoxM7, 12, 6);
-            this.tableLayoutPanel1.Controls.Add(this.BoxL7, 11, 6);
-            this.tableLayoutPanel1.Controls.Add(this.BoxK7, 10, 6);
-            this.tableLayoutPanel1.Controls.Add(this.BoxJ7, 9, 6);
-            this.tableLayoutPanel1.Controls.Add(this.BoxI7, 8, 6);
-            this.tableLayoutPanel1.Controls.Add(this.BoxH7, 7, 6);
-            this.tableLayoutPanel1.Controls.Add(this.BoxG7, 6, 6);
-            this.tableLayoutPanel1.Controls.Add(this.BoxF7, 5, 6);
-            this.tableLayoutPanel1.Controls.Add(this.BoxE7, 4, 6);
-            this.tableLayoutPanel1.Controls.Add(this.BoxD7, 3, 6);
-            this.tableLayoutPanel1.Controls.Add(this.BoxC7, 2, 6);
-            this.tableLayoutPanel1.Controls.Add(this.BoxB7, 1, 6);
-            this.tableLayoutPanel1.Controls.Add(this.BoxA7, 0, 6);
-            this.tableLayoutPanel1.Controls.Add(this.BoxP6, 15, 5);
-            this.tableLayoutPanel1.Controls.Add(this.BoxO6, 14, 5);
-            this.tableLayoutPanel1.Controls.Add(this.BoxN6, 13, 5);
-            this.tableLayoutPanel1.Controls.Add(this.BoxM6, 12, 5);
-            this.tableLayoutPanel1.Controls.Add(this.BoxL6, 11, 5);
-            this.tableLayoutPanel1.Controls.Add(this.BoxK6, 10, 5);
-            this.tableLayoutPanel1.Controls.Add(this.BoxJ6, 9, 5);
-            this.tableLayoutPanel1.Controls.Add(this.BoxI6, 8, 5);
-            this.tableLayoutPanel1.Controls.Add(this.BoxH6, 7, 5);
-            this.tableLayoutPanel1.Controls.Add(this.BoxG6, 6, 5);
-            this.tableLayoutPanel1.Controls.Add(this.BoxF6, 5, 5);
-            this.tableLayoutPanel1.Controls.Add(this.BoxE6, 4, 5);
-            this.tableLayoutPanel1.Controls.Add(this.BoxD6, 3, 5);
-            this.tableLayoutPanel1.Controls.Add(this.BoxC6, 2, 5);
-            this.tableLayoutPanel1.Controls.Add(this.BoxB6, 1, 5);
-            this.tableLayoutPanel1.Controls.Add(this.BoxA6, 0, 5);
-            this.tableLayoutPanel1.Controls.Add(this.BoxP5, 15, 4);
-            this.tableLayoutPanel1.Controls.Add(this.BoxO5, 14, 4);
-            this.tableLayoutPanel1.Controls.Add(this.BoxN5, 13, 4);
-            this.tableLayoutPanel1.Controls.Add(this.BoxM5, 12, 4);
-            this.tableLayoutPanel1.Controls.Add(this.BoxL5, 11, 4);
-            this.tableLayoutPanel1.Controls.Add(this.BoxK5, 10, 4);
-            this.tableLayoutPanel1.Controls.Add(this.BoxJ5, 9, 4);
-            this.tableLayoutPanel1.Controls.Add(this.BoxI5, 8, 4);
-            this.tableLayoutPanel1.Controls.Add(this.BoxH5, 7, 4);
-            this.tableLayoutPanel1.Controls.Add(this.BoxG5, 6, 4);
-            this.tableLayoutPanel1.Controls.Add(this.BoxF5, 5, 4);
-            this.tableLayoutPanel1.Controls.Add(this.BoxE5, 4, 4);
-            this.tableLayoutPanel1.Controls.Add(this.BoxD5, 3, 4);
-            this.tableLayoutPanel1.Controls.Add(this.BoxC5, 2, 4);
-            this.tableLayoutPanel1.Controls.Add(this.BoxB5, 1, 4);
-            this.tableLayoutPanel1.Controls.Add(this.BoxA5, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.BoxP4, 15, 3);
-            this.tableLayoutPanel1.Controls.Add(this.BoxO4, 14, 3);
-            this.tableLayoutPanel1.Controls.Add(this.BoxN4, 13, 3);
-            this.tableLayoutPanel1.Controls.Add(this.BoxM4, 12, 3);
-            this.tableLayoutPanel1.Controls.Add(this.BoxL4, 11, 3);
-            this.tableLayoutPanel1.Controls.Add(this.BoxK4, 10, 3);
-            this.tableLayoutPanel1.Controls.Add(this.BoxJ4, 9, 3);
-            this.tableLayoutPanel1.Controls.Add(this.BoxI4, 8, 3);
-            this.tableLayoutPanel1.Controls.Add(this.BoxH4, 7, 3);
-            this.tableLayoutPanel1.Controls.Add(this.BoxG4, 6, 3);
-            this.tableLayoutPanel1.Controls.Add(this.BoxF4, 5, 3);
-            this.tableLayoutPanel1.Controls.Add(this.BoxE4, 4, 3);
-            this.tableLayoutPanel1.Controls.Add(this.BoxD4, 3, 3);
-            this.tableLayoutPanel1.Controls.Add(this.BoxC4, 2, 3);
-            this.tableLayoutPanel1.Controls.Add(this.BoxB4, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.BoxA4, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.BoxP3, 15, 2);
-            this.tableLayoutPanel1.Controls.Add(this.BoxO3, 14, 2);
-            this.tableLayoutPanel1.Controls.Add(this.BoxN3, 13, 2);
-            this.tableLayoutPanel1.Controls.Add(this.BoxM3, 12, 2);
-            this.tableLayoutPanel1.Controls.Add(this.BoxL3, 11, 2);
-            this.tableLayoutPanel1.Controls.Add(this.BoxK3, 10, 2);
-            this.tableLayoutPanel1.Controls.Add(this.BoxJ3, 9, 2);
-            this.tableLayoutPanel1.Controls.Add(this.BoxI3, 8, 2);
-            this.tableLayoutPanel1.Controls.Add(this.BoxH3, 7, 2);
-            this.tableLayoutPanel1.Controls.Add(this.BoxG3, 6, 2);
-            this.tableLayoutPanel1.Controls.Add(this.BoxF3, 5, 2);
-            this.tableLayoutPanel1.Controls.Add(this.BoxE3, 4, 2);
-            this.tableLayoutPanel1.Controls.Add(this.BoxD3, 3, 2);
-            this.tableLayoutPanel1.Controls.Add(this.BoxC3, 2, 2);
-            this.tableLayoutPanel1.Controls.Add(this.BoxB3, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.BoxA3, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.BoxP2, 15, 1);
-            this.tableLayoutPanel1.Controls.Add(this.BoxO2, 14, 1);
-            this.tableLayoutPanel1.Controls.Add(this.BoxN2, 13, 1);
-            this.tableLayoutPanel1.Controls.Add(this.BoxM2, 12, 1);
-            this.tableLayoutPanel1.Controls.Add(this.BoxL2, 11, 1);
-            this.tableLayoutPanel1.Controls.Add(this.BoxK2, 10, 1);
-            this.tableLayoutPanel1.Controls.Add(this.BoxJ2, 9, 1);
-            this.tableLayoutPanel1.Controls.Add(this.BoxI2, 8, 1);
-            this.tableLayoutPanel1.Controls.Add(this.BoxH2, 7, 1);
-            this.tableLayoutPanel1.Controls.Add(this.BoxG2, 6, 1);
-            this.tableLayoutPanel1.Controls.Add(this.BoxF2, 5, 1);
-            this.tableLayoutPanel1.Controls.Add(this.BoxE2, 4, 1);
-            this.tableLayoutPanel1.Controls.Add(this.BoxD2, 3, 1);
-            this.tableLayoutPanel1.Controls.Add(this.BoxC2, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.BoxB2, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.BoxA2, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.BoxP1, 15, 0);
-            this.tableLayoutPanel1.Controls.Add(this.BoxO1, 14, 0);
-            this.tableLayoutPanel1.Controls.Add(this.BoxN1, 13, 0);
-            this.tableLayoutPanel1.Controls.Add(this.BoxM1, 12, 0);
-            this.tableLayoutPanel1.Controls.Add(this.BoxL1, 11, 0);
-            this.tableLayoutPanel1.Controls.Add(this.BoxK1, 10, 0);
-            this.tableLayoutPanel1.Controls.Add(this.BoxJ1, 9, 0);
-            this.tableLayoutPanel1.Controls.Add(this.BoxI1, 8, 0);
-            this.tableLayoutPanel1.Controls.Add(this.BoxH1, 7, 0);
-            this.tableLayoutPanel1.Controls.Add(this.BoxG1, 6, 0);
-            this.tableLayoutPanel1.Controls.Add(this.BoxF1, 5, 0);
-            this.tableLayoutPanel1.Controls.Add(this.BoxE1, 4, 0);
-            this.tableLayoutPanel1.Controls.Add(this.BoxD1, 3, 0);
-            this.tableLayoutPanel1.Controls.Add(this.BoxC1, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.BoxB1, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.BoxA1, 0, 0);
-            this.tableLayoutPanel1.ForeColor = System.Drawing.Color.Black;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(250, 30);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 20;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(554, 680);
-            this.tableLayoutPanel1.TabIndex = 0;
+            this.grid.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.grid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(36)))));
+            this.grid.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.grid.ColumnCount = 16;
+            this.grid.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
+            this.grid.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
+            this.grid.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
+            this.grid.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
+            this.grid.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
+            this.grid.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
+            this.grid.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
+            this.grid.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
+            this.grid.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
+            this.grid.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
+            this.grid.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
+            this.grid.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
+            this.grid.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
+            this.grid.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
+            this.grid.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
+            this.grid.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
+            this.grid.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.grid.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.grid.Controls.Add(this.BoxP20, 15, 19);
+            this.grid.Controls.Add(this.BoxO20, 14, 19);
+            this.grid.Controls.Add(this.BoxN20, 13, 19);
+            this.grid.Controls.Add(this.BoxM20, 12, 19);
+            this.grid.Controls.Add(this.BoxL20, 11, 19);
+            this.grid.Controls.Add(this.BoxK20, 10, 19);
+            this.grid.Controls.Add(this.BoxJ20, 9, 19);
+            this.grid.Controls.Add(this.BoxI20, 8, 19);
+            this.grid.Controls.Add(this.BoxH20, 7, 19);
+            this.grid.Controls.Add(this.BoxG20, 6, 19);
+            this.grid.Controls.Add(this.BoxF20, 5, 19);
+            this.grid.Controls.Add(this.BoxE20, 4, 19);
+            this.grid.Controls.Add(this.BoxD20, 3, 19);
+            this.grid.Controls.Add(this.BoxC20, 2, 19);
+            this.grid.Controls.Add(this.BoxB20, 1, 19);
+            this.grid.Controls.Add(this.BoxA20, 0, 19);
+            this.grid.Controls.Add(this.BoxP19, 15, 18);
+            this.grid.Controls.Add(this.BoxO19, 14, 18);
+            this.grid.Controls.Add(this.BoxN19, 13, 18);
+            this.grid.Controls.Add(this.BoxM19, 12, 18);
+            this.grid.Controls.Add(this.BoxL19, 11, 18);
+            this.grid.Controls.Add(this.BoxK19, 10, 18);
+            this.grid.Controls.Add(this.BoxJ19, 9, 18);
+            this.grid.Controls.Add(this.BoxI19, 8, 18);
+            this.grid.Controls.Add(this.BoxH19, 7, 18);
+            this.grid.Controls.Add(this.BoxG19, 6, 18);
+            this.grid.Controls.Add(this.BoxF19, 5, 18);
+            this.grid.Controls.Add(this.BoxE19, 4, 18);
+            this.grid.Controls.Add(this.BoxD19, 3, 18);
+            this.grid.Controls.Add(this.BoxC19, 2, 18);
+            this.grid.Controls.Add(this.BoxB19, 1, 18);
+            this.grid.Controls.Add(this.BoxA19, 0, 18);
+            this.grid.Controls.Add(this.BoxP18, 15, 17);
+            this.grid.Controls.Add(this.BoxO18, 14, 17);
+            this.grid.Controls.Add(this.BoxN18, 13, 17);
+            this.grid.Controls.Add(this.BoxM18, 12, 17);
+            this.grid.Controls.Add(this.BoxL18, 11, 17);
+            this.grid.Controls.Add(this.BoxK18, 10, 17);
+            this.grid.Controls.Add(this.BoxJ18, 9, 17);
+            this.grid.Controls.Add(this.BoxI18, 8, 17);
+            this.grid.Controls.Add(this.BoxH18, 7, 17);
+            this.grid.Controls.Add(this.BoxG18, 6, 17);
+            this.grid.Controls.Add(this.BoxF18, 5, 17);
+            this.grid.Controls.Add(this.BoxE18, 4, 17);
+            this.grid.Controls.Add(this.BoxD18, 3, 17);
+            this.grid.Controls.Add(this.BoxC18, 2, 17);
+            this.grid.Controls.Add(this.BoxB18, 1, 17);
+            this.grid.Controls.Add(this.BoxA18, 0, 17);
+            this.grid.Controls.Add(this.BoxP17, 15, 16);
+            this.grid.Controls.Add(this.BoxO17, 14, 16);
+            this.grid.Controls.Add(this.BoxN17, 13, 16);
+            this.grid.Controls.Add(this.BoxM17, 12, 16);
+            this.grid.Controls.Add(this.BoxL17, 11, 16);
+            this.grid.Controls.Add(this.BoxK17, 10, 16);
+            this.grid.Controls.Add(this.BoxJ17, 9, 16);
+            this.grid.Controls.Add(this.BoxI17, 8, 16);
+            this.grid.Controls.Add(this.BoxH17, 7, 16);
+            this.grid.Controls.Add(this.BoxG17, 6, 16);
+            this.grid.Controls.Add(this.BoxF17, 5, 16);
+            this.grid.Controls.Add(this.BoxE17, 4, 16);
+            this.grid.Controls.Add(this.BoxD17, 3, 16);
+            this.grid.Controls.Add(this.BoxC17, 2, 16);
+            this.grid.Controls.Add(this.BoxB17, 1, 16);
+            this.grid.Controls.Add(this.BoxA17, 0, 16);
+            this.grid.Controls.Add(this.BoxP16, 15, 15);
+            this.grid.Controls.Add(this.BoxO16, 14, 15);
+            this.grid.Controls.Add(this.BoxN16, 13, 15);
+            this.grid.Controls.Add(this.BoxM16, 12, 15);
+            this.grid.Controls.Add(this.BoxL16, 11, 15);
+            this.grid.Controls.Add(this.BoxK16, 10, 15);
+            this.grid.Controls.Add(this.BoxJ16, 9, 15);
+            this.grid.Controls.Add(this.BoxI16, 8, 15);
+            this.grid.Controls.Add(this.BoxH16, 7, 15);
+            this.grid.Controls.Add(this.BoxG16, 6, 15);
+            this.grid.Controls.Add(this.BoxF16, 5, 15);
+            this.grid.Controls.Add(this.BoxE16, 4, 15);
+            this.grid.Controls.Add(this.BoxD16, 3, 15);
+            this.grid.Controls.Add(this.BoxC16, 2, 15);
+            this.grid.Controls.Add(this.BoxB16, 1, 15);
+            this.grid.Controls.Add(this.BoxA16, 0, 15);
+            this.grid.Controls.Add(this.BoxP15, 15, 14);
+            this.grid.Controls.Add(this.BoxO15, 14, 14);
+            this.grid.Controls.Add(this.BoxN15, 13, 14);
+            this.grid.Controls.Add(this.BoxM15, 12, 14);
+            this.grid.Controls.Add(this.BoxL15, 11, 14);
+            this.grid.Controls.Add(this.BoxK15, 10, 14);
+            this.grid.Controls.Add(this.BoxJ15, 9, 14);
+            this.grid.Controls.Add(this.BoxI15, 8, 14);
+            this.grid.Controls.Add(this.BoxH15, 7, 14);
+            this.grid.Controls.Add(this.BoxG15, 6, 14);
+            this.grid.Controls.Add(this.BoxF15, 5, 14);
+            this.grid.Controls.Add(this.BoxE15, 4, 14);
+            this.grid.Controls.Add(this.BoxD15, 3, 14);
+            this.grid.Controls.Add(this.BoxC15, 2, 14);
+            this.grid.Controls.Add(this.BoxB15, 1, 14);
+            this.grid.Controls.Add(this.BoxA15, 0, 14);
+            this.grid.Controls.Add(this.BoxP14, 15, 13);
+            this.grid.Controls.Add(this.BoxO14, 14, 13);
+            this.grid.Controls.Add(this.BoxN14, 13, 13);
+            this.grid.Controls.Add(this.BoxM14, 12, 13);
+            this.grid.Controls.Add(this.BoxL14, 11, 13);
+            this.grid.Controls.Add(this.BoxK14, 10, 13);
+            this.grid.Controls.Add(this.BoxJ14, 9, 13);
+            this.grid.Controls.Add(this.BoxI14, 8, 13);
+            this.grid.Controls.Add(this.BoxH14, 7, 13);
+            this.grid.Controls.Add(this.BoxG14, 6, 13);
+            this.grid.Controls.Add(this.BoxF14, 5, 13);
+            this.grid.Controls.Add(this.BoxE14, 4, 13);
+            this.grid.Controls.Add(this.BoxD14, 3, 13);
+            this.grid.Controls.Add(this.BoxC14, 2, 13);
+            this.grid.Controls.Add(this.BoxB14, 1, 13);
+            this.grid.Controls.Add(this.BoxA14, 0, 13);
+            this.grid.Controls.Add(this.BoxP13, 15, 12);
+            this.grid.Controls.Add(this.BoxO13, 14, 12);
+            this.grid.Controls.Add(this.BoxN13, 13, 12);
+            this.grid.Controls.Add(this.BoxM13, 12, 12);
+            this.grid.Controls.Add(this.BoxL13, 11, 12);
+            this.grid.Controls.Add(this.BoxK13, 10, 12);
+            this.grid.Controls.Add(this.BoxJ13, 9, 12);
+            this.grid.Controls.Add(this.BoxI13, 8, 12);
+            this.grid.Controls.Add(this.BoxH13, 7, 12);
+            this.grid.Controls.Add(this.BoxG13, 6, 12);
+            this.grid.Controls.Add(this.BoxF13, 5, 12);
+            this.grid.Controls.Add(this.BoxE13, 4, 12);
+            this.grid.Controls.Add(this.BoxD13, 3, 12);
+            this.grid.Controls.Add(this.BoxC13, 2, 12);
+            this.grid.Controls.Add(this.BoxB13, 1, 12);
+            this.grid.Controls.Add(this.BoxA13, 0, 12);
+            this.grid.Controls.Add(this.BoxP12, 15, 11);
+            this.grid.Controls.Add(this.BoxO12, 14, 11);
+            this.grid.Controls.Add(this.BoxN12, 13, 11);
+            this.grid.Controls.Add(this.BoxM12, 12, 11);
+            this.grid.Controls.Add(this.BoxL12, 11, 11);
+            this.grid.Controls.Add(this.BoxK12, 10, 11);
+            this.grid.Controls.Add(this.BoxJ12, 9, 11);
+            this.grid.Controls.Add(this.BoxI12, 8, 11);
+            this.grid.Controls.Add(this.BoxH12, 7, 11);
+            this.grid.Controls.Add(this.BoxG12, 6, 11);
+            this.grid.Controls.Add(this.BoxF12, 5, 11);
+            this.grid.Controls.Add(this.BoxE12, 4, 11);
+            this.grid.Controls.Add(this.BoxD12, 3, 11);
+            this.grid.Controls.Add(this.BoxC12, 2, 11);
+            this.grid.Controls.Add(this.BoxB12, 1, 11);
+            this.grid.Controls.Add(this.BoxA12, 0, 11);
+            this.grid.Controls.Add(this.BoxP11, 15, 10);
+            this.grid.Controls.Add(this.BoxO11, 14, 10);
+            this.grid.Controls.Add(this.BoxN11, 13, 10);
+            this.grid.Controls.Add(this.BoxM11, 12, 10);
+            this.grid.Controls.Add(this.BoxL11, 11, 10);
+            this.grid.Controls.Add(this.BoxK11, 10, 10);
+            this.grid.Controls.Add(this.BoxJ11, 9, 10);
+            this.grid.Controls.Add(this.BoxI11, 8, 10);
+            this.grid.Controls.Add(this.BoxH11, 7, 10);
+            this.grid.Controls.Add(this.BoxG11, 6, 10);
+            this.grid.Controls.Add(this.BoxF11, 5, 10);
+            this.grid.Controls.Add(this.BoxE11, 4, 10);
+            this.grid.Controls.Add(this.BoxD11, 3, 10);
+            this.grid.Controls.Add(this.BoxC11, 2, 10);
+            this.grid.Controls.Add(this.BoxB11, 1, 10);
+            this.grid.Controls.Add(this.BoxA11, 0, 10);
+            this.grid.Controls.Add(this.BoxP10, 15, 9);
+            this.grid.Controls.Add(this.BoxO10, 14, 9);
+            this.grid.Controls.Add(this.BoxN10, 13, 9);
+            this.grid.Controls.Add(this.BoxM10, 12, 9);
+            this.grid.Controls.Add(this.BoxL10, 11, 9);
+            this.grid.Controls.Add(this.BoxK10, 10, 9);
+            this.grid.Controls.Add(this.BoxJ10, 9, 9);
+            this.grid.Controls.Add(this.BoxI10, 8, 9);
+            this.grid.Controls.Add(this.BoxH10, 7, 9);
+            this.grid.Controls.Add(this.BoxG10, 6, 9);
+            this.grid.Controls.Add(this.BoxF10, 5, 9);
+            this.grid.Controls.Add(this.BoxE10, 4, 9);
+            this.grid.Controls.Add(this.BoxD10, 3, 9);
+            this.grid.Controls.Add(this.BoxC10, 2, 9);
+            this.grid.Controls.Add(this.BoxB10, 1, 9);
+            this.grid.Controls.Add(this.BoxA10, 0, 9);
+            this.grid.Controls.Add(this.BoxP9, 15, 8);
+            this.grid.Controls.Add(this.BoxO9, 14, 8);
+            this.grid.Controls.Add(this.BoxN9, 13, 8);
+            this.grid.Controls.Add(this.BoxM9, 12, 8);
+            this.grid.Controls.Add(this.BoxL9, 11, 8);
+            this.grid.Controls.Add(this.BoxK9, 10, 8);
+            this.grid.Controls.Add(this.BoxJ9, 9, 8);
+            this.grid.Controls.Add(this.BoxI9, 8, 8);
+            this.grid.Controls.Add(this.BoxH9, 7, 8);
+            this.grid.Controls.Add(this.BoxG9, 6, 8);
+            this.grid.Controls.Add(this.BoxF9, 5, 8);
+            this.grid.Controls.Add(this.BoxE9, 4, 8);
+            this.grid.Controls.Add(this.BoxD9, 3, 8);
+            this.grid.Controls.Add(this.BoxC9, 2, 8);
+            this.grid.Controls.Add(this.BoxB9, 1, 8);
+            this.grid.Controls.Add(this.BoxA9, 0, 8);
+            this.grid.Controls.Add(this.BoxP8, 15, 7);
+            this.grid.Controls.Add(this.BoxO8, 14, 7);
+            this.grid.Controls.Add(this.BoxN8, 13, 7);
+            this.grid.Controls.Add(this.BoxM8, 12, 7);
+            this.grid.Controls.Add(this.BoxL8, 11, 7);
+            this.grid.Controls.Add(this.BoxK8, 10, 7);
+            this.grid.Controls.Add(this.BoxJ8, 9, 7);
+            this.grid.Controls.Add(this.BoxI8, 8, 7);
+            this.grid.Controls.Add(this.BoxH8, 7, 7);
+            this.grid.Controls.Add(this.BoxG8, 6, 7);
+            this.grid.Controls.Add(this.BoxF8, 5, 7);
+            this.grid.Controls.Add(this.BoxE8, 4, 7);
+            this.grid.Controls.Add(this.BoxD8, 3, 7);
+            this.grid.Controls.Add(this.BoxC8, 2, 7);
+            this.grid.Controls.Add(this.BoxB8, 1, 7);
+            this.grid.Controls.Add(this.BoxA8, 0, 7);
+            this.grid.Controls.Add(this.BoxP7, 15, 6);
+            this.grid.Controls.Add(this.BoxO7, 14, 6);
+            this.grid.Controls.Add(this.BoxN7, 13, 6);
+            this.grid.Controls.Add(this.BoxM7, 12, 6);
+            this.grid.Controls.Add(this.BoxL7, 11, 6);
+            this.grid.Controls.Add(this.BoxK7, 10, 6);
+            this.grid.Controls.Add(this.BoxJ7, 9, 6);
+            this.grid.Controls.Add(this.BoxI7, 8, 6);
+            this.grid.Controls.Add(this.BoxH7, 7, 6);
+            this.grid.Controls.Add(this.BoxG7, 6, 6);
+            this.grid.Controls.Add(this.BoxF7, 5, 6);
+            this.grid.Controls.Add(this.BoxE7, 4, 6);
+            this.grid.Controls.Add(this.BoxD7, 3, 6);
+            this.grid.Controls.Add(this.BoxC7, 2, 6);
+            this.grid.Controls.Add(this.BoxB7, 1, 6);
+            this.grid.Controls.Add(this.BoxA7, 0, 6);
+            this.grid.Controls.Add(this.BoxP6, 15, 5);
+            this.grid.Controls.Add(this.BoxO6, 14, 5);
+            this.grid.Controls.Add(this.BoxN6, 13, 5);
+            this.grid.Controls.Add(this.BoxM6, 12, 5);
+            this.grid.Controls.Add(this.BoxL6, 11, 5);
+            this.grid.Controls.Add(this.BoxK6, 10, 5);
+            this.grid.Controls.Add(this.BoxJ6, 9, 5);
+            this.grid.Controls.Add(this.BoxI6, 8, 5);
+            this.grid.Controls.Add(this.BoxH6, 7, 5);
+            this.grid.Controls.Add(this.BoxG6, 6, 5);
+            this.grid.Controls.Add(this.BoxF6, 5, 5);
+            this.grid.Controls.Add(this.BoxE6, 4, 5);
+            this.grid.Controls.Add(this.BoxD6, 3, 5);
+            this.grid.Controls.Add(this.BoxC6, 2, 5);
+            this.grid.Controls.Add(this.BoxB6, 1, 5);
+            this.grid.Controls.Add(this.BoxA6, 0, 5);
+            this.grid.Controls.Add(this.BoxP5, 15, 4);
+            this.grid.Controls.Add(this.BoxO5, 14, 4);
+            this.grid.Controls.Add(this.BoxN5, 13, 4);
+            this.grid.Controls.Add(this.BoxM5, 12, 4);
+            this.grid.Controls.Add(this.BoxL5, 11, 4);
+            this.grid.Controls.Add(this.BoxK5, 10, 4);
+            this.grid.Controls.Add(this.BoxJ5, 9, 4);
+            this.grid.Controls.Add(this.BoxI5, 8, 4);
+            this.grid.Controls.Add(this.BoxH5, 7, 4);
+            this.grid.Controls.Add(this.BoxG5, 6, 4);
+            this.grid.Controls.Add(this.BoxF5, 5, 4);
+            this.grid.Controls.Add(this.BoxE5, 4, 4);
+            this.grid.Controls.Add(this.BoxD5, 3, 4);
+            this.grid.Controls.Add(this.BoxC5, 2, 4);
+            this.grid.Controls.Add(this.BoxB5, 1, 4);
+            this.grid.Controls.Add(this.BoxA5, 0, 4);
+            this.grid.Controls.Add(this.BoxP4, 15, 3);
+            this.grid.Controls.Add(this.BoxO4, 14, 3);
+            this.grid.Controls.Add(this.BoxN4, 13, 3);
+            this.grid.Controls.Add(this.BoxM4, 12, 3);
+            this.grid.Controls.Add(this.BoxL4, 11, 3);
+            this.grid.Controls.Add(this.BoxK4, 10, 3);
+            this.grid.Controls.Add(this.BoxJ4, 9, 3);
+            this.grid.Controls.Add(this.BoxI4, 8, 3);
+            this.grid.Controls.Add(this.BoxH4, 7, 3);
+            this.grid.Controls.Add(this.BoxG4, 6, 3);
+            this.grid.Controls.Add(this.BoxF4, 5, 3);
+            this.grid.Controls.Add(this.BoxE4, 4, 3);
+            this.grid.Controls.Add(this.BoxD4, 3, 3);
+            this.grid.Controls.Add(this.BoxC4, 2, 3);
+            this.grid.Controls.Add(this.BoxB4, 1, 3);
+            this.grid.Controls.Add(this.BoxA4, 0, 3);
+            this.grid.Controls.Add(this.BoxP3, 15, 2);
+            this.grid.Controls.Add(this.BoxO3, 14, 2);
+            this.grid.Controls.Add(this.BoxN3, 13, 2);
+            this.grid.Controls.Add(this.BoxM3, 12, 2);
+            this.grid.Controls.Add(this.BoxL3, 11, 2);
+            this.grid.Controls.Add(this.BoxK3, 10, 2);
+            this.grid.Controls.Add(this.BoxJ3, 9, 2);
+            this.grid.Controls.Add(this.BoxI3, 8, 2);
+            this.grid.Controls.Add(this.BoxH3, 7, 2);
+            this.grid.Controls.Add(this.BoxG3, 6, 2);
+            this.grid.Controls.Add(this.BoxF3, 5, 2);
+            this.grid.Controls.Add(this.BoxE3, 4, 2);
+            this.grid.Controls.Add(this.BoxD3, 3, 2);
+            this.grid.Controls.Add(this.BoxC3, 2, 2);
+            this.grid.Controls.Add(this.BoxB3, 1, 2);
+            this.grid.Controls.Add(this.BoxA3, 0, 2);
+            this.grid.Controls.Add(this.BoxP2, 15, 1);
+            this.grid.Controls.Add(this.BoxO2, 14, 1);
+            this.grid.Controls.Add(this.BoxN2, 13, 1);
+            this.grid.Controls.Add(this.BoxM2, 12, 1);
+            this.grid.Controls.Add(this.BoxL2, 11, 1);
+            this.grid.Controls.Add(this.BoxK2, 10, 1);
+            this.grid.Controls.Add(this.BoxJ2, 9, 1);
+            this.grid.Controls.Add(this.BoxI2, 8, 1);
+            this.grid.Controls.Add(this.BoxH2, 7, 1);
+            this.grid.Controls.Add(this.BoxG2, 6, 1);
+            this.grid.Controls.Add(this.BoxF2, 5, 1);
+            this.grid.Controls.Add(this.BoxE2, 4, 1);
+            this.grid.Controls.Add(this.BoxD2, 3, 1);
+            this.grid.Controls.Add(this.BoxC2, 2, 1);
+            this.grid.Controls.Add(this.BoxB2, 1, 1);
+            this.grid.Controls.Add(this.BoxA2, 0, 1);
+            this.grid.Controls.Add(this.BoxP1, 15, 0);
+            this.grid.Controls.Add(this.BoxO1, 14, 0);
+            this.grid.Controls.Add(this.BoxN1, 13, 0);
+            this.grid.Controls.Add(this.BoxM1, 12, 0);
+            this.grid.Controls.Add(this.BoxL1, 11, 0);
+            this.grid.Controls.Add(this.BoxK1, 10, 0);
+            this.grid.Controls.Add(this.BoxJ1, 9, 0);
+            this.grid.Controls.Add(this.BoxI1, 8, 0);
+            this.grid.Controls.Add(this.BoxH1, 7, 0);
+            this.grid.Controls.Add(this.BoxG1, 6, 0);
+            this.grid.Controls.Add(this.BoxF1, 5, 0);
+            this.grid.Controls.Add(this.BoxE1, 4, 0);
+            this.grid.Controls.Add(this.BoxD1, 3, 0);
+            this.grid.Controls.Add(this.BoxC1, 2, 0);
+            this.grid.Controls.Add(this.BoxB1, 1, 0);
+            this.grid.Controls.Add(this.BoxA1, 0, 0);
+            this.grid.ForeColor = System.Drawing.Color.Black;
+            this.grid.Location = new System.Drawing.Point(250, 30);
+            this.grid.Margin = new System.Windows.Forms.Padding(0);
+            this.grid.Name = "grid";
+            this.grid.RowCount = 20;
+            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.grid.Size = new System.Drawing.Size(554, 680);
+            this.grid.TabIndex = 0;
             // 
             // BoxP20
             // 
+            this.BoxP20.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxP20.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxP20.Location = new System.Drawing.Point(513, 649);
             this.BoxP20.Name = "BoxP20";
@@ -1062,6 +1063,7 @@
             // 
             // BoxO20
             // 
+            this.BoxO20.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxO20.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxO20.Location = new System.Drawing.Point(479, 649);
             this.BoxO20.Name = "BoxO20";
@@ -1071,6 +1073,7 @@
             // 
             // BoxN20
             // 
+            this.BoxN20.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxN20.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxN20.Location = new System.Drawing.Point(445, 649);
             this.BoxN20.Name = "BoxN20";
@@ -1080,6 +1083,7 @@
             // 
             // BoxM20
             // 
+            this.BoxM20.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxM20.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxM20.Location = new System.Drawing.Point(411, 649);
             this.BoxM20.Name = "BoxM20";
@@ -1089,6 +1093,7 @@
             // 
             // BoxL20
             // 
+            this.BoxL20.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxL20.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxL20.Location = new System.Drawing.Point(377, 649);
             this.BoxL20.Name = "BoxL20";
@@ -1098,6 +1103,7 @@
             // 
             // BoxK20
             // 
+            this.BoxK20.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxK20.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxK20.Location = new System.Drawing.Point(343, 649);
             this.BoxK20.Name = "BoxK20";
@@ -1107,6 +1113,7 @@
             // 
             // BoxJ20
             // 
+            this.BoxJ20.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxJ20.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxJ20.Location = new System.Drawing.Point(309, 649);
             this.BoxJ20.Name = "BoxJ20";
@@ -1116,6 +1123,7 @@
             // 
             // BoxI20
             // 
+            this.BoxI20.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxI20.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxI20.Location = new System.Drawing.Point(275, 649);
             this.BoxI20.Name = "BoxI20";
@@ -1125,6 +1133,7 @@
             // 
             // BoxH20
             // 
+            this.BoxH20.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxH20.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxH20.Location = new System.Drawing.Point(241, 649);
             this.BoxH20.Name = "BoxH20";
@@ -1134,6 +1143,7 @@
             // 
             // BoxG20
             // 
+            this.BoxG20.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxG20.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxG20.Location = new System.Drawing.Point(207, 649);
             this.BoxG20.Name = "BoxG20";
@@ -1143,6 +1153,7 @@
             // 
             // BoxF20
             // 
+            this.BoxF20.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxF20.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxF20.Location = new System.Drawing.Point(173, 649);
             this.BoxF20.Name = "BoxF20";
@@ -1152,6 +1163,7 @@
             // 
             // BoxE20
             // 
+            this.BoxE20.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxE20.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxE20.Location = new System.Drawing.Point(139, 649);
             this.BoxE20.Name = "BoxE20";
@@ -1161,6 +1173,7 @@
             // 
             // BoxD20
             // 
+            this.BoxD20.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxD20.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxD20.Location = new System.Drawing.Point(105, 649);
             this.BoxD20.Name = "BoxD20";
@@ -1170,6 +1183,7 @@
             // 
             // BoxC20
             // 
+            this.BoxC20.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxC20.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxC20.Location = new System.Drawing.Point(71, 649);
             this.BoxC20.Name = "BoxC20";
@@ -1179,6 +1193,7 @@
             // 
             // BoxB20
             // 
+            this.BoxB20.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxB20.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxB20.Location = new System.Drawing.Point(37, 649);
             this.BoxB20.Name = "BoxB20";
@@ -1188,6 +1203,7 @@
             // 
             // BoxA20
             // 
+            this.BoxA20.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxA20.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxA20.Location = new System.Drawing.Point(3, 649);
             this.BoxA20.Name = "BoxA20";
@@ -1197,6 +1213,7 @@
             // 
             // BoxP19
             // 
+            this.BoxP19.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxP19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxP19.Location = new System.Drawing.Point(513, 615);
             this.BoxP19.Name = "BoxP19";
@@ -1206,6 +1223,7 @@
             // 
             // BoxO19
             // 
+            this.BoxO19.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxO19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxO19.Location = new System.Drawing.Point(479, 615);
             this.BoxO19.Name = "BoxO19";
@@ -1215,6 +1233,7 @@
             // 
             // BoxN19
             // 
+            this.BoxN19.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxN19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxN19.Location = new System.Drawing.Point(445, 615);
             this.BoxN19.Name = "BoxN19";
@@ -1224,6 +1243,7 @@
             // 
             // BoxM19
             // 
+            this.BoxM19.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxM19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxM19.Location = new System.Drawing.Point(411, 615);
             this.BoxM19.Name = "BoxM19";
@@ -1233,6 +1253,7 @@
             // 
             // BoxL19
             // 
+            this.BoxL19.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxL19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxL19.Location = new System.Drawing.Point(377, 615);
             this.BoxL19.Name = "BoxL19";
@@ -1242,6 +1263,7 @@
             // 
             // BoxK19
             // 
+            this.BoxK19.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxK19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxK19.Location = new System.Drawing.Point(343, 615);
             this.BoxK19.Name = "BoxK19";
@@ -1251,6 +1273,7 @@
             // 
             // BoxJ19
             // 
+            this.BoxJ19.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxJ19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxJ19.Location = new System.Drawing.Point(309, 615);
             this.BoxJ19.Name = "BoxJ19";
@@ -1260,6 +1283,7 @@
             // 
             // BoxI19
             // 
+            this.BoxI19.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxI19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxI19.Location = new System.Drawing.Point(275, 615);
             this.BoxI19.Name = "BoxI19";
@@ -1269,6 +1293,7 @@
             // 
             // BoxH19
             // 
+            this.BoxH19.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxH19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxH19.Location = new System.Drawing.Point(241, 615);
             this.BoxH19.Name = "BoxH19";
@@ -1278,6 +1303,7 @@
             // 
             // BoxG19
             // 
+            this.BoxG19.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxG19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxG19.Location = new System.Drawing.Point(207, 615);
             this.BoxG19.Name = "BoxG19";
@@ -1287,6 +1313,7 @@
             // 
             // BoxF19
             // 
+            this.BoxF19.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxF19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxF19.Location = new System.Drawing.Point(173, 615);
             this.BoxF19.Name = "BoxF19";
@@ -1296,6 +1323,7 @@
             // 
             // BoxE19
             // 
+            this.BoxE19.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxE19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxE19.Location = new System.Drawing.Point(139, 615);
             this.BoxE19.Name = "BoxE19";
@@ -1305,6 +1333,7 @@
             // 
             // BoxD19
             // 
+            this.BoxD19.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxD19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxD19.Location = new System.Drawing.Point(105, 615);
             this.BoxD19.Name = "BoxD19";
@@ -1314,6 +1343,7 @@
             // 
             // BoxC19
             // 
+            this.BoxC19.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxC19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxC19.Location = new System.Drawing.Point(71, 615);
             this.BoxC19.Name = "BoxC19";
@@ -1323,6 +1353,7 @@
             // 
             // BoxB19
             // 
+            this.BoxB19.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxB19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxB19.Location = new System.Drawing.Point(37, 615);
             this.BoxB19.Name = "BoxB19";
@@ -1332,6 +1363,7 @@
             // 
             // BoxA19
             // 
+            this.BoxA19.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxA19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxA19.Location = new System.Drawing.Point(3, 615);
             this.BoxA19.Name = "BoxA19";
@@ -1341,6 +1373,7 @@
             // 
             // BoxP18
             // 
+            this.BoxP18.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxP18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxP18.Location = new System.Drawing.Point(513, 581);
             this.BoxP18.Name = "BoxP18";
@@ -1350,6 +1383,7 @@
             // 
             // BoxO18
             // 
+            this.BoxO18.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxO18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxO18.Location = new System.Drawing.Point(479, 581);
             this.BoxO18.Name = "BoxO18";
@@ -1359,6 +1393,7 @@
             // 
             // BoxN18
             // 
+            this.BoxN18.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxN18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxN18.Location = new System.Drawing.Point(445, 581);
             this.BoxN18.Name = "BoxN18";
@@ -1368,6 +1403,7 @@
             // 
             // BoxM18
             // 
+            this.BoxM18.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxM18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxM18.Location = new System.Drawing.Point(411, 581);
             this.BoxM18.Name = "BoxM18";
@@ -1377,6 +1413,7 @@
             // 
             // BoxL18
             // 
+            this.BoxL18.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxL18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxL18.Location = new System.Drawing.Point(377, 581);
             this.BoxL18.Name = "BoxL18";
@@ -1386,6 +1423,7 @@
             // 
             // BoxK18
             // 
+            this.BoxK18.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxK18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxK18.Location = new System.Drawing.Point(343, 581);
             this.BoxK18.Name = "BoxK18";
@@ -1395,6 +1433,7 @@
             // 
             // BoxJ18
             // 
+            this.BoxJ18.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxJ18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxJ18.Location = new System.Drawing.Point(309, 581);
             this.BoxJ18.Name = "BoxJ18";
@@ -1404,6 +1443,7 @@
             // 
             // BoxI18
             // 
+            this.BoxI18.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxI18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxI18.Location = new System.Drawing.Point(275, 581);
             this.BoxI18.Name = "BoxI18";
@@ -1413,6 +1453,7 @@
             // 
             // BoxH18
             // 
+            this.BoxH18.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxH18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxH18.Location = new System.Drawing.Point(241, 581);
             this.BoxH18.Name = "BoxH18";
@@ -1422,6 +1463,7 @@
             // 
             // BoxG18
             // 
+            this.BoxG18.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxG18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxG18.Location = new System.Drawing.Point(207, 581);
             this.BoxG18.Name = "BoxG18";
@@ -1431,6 +1473,7 @@
             // 
             // BoxF18
             // 
+            this.BoxF18.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxF18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxF18.Location = new System.Drawing.Point(173, 581);
             this.BoxF18.Name = "BoxF18";
@@ -1440,6 +1483,7 @@
             // 
             // BoxE18
             // 
+            this.BoxE18.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxE18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxE18.Location = new System.Drawing.Point(139, 581);
             this.BoxE18.Name = "BoxE18";
@@ -1449,6 +1493,7 @@
             // 
             // BoxD18
             // 
+            this.BoxD18.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxD18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxD18.Location = new System.Drawing.Point(105, 581);
             this.BoxD18.Name = "BoxD18";
@@ -1458,6 +1503,7 @@
             // 
             // BoxC18
             // 
+            this.BoxC18.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxC18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxC18.Location = new System.Drawing.Point(71, 581);
             this.BoxC18.Name = "BoxC18";
@@ -1467,6 +1513,7 @@
             // 
             // BoxB18
             // 
+            this.BoxB18.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxB18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxB18.Location = new System.Drawing.Point(37, 581);
             this.BoxB18.Name = "BoxB18";
@@ -1476,6 +1523,7 @@
             // 
             // BoxA18
             // 
+            this.BoxA18.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxA18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxA18.Location = new System.Drawing.Point(3, 581);
             this.BoxA18.Name = "BoxA18";
@@ -1485,6 +1533,7 @@
             // 
             // BoxP17
             // 
+            this.BoxP17.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxP17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxP17.Location = new System.Drawing.Point(513, 547);
             this.BoxP17.Name = "BoxP17";
@@ -1494,6 +1543,7 @@
             // 
             // BoxO17
             // 
+            this.BoxO17.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxO17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxO17.Location = new System.Drawing.Point(479, 547);
             this.BoxO17.Name = "BoxO17";
@@ -1503,6 +1553,7 @@
             // 
             // BoxN17
             // 
+            this.BoxN17.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxN17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxN17.Location = new System.Drawing.Point(445, 547);
             this.BoxN17.Name = "BoxN17";
@@ -1512,6 +1563,7 @@
             // 
             // BoxM17
             // 
+            this.BoxM17.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxM17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxM17.Location = new System.Drawing.Point(411, 547);
             this.BoxM17.Name = "BoxM17";
@@ -1521,6 +1573,7 @@
             // 
             // BoxL17
             // 
+            this.BoxL17.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxL17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxL17.Location = new System.Drawing.Point(377, 547);
             this.BoxL17.Name = "BoxL17";
@@ -1530,6 +1583,7 @@
             // 
             // BoxK17
             // 
+            this.BoxK17.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxK17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxK17.Location = new System.Drawing.Point(343, 547);
             this.BoxK17.Name = "BoxK17";
@@ -1539,6 +1593,7 @@
             // 
             // BoxJ17
             // 
+            this.BoxJ17.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxJ17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxJ17.Location = new System.Drawing.Point(309, 547);
             this.BoxJ17.Name = "BoxJ17";
@@ -1548,6 +1603,7 @@
             // 
             // BoxI17
             // 
+            this.BoxI17.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxI17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxI17.Location = new System.Drawing.Point(275, 547);
             this.BoxI17.Name = "BoxI17";
@@ -1557,6 +1613,7 @@
             // 
             // BoxH17
             // 
+            this.BoxH17.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxH17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxH17.Location = new System.Drawing.Point(241, 547);
             this.BoxH17.Name = "BoxH17";
@@ -1566,6 +1623,7 @@
             // 
             // BoxG17
             // 
+            this.BoxG17.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxG17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxG17.Location = new System.Drawing.Point(207, 547);
             this.BoxG17.Name = "BoxG17";
@@ -1575,6 +1633,7 @@
             // 
             // BoxF17
             // 
+            this.BoxF17.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxF17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxF17.Location = new System.Drawing.Point(173, 547);
             this.BoxF17.Name = "BoxF17";
@@ -1584,6 +1643,7 @@
             // 
             // BoxE17
             // 
+            this.BoxE17.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxE17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxE17.Location = new System.Drawing.Point(139, 547);
             this.BoxE17.Name = "BoxE17";
@@ -1593,6 +1653,7 @@
             // 
             // BoxD17
             // 
+            this.BoxD17.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxD17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxD17.Location = new System.Drawing.Point(105, 547);
             this.BoxD17.Name = "BoxD17";
@@ -1602,6 +1663,7 @@
             // 
             // BoxC17
             // 
+            this.BoxC17.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxC17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxC17.Location = new System.Drawing.Point(71, 547);
             this.BoxC17.Name = "BoxC17";
@@ -1611,6 +1673,7 @@
             // 
             // BoxB17
             // 
+            this.BoxB17.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxB17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxB17.Location = new System.Drawing.Point(37, 547);
             this.BoxB17.Name = "BoxB17";
@@ -1620,6 +1683,7 @@
             // 
             // BoxA17
             // 
+            this.BoxA17.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxA17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxA17.Location = new System.Drawing.Point(3, 547);
             this.BoxA17.Name = "BoxA17";
@@ -1629,6 +1693,7 @@
             // 
             // BoxP16
             // 
+            this.BoxP16.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxP16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxP16.Location = new System.Drawing.Point(513, 513);
             this.BoxP16.Name = "BoxP16";
@@ -1638,6 +1703,7 @@
             // 
             // BoxO16
             // 
+            this.BoxO16.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxO16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxO16.Location = new System.Drawing.Point(479, 513);
             this.BoxO16.Name = "BoxO16";
@@ -1647,6 +1713,7 @@
             // 
             // BoxN16
             // 
+            this.BoxN16.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxN16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxN16.Location = new System.Drawing.Point(445, 513);
             this.BoxN16.Name = "BoxN16";
@@ -1656,6 +1723,7 @@
             // 
             // BoxM16
             // 
+            this.BoxM16.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxM16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxM16.Location = new System.Drawing.Point(411, 513);
             this.BoxM16.Name = "BoxM16";
@@ -1665,6 +1733,7 @@
             // 
             // BoxL16
             // 
+            this.BoxL16.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxL16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxL16.Location = new System.Drawing.Point(377, 513);
             this.BoxL16.Name = "BoxL16";
@@ -1674,6 +1743,7 @@
             // 
             // BoxK16
             // 
+            this.BoxK16.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxK16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxK16.Location = new System.Drawing.Point(343, 513);
             this.BoxK16.Name = "BoxK16";
@@ -1683,6 +1753,7 @@
             // 
             // BoxJ16
             // 
+            this.BoxJ16.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxJ16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxJ16.Location = new System.Drawing.Point(309, 513);
             this.BoxJ16.Name = "BoxJ16";
@@ -1692,6 +1763,7 @@
             // 
             // BoxI16
             // 
+            this.BoxI16.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxI16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxI16.Location = new System.Drawing.Point(275, 513);
             this.BoxI16.Name = "BoxI16";
@@ -1701,6 +1773,7 @@
             // 
             // BoxH16
             // 
+            this.BoxH16.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxH16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxH16.Location = new System.Drawing.Point(241, 513);
             this.BoxH16.Name = "BoxH16";
@@ -1710,6 +1783,7 @@
             // 
             // BoxG16
             // 
+            this.BoxG16.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxG16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxG16.Location = new System.Drawing.Point(207, 513);
             this.BoxG16.Name = "BoxG16";
@@ -1719,6 +1793,7 @@
             // 
             // BoxF16
             // 
+            this.BoxF16.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxF16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxF16.Location = new System.Drawing.Point(173, 513);
             this.BoxF16.Name = "BoxF16";
@@ -1728,6 +1803,7 @@
             // 
             // BoxE16
             // 
+            this.BoxE16.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxE16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxE16.Location = new System.Drawing.Point(139, 513);
             this.BoxE16.Name = "BoxE16";
@@ -1737,6 +1813,7 @@
             // 
             // BoxD16
             // 
+            this.BoxD16.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxD16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxD16.Location = new System.Drawing.Point(105, 513);
             this.BoxD16.Name = "BoxD16";
@@ -1746,6 +1823,7 @@
             // 
             // BoxC16
             // 
+            this.BoxC16.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxC16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxC16.Location = new System.Drawing.Point(71, 513);
             this.BoxC16.Name = "BoxC16";
@@ -1755,6 +1833,7 @@
             // 
             // BoxB16
             // 
+            this.BoxB16.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxB16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxB16.Location = new System.Drawing.Point(37, 513);
             this.BoxB16.Name = "BoxB16";
@@ -1764,6 +1843,7 @@
             // 
             // BoxA16
             // 
+            this.BoxA16.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxA16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxA16.Location = new System.Drawing.Point(3, 513);
             this.BoxA16.Name = "BoxA16";
@@ -1773,6 +1853,7 @@
             // 
             // BoxP15
             // 
+            this.BoxP15.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxP15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxP15.Location = new System.Drawing.Point(513, 479);
             this.BoxP15.Name = "BoxP15";
@@ -1782,6 +1863,7 @@
             // 
             // BoxO15
             // 
+            this.BoxO15.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxO15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxO15.Location = new System.Drawing.Point(479, 479);
             this.BoxO15.Name = "BoxO15";
@@ -1791,6 +1873,7 @@
             // 
             // BoxN15
             // 
+            this.BoxN15.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxN15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxN15.Location = new System.Drawing.Point(445, 479);
             this.BoxN15.Name = "BoxN15";
@@ -1800,6 +1883,7 @@
             // 
             // BoxM15
             // 
+            this.BoxM15.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxM15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxM15.Location = new System.Drawing.Point(411, 479);
             this.BoxM15.Name = "BoxM15";
@@ -1809,6 +1893,7 @@
             // 
             // BoxL15
             // 
+            this.BoxL15.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxL15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxL15.Location = new System.Drawing.Point(377, 479);
             this.BoxL15.Name = "BoxL15";
@@ -1818,6 +1903,7 @@
             // 
             // BoxK15
             // 
+            this.BoxK15.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxK15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxK15.Location = new System.Drawing.Point(343, 479);
             this.BoxK15.Name = "BoxK15";
@@ -1827,6 +1913,7 @@
             // 
             // BoxJ15
             // 
+            this.BoxJ15.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxJ15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxJ15.Location = new System.Drawing.Point(309, 479);
             this.BoxJ15.Name = "BoxJ15";
@@ -1836,6 +1923,7 @@
             // 
             // BoxI15
             // 
+            this.BoxI15.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxI15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxI15.Location = new System.Drawing.Point(275, 479);
             this.BoxI15.Name = "BoxI15";
@@ -1845,6 +1933,7 @@
             // 
             // BoxH15
             // 
+            this.BoxH15.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxH15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxH15.Location = new System.Drawing.Point(241, 479);
             this.BoxH15.Name = "BoxH15";
@@ -1854,6 +1943,7 @@
             // 
             // BoxG15
             // 
+            this.BoxG15.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxG15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxG15.Location = new System.Drawing.Point(207, 479);
             this.BoxG15.Name = "BoxG15";
@@ -1863,6 +1953,7 @@
             // 
             // BoxF15
             // 
+            this.BoxF15.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxF15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxF15.Location = new System.Drawing.Point(173, 479);
             this.BoxF15.Name = "BoxF15";
@@ -1872,6 +1963,7 @@
             // 
             // BoxE15
             // 
+            this.BoxE15.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxE15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxE15.Location = new System.Drawing.Point(139, 479);
             this.BoxE15.Name = "BoxE15";
@@ -1881,6 +1973,7 @@
             // 
             // BoxD15
             // 
+            this.BoxD15.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxD15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxD15.Location = new System.Drawing.Point(105, 479);
             this.BoxD15.Name = "BoxD15";
@@ -1890,6 +1983,7 @@
             // 
             // BoxC15
             // 
+            this.BoxC15.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxC15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxC15.Location = new System.Drawing.Point(71, 479);
             this.BoxC15.Name = "BoxC15";
@@ -1899,6 +1993,7 @@
             // 
             // BoxB15
             // 
+            this.BoxB15.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxB15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxB15.Location = new System.Drawing.Point(37, 479);
             this.BoxB15.Name = "BoxB15";
@@ -1908,6 +2003,7 @@
             // 
             // BoxA15
             // 
+            this.BoxA15.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxA15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxA15.Location = new System.Drawing.Point(3, 479);
             this.BoxA15.Name = "BoxA15";
@@ -1917,6 +2013,7 @@
             // 
             // BoxP14
             // 
+            this.BoxP14.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxP14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxP14.Location = new System.Drawing.Point(513, 445);
             this.BoxP14.Name = "BoxP14";
@@ -1926,6 +2023,7 @@
             // 
             // BoxO14
             // 
+            this.BoxO14.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxO14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxO14.Location = new System.Drawing.Point(479, 445);
             this.BoxO14.Name = "BoxO14";
@@ -1935,6 +2033,7 @@
             // 
             // BoxN14
             // 
+            this.BoxN14.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxN14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxN14.Location = new System.Drawing.Point(445, 445);
             this.BoxN14.Name = "BoxN14";
@@ -1944,6 +2043,7 @@
             // 
             // BoxM14
             // 
+            this.BoxM14.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxM14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxM14.Location = new System.Drawing.Point(411, 445);
             this.BoxM14.Name = "BoxM14";
@@ -1953,6 +2053,7 @@
             // 
             // BoxL14
             // 
+            this.BoxL14.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxL14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxL14.Location = new System.Drawing.Point(377, 445);
             this.BoxL14.Name = "BoxL14";
@@ -1962,6 +2063,7 @@
             // 
             // BoxK14
             // 
+            this.BoxK14.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxK14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxK14.Location = new System.Drawing.Point(343, 445);
             this.BoxK14.Name = "BoxK14";
@@ -1971,6 +2073,7 @@
             // 
             // BoxJ14
             // 
+            this.BoxJ14.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxJ14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxJ14.Location = new System.Drawing.Point(309, 445);
             this.BoxJ14.Name = "BoxJ14";
@@ -1980,6 +2083,7 @@
             // 
             // BoxI14
             // 
+            this.BoxI14.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxI14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxI14.Location = new System.Drawing.Point(275, 445);
             this.BoxI14.Name = "BoxI14";
@@ -1989,6 +2093,7 @@
             // 
             // BoxH14
             // 
+            this.BoxH14.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxH14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxH14.Location = new System.Drawing.Point(241, 445);
             this.BoxH14.Name = "BoxH14";
@@ -1998,6 +2103,7 @@
             // 
             // BoxG14
             // 
+            this.BoxG14.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxG14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxG14.Location = new System.Drawing.Point(207, 445);
             this.BoxG14.Name = "BoxG14";
@@ -2007,6 +2113,7 @@
             // 
             // BoxF14
             // 
+            this.BoxF14.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxF14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxF14.Location = new System.Drawing.Point(173, 445);
             this.BoxF14.Name = "BoxF14";
@@ -2016,6 +2123,7 @@
             // 
             // BoxE14
             // 
+            this.BoxE14.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxE14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxE14.Location = new System.Drawing.Point(139, 445);
             this.BoxE14.Name = "BoxE14";
@@ -2025,6 +2133,7 @@
             // 
             // BoxD14
             // 
+            this.BoxD14.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxD14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxD14.Location = new System.Drawing.Point(105, 445);
             this.BoxD14.Name = "BoxD14";
@@ -2034,6 +2143,7 @@
             // 
             // BoxC14
             // 
+            this.BoxC14.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxC14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxC14.Location = new System.Drawing.Point(71, 445);
             this.BoxC14.Name = "BoxC14";
@@ -2043,6 +2153,7 @@
             // 
             // BoxB14
             // 
+            this.BoxB14.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxB14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxB14.Location = new System.Drawing.Point(37, 445);
             this.BoxB14.Name = "BoxB14";
@@ -2052,6 +2163,7 @@
             // 
             // BoxA14
             // 
+            this.BoxA14.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxA14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxA14.Location = new System.Drawing.Point(3, 445);
             this.BoxA14.Name = "BoxA14";
@@ -2061,6 +2173,7 @@
             // 
             // BoxP13
             // 
+            this.BoxP13.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxP13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxP13.Location = new System.Drawing.Point(513, 411);
             this.BoxP13.Name = "BoxP13";
@@ -2070,6 +2183,7 @@
             // 
             // BoxO13
             // 
+            this.BoxO13.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxO13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxO13.Location = new System.Drawing.Point(479, 411);
             this.BoxO13.Name = "BoxO13";
@@ -2079,6 +2193,7 @@
             // 
             // BoxN13
             // 
+            this.BoxN13.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxN13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxN13.Location = new System.Drawing.Point(445, 411);
             this.BoxN13.Name = "BoxN13";
@@ -2088,6 +2203,7 @@
             // 
             // BoxM13
             // 
+            this.BoxM13.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxM13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxM13.Location = new System.Drawing.Point(411, 411);
             this.BoxM13.Name = "BoxM13";
@@ -2097,6 +2213,7 @@
             // 
             // BoxL13
             // 
+            this.BoxL13.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxL13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxL13.Location = new System.Drawing.Point(377, 411);
             this.BoxL13.Name = "BoxL13";
@@ -2106,6 +2223,7 @@
             // 
             // BoxK13
             // 
+            this.BoxK13.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxK13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxK13.Location = new System.Drawing.Point(343, 411);
             this.BoxK13.Name = "BoxK13";
@@ -2115,6 +2233,7 @@
             // 
             // BoxJ13
             // 
+            this.BoxJ13.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxJ13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxJ13.Location = new System.Drawing.Point(309, 411);
             this.BoxJ13.Name = "BoxJ13";
@@ -2124,6 +2243,7 @@
             // 
             // BoxI13
             // 
+            this.BoxI13.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxI13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxI13.Location = new System.Drawing.Point(275, 411);
             this.BoxI13.Name = "BoxI13";
@@ -2133,6 +2253,7 @@
             // 
             // BoxH13
             // 
+            this.BoxH13.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxH13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxH13.Location = new System.Drawing.Point(241, 411);
             this.BoxH13.Name = "BoxH13";
@@ -2142,6 +2263,7 @@
             // 
             // BoxG13
             // 
+            this.BoxG13.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxG13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxG13.Location = new System.Drawing.Point(207, 411);
             this.BoxG13.Name = "BoxG13";
@@ -2151,6 +2273,7 @@
             // 
             // BoxF13
             // 
+            this.BoxF13.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxF13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxF13.Location = new System.Drawing.Point(173, 411);
             this.BoxF13.Name = "BoxF13";
@@ -2160,6 +2283,7 @@
             // 
             // BoxE13
             // 
+            this.BoxE13.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxE13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxE13.Location = new System.Drawing.Point(139, 411);
             this.BoxE13.Name = "BoxE13";
@@ -2169,6 +2293,7 @@
             // 
             // BoxD13
             // 
+            this.BoxD13.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxD13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxD13.Location = new System.Drawing.Point(105, 411);
             this.BoxD13.Name = "BoxD13";
@@ -2178,6 +2303,7 @@
             // 
             // BoxC13
             // 
+            this.BoxC13.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxC13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxC13.Location = new System.Drawing.Point(71, 411);
             this.BoxC13.Name = "BoxC13";
@@ -2187,6 +2313,7 @@
             // 
             // BoxB13
             // 
+            this.BoxB13.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxB13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxB13.Location = new System.Drawing.Point(37, 411);
             this.BoxB13.Name = "BoxB13";
@@ -2196,6 +2323,7 @@
             // 
             // BoxA13
             // 
+            this.BoxA13.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxA13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxA13.Location = new System.Drawing.Point(3, 411);
             this.BoxA13.Name = "BoxA13";
@@ -2205,6 +2333,7 @@
             // 
             // BoxP12
             // 
+            this.BoxP12.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxP12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxP12.Location = new System.Drawing.Point(513, 377);
             this.BoxP12.Name = "BoxP12";
@@ -2214,6 +2343,7 @@
             // 
             // BoxO12
             // 
+            this.BoxO12.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxO12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxO12.Location = new System.Drawing.Point(479, 377);
             this.BoxO12.Name = "BoxO12";
@@ -2223,6 +2353,7 @@
             // 
             // BoxN12
             // 
+            this.BoxN12.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxN12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxN12.Location = new System.Drawing.Point(445, 377);
             this.BoxN12.Name = "BoxN12";
@@ -2232,6 +2363,7 @@
             // 
             // BoxM12
             // 
+            this.BoxM12.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxM12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxM12.Location = new System.Drawing.Point(411, 377);
             this.BoxM12.Name = "BoxM12";
@@ -2241,6 +2373,7 @@
             // 
             // BoxL12
             // 
+            this.BoxL12.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxL12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxL12.Location = new System.Drawing.Point(377, 377);
             this.BoxL12.Name = "BoxL12";
@@ -2250,6 +2383,7 @@
             // 
             // BoxK12
             // 
+            this.BoxK12.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxK12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxK12.Location = new System.Drawing.Point(343, 377);
             this.BoxK12.Name = "BoxK12";
@@ -2259,6 +2393,7 @@
             // 
             // BoxJ12
             // 
+            this.BoxJ12.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxJ12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxJ12.Location = new System.Drawing.Point(309, 377);
             this.BoxJ12.Name = "BoxJ12";
@@ -2268,6 +2403,7 @@
             // 
             // BoxI12
             // 
+            this.BoxI12.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxI12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxI12.Location = new System.Drawing.Point(275, 377);
             this.BoxI12.Name = "BoxI12";
@@ -2277,6 +2413,7 @@
             // 
             // BoxH12
             // 
+            this.BoxH12.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxH12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxH12.Location = new System.Drawing.Point(241, 377);
             this.BoxH12.Name = "BoxH12";
@@ -2286,6 +2423,7 @@
             // 
             // BoxG12
             // 
+            this.BoxG12.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxG12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxG12.Location = new System.Drawing.Point(207, 377);
             this.BoxG12.Name = "BoxG12";
@@ -2295,6 +2433,7 @@
             // 
             // BoxF12
             // 
+            this.BoxF12.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxF12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxF12.Location = new System.Drawing.Point(173, 377);
             this.BoxF12.Name = "BoxF12";
@@ -2304,6 +2443,7 @@
             // 
             // BoxE12
             // 
+            this.BoxE12.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxE12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxE12.Location = new System.Drawing.Point(139, 377);
             this.BoxE12.Name = "BoxE12";
@@ -2313,6 +2453,7 @@
             // 
             // BoxD12
             // 
+            this.BoxD12.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxD12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxD12.Location = new System.Drawing.Point(105, 377);
             this.BoxD12.Name = "BoxD12";
@@ -2322,6 +2463,7 @@
             // 
             // BoxC12
             // 
+            this.BoxC12.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxC12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxC12.Location = new System.Drawing.Point(71, 377);
             this.BoxC12.Name = "BoxC12";
@@ -2331,6 +2473,7 @@
             // 
             // BoxB12
             // 
+            this.BoxB12.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxB12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxB12.Location = new System.Drawing.Point(37, 377);
             this.BoxB12.Name = "BoxB12";
@@ -2340,6 +2483,7 @@
             // 
             // BoxA12
             // 
+            this.BoxA12.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxA12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxA12.Location = new System.Drawing.Point(3, 377);
             this.BoxA12.Name = "BoxA12";
@@ -2349,6 +2493,7 @@
             // 
             // BoxP11
             // 
+            this.BoxP11.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxP11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxP11.Location = new System.Drawing.Point(513, 343);
             this.BoxP11.Name = "BoxP11";
@@ -2358,6 +2503,7 @@
             // 
             // BoxO11
             // 
+            this.BoxO11.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxO11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxO11.Location = new System.Drawing.Point(479, 343);
             this.BoxO11.Name = "BoxO11";
@@ -2367,6 +2513,7 @@
             // 
             // BoxN11
             // 
+            this.BoxN11.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxN11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxN11.Location = new System.Drawing.Point(445, 343);
             this.BoxN11.Name = "BoxN11";
@@ -2376,6 +2523,7 @@
             // 
             // BoxM11
             // 
+            this.BoxM11.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxM11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxM11.Location = new System.Drawing.Point(411, 343);
             this.BoxM11.Name = "BoxM11";
@@ -2385,6 +2533,7 @@
             // 
             // BoxL11
             // 
+            this.BoxL11.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxL11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxL11.Location = new System.Drawing.Point(377, 343);
             this.BoxL11.Name = "BoxL11";
@@ -2394,6 +2543,7 @@
             // 
             // BoxK11
             // 
+            this.BoxK11.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxK11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxK11.Location = new System.Drawing.Point(343, 343);
             this.BoxK11.Name = "BoxK11";
@@ -2403,6 +2553,7 @@
             // 
             // BoxJ11
             // 
+            this.BoxJ11.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxJ11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxJ11.Location = new System.Drawing.Point(309, 343);
             this.BoxJ11.Name = "BoxJ11";
@@ -2412,6 +2563,7 @@
             // 
             // BoxI11
             // 
+            this.BoxI11.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxI11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxI11.Location = new System.Drawing.Point(275, 343);
             this.BoxI11.Name = "BoxI11";
@@ -2421,6 +2573,7 @@
             // 
             // BoxH11
             // 
+            this.BoxH11.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxH11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxH11.Location = new System.Drawing.Point(241, 343);
             this.BoxH11.Name = "BoxH11";
@@ -2430,6 +2583,7 @@
             // 
             // BoxG11
             // 
+            this.BoxG11.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxG11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxG11.Location = new System.Drawing.Point(207, 343);
             this.BoxG11.Name = "BoxG11";
@@ -2439,6 +2593,7 @@
             // 
             // BoxF11
             // 
+            this.BoxF11.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxF11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxF11.Location = new System.Drawing.Point(173, 343);
             this.BoxF11.Name = "BoxF11";
@@ -2448,6 +2603,7 @@
             // 
             // BoxE11
             // 
+            this.BoxE11.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxE11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxE11.Location = new System.Drawing.Point(139, 343);
             this.BoxE11.Name = "BoxE11";
@@ -2457,6 +2613,7 @@
             // 
             // BoxD11
             // 
+            this.BoxD11.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxD11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxD11.Location = new System.Drawing.Point(105, 343);
             this.BoxD11.Name = "BoxD11";
@@ -2466,6 +2623,7 @@
             // 
             // BoxC11
             // 
+            this.BoxC11.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxC11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxC11.Location = new System.Drawing.Point(71, 343);
             this.BoxC11.Name = "BoxC11";
@@ -2475,6 +2633,7 @@
             // 
             // BoxB11
             // 
+            this.BoxB11.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxB11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxB11.Location = new System.Drawing.Point(37, 343);
             this.BoxB11.Name = "BoxB11";
@@ -2484,6 +2643,7 @@
             // 
             // BoxA11
             // 
+            this.BoxA11.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxA11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxA11.Location = new System.Drawing.Point(3, 343);
             this.BoxA11.Name = "BoxA11";
@@ -2493,6 +2653,7 @@
             // 
             // BoxP10
             // 
+            this.BoxP10.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxP10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxP10.Location = new System.Drawing.Point(513, 309);
             this.BoxP10.Name = "BoxP10";
@@ -2502,6 +2663,7 @@
             // 
             // BoxO10
             // 
+            this.BoxO10.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxO10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxO10.Location = new System.Drawing.Point(479, 309);
             this.BoxO10.Name = "BoxO10";
@@ -2511,6 +2673,7 @@
             // 
             // BoxN10
             // 
+            this.BoxN10.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxN10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxN10.Location = new System.Drawing.Point(445, 309);
             this.BoxN10.Name = "BoxN10";
@@ -2520,6 +2683,7 @@
             // 
             // BoxM10
             // 
+            this.BoxM10.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxM10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxM10.Location = new System.Drawing.Point(411, 309);
             this.BoxM10.Name = "BoxM10";
@@ -2529,6 +2693,7 @@
             // 
             // BoxL10
             // 
+            this.BoxL10.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxL10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxL10.Location = new System.Drawing.Point(377, 309);
             this.BoxL10.Name = "BoxL10";
@@ -2538,6 +2703,7 @@
             // 
             // BoxK10
             // 
+            this.BoxK10.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxK10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxK10.Location = new System.Drawing.Point(343, 309);
             this.BoxK10.Name = "BoxK10";
@@ -2547,6 +2713,7 @@
             // 
             // BoxJ10
             // 
+            this.BoxJ10.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxJ10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxJ10.Location = new System.Drawing.Point(309, 309);
             this.BoxJ10.Name = "BoxJ10";
@@ -2556,6 +2723,7 @@
             // 
             // BoxI10
             // 
+            this.BoxI10.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxI10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxI10.Location = new System.Drawing.Point(275, 309);
             this.BoxI10.Name = "BoxI10";
@@ -2565,6 +2733,7 @@
             // 
             // BoxH10
             // 
+            this.BoxH10.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxH10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxH10.Location = new System.Drawing.Point(241, 309);
             this.BoxH10.Name = "BoxH10";
@@ -2574,6 +2743,7 @@
             // 
             // BoxG10
             // 
+            this.BoxG10.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxG10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxG10.Location = new System.Drawing.Point(207, 309);
             this.BoxG10.Name = "BoxG10";
@@ -2583,6 +2753,7 @@
             // 
             // BoxF10
             // 
+            this.BoxF10.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxF10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxF10.Location = new System.Drawing.Point(173, 309);
             this.BoxF10.Name = "BoxF10";
@@ -2592,6 +2763,7 @@
             // 
             // BoxE10
             // 
+            this.BoxE10.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxE10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxE10.Location = new System.Drawing.Point(139, 309);
             this.BoxE10.Name = "BoxE10";
@@ -2601,6 +2773,7 @@
             // 
             // BoxD10
             // 
+            this.BoxD10.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxD10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxD10.Location = new System.Drawing.Point(105, 309);
             this.BoxD10.Name = "BoxD10";
@@ -2610,6 +2783,7 @@
             // 
             // BoxC10
             // 
+            this.BoxC10.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxC10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxC10.Location = new System.Drawing.Point(71, 309);
             this.BoxC10.Name = "BoxC10";
@@ -2619,6 +2793,7 @@
             // 
             // BoxB10
             // 
+            this.BoxB10.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxB10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxB10.Location = new System.Drawing.Point(37, 309);
             this.BoxB10.Name = "BoxB10";
@@ -2628,6 +2803,7 @@
             // 
             // BoxA10
             // 
+            this.BoxA10.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxA10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxA10.Location = new System.Drawing.Point(3, 309);
             this.BoxA10.Name = "BoxA10";
@@ -2637,6 +2813,7 @@
             // 
             // BoxP9
             // 
+            this.BoxP9.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxP9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxP9.Location = new System.Drawing.Point(513, 275);
             this.BoxP9.Name = "BoxP9";
@@ -2646,6 +2823,7 @@
             // 
             // BoxO9
             // 
+            this.BoxO9.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxO9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxO9.Location = new System.Drawing.Point(479, 275);
             this.BoxO9.Name = "BoxO9";
@@ -2655,6 +2833,7 @@
             // 
             // BoxN9
             // 
+            this.BoxN9.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxN9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxN9.Location = new System.Drawing.Point(445, 275);
             this.BoxN9.Name = "BoxN9";
@@ -2664,6 +2843,7 @@
             // 
             // BoxM9
             // 
+            this.BoxM9.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxM9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxM9.Location = new System.Drawing.Point(411, 275);
             this.BoxM9.Name = "BoxM9";
@@ -2673,6 +2853,7 @@
             // 
             // BoxL9
             // 
+            this.BoxL9.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxL9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxL9.Location = new System.Drawing.Point(377, 275);
             this.BoxL9.Name = "BoxL9";
@@ -2682,6 +2863,7 @@
             // 
             // BoxK9
             // 
+            this.BoxK9.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxK9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxK9.Location = new System.Drawing.Point(343, 275);
             this.BoxK9.Name = "BoxK9";
@@ -2691,6 +2873,7 @@
             // 
             // BoxJ9
             // 
+            this.BoxJ9.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxJ9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxJ9.Location = new System.Drawing.Point(309, 275);
             this.BoxJ9.Name = "BoxJ9";
@@ -2700,6 +2883,7 @@
             // 
             // BoxI9
             // 
+            this.BoxI9.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxI9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxI9.Location = new System.Drawing.Point(275, 275);
             this.BoxI9.Name = "BoxI9";
@@ -2709,6 +2893,7 @@
             // 
             // BoxH9
             // 
+            this.BoxH9.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxH9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxH9.Location = new System.Drawing.Point(241, 275);
             this.BoxH9.Name = "BoxH9";
@@ -2718,6 +2903,7 @@
             // 
             // BoxG9
             // 
+            this.BoxG9.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxG9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxG9.Location = new System.Drawing.Point(207, 275);
             this.BoxG9.Name = "BoxG9";
@@ -2727,6 +2913,7 @@
             // 
             // BoxF9
             // 
+            this.BoxF9.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxF9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxF9.Location = new System.Drawing.Point(173, 275);
             this.BoxF9.Name = "BoxF9";
@@ -2736,6 +2923,7 @@
             // 
             // BoxE9
             // 
+            this.BoxE9.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxE9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxE9.Location = new System.Drawing.Point(139, 275);
             this.BoxE9.Name = "BoxE9";
@@ -2745,6 +2933,7 @@
             // 
             // BoxD9
             // 
+            this.BoxD9.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxD9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxD9.Location = new System.Drawing.Point(105, 275);
             this.BoxD9.Name = "BoxD9";
@@ -2754,6 +2943,7 @@
             // 
             // BoxC9
             // 
+            this.BoxC9.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxC9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxC9.Location = new System.Drawing.Point(71, 275);
             this.BoxC9.Name = "BoxC9";
@@ -2763,6 +2953,7 @@
             // 
             // BoxB9
             // 
+            this.BoxB9.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxB9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxB9.Location = new System.Drawing.Point(37, 275);
             this.BoxB9.Name = "BoxB9";
@@ -2772,6 +2963,7 @@
             // 
             // BoxA9
             // 
+            this.BoxA9.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxA9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxA9.Location = new System.Drawing.Point(3, 275);
             this.BoxA9.Name = "BoxA9";
@@ -2781,6 +2973,7 @@
             // 
             // BoxP8
             // 
+            this.BoxP8.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxP8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxP8.Location = new System.Drawing.Point(513, 241);
             this.BoxP8.Name = "BoxP8";
@@ -2790,6 +2983,7 @@
             // 
             // BoxO8
             // 
+            this.BoxO8.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxO8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxO8.Location = new System.Drawing.Point(479, 241);
             this.BoxO8.Name = "BoxO8";
@@ -2799,6 +2993,7 @@
             // 
             // BoxN8
             // 
+            this.BoxN8.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxN8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxN8.Location = new System.Drawing.Point(445, 241);
             this.BoxN8.Name = "BoxN8";
@@ -2808,6 +3003,7 @@
             // 
             // BoxM8
             // 
+            this.BoxM8.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxM8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxM8.Location = new System.Drawing.Point(411, 241);
             this.BoxM8.Name = "BoxM8";
@@ -2817,6 +3013,7 @@
             // 
             // BoxL8
             // 
+            this.BoxL8.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxL8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxL8.Location = new System.Drawing.Point(377, 241);
             this.BoxL8.Name = "BoxL8";
@@ -2826,6 +3023,7 @@
             // 
             // BoxK8
             // 
+            this.BoxK8.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxK8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxK8.Location = new System.Drawing.Point(343, 241);
             this.BoxK8.Name = "BoxK8";
@@ -2835,6 +3033,7 @@
             // 
             // BoxJ8
             // 
+            this.BoxJ8.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxJ8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxJ8.Location = new System.Drawing.Point(309, 241);
             this.BoxJ8.Name = "BoxJ8";
@@ -2844,6 +3043,7 @@
             // 
             // BoxI8
             // 
+            this.BoxI8.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxI8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxI8.Location = new System.Drawing.Point(275, 241);
             this.BoxI8.Name = "BoxI8";
@@ -2853,6 +3053,7 @@
             // 
             // BoxH8
             // 
+            this.BoxH8.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxH8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxH8.Location = new System.Drawing.Point(241, 241);
             this.BoxH8.Name = "BoxH8";
@@ -2862,6 +3063,7 @@
             // 
             // BoxG8
             // 
+            this.BoxG8.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxG8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxG8.Location = new System.Drawing.Point(207, 241);
             this.BoxG8.Name = "BoxG8";
@@ -2871,6 +3073,7 @@
             // 
             // BoxF8
             // 
+            this.BoxF8.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxF8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxF8.Location = new System.Drawing.Point(173, 241);
             this.BoxF8.Name = "BoxF8";
@@ -2880,6 +3083,7 @@
             // 
             // BoxE8
             // 
+            this.BoxE8.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxE8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxE8.Location = new System.Drawing.Point(139, 241);
             this.BoxE8.Name = "BoxE8";
@@ -2889,6 +3093,7 @@
             // 
             // BoxD8
             // 
+            this.BoxD8.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxD8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxD8.Location = new System.Drawing.Point(105, 241);
             this.BoxD8.Name = "BoxD8";
@@ -2898,6 +3103,7 @@
             // 
             // BoxC8
             // 
+            this.BoxC8.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxC8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxC8.Location = new System.Drawing.Point(71, 241);
             this.BoxC8.Name = "BoxC8";
@@ -2907,6 +3113,7 @@
             // 
             // BoxB8
             // 
+            this.BoxB8.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxB8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxB8.Location = new System.Drawing.Point(37, 241);
             this.BoxB8.Name = "BoxB8";
@@ -2916,6 +3123,7 @@
             // 
             // BoxA8
             // 
+            this.BoxA8.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxA8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxA8.Location = new System.Drawing.Point(3, 241);
             this.BoxA8.Name = "BoxA8";
@@ -2925,6 +3133,7 @@
             // 
             // BoxP7
             // 
+            this.BoxP7.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxP7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxP7.Location = new System.Drawing.Point(513, 207);
             this.BoxP7.Name = "BoxP7";
@@ -2934,6 +3143,7 @@
             // 
             // BoxO7
             // 
+            this.BoxO7.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxO7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxO7.Location = new System.Drawing.Point(479, 207);
             this.BoxO7.Name = "BoxO7";
@@ -2943,6 +3153,7 @@
             // 
             // BoxN7
             // 
+            this.BoxN7.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxN7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxN7.Location = new System.Drawing.Point(445, 207);
             this.BoxN7.Name = "BoxN7";
@@ -2952,6 +3163,7 @@
             // 
             // BoxM7
             // 
+            this.BoxM7.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxM7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxM7.Location = new System.Drawing.Point(411, 207);
             this.BoxM7.Name = "BoxM7";
@@ -2961,6 +3173,7 @@
             // 
             // BoxL7
             // 
+            this.BoxL7.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxL7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxL7.Location = new System.Drawing.Point(377, 207);
             this.BoxL7.Name = "BoxL7";
@@ -2970,6 +3183,7 @@
             // 
             // BoxK7
             // 
+            this.BoxK7.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxK7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxK7.Location = new System.Drawing.Point(343, 207);
             this.BoxK7.Name = "BoxK7";
@@ -2979,6 +3193,7 @@
             // 
             // BoxJ7
             // 
+            this.BoxJ7.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxJ7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxJ7.Location = new System.Drawing.Point(309, 207);
             this.BoxJ7.Name = "BoxJ7";
@@ -2988,6 +3203,7 @@
             // 
             // BoxI7
             // 
+            this.BoxI7.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxI7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxI7.Location = new System.Drawing.Point(275, 207);
             this.BoxI7.Name = "BoxI7";
@@ -2997,6 +3213,7 @@
             // 
             // BoxH7
             // 
+            this.BoxH7.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxH7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxH7.Location = new System.Drawing.Point(241, 207);
             this.BoxH7.Name = "BoxH7";
@@ -3006,6 +3223,7 @@
             // 
             // BoxG7
             // 
+            this.BoxG7.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxG7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxG7.Location = new System.Drawing.Point(207, 207);
             this.BoxG7.Name = "BoxG7";
@@ -3015,6 +3233,7 @@
             // 
             // BoxF7
             // 
+            this.BoxF7.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxF7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxF7.Location = new System.Drawing.Point(173, 207);
             this.BoxF7.Name = "BoxF7";
@@ -3024,6 +3243,7 @@
             // 
             // BoxE7
             // 
+            this.BoxE7.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxE7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxE7.Location = new System.Drawing.Point(139, 207);
             this.BoxE7.Name = "BoxE7";
@@ -3033,6 +3253,7 @@
             // 
             // BoxD7
             // 
+            this.BoxD7.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxD7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxD7.Location = new System.Drawing.Point(105, 207);
             this.BoxD7.Name = "BoxD7";
@@ -3042,6 +3263,7 @@
             // 
             // BoxC7
             // 
+            this.BoxC7.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxC7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxC7.Location = new System.Drawing.Point(71, 207);
             this.BoxC7.Name = "BoxC7";
@@ -3051,6 +3273,7 @@
             // 
             // BoxB7
             // 
+            this.BoxB7.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxB7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxB7.Location = new System.Drawing.Point(37, 207);
             this.BoxB7.Name = "BoxB7";
@@ -3060,6 +3283,7 @@
             // 
             // BoxA7
             // 
+            this.BoxA7.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxA7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxA7.Location = new System.Drawing.Point(3, 207);
             this.BoxA7.Name = "BoxA7";
@@ -3069,6 +3293,7 @@
             // 
             // BoxP6
             // 
+            this.BoxP6.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxP6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxP6.Location = new System.Drawing.Point(513, 173);
             this.BoxP6.Name = "BoxP6";
@@ -3078,6 +3303,7 @@
             // 
             // BoxO6
             // 
+            this.BoxO6.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxO6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxO6.Location = new System.Drawing.Point(479, 173);
             this.BoxO6.Name = "BoxO6";
@@ -3087,6 +3313,7 @@
             // 
             // BoxN6
             // 
+            this.BoxN6.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxN6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxN6.Location = new System.Drawing.Point(445, 173);
             this.BoxN6.Name = "BoxN6";
@@ -3096,6 +3323,7 @@
             // 
             // BoxM6
             // 
+            this.BoxM6.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxM6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxM6.Location = new System.Drawing.Point(411, 173);
             this.BoxM6.Name = "BoxM6";
@@ -3105,6 +3333,7 @@
             // 
             // BoxL6
             // 
+            this.BoxL6.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxL6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxL6.Location = new System.Drawing.Point(377, 173);
             this.BoxL6.Name = "BoxL6";
@@ -3114,6 +3343,7 @@
             // 
             // BoxK6
             // 
+            this.BoxK6.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxK6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxK6.Location = new System.Drawing.Point(343, 173);
             this.BoxK6.Name = "BoxK6";
@@ -3123,6 +3353,7 @@
             // 
             // BoxJ6
             // 
+            this.BoxJ6.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxJ6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxJ6.Location = new System.Drawing.Point(309, 173);
             this.BoxJ6.Name = "BoxJ6";
@@ -3132,6 +3363,7 @@
             // 
             // BoxI6
             // 
+            this.BoxI6.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxI6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxI6.Location = new System.Drawing.Point(275, 173);
             this.BoxI6.Name = "BoxI6";
@@ -3141,6 +3373,7 @@
             // 
             // BoxH6
             // 
+            this.BoxH6.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxH6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxH6.Location = new System.Drawing.Point(241, 173);
             this.BoxH6.Name = "BoxH6";
@@ -3150,6 +3383,7 @@
             // 
             // BoxG6
             // 
+            this.BoxG6.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxG6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxG6.Location = new System.Drawing.Point(207, 173);
             this.BoxG6.Name = "BoxG6";
@@ -3159,6 +3393,7 @@
             // 
             // BoxF6
             // 
+            this.BoxF6.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxF6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxF6.Location = new System.Drawing.Point(173, 173);
             this.BoxF6.Name = "BoxF6";
@@ -3168,6 +3403,7 @@
             // 
             // BoxE6
             // 
+            this.BoxE6.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxE6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxE6.Location = new System.Drawing.Point(139, 173);
             this.BoxE6.Name = "BoxE6";
@@ -3177,6 +3413,7 @@
             // 
             // BoxD6
             // 
+            this.BoxD6.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxD6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxD6.Location = new System.Drawing.Point(105, 173);
             this.BoxD6.Name = "BoxD6";
@@ -3186,6 +3423,7 @@
             // 
             // BoxC6
             // 
+            this.BoxC6.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxC6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxC6.Location = new System.Drawing.Point(71, 173);
             this.BoxC6.Name = "BoxC6";
@@ -3195,6 +3433,7 @@
             // 
             // BoxB6
             // 
+            this.BoxB6.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxB6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxB6.Location = new System.Drawing.Point(37, 173);
             this.BoxB6.Name = "BoxB6";
@@ -3204,6 +3443,7 @@
             // 
             // BoxA6
             // 
+            this.BoxA6.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxA6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxA6.Location = new System.Drawing.Point(3, 173);
             this.BoxA6.Name = "BoxA6";
@@ -3213,6 +3453,7 @@
             // 
             // BoxP5
             // 
+            this.BoxP5.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxP5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxP5.Location = new System.Drawing.Point(513, 139);
             this.BoxP5.Name = "BoxP5";
@@ -3222,6 +3463,7 @@
             // 
             // BoxO5
             // 
+            this.BoxO5.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxO5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxO5.Location = new System.Drawing.Point(479, 139);
             this.BoxO5.Name = "BoxO5";
@@ -3231,6 +3473,7 @@
             // 
             // BoxN5
             // 
+            this.BoxN5.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxN5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxN5.Location = new System.Drawing.Point(445, 139);
             this.BoxN5.Name = "BoxN5";
@@ -3240,6 +3483,7 @@
             // 
             // BoxM5
             // 
+            this.BoxM5.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxM5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxM5.Location = new System.Drawing.Point(411, 139);
             this.BoxM5.Name = "BoxM5";
@@ -3249,6 +3493,7 @@
             // 
             // BoxL5
             // 
+            this.BoxL5.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxL5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxL5.Location = new System.Drawing.Point(377, 139);
             this.BoxL5.Name = "BoxL5";
@@ -3258,6 +3503,7 @@
             // 
             // BoxK5
             // 
+            this.BoxK5.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxK5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxK5.Location = new System.Drawing.Point(343, 139);
             this.BoxK5.Name = "BoxK5";
@@ -3267,6 +3513,7 @@
             // 
             // BoxJ5
             // 
+            this.BoxJ5.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxJ5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxJ5.Location = new System.Drawing.Point(309, 139);
             this.BoxJ5.Name = "BoxJ5";
@@ -3276,6 +3523,7 @@
             // 
             // BoxI5
             // 
+            this.BoxI5.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxI5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxI5.Location = new System.Drawing.Point(275, 139);
             this.BoxI5.Name = "BoxI5";
@@ -3285,6 +3533,7 @@
             // 
             // BoxH5
             // 
+            this.BoxH5.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxH5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxH5.Location = new System.Drawing.Point(241, 139);
             this.BoxH5.Name = "BoxH5";
@@ -3294,6 +3543,7 @@
             // 
             // BoxG5
             // 
+            this.BoxG5.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxG5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxG5.Location = new System.Drawing.Point(207, 139);
             this.BoxG5.Name = "BoxG5";
@@ -3303,6 +3553,7 @@
             // 
             // BoxF5
             // 
+            this.BoxF5.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxF5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxF5.Location = new System.Drawing.Point(173, 139);
             this.BoxF5.Name = "BoxF5";
@@ -3312,6 +3563,7 @@
             // 
             // BoxE5
             // 
+            this.BoxE5.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxE5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxE5.Location = new System.Drawing.Point(139, 139);
             this.BoxE5.Name = "BoxE5";
@@ -3321,6 +3573,7 @@
             // 
             // BoxD5
             // 
+            this.BoxD5.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxD5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxD5.Location = new System.Drawing.Point(105, 139);
             this.BoxD5.Name = "BoxD5";
@@ -3330,6 +3583,7 @@
             // 
             // BoxC5
             // 
+            this.BoxC5.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxC5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxC5.Location = new System.Drawing.Point(71, 139);
             this.BoxC5.Name = "BoxC5";
@@ -3339,6 +3593,7 @@
             // 
             // BoxB5
             // 
+            this.BoxB5.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxB5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxB5.Location = new System.Drawing.Point(37, 139);
             this.BoxB5.Name = "BoxB5";
@@ -3348,6 +3603,7 @@
             // 
             // BoxA5
             // 
+            this.BoxA5.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxA5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxA5.Location = new System.Drawing.Point(3, 139);
             this.BoxA5.Name = "BoxA5";
@@ -3357,6 +3613,7 @@
             // 
             // BoxP4
             // 
+            this.BoxP4.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxP4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxP4.Location = new System.Drawing.Point(513, 105);
             this.BoxP4.Name = "BoxP4";
@@ -3366,6 +3623,7 @@
             // 
             // BoxO4
             // 
+            this.BoxO4.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxO4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxO4.Location = new System.Drawing.Point(479, 105);
             this.BoxO4.Name = "BoxO4";
@@ -3375,6 +3633,7 @@
             // 
             // BoxN4
             // 
+            this.BoxN4.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxN4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxN4.Location = new System.Drawing.Point(445, 105);
             this.BoxN4.Name = "BoxN4";
@@ -3384,6 +3643,7 @@
             // 
             // BoxM4
             // 
+            this.BoxM4.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxM4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxM4.Location = new System.Drawing.Point(411, 105);
             this.BoxM4.Name = "BoxM4";
@@ -3393,6 +3653,7 @@
             // 
             // BoxL4
             // 
+            this.BoxL4.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxL4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxL4.Location = new System.Drawing.Point(377, 105);
             this.BoxL4.Name = "BoxL4";
@@ -3402,6 +3663,7 @@
             // 
             // BoxK4
             // 
+            this.BoxK4.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxK4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxK4.Location = new System.Drawing.Point(343, 105);
             this.BoxK4.Name = "BoxK4";
@@ -3411,6 +3673,7 @@
             // 
             // BoxJ4
             // 
+            this.BoxJ4.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxJ4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxJ4.Location = new System.Drawing.Point(309, 105);
             this.BoxJ4.Name = "BoxJ4";
@@ -3420,6 +3683,7 @@
             // 
             // BoxI4
             // 
+            this.BoxI4.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxI4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxI4.Location = new System.Drawing.Point(275, 105);
             this.BoxI4.Name = "BoxI4";
@@ -3429,6 +3693,7 @@
             // 
             // BoxH4
             // 
+            this.BoxH4.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxH4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxH4.Location = new System.Drawing.Point(241, 105);
             this.BoxH4.Name = "BoxH4";
@@ -3438,6 +3703,7 @@
             // 
             // BoxG4
             // 
+            this.BoxG4.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxG4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxG4.Location = new System.Drawing.Point(207, 105);
             this.BoxG4.Name = "BoxG4";
@@ -3447,6 +3713,7 @@
             // 
             // BoxF4
             // 
+            this.BoxF4.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxF4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxF4.Location = new System.Drawing.Point(173, 105);
             this.BoxF4.Name = "BoxF4";
@@ -3456,6 +3723,7 @@
             // 
             // BoxE4
             // 
+            this.BoxE4.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxE4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxE4.Location = new System.Drawing.Point(139, 105);
             this.BoxE4.Name = "BoxE4";
@@ -3465,6 +3733,7 @@
             // 
             // BoxD4
             // 
+            this.BoxD4.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxD4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxD4.Location = new System.Drawing.Point(105, 105);
             this.BoxD4.Name = "BoxD4";
@@ -3474,6 +3743,7 @@
             // 
             // BoxC4
             // 
+            this.BoxC4.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxC4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxC4.Location = new System.Drawing.Point(71, 105);
             this.BoxC4.Name = "BoxC4";
@@ -3483,6 +3753,7 @@
             // 
             // BoxB4
             // 
+            this.BoxB4.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxB4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxB4.Location = new System.Drawing.Point(37, 105);
             this.BoxB4.Name = "BoxB4";
@@ -3492,6 +3763,7 @@
             // 
             // BoxA4
             // 
+            this.BoxA4.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxA4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxA4.Location = new System.Drawing.Point(3, 105);
             this.BoxA4.Name = "BoxA4";
@@ -3501,6 +3773,7 @@
             // 
             // BoxP3
             // 
+            this.BoxP3.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxP3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxP3.Location = new System.Drawing.Point(513, 71);
             this.BoxP3.Name = "BoxP3";
@@ -3510,6 +3783,7 @@
             // 
             // BoxO3
             // 
+            this.BoxO3.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxO3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxO3.Location = new System.Drawing.Point(479, 71);
             this.BoxO3.Name = "BoxO3";
@@ -3519,6 +3793,7 @@
             // 
             // BoxN3
             // 
+            this.BoxN3.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxN3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxN3.Location = new System.Drawing.Point(445, 71);
             this.BoxN3.Name = "BoxN3";
@@ -3528,6 +3803,7 @@
             // 
             // BoxM3
             // 
+            this.BoxM3.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxM3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxM3.Location = new System.Drawing.Point(411, 71);
             this.BoxM3.Name = "BoxM3";
@@ -3537,6 +3813,7 @@
             // 
             // BoxL3
             // 
+            this.BoxL3.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxL3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxL3.Location = new System.Drawing.Point(377, 71);
             this.BoxL3.Name = "BoxL3";
@@ -3546,6 +3823,7 @@
             // 
             // BoxK3
             // 
+            this.BoxK3.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxK3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxK3.Location = new System.Drawing.Point(343, 71);
             this.BoxK3.Name = "BoxK3";
@@ -3555,6 +3833,7 @@
             // 
             // BoxJ3
             // 
+            this.BoxJ3.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxJ3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxJ3.Location = new System.Drawing.Point(309, 71);
             this.BoxJ3.Name = "BoxJ3";
@@ -3564,6 +3843,7 @@
             // 
             // BoxI3
             // 
+            this.BoxI3.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxI3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxI3.Location = new System.Drawing.Point(275, 71);
             this.BoxI3.Name = "BoxI3";
@@ -3573,6 +3853,7 @@
             // 
             // BoxH3
             // 
+            this.BoxH3.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxH3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxH3.Location = new System.Drawing.Point(241, 71);
             this.BoxH3.Name = "BoxH3";
@@ -3582,6 +3863,7 @@
             // 
             // BoxG3
             // 
+            this.BoxG3.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxG3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxG3.Location = new System.Drawing.Point(207, 71);
             this.BoxG3.Name = "BoxG3";
@@ -3591,6 +3873,7 @@
             // 
             // BoxF3
             // 
+            this.BoxF3.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxF3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxF3.Location = new System.Drawing.Point(173, 71);
             this.BoxF3.Name = "BoxF3";
@@ -3600,6 +3883,7 @@
             // 
             // BoxE3
             // 
+            this.BoxE3.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxE3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxE3.Location = new System.Drawing.Point(139, 71);
             this.BoxE3.Name = "BoxE3";
@@ -3609,6 +3893,7 @@
             // 
             // BoxD3
             // 
+            this.BoxD3.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxD3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxD3.Location = new System.Drawing.Point(105, 71);
             this.BoxD3.Name = "BoxD3";
@@ -3618,6 +3903,7 @@
             // 
             // BoxC3
             // 
+            this.BoxC3.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxC3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxC3.Location = new System.Drawing.Point(71, 71);
             this.BoxC3.Name = "BoxC3";
@@ -3627,6 +3913,7 @@
             // 
             // BoxB3
             // 
+            this.BoxB3.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxB3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxB3.Location = new System.Drawing.Point(37, 71);
             this.BoxB3.Name = "BoxB3";
@@ -3636,6 +3923,7 @@
             // 
             // BoxA3
             // 
+            this.BoxA3.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxA3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxA3.Location = new System.Drawing.Point(3, 71);
             this.BoxA3.Name = "BoxA3";
@@ -3645,6 +3933,7 @@
             // 
             // BoxP2
             // 
+            this.BoxP2.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxP2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxP2.Location = new System.Drawing.Point(513, 37);
             this.BoxP2.Name = "BoxP2";
@@ -3654,6 +3943,7 @@
             // 
             // BoxO2
             // 
+            this.BoxO2.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxO2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxO2.Location = new System.Drawing.Point(479, 37);
             this.BoxO2.Name = "BoxO2";
@@ -3663,6 +3953,7 @@
             // 
             // BoxN2
             // 
+            this.BoxN2.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxN2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxN2.Location = new System.Drawing.Point(445, 37);
             this.BoxN2.Name = "BoxN2";
@@ -3672,6 +3963,7 @@
             // 
             // BoxM2
             // 
+            this.BoxM2.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxM2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxM2.Location = new System.Drawing.Point(411, 37);
             this.BoxM2.Name = "BoxM2";
@@ -3681,6 +3973,7 @@
             // 
             // BoxL2
             // 
+            this.BoxL2.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxL2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxL2.Location = new System.Drawing.Point(377, 37);
             this.BoxL2.Name = "BoxL2";
@@ -3690,6 +3983,7 @@
             // 
             // BoxK2
             // 
+            this.BoxK2.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxK2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxK2.Location = new System.Drawing.Point(343, 37);
             this.BoxK2.Name = "BoxK2";
@@ -3699,6 +3993,7 @@
             // 
             // BoxJ2
             // 
+            this.BoxJ2.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxJ2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxJ2.Location = new System.Drawing.Point(309, 37);
             this.BoxJ2.Name = "BoxJ2";
@@ -3708,6 +4003,7 @@
             // 
             // BoxI2
             // 
+            this.BoxI2.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxI2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxI2.Location = new System.Drawing.Point(275, 37);
             this.BoxI2.Name = "BoxI2";
@@ -3717,6 +4013,7 @@
             // 
             // BoxH2
             // 
+            this.BoxH2.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxH2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxH2.Location = new System.Drawing.Point(241, 37);
             this.BoxH2.Name = "BoxH2";
@@ -3726,6 +4023,7 @@
             // 
             // BoxG2
             // 
+            this.BoxG2.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxG2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxG2.Location = new System.Drawing.Point(207, 37);
             this.BoxG2.Name = "BoxG2";
@@ -3735,6 +4033,7 @@
             // 
             // BoxF2
             // 
+            this.BoxF2.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxF2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxF2.Location = new System.Drawing.Point(173, 37);
             this.BoxF2.Name = "BoxF2";
@@ -3744,6 +4043,7 @@
             // 
             // BoxE2
             // 
+            this.BoxE2.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxE2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxE2.Location = new System.Drawing.Point(139, 37);
             this.BoxE2.Name = "BoxE2";
@@ -3753,6 +4053,7 @@
             // 
             // BoxD2
             // 
+            this.BoxD2.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxD2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxD2.Location = new System.Drawing.Point(105, 37);
             this.BoxD2.Name = "BoxD2";
@@ -3762,6 +4063,7 @@
             // 
             // BoxC2
             // 
+            this.BoxC2.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxC2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxC2.Location = new System.Drawing.Point(71, 37);
             this.BoxC2.Name = "BoxC2";
@@ -3771,6 +4073,7 @@
             // 
             // BoxB2
             // 
+            this.BoxB2.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxB2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxB2.Location = new System.Drawing.Point(37, 37);
             this.BoxB2.Name = "BoxB2";
@@ -3780,6 +4083,7 @@
             // 
             // BoxA2
             // 
+            this.BoxA2.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxA2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxA2.Location = new System.Drawing.Point(3, 37);
             this.BoxA2.Name = "BoxA2";
@@ -3789,6 +4093,7 @@
             // 
             // BoxP1
             // 
+            this.BoxP1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxP1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxP1.Location = new System.Drawing.Point(513, 3);
             this.BoxP1.Name = "BoxP1";
@@ -3798,6 +4103,7 @@
             // 
             // BoxO1
             // 
+            this.BoxO1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxO1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxO1.Location = new System.Drawing.Point(479, 3);
             this.BoxO1.Name = "BoxO1";
@@ -3807,6 +4113,7 @@
             // 
             // BoxN1
             // 
+            this.BoxN1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxN1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxN1.Location = new System.Drawing.Point(445, 3);
             this.BoxN1.Name = "BoxN1";
@@ -3816,6 +4123,7 @@
             // 
             // BoxM1
             // 
+            this.BoxM1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxM1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxM1.Location = new System.Drawing.Point(411, 3);
             this.BoxM1.Name = "BoxM1";
@@ -3825,6 +4133,7 @@
             // 
             // BoxL1
             // 
+            this.BoxL1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxL1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxL1.Location = new System.Drawing.Point(377, 3);
             this.BoxL1.Name = "BoxL1";
@@ -3834,6 +4143,7 @@
             // 
             // BoxK1
             // 
+            this.BoxK1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxK1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxK1.Location = new System.Drawing.Point(343, 3);
             this.BoxK1.Name = "BoxK1";
@@ -3843,6 +4153,7 @@
             // 
             // BoxJ1
             // 
+            this.BoxJ1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxJ1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxJ1.Location = new System.Drawing.Point(309, 3);
             this.BoxJ1.Name = "BoxJ1";
@@ -3852,6 +4163,7 @@
             // 
             // BoxI1
             // 
+            this.BoxI1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxI1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxI1.Location = new System.Drawing.Point(275, 3);
             this.BoxI1.Name = "BoxI1";
@@ -3861,6 +4173,7 @@
             // 
             // BoxH1
             // 
+            this.BoxH1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxH1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxH1.Location = new System.Drawing.Point(241, 3);
             this.BoxH1.Name = "BoxH1";
@@ -3870,6 +4183,7 @@
             // 
             // BoxG1
             // 
+            this.BoxG1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxG1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxG1.Location = new System.Drawing.Point(207, 3);
             this.BoxG1.Name = "BoxG1";
@@ -3879,6 +4193,7 @@
             // 
             // BoxF1
             // 
+            this.BoxF1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxF1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxF1.Location = new System.Drawing.Point(173, 3);
             this.BoxF1.Name = "BoxF1";
@@ -3888,6 +4203,7 @@
             // 
             // BoxE1
             // 
+            this.BoxE1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxE1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxE1.Location = new System.Drawing.Point(139, 3);
             this.BoxE1.Name = "BoxE1";
@@ -3897,6 +4213,7 @@
             // 
             // BoxD1
             // 
+            this.BoxD1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxD1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxD1.Location = new System.Drawing.Point(105, 3);
             this.BoxD1.Name = "BoxD1";
@@ -3906,6 +4223,7 @@
             // 
             // BoxC1
             // 
+            this.BoxC1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxC1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxC1.Location = new System.Drawing.Point(71, 3);
             this.BoxC1.Name = "BoxC1";
@@ -3915,6 +4233,7 @@
             // 
             // BoxB1
             // 
+            this.BoxB1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxB1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxB1.Location = new System.Drawing.Point(37, 3);
             this.BoxB1.Name = "BoxB1";
@@ -3924,6 +4243,7 @@
             // 
             // BoxA1
             // 
+            this.BoxA1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxA1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BoxA1.Location = new System.Drawing.Point(3, 3);
             this.BoxA1.Name = "BoxA1";
@@ -3993,11 +4313,11 @@
             this.Controls.Add(this.hiddenBtn);
             this.Controls.Add(this.startGameLabel);
             this.Controls.Add(this.countdownLabel);
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.grid);
             this.Name = "Form1";
             this.Text = "TetrisClone";
             this.Enter += new System.EventHandler(this.Form1_Enter);
-            this.tableLayoutPanel1.ResumeLayout(false);
+            this.grid.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.BoxP20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BoxO20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BoxN20)).EndInit();
@@ -4324,7 +4644,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel grid;
         private System.Windows.Forms.PictureBox BoxA1;
         private System.Windows.Forms.PictureBox BoxP20;
         private System.Windows.Forms.PictureBox BoxO20;
