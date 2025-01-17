@@ -254,6 +254,7 @@ namespace TetrisClone
             if(timeLeft == TimeSpan.Zero)
             {
                 gameTimer.Stop();
+                pieceTimer.Stop();
                 MessageBox.Show("You scored: x", "Time's up!");
                 Close();
             }
