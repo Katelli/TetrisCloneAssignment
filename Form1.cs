@@ -199,10 +199,6 @@ namespace TetrisClone
                         newBoxRow = boxRow;
                         break;
 
-                    //case "up":
-
-                    //    break;
-
                     case "down":
                         newBoxCol = boxCol;
                         newBoxRow = boxRow + 1;
@@ -233,12 +229,155 @@ namespace TetrisClone
 
         public bool TestOverlap()
         {
-            return false;
+            foreach (PictureBox box in movingPieceHolder)
+            {
+                if (box.BackColor != Color.DarkSlateGray & currentPiece.Contains(box) == false)
+                {
+                    return false;
+                }
+            }
+
+            return true;
         }
 
         public void Rotate()
         {
+            // Each piece consists of four boxes, this gets all four boxes' columns and rows
+            int box1Col = grid.GetColumn(currentPiece[0]);
+            int box1Row = grid.GetRow(currentPiece[0]);
 
+            int box2Col = grid.GetColumn(currentPiece[1]);
+            int box2Row = grid.GetRow(currentPiece[1]);
+
+            int box3Col = grid.GetColumn(currentPiece[2]);
+            int box3Row = grid.GetRow(currentPiece[2]);
+
+            int box4Col = grid.GetColumn(currentPiece[3]);
+            int box4Row = grid.GetRow(currentPiece[3]);
+
+            // I piece
+            if (currentPieceInt == 0)
+            {
+                // Test if the piece is too close to the edge of the board
+                if(rotations == 0 & box1Col > 13)
+                {
+                    return;
+                }
+                else if(rotations == 3 & box1Col < 4)
+                {
+                    return;
+                }
+
+                if(rotations == 0)
+                {
+                    movingPieceHolder[0] = grid.GetControlFromPosition(box1Col + 3, box1Row + 3);
+                    movingPieceHolder[1] = grid.GetControlFromPosition(box2Col + 2, box2Row + 2);
+                    movingPieceHolder[2] = grid.GetControlFromPosition(box3Col + 1, box3Row + 1);
+                    movingPieceHolder[3] = grid.GetControlFromPosition(box4Col, box4Row);
+
+                    if (TestOverlap() == true)
+                    {
+                        rotations++;
+                    }
+                    else
+                    {
+                        return;
+                    }
+                }
+                else if(rotations == 1)
+                {
+                    movingPieceHolder[0] = grid.GetControlFromPosition(box1Col - 3, box1Row + 3);
+                    movingPieceHolder[1] = grid.GetControlFromPosition(box2Col - 2, box2Row + 2);
+                    movingPieceHolder[2] = grid.GetControlFromPosition(box3Col - 1, box3Row + 1);
+                    movingPieceHolder[3] = grid.GetControlFromPosition(box4Col, box4Row);
+
+                    if (TestOverlap() == true)
+                    {
+                        rotations++;
+                    }
+                    else
+                    {
+                        return;
+                    }
+                }
+                else if(rotations == 2)
+                {
+                    movingPieceHolder[0] = grid.GetControlFromPosition(box1Col - 3, box1Row - 3);
+                    movingPieceHolder[1] = grid.GetControlFromPosition(box2Col - 2, box2Row - 2);
+                    movingPieceHolder[2] = grid.GetControlFromPosition(box3Col - 1, box3Row - 1);
+                    movingPieceHolder[3] = grid.GetControlFromPosition(box4Col, box4Row);
+
+                    if (TestOverlap() == true)
+                    {
+                        rotations++;
+                    }
+                    else
+                    {
+                        return;
+                    }
+                }
+                else if(rotations == 3)
+                {
+                    movingPieceHolder[0] = grid.GetControlFromPosition(box1Col + 3, box1Row - 3);
+                    movingPieceHolder[1] = grid.GetControlFromPosition(box2Col + 2, box2Row - 2);
+                    movingPieceHolder[2] = grid.GetControlFromPosition(box3Col + 1, box3Row - 1);
+                    movingPieceHolder[3] = grid.GetControlFromPosition(box4Col, box4Row);
+
+                    if (TestOverlap() == true)
+                    {
+                        rotations = 0;
+                    }
+                    else
+                    {
+                        return;
+                    }
+                }
+            }
+            // O piece
+            else if (currentPieceInt == 1)
+            {
+                // Can't rotate
+                return;
+            }
+            // S piece
+            else if(currentPieceInt == 2)
+            {
+                return;
+            }
+            // Z piece
+            else if(currentPieceInt == 3)
+            {
+                return;
+            }
+            // L piece
+            else if(currentPieceInt == 4)
+            {
+                return;
+            }
+            // J piece
+            else if(currentPieceInt == 5)
+            {
+                return;
+            }
+            // T piece
+            else if(currentPieceInt == 6)
+            {
+                return;
+            }
+
+            foreach(PictureBox box in currentPiece)
+            {
+                box.BackColor = Color.DarkSlateGray;
+            }
+
+            // Replace current piece's position with movingPieceHolder's
+            int x = 0;
+            foreach (PictureBox box in movingPieceHolder)
+            {
+                box.BackColor = colorArray[currentPieceInt];
+                currentPiece[x] = box;
+                x++;
+            }
         }
 
         // Moves the current piece down one row every second
@@ -307,6 +446,11 @@ namespace TetrisClone
             else if ((e.KeyCode == Keys.Right | e.KeyCode == Keys.D) & (TestMove("right") == true))
             {
                 MovePiece("right");
+            }
+            // --Temporary Up for testing--
+            else if(e.KeyCode == Keys.Up | e.KeyCode == Keys.W)
+            {
+                Rotate();
             }
             //// Up
             //else if ((e.KeyCode == Keys.Up | e.KeyCode == Keys.W) & (TestMove("up") == true))
