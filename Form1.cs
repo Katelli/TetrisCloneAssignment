@@ -259,11 +259,15 @@ namespace TetrisClone
             if (currentPieceInt == 0)
             {
                 // Test if the piece is too close to the edge of the board
-                if(rotations == 0 & box1Col > 13)
+                if(rotations == 0 & box1Col >= 13)
                 {
                     return;
                 }
-                else if(rotations == 3 & box1Col < 4)
+                else if(rotations == 1 & box1Row >= 17)
+                {
+                    return;
+                }
+                else if(rotations == 2 & box1Col <= 2)
                 {
                     return;
                 }
@@ -339,10 +343,50 @@ namespace TetrisClone
                 // Can't rotate
                 return;
             }
-            // S piece
-            else if(currentPieceInt == 2)
+            // S piece 
+            else if (currentPieceInt == 2)
             {
-                return;
+                if (rotations == 0 & box3Row >= 18)
+                {
+                    return;
+                }
+                else if (rotations == 1 & box3Col >= 15)
+                {
+                    return;
+                }
+
+                if (rotations == 0)
+                {
+                    movingPieceHolder[0] = grid.GetControlFromPosition(box1Col + 1, box1Row + 1);
+                    movingPieceHolder[1] = grid.GetControlFromPosition(box2Col, box2Row);
+                    movingPieceHolder[2] = grid.GetControlFromPosition(box3Col, box3Row + 2);
+                    movingPieceHolder[3] = grid.GetControlFromPosition(box4Col + 1, box4Row - 1);
+
+                    if (TestOverlap() == true)
+                    {
+                        rotations++;
+                    }
+                    else
+                    {
+                        return;
+                    }
+                }
+                else if (rotations == 1)
+                {
+                    movingPieceHolder[0] = grid.GetControlFromPosition(box1Col, box1Row);
+                    movingPieceHolder[1] = grid.GetControlFromPosition(box2Col + 1, box2Row + 1);
+                    movingPieceHolder[2] = grid.GetControlFromPosition(box3Col + 1, box3Row - 1);
+                    movingPieceHolder[3] = grid.GetControlFromPosition(box4Col, box4Row + 2);
+
+                    if (TestOverlap() == true)
+                    {
+                        rotations = 0;
+                    }
+                    else
+                    {
+                        return;
+                    }
+                }
             }
             // Z piece
             else if(currentPieceInt == 3)
