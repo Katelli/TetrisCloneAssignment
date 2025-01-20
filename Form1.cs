@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Windows.Forms;
 
 namespace TetrisClone
@@ -14,11 +15,13 @@ namespace TetrisClone
         Control[] currentPiece = { null, null, null, null };
         Control[] movingPieceHolder = { null, null, null, null };
         int currentPieceInt;
+        int rotations = 0;
         Random random = new Random();
 
         public Form1()
         {
             InitializeComponent();
+            this.KeyPreview = true;
             this.grid.CellPaint += tableLayoutPanel1_CellPaint;
             startLabelFlash.Start();
         }
@@ -37,8 +40,6 @@ namespace TetrisClone
 
         public void DropPiece()
         {
-            pieceTimer.Start();
-
             // Layout option for each pieace
             Control[,] pieceArray =
             {
@@ -63,6 +64,8 @@ namespace TetrisClone
             {
                 box.BackColor = colorArray[currentPieceInt];
             }
+
+            pieceTimer.Start();
         }
 
         // Determines whether the move(right/left/down)/rotation(up) would put the piece outside the grid
@@ -228,6 +231,16 @@ namespace TetrisClone
 
         }
 
+        public bool TestOverlap()
+        {
+            return false;
+        }
+
+        public void Rotate()
+        {
+
+        }
+
         // Moves the current piece down one row every second
         private void pieceTimer_Tick(object sender, EventArgs e)
         {
@@ -273,15 +286,39 @@ namespace TetrisClone
             }
         }
 
-        // Starts the game
-        // Hides and disables the flashing startLabel
-        private void Form1_Enter(object sender, EventArgs e)
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
-            startLabelFlash.Stop();
-            startGameLabel.Visible = false;
-            gameTimer.Start();
-            DropPiece();
-
+            // Starts the game
+            // Hides and disables the flashing startLabel
+            if (e.KeyCode == Keys.Enter)
+            {
+                startLabelFlash.Stop();
+                startGameLabel.Visible = false;
+                gameTimer.Start();
+                DropPiece();
+            }
+            
+            // Left
+            if ((e.KeyCode == Keys.Left || e.KeyCode == Keys.A) && (TestMove("left") == true))
+            {
+                MovePiece("left");
+            }
+            // Right
+            else if ((e.KeyCode == Keys.Right | e.KeyCode == Keys.D) & (TestMove("right") == true))
+            {
+                MovePiece("right");
+            }
+            //// Up
+            //else if ((e.KeyCode == Keys.Up | e.KeyCode == Keys.W) & (TestMove("up") == true))
+            //{
+            //    MovePiece("up");
+            //}
+            // Down
+            else if ((e.KeyCode == Keys.Down | e.KeyCode == Keys.S) & (TestMove("down") == true))
+            {
+                MovePiece("down");
+            }
         }
+
     }
 }

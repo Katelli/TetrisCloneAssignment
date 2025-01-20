@@ -355,7 +355,6 @@
             this.startLabelFlash = new System.Windows.Forms.Timer(this.components);
             this.countdownLabel = new System.Windows.Forms.Label();
             this.startGameLabel = new System.Windows.Forms.Label();
-            this.hiddenBtn = new System.Windows.Forms.Button();
             this.grid.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BoxP20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BoxO20)).BeginInit();
@@ -4289,20 +4288,6 @@
             this.startGameLabel.TabIndex = 1;
             this.startGameLabel.Text = "Press Enter";
             this.startGameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.startGameLabel.Enter += new System.EventHandler(this.Form1_Enter);
-            // 
-            // hiddenBtn
-            // 
-            this.hiddenBtn.BackColor = System.Drawing.Color.Black;
-            this.hiddenBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.hiddenBtn.FlatAppearance.BorderSize = 0;
-            this.hiddenBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.hiddenBtn.Location = new System.Drawing.Point(999, 54);
-            this.hiddenBtn.Name = "hiddenBtn";
-            this.hiddenBtn.Size = new System.Drawing.Size(75, 23);
-            this.hiddenBtn.TabIndex = 2;
-            this.hiddenBtn.UseVisualStyleBackColor = false;
-            this.hiddenBtn.Click += new System.EventHandler(this.Form1_Enter);
             // 
             // Form1
             // 
@@ -4310,13 +4295,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1178, 744);
-            this.Controls.Add(this.hiddenBtn);
             this.Controls.Add(this.startGameLabel);
             this.Controls.Add(this.countdownLabel);
             this.Controls.Add(this.grid);
             this.Name = "Form1";
             this.Text = "TetrisClone";
-            this.Enter += new System.EventHandler(this.Form1_Enter);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.grid.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.BoxP20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BoxO20)).EndInit();
@@ -4970,7 +4954,6 @@
         private System.Windows.Forms.Timer startLabelFlash;
         private System.Windows.Forms.Label countdownLabel;
         private System.Windows.Forms.Label startGameLabel;
-        private System.Windows.Forms.Button hiddenBtn;
     }
 }
 
