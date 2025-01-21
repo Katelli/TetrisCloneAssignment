@@ -263,7 +263,7 @@ namespace TetrisClone
                 {
                     return;
                 }
-                else if(rotations == 1 & box1Row == 3)
+                else if(rotations == 1 & box1Row == 19)
                 {
                     return;
                 }
@@ -311,7 +311,7 @@ namespace TetrisClone
             else if (currentPieceInt == 2)
             {
                 // Test if the piece is too close to the edge of the board
-                if (rotations == 0 & box3Row == 18)
+                if (rotations == 0 & box3Row == 19)
                 {
                     return;
                 }
@@ -357,7 +357,7 @@ namespace TetrisClone
             else if(currentPieceInt == 3)
             {
                 // Test if the piece is too close to the edge of the board
-                if (rotations == 0 & box1Row == 19)
+                if (rotations == 0 & box1Row == 18)
                 {
                     return;
                 }
@@ -403,11 +403,11 @@ namespace TetrisClone
             else if(currentPieceInt == 4)
             {
                 // Test if the piece is too close to the edge of the board
-                if (rotations == 0 & (box4Col == 16 | box1Col == 1))
+                if (rotations == 0 & box4Col == 15)
                 {
                     return;
                 }
-                else if (rotations == 1 & (box4Row == 19 | box4Row == 20))
+                else if (rotations == 1 & box4Row == 19)
                 {
                     return;
                 }
@@ -485,167 +485,165 @@ namespace TetrisClone
             else if(currentPieceInt == 5)
             {
                 // Test if the piece is too close to the edge of the board
-                //if (rotations == 0 & box1Col >= 13)
-                //{
-                //    return;
-                //}
-                //else if (rotations == 1 & box1Row >= 17)
-                //{
-                //    return;
-                //}
-                //else if (rotations == 2 & box1Col <= 2)
-                //{
-                //    return;
-                //}
+                if (rotations == 0 & box4Col == 14)
+                {
+                    return;
+                }
+                else if (rotations == 1 & box1Row == 19)
+                {
+                    return;
+                }
+                else if (rotations == 2 & box1Col == 0)
+                {
+                    return;
+                }
 
-                //if (rotations == 0)
-                //{
-                //    movingPieceHolder[0] = grid.GetControlFromPosition(box1Col + 3, box1Row + 3);
-                //    movingPieceHolder[1] = grid.GetControlFromPosition(box2Col + 2, box2Row + 2);
-                //    movingPieceHolder[2] = grid.GetControlFromPosition(box3Col + 1, box3Row + 1);
-                //    movingPieceHolder[3] = grid.GetControlFromPosition(box4Col, box4Row);
+                if (rotations == 0)
+                {
+                    movingPieceHolder[0] = grid.GetControlFromPosition(box1Col + 1, box1Row + 2); // I1 -> J3
+                    movingPieceHolder[1] = grid.GetControlFromPosition(box2Col, box2Row + 1); // I2 -> I3
+                    movingPieceHolder[2] = grid.GetControlFromPosition(box3Col - 1, box3Row); // I3 -> H3
+                    movingPieceHolder[3] = grid.GetControlFromPosition(box4Col, box4Row - 1); // H3 -> H2
 
-                //    if (TestOverlap() == true)
-                //    {
-                //        rotations++;
-                //    }
-                //    else
-                //    {
-                //        return;
-                //    }
-                //}
-                //else if (rotations == 1)
-                //{
-                //    movingPieceHolder[0] = grid.GetControlFromPosition(box1Col - 3, box1Row + 3);
-                //    movingPieceHolder[1] = grid.GetControlFromPosition(box2Col - 2, box2Row + 2);
-                //    movingPieceHolder[2] = grid.GetControlFromPosition(box3Col - 1, box3Row + 1);
-                //    movingPieceHolder[3] = grid.GetControlFromPosition(box4Col, box4Row);
+                    if (TestOverlap() == true)
+                    {
+                        rotations++;
+                    }
+                    else
+                    {
+                        return;
+                    }
+                }
+                else if (rotations == 1)
+                {
+                    movingPieceHolder[0] = grid.GetControlFromPosition(box1Col - 2, box1Row + 1); // J3 -> H4
+                    movingPieceHolder[1] = grid.GetControlFromPosition(box2Col - 1, box2Row); // I3 -> H3
+                    movingPieceHolder[2] = grid.GetControlFromPosition(box3Col, box3Row - 1); // H3 -> H2
+                    movingPieceHolder[3] = grid.GetControlFromPosition(box4Col + 1, box4Row); // H2 -> I2
 
-                //    if (TestOverlap() == true)
-                //    {
-                //        rotations++;
-                //    }
-                //    else
-                //    {
-                //        return;
-                //    }
-                //}
-                //else if (rotations == 2)
-                //{
-                //    movingPieceHolder[0] = grid.GetControlFromPosition(box1Col - 3, box1Row - 3);
-                //    movingPieceHolder[1] = grid.GetControlFromPosition(box2Col - 2, box2Row - 2);
-                //    movingPieceHolder[2] = grid.GetControlFromPosition(box3Col - 1, box3Row - 1);
-                //    movingPieceHolder[3] = grid.GetControlFromPosition(box4Col, box4Row);
+                    if (TestOverlap() == true)
+                    {
+                        rotations++;
+                    }
+                    else
+                    {
+                        return;
+                    }
+                }
+                else if (rotations == 2)
+                {
+                    movingPieceHolder[0] = grid.GetControlFromPosition(box1Col - 1, box1Row - 2); // H4 -> G2
+                    movingPieceHolder[1] = grid.GetControlFromPosition(box2Col, box2Row - 1); // H3 -> H2
+                    movingPieceHolder[2] = grid.GetControlFromPosition(box3Col + 1, box3Row); // H2 -> I2
+                    movingPieceHolder[3] = grid.GetControlFromPosition(box4Col, box4Row + 1); // I2 -> I3
 
-                //    if (TestOverlap() == true)
-                //    {
-                //        rotations++;
-                //    }
-                //    else
-                //    {
-                //        return;
-                //    }
-                //}
-                //else if (rotations == 3)
-                //{
-                //    movingPieceHolder[0] = grid.GetControlFromPosition(box1Col + 3, box1Row - 3);
-                //    movingPieceHolder[1] = grid.GetControlFromPosition(box2Col + 2, box2Row - 2);
-                //    movingPieceHolder[2] = grid.GetControlFromPosition(box3Col + 1, box3Row - 1);
-                //    movingPieceHolder[3] = grid.GetControlFromPosition(box4Col, box4Row);
+                    if (TestOverlap() == true)
+                    {
+                        rotations++;
+                    }
+                    else
+                    {
+                        return;
+                    }
+                }
+                else if (rotations == 3)
+                {
+                    movingPieceHolder[0] = grid.GetControlFromPosition(box1Col + 2, box1Row); // G2 -> I2
+                    movingPieceHolder[1] = grid.GetControlFromPosition(box2Col + 1, box2Row + 1); // H2 -> I3
+                    movingPieceHolder[2] = grid.GetControlFromPosition(box3Col, box3Row + 2); // I2 -> I4
+                    movingPieceHolder[3] = grid.GetControlFromPosition(box4Col - 1, box4Row + 1); // I3 -> H4
 
-                //    if (TestOverlap() == true)
-                //    {
-                //        rotations = 0;
-                //    }
-                //    else
-                //    {
-                //        return;
-                //    }
-                //}
-                return;
+                    if (TestOverlap() == true)
+                    {
+                        rotations = 0;
+                    }
+                    else
+                    {
+                        return;
+                    }
+                }
             }
             // T piece
             else if(currentPieceInt == 6)
             {
                 // Test if the piece is too close to the edge of the board
-                //if (rotations == 0 & box1Col >= 13)
-                //{
-                //    return;
-                //}
-                //else if (rotations == 1 & box1Row >= 17)
-                //{
-                //    return;
-                //}
-                //else if (rotations == 2 & box1Col <= 2)
-                //{
-                //    return;
-                //}
+                if (rotations == 0 & box4Col == 15)
+                {
+                    return;
+                }
+                else if (rotations == 1 & box4Row == 19)
+                {
+                    return;
+                }
+                else if (rotations == 2 & box4Col == 0)
+                {
+                    return;
+                }
 
-                //if (rotations == 0)
-                //{
-                //    movingPieceHolder[0] = grid.GetControlFromPosition(box1Col + 3, box1Row + 3);
-                //    movingPieceHolder[1] = grid.GetControlFromPosition(box2Col + 2, box2Row + 2);
-                //    movingPieceHolder[2] = grid.GetControlFromPosition(box3Col + 1, box3Row + 1);
-                //    movingPieceHolder[3] = grid.GetControlFromPosition(box4Col, box4Row);
+                if (rotations == 0)
+                {
+                    movingPieceHolder[0] = grid.GetControlFromPosition(box1Col + 2, box1Row + 1); // H1 -> J2
+                    movingPieceHolder[1] = grid.GetControlFromPosition(box2Col + 1, box2Row); // H2 -> I2
+                    movingPieceHolder[2] = grid.GetControlFromPosition(box3Col, box3Row - 1); // H3 -> H2
+                    movingPieceHolder[3] = grid.GetControlFromPosition(box4Col, box4Row + 1); // I2 -> I3
 
-                //    if (TestOverlap() == true)
-                //    {
-                //        rotations++;
-                //    }
-                //    else
-                //    {
-                //        return;
-                //    }
-                //}
-                //else if (rotations == 1)
-                //{
-                //    movingPieceHolder[0] = grid.GetControlFromPosition(box1Col - 3, box1Row + 3);
-                //    movingPieceHolder[1] = grid.GetControlFromPosition(box2Col - 2, box2Row + 2);
-                //    movingPieceHolder[2] = grid.GetControlFromPosition(box3Col - 1, box3Row + 1);
-                //    movingPieceHolder[3] = grid.GetControlFromPosition(box4Col, box4Row);
+                    if (TestOverlap() == true)
+                    {
+                        rotations++;
+                    }
+                    else
+                    {
+                        return;
+                    }
+                }
+                else if (rotations == 1)
+                {
+                    movingPieceHolder[0] = grid.GetControlFromPosition(box1Col - 1, box1Row + 2); // J2 -> I4
+                    movingPieceHolder[1] = grid.GetControlFromPosition(box2Col, box2Row + 1); // I2 -> I3
+                    movingPieceHolder[2] = grid.GetControlFromPosition(box3Col + 1, box3Row); // H2 -> I2
+                    movingPieceHolder[3] = grid.GetControlFromPosition(box4Col - 1, box4Row); // I3 -> H3
 
-                //    if (TestOverlap() == true)
-                //    {
-                //        rotations++;
-                //    }
-                //    else
-                //    {
-                //        return;
-                //    }
-                //}
-                //else if (rotations == 2)
-                //{
-                //    movingPieceHolder[0] = grid.GetControlFromPosition(box1Col - 3, box1Row - 3);
-                //    movingPieceHolder[1] = grid.GetControlFromPosition(box2Col - 2, box2Row - 2);
-                //    movingPieceHolder[2] = grid.GetControlFromPosition(box3Col - 1, box3Row - 1);
-                //    movingPieceHolder[3] = grid.GetControlFromPosition(box4Col, box4Row);
+                    if (TestOverlap() == true)
+                    {
+                        rotations++;
+                    }
+                    else
+                    {
+                        return;
+                    }
+                }
+                else if (rotations == 2)
+                {
+                    movingPieceHolder[0] = grid.GetControlFromPosition(box1Col - 2, box1Row - 1); // I4 -> G3
+                    movingPieceHolder[1] = grid.GetControlFromPosition(box2Col - 1, box2Row); // I3 -> H3
+                    movingPieceHolder[2] = grid.GetControlFromPosition(box3Col, box3Row + 1); // I2 -> I3
+                    movingPieceHolder[3] = grid.GetControlFromPosition(box4Col, box4Row - 1); // H3 -> H2
 
-                //    if (TestOverlap() == true)
-                //    {
-                //        rotations++;
-                //    }
-                //    else
-                //    {
-                //        return;
-                //    }
-                //}
-                //else if (rotations == 3)
-                //{
-                //    movingPieceHolder[0] = grid.GetControlFromPosition(box1Col + 3, box1Row - 3);
-                //    movingPieceHolder[1] = grid.GetControlFromPosition(box2Col + 2, box2Row - 2);
-                //    movingPieceHolder[2] = grid.GetControlFromPosition(box3Col + 1, box3Row - 1);
-                //    movingPieceHolder[3] = grid.GetControlFromPosition(box4Col, box4Row);
+                    if (TestOverlap() == true)
+                    {
+                        rotations++;
+                    }
+                    else
+                    {
+                        return;
+                    }
+                }
+                else if (rotations == 3)
+                {
+                    movingPieceHolder[0] = grid.GetControlFromPosition(box1Col + 1, box1Row - 1); // G3 -> H2
+                    movingPieceHolder[1] = grid.GetControlFromPosition(box2Col, box2Row); // H3 -> H3
+                    movingPieceHolder[2] = grid.GetControlFromPosition(box3Col - 1, box3Row + 1); // I3 -> H4
+                    movingPieceHolder[3] = grid.GetControlFromPosition(box4Col + 1, box4Row + 1); // H2 -> I3
 
-                //    if (TestOverlap() == true)
-                //    {
-                //        rotations = 0;
-                //    }
-                //    else
-                //    {
-                //        return;
-                //    }
-                //}
-                return;
+                    if (TestOverlap() == true)
+                    {
+                        rotations = 0;
+                    }
+                    else
+                    {
+                        return;
+                    }
+                }
             }
 
             foreach(PictureBox box in currentPiece)
@@ -713,12 +711,15 @@ namespace TetrisClone
         {
             // Starts the game
             // Hides and disables the flashing startLabel
-            if (e.KeyCode == Keys.Enter)
-            {
-                startLabelFlash.Stop();
-                startGameLabel.Visible = false;
-                gameTimer.Start();
-                DropPiece();
+            if (gameTimer.Enabled == false)
+            { 
+                if (e.KeyCode == Keys.Enter)
+                {
+                    startLabelFlash.Stop();
+                    startGameLabel.Visible = false;
+                    gameTimer.Start();
+                    DropPiece();
+                }
             }
             
             // Left
