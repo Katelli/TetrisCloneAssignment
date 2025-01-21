@@ -30,6 +30,86 @@
         {
             this.components = new System.ComponentModel.Container();
             this.grid = new System.Windows.Forms.TableLayoutPanel();
+            this.BoxP25 = new System.Windows.Forms.PictureBox();
+            this.BoxO25 = new System.Windows.Forms.PictureBox();
+            this.BoxN25 = new System.Windows.Forms.PictureBox();
+            this.BoxM25 = new System.Windows.Forms.PictureBox();
+            this.BoxL25 = new System.Windows.Forms.PictureBox();
+            this.BoxK25 = new System.Windows.Forms.PictureBox();
+            this.BoxJ25 = new System.Windows.Forms.PictureBox();
+            this.BoxI25 = new System.Windows.Forms.PictureBox();
+            this.BoxH25 = new System.Windows.Forms.PictureBox();
+            this.BoxG25 = new System.Windows.Forms.PictureBox();
+            this.BoxF25 = new System.Windows.Forms.PictureBox();
+            this.BoxE25 = new System.Windows.Forms.PictureBox();
+            this.BoxD25 = new System.Windows.Forms.PictureBox();
+            this.BoxC25 = new System.Windows.Forms.PictureBox();
+            this.BoxB25 = new System.Windows.Forms.PictureBox();
+            this.BoxA25 = new System.Windows.Forms.PictureBox();
+            this.BoxP24 = new System.Windows.Forms.PictureBox();
+            this.BoxO24 = new System.Windows.Forms.PictureBox();
+            this.BoxN24 = new System.Windows.Forms.PictureBox();
+            this.BoxM24 = new System.Windows.Forms.PictureBox();
+            this.BoxL24 = new System.Windows.Forms.PictureBox();
+            this.BoxK24 = new System.Windows.Forms.PictureBox();
+            this.BoxJ24 = new System.Windows.Forms.PictureBox();
+            this.BoxI24 = new System.Windows.Forms.PictureBox();
+            this.BoxH24 = new System.Windows.Forms.PictureBox();
+            this.BoxG24 = new System.Windows.Forms.PictureBox();
+            this.BoxF24 = new System.Windows.Forms.PictureBox();
+            this.BoxE24 = new System.Windows.Forms.PictureBox();
+            this.BoxD24 = new System.Windows.Forms.PictureBox();
+            this.BoxC24 = new System.Windows.Forms.PictureBox();
+            this.BoxB24 = new System.Windows.Forms.PictureBox();
+            this.BoxA24 = new System.Windows.Forms.PictureBox();
+            this.BoxP23 = new System.Windows.Forms.PictureBox();
+            this.BoxO23 = new System.Windows.Forms.PictureBox();
+            this.BoxN23 = new System.Windows.Forms.PictureBox();
+            this.BoxM23 = new System.Windows.Forms.PictureBox();
+            this.BoxL23 = new System.Windows.Forms.PictureBox();
+            this.BoxK23 = new System.Windows.Forms.PictureBox();
+            this.BoxJ23 = new System.Windows.Forms.PictureBox();
+            this.BoxI23 = new System.Windows.Forms.PictureBox();
+            this.BoxH23 = new System.Windows.Forms.PictureBox();
+            this.BoxG23 = new System.Windows.Forms.PictureBox();
+            this.BoxF23 = new System.Windows.Forms.PictureBox();
+            this.BoxE23 = new System.Windows.Forms.PictureBox();
+            this.BoxD23 = new System.Windows.Forms.PictureBox();
+            this.BoxC23 = new System.Windows.Forms.PictureBox();
+            this.BoxB23 = new System.Windows.Forms.PictureBox();
+            this.BoxA23 = new System.Windows.Forms.PictureBox();
+            this.BoxP22 = new System.Windows.Forms.PictureBox();
+            this.BoxO22 = new System.Windows.Forms.PictureBox();
+            this.BoxN22 = new System.Windows.Forms.PictureBox();
+            this.BoxM22 = new System.Windows.Forms.PictureBox();
+            this.BoxL22 = new System.Windows.Forms.PictureBox();
+            this.BoxK22 = new System.Windows.Forms.PictureBox();
+            this.BoxJ22 = new System.Windows.Forms.PictureBox();
+            this.BoxI22 = new System.Windows.Forms.PictureBox();
+            this.BoxH22 = new System.Windows.Forms.PictureBox();
+            this.BoxG22 = new System.Windows.Forms.PictureBox();
+            this.BoxF22 = new System.Windows.Forms.PictureBox();
+            this.BoxE22 = new System.Windows.Forms.PictureBox();
+            this.BoxD22 = new System.Windows.Forms.PictureBox();
+            this.BoxC22 = new System.Windows.Forms.PictureBox();
+            this.BoxB22 = new System.Windows.Forms.PictureBox();
+            this.BoxA22 = new System.Windows.Forms.PictureBox();
+            this.BoxP21 = new System.Windows.Forms.PictureBox();
+            this.BoxO21 = new System.Windows.Forms.PictureBox();
+            this.BoxN21 = new System.Windows.Forms.PictureBox();
+            this.BoxM21 = new System.Windows.Forms.PictureBox();
+            this.BoxL21 = new System.Windows.Forms.PictureBox();
+            this.BoxK21 = new System.Windows.Forms.PictureBox();
+            this.BoxJ21 = new System.Windows.Forms.PictureBox();
+            this.BoxI21 = new System.Windows.Forms.PictureBox();
+            this.BoxH21 = new System.Windows.Forms.PictureBox();
+            this.BoxG21 = new System.Windows.Forms.PictureBox();
+            this.BoxF21 = new System.Windows.Forms.PictureBox();
+            this.BoxE21 = new System.Windows.Forms.PictureBox();
+            this.BoxD21 = new System.Windows.Forms.PictureBox();
+            this.BoxC21 = new System.Windows.Forms.PictureBox();
+            this.BoxB21 = new System.Windows.Forms.PictureBox();
+            this.BoxA21 = new System.Windows.Forms.PictureBox();
             this.BoxP20 = new System.Windows.Forms.PictureBox();
             this.BoxO20 = new System.Windows.Forms.PictureBox();
             this.BoxN20 = new System.Windows.Forms.PictureBox();
@@ -355,7 +435,94 @@
             this.startLabelFlash = new System.Windows.Forms.Timer(this.components);
             this.countdownLabel = new System.Windows.Forms.Label();
             this.startGameLabel = new System.Windows.Forms.Label();
+            this.timeTxtLabel = new System.Windows.Forms.Label();
+            this.scoreTxtLabel = new System.Windows.Forms.Label();
+            this.scoreLabel = new System.Windows.Forms.Label();
+            this.nextPiece = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.grid.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxP25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxO25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxN25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxM25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxL25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxK25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxJ25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxI25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxH25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxG25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxF25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxE25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxD25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxC25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxB25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxA25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxP24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxO24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxN24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxM24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxL24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxK24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxJ24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxI24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxH24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxG24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxF24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxE24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxD24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxC24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxB24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxA24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxP23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxO23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxN23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxM23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxL23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxK23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxJ23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxI23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxH23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxG23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxF23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxE23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxD23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxC23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxB23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxA23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxP22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxO22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxN22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxM22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxL22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxK22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxJ22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxI22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxH22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxG22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxF22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxE22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxD22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxC22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxB22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxA22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxP21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxO21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxN21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxM21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxL21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxK21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxJ21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxI21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxH21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxG21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxF21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxE21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxD21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxC21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxB21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxA21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BoxP20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BoxO20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BoxN20)).BeginInit();
@@ -700,8 +867,86 @@
             this.grid.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
             this.grid.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
             this.grid.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
-            this.grid.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.grid.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.grid.Controls.Add(this.BoxP25, 15, 24);
+            this.grid.Controls.Add(this.BoxO25, 14, 24);
+            this.grid.Controls.Add(this.BoxN25, 13, 24);
+            this.grid.Controls.Add(this.BoxM25, 12, 24);
+            this.grid.Controls.Add(this.BoxL25, 11, 24);
+            this.grid.Controls.Add(this.BoxK25, 10, 24);
+            this.grid.Controls.Add(this.BoxJ25, 9, 24);
+            this.grid.Controls.Add(this.BoxI25, 8, 24);
+            this.grid.Controls.Add(this.BoxH25, 7, 24);
+            this.grid.Controls.Add(this.BoxG25, 6, 24);
+            this.grid.Controls.Add(this.BoxF25, 5, 24);
+            this.grid.Controls.Add(this.BoxE25, 4, 24);
+            this.grid.Controls.Add(this.BoxD25, 3, 24);
+            this.grid.Controls.Add(this.BoxC25, 2, 24);
+            this.grid.Controls.Add(this.BoxB25, 1, 24);
+            this.grid.Controls.Add(this.BoxA25, 0, 24);
+            this.grid.Controls.Add(this.BoxP24, 15, 23);
+            this.grid.Controls.Add(this.BoxO24, 14, 23);
+            this.grid.Controls.Add(this.BoxN24, 13, 23);
+            this.grid.Controls.Add(this.BoxM24, 12, 23);
+            this.grid.Controls.Add(this.BoxL24, 11, 23);
+            this.grid.Controls.Add(this.BoxK24, 10, 23);
+            this.grid.Controls.Add(this.BoxJ24, 9, 23);
+            this.grid.Controls.Add(this.BoxI24, 8, 23);
+            this.grid.Controls.Add(this.BoxH24, 7, 23);
+            this.grid.Controls.Add(this.BoxG24, 6, 23);
+            this.grid.Controls.Add(this.BoxF24, 5, 23);
+            this.grid.Controls.Add(this.BoxE24, 4, 23);
+            this.grid.Controls.Add(this.BoxD24, 3, 23);
+            this.grid.Controls.Add(this.BoxC24, 2, 23);
+            this.grid.Controls.Add(this.BoxB24, 1, 23);
+            this.grid.Controls.Add(this.BoxA24, 0, 23);
+            this.grid.Controls.Add(this.BoxP23, 15, 22);
+            this.grid.Controls.Add(this.BoxO23, 14, 22);
+            this.grid.Controls.Add(this.BoxN23, 13, 22);
+            this.grid.Controls.Add(this.BoxM23, 12, 22);
+            this.grid.Controls.Add(this.BoxL23, 11, 22);
+            this.grid.Controls.Add(this.BoxK23, 10, 22);
+            this.grid.Controls.Add(this.BoxJ23, 9, 22);
+            this.grid.Controls.Add(this.BoxI23, 8, 22);
+            this.grid.Controls.Add(this.BoxH23, 7, 22);
+            this.grid.Controls.Add(this.BoxG23, 6, 22);
+            this.grid.Controls.Add(this.BoxF23, 5, 22);
+            this.grid.Controls.Add(this.BoxE23, 4, 22);
+            this.grid.Controls.Add(this.BoxD23, 3, 22);
+            this.grid.Controls.Add(this.BoxC23, 2, 22);
+            this.grid.Controls.Add(this.BoxB23, 1, 22);
+            this.grid.Controls.Add(this.BoxA23, 0, 22);
+            this.grid.Controls.Add(this.BoxP22, 15, 21);
+            this.grid.Controls.Add(this.BoxO22, 14, 21);
+            this.grid.Controls.Add(this.BoxN22, 13, 21);
+            this.grid.Controls.Add(this.BoxM22, 12, 21);
+            this.grid.Controls.Add(this.BoxL22, 11, 21);
+            this.grid.Controls.Add(this.BoxK22, 10, 21);
+            this.grid.Controls.Add(this.BoxJ22, 9, 21);
+            this.grid.Controls.Add(this.BoxI22, 8, 21);
+            this.grid.Controls.Add(this.BoxH22, 7, 21);
+            this.grid.Controls.Add(this.BoxG22, 6, 21);
+            this.grid.Controls.Add(this.BoxF22, 5, 21);
+            this.grid.Controls.Add(this.BoxE22, 4, 21);
+            this.grid.Controls.Add(this.BoxD22, 3, 21);
+            this.grid.Controls.Add(this.BoxC22, 2, 21);
+            this.grid.Controls.Add(this.BoxB22, 1, 21);
+            this.grid.Controls.Add(this.BoxA22, 0, 21);
+            this.grid.Controls.Add(this.BoxP21, 15, 20);
+            this.grid.Controls.Add(this.BoxO21, 14, 20);
+            this.grid.Controls.Add(this.BoxN21, 13, 20);
+            this.grid.Controls.Add(this.BoxM21, 12, 20);
+            this.grid.Controls.Add(this.BoxL21, 11, 20);
+            this.grid.Controls.Add(this.BoxK21, 10, 20);
+            this.grid.Controls.Add(this.BoxJ21, 9, 20);
+            this.grid.Controls.Add(this.BoxI21, 8, 20);
+            this.grid.Controls.Add(this.BoxH21, 7, 20);
+            this.grid.Controls.Add(this.BoxG21, 6, 20);
+            this.grid.Controls.Add(this.BoxF21, 5, 20);
+            this.grid.Controls.Add(this.BoxE21, 4, 20);
+            this.grid.Controls.Add(this.BoxD21, 3, 20);
+            this.grid.Controls.Add(this.BoxC21, 2, 20);
+            this.grid.Controls.Add(this.BoxB21, 1, 20);
+            this.grid.Controls.Add(this.BoxA21, 0, 20);
             this.grid.Controls.Add(this.BoxP20, 15, 19);
             this.grid.Controls.Add(this.BoxO20, 14, 19);
             this.grid.Controls.Add(this.BoxN20, 13, 19);
@@ -1023,32 +1268,838 @@
             this.grid.Controls.Add(this.BoxB1, 1, 0);
             this.grid.Controls.Add(this.BoxA1, 0, 0);
             this.grid.ForeColor = System.Drawing.Color.Black;
-            this.grid.Location = new System.Drawing.Point(250, 30);
+            this.grid.Location = new System.Drawing.Point(430, 40);
             this.grid.Margin = new System.Windows.Forms.Padding(0);
             this.grid.Name = "grid";
-            this.grid.RowCount = 20;
-            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.grid.Size = new System.Drawing.Size(554, 680);
+            this.grid.RowCount = 25;
+            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
+            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
+            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
+            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
+            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
+            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
+            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
+            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
+            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
+            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
+            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
+            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
+            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
+            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
+            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
+            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
+            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
+            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
+            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
+            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
+            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
+            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
+            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
+            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
+            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
+            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.grid.Size = new System.Drawing.Size(554, 850);
             this.grid.TabIndex = 0;
+            // 
+            // BoxP25
+            // 
+            this.BoxP25.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxP25.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxP25.Location = new System.Drawing.Point(513, 819);
+            this.BoxP25.Name = "BoxP25";
+            this.BoxP25.Size = new System.Drawing.Size(38, 28);
+            this.BoxP25.TabIndex = 475;
+            this.BoxP25.TabStop = false;
+            // 
+            // BoxO25
+            // 
+            this.BoxO25.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxO25.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxO25.Location = new System.Drawing.Point(479, 819);
+            this.BoxO25.Name = "BoxO25";
+            this.BoxO25.Size = new System.Drawing.Size(28, 28);
+            this.BoxO25.TabIndex = 474;
+            this.BoxO25.TabStop = false;
+            // 
+            // BoxN25
+            // 
+            this.BoxN25.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxN25.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxN25.Location = new System.Drawing.Point(445, 819);
+            this.BoxN25.Name = "BoxN25";
+            this.BoxN25.Size = new System.Drawing.Size(28, 28);
+            this.BoxN25.TabIndex = 473;
+            this.BoxN25.TabStop = false;
+            // 
+            // BoxM25
+            // 
+            this.BoxM25.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxM25.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxM25.Location = new System.Drawing.Point(411, 819);
+            this.BoxM25.Name = "BoxM25";
+            this.BoxM25.Size = new System.Drawing.Size(28, 28);
+            this.BoxM25.TabIndex = 472;
+            this.BoxM25.TabStop = false;
+            // 
+            // BoxL25
+            // 
+            this.BoxL25.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxL25.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxL25.Location = new System.Drawing.Point(377, 819);
+            this.BoxL25.Name = "BoxL25";
+            this.BoxL25.Size = new System.Drawing.Size(28, 28);
+            this.BoxL25.TabIndex = 471;
+            this.BoxL25.TabStop = false;
+            // 
+            // BoxK25
+            // 
+            this.BoxK25.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxK25.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxK25.Location = new System.Drawing.Point(343, 819);
+            this.BoxK25.Name = "BoxK25";
+            this.BoxK25.Size = new System.Drawing.Size(28, 28);
+            this.BoxK25.TabIndex = 470;
+            this.BoxK25.TabStop = false;
+            // 
+            // BoxJ25
+            // 
+            this.BoxJ25.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxJ25.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxJ25.Location = new System.Drawing.Point(309, 819);
+            this.BoxJ25.Name = "BoxJ25";
+            this.BoxJ25.Size = new System.Drawing.Size(28, 28);
+            this.BoxJ25.TabIndex = 469;
+            this.BoxJ25.TabStop = false;
+            // 
+            // BoxI25
+            // 
+            this.BoxI25.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxI25.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxI25.Location = new System.Drawing.Point(275, 819);
+            this.BoxI25.Name = "BoxI25";
+            this.BoxI25.Size = new System.Drawing.Size(28, 28);
+            this.BoxI25.TabIndex = 468;
+            this.BoxI25.TabStop = false;
+            // 
+            // BoxH25
+            // 
+            this.BoxH25.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxH25.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxH25.Location = new System.Drawing.Point(241, 819);
+            this.BoxH25.Name = "BoxH25";
+            this.BoxH25.Size = new System.Drawing.Size(28, 28);
+            this.BoxH25.TabIndex = 467;
+            this.BoxH25.TabStop = false;
+            // 
+            // BoxG25
+            // 
+            this.BoxG25.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxG25.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxG25.Location = new System.Drawing.Point(207, 819);
+            this.BoxG25.Name = "BoxG25";
+            this.BoxG25.Size = new System.Drawing.Size(28, 28);
+            this.BoxG25.TabIndex = 466;
+            this.BoxG25.TabStop = false;
+            // 
+            // BoxF25
+            // 
+            this.BoxF25.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxF25.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxF25.Location = new System.Drawing.Point(173, 819);
+            this.BoxF25.Name = "BoxF25";
+            this.BoxF25.Size = new System.Drawing.Size(28, 28);
+            this.BoxF25.TabIndex = 465;
+            this.BoxF25.TabStop = false;
+            // 
+            // BoxE25
+            // 
+            this.BoxE25.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxE25.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxE25.Location = new System.Drawing.Point(139, 819);
+            this.BoxE25.Name = "BoxE25";
+            this.BoxE25.Size = new System.Drawing.Size(28, 28);
+            this.BoxE25.TabIndex = 464;
+            this.BoxE25.TabStop = false;
+            // 
+            // BoxD25
+            // 
+            this.BoxD25.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxD25.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxD25.Location = new System.Drawing.Point(105, 819);
+            this.BoxD25.Name = "BoxD25";
+            this.BoxD25.Size = new System.Drawing.Size(28, 28);
+            this.BoxD25.TabIndex = 463;
+            this.BoxD25.TabStop = false;
+            // 
+            // BoxC25
+            // 
+            this.BoxC25.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxC25.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxC25.Location = new System.Drawing.Point(71, 819);
+            this.BoxC25.Name = "BoxC25";
+            this.BoxC25.Size = new System.Drawing.Size(28, 28);
+            this.BoxC25.TabIndex = 462;
+            this.BoxC25.TabStop = false;
+            // 
+            // BoxB25
+            // 
+            this.BoxB25.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxB25.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxB25.Location = new System.Drawing.Point(37, 819);
+            this.BoxB25.Name = "BoxB25";
+            this.BoxB25.Size = new System.Drawing.Size(28, 28);
+            this.BoxB25.TabIndex = 461;
+            this.BoxB25.TabStop = false;
+            // 
+            // BoxA25
+            // 
+            this.BoxA25.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxA25.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxA25.Location = new System.Drawing.Point(3, 819);
+            this.BoxA25.Name = "BoxA25";
+            this.BoxA25.Size = new System.Drawing.Size(28, 28);
+            this.BoxA25.TabIndex = 460;
+            this.BoxA25.TabStop = false;
+            // 
+            // BoxP24
+            // 
+            this.BoxP24.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxP24.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxP24.Location = new System.Drawing.Point(513, 785);
+            this.BoxP24.Name = "BoxP24";
+            this.BoxP24.Size = new System.Drawing.Size(38, 28);
+            this.BoxP24.TabIndex = 459;
+            this.BoxP24.TabStop = false;
+            // 
+            // BoxO24
+            // 
+            this.BoxO24.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxO24.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxO24.Location = new System.Drawing.Point(479, 785);
+            this.BoxO24.Name = "BoxO24";
+            this.BoxO24.Size = new System.Drawing.Size(28, 28);
+            this.BoxO24.TabIndex = 458;
+            this.BoxO24.TabStop = false;
+            // 
+            // BoxN24
+            // 
+            this.BoxN24.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxN24.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxN24.Location = new System.Drawing.Point(445, 785);
+            this.BoxN24.Name = "BoxN24";
+            this.BoxN24.Size = new System.Drawing.Size(28, 28);
+            this.BoxN24.TabIndex = 457;
+            this.BoxN24.TabStop = false;
+            // 
+            // BoxM24
+            // 
+            this.BoxM24.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxM24.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxM24.Location = new System.Drawing.Point(411, 785);
+            this.BoxM24.Name = "BoxM24";
+            this.BoxM24.Size = new System.Drawing.Size(28, 28);
+            this.BoxM24.TabIndex = 456;
+            this.BoxM24.TabStop = false;
+            // 
+            // BoxL24
+            // 
+            this.BoxL24.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxL24.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxL24.Location = new System.Drawing.Point(377, 785);
+            this.BoxL24.Name = "BoxL24";
+            this.BoxL24.Size = new System.Drawing.Size(28, 28);
+            this.BoxL24.TabIndex = 455;
+            this.BoxL24.TabStop = false;
+            // 
+            // BoxK24
+            // 
+            this.BoxK24.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxK24.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxK24.Location = new System.Drawing.Point(343, 785);
+            this.BoxK24.Name = "BoxK24";
+            this.BoxK24.Size = new System.Drawing.Size(28, 28);
+            this.BoxK24.TabIndex = 454;
+            this.BoxK24.TabStop = false;
+            // 
+            // BoxJ24
+            // 
+            this.BoxJ24.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxJ24.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxJ24.Location = new System.Drawing.Point(309, 785);
+            this.BoxJ24.Name = "BoxJ24";
+            this.BoxJ24.Size = new System.Drawing.Size(28, 28);
+            this.BoxJ24.TabIndex = 453;
+            this.BoxJ24.TabStop = false;
+            // 
+            // BoxI24
+            // 
+            this.BoxI24.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxI24.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxI24.Location = new System.Drawing.Point(275, 785);
+            this.BoxI24.Name = "BoxI24";
+            this.BoxI24.Size = new System.Drawing.Size(28, 28);
+            this.BoxI24.TabIndex = 452;
+            this.BoxI24.TabStop = false;
+            // 
+            // BoxH24
+            // 
+            this.BoxH24.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxH24.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxH24.Location = new System.Drawing.Point(241, 785);
+            this.BoxH24.Name = "BoxH24";
+            this.BoxH24.Size = new System.Drawing.Size(28, 28);
+            this.BoxH24.TabIndex = 451;
+            this.BoxH24.TabStop = false;
+            // 
+            // BoxG24
+            // 
+            this.BoxG24.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxG24.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxG24.Location = new System.Drawing.Point(207, 785);
+            this.BoxG24.Name = "BoxG24";
+            this.BoxG24.Size = new System.Drawing.Size(28, 28);
+            this.BoxG24.TabIndex = 450;
+            this.BoxG24.TabStop = false;
+            // 
+            // BoxF24
+            // 
+            this.BoxF24.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxF24.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxF24.Location = new System.Drawing.Point(173, 785);
+            this.BoxF24.Name = "BoxF24";
+            this.BoxF24.Size = new System.Drawing.Size(28, 28);
+            this.BoxF24.TabIndex = 449;
+            this.BoxF24.TabStop = false;
+            // 
+            // BoxE24
+            // 
+            this.BoxE24.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxE24.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxE24.Location = new System.Drawing.Point(139, 785);
+            this.BoxE24.Name = "BoxE24";
+            this.BoxE24.Size = new System.Drawing.Size(28, 28);
+            this.BoxE24.TabIndex = 448;
+            this.BoxE24.TabStop = false;
+            // 
+            // BoxD24
+            // 
+            this.BoxD24.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxD24.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxD24.Location = new System.Drawing.Point(105, 785);
+            this.BoxD24.Name = "BoxD24";
+            this.BoxD24.Size = new System.Drawing.Size(28, 28);
+            this.BoxD24.TabIndex = 447;
+            this.BoxD24.TabStop = false;
+            // 
+            // BoxC24
+            // 
+            this.BoxC24.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxC24.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxC24.Location = new System.Drawing.Point(71, 785);
+            this.BoxC24.Name = "BoxC24";
+            this.BoxC24.Size = new System.Drawing.Size(28, 28);
+            this.BoxC24.TabIndex = 446;
+            this.BoxC24.TabStop = false;
+            // 
+            // BoxB24
+            // 
+            this.BoxB24.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxB24.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxB24.Location = new System.Drawing.Point(37, 785);
+            this.BoxB24.Name = "BoxB24";
+            this.BoxB24.Size = new System.Drawing.Size(28, 28);
+            this.BoxB24.TabIndex = 445;
+            this.BoxB24.TabStop = false;
+            // 
+            // BoxA24
+            // 
+            this.BoxA24.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxA24.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxA24.Location = new System.Drawing.Point(3, 785);
+            this.BoxA24.Name = "BoxA24";
+            this.BoxA24.Size = new System.Drawing.Size(28, 28);
+            this.BoxA24.TabIndex = 444;
+            this.BoxA24.TabStop = false;
+            // 
+            // BoxP23
+            // 
+            this.BoxP23.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxP23.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxP23.Location = new System.Drawing.Point(513, 751);
+            this.BoxP23.Name = "BoxP23";
+            this.BoxP23.Size = new System.Drawing.Size(38, 28);
+            this.BoxP23.TabIndex = 443;
+            this.BoxP23.TabStop = false;
+            // 
+            // BoxO23
+            // 
+            this.BoxO23.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxO23.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxO23.Location = new System.Drawing.Point(479, 751);
+            this.BoxO23.Name = "BoxO23";
+            this.BoxO23.Size = new System.Drawing.Size(28, 28);
+            this.BoxO23.TabIndex = 442;
+            this.BoxO23.TabStop = false;
+            // 
+            // BoxN23
+            // 
+            this.BoxN23.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxN23.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxN23.Location = new System.Drawing.Point(445, 751);
+            this.BoxN23.Name = "BoxN23";
+            this.BoxN23.Size = new System.Drawing.Size(28, 28);
+            this.BoxN23.TabIndex = 441;
+            this.BoxN23.TabStop = false;
+            // 
+            // BoxM23
+            // 
+            this.BoxM23.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxM23.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxM23.Location = new System.Drawing.Point(411, 751);
+            this.BoxM23.Name = "BoxM23";
+            this.BoxM23.Size = new System.Drawing.Size(28, 28);
+            this.BoxM23.TabIndex = 440;
+            this.BoxM23.TabStop = false;
+            // 
+            // BoxL23
+            // 
+            this.BoxL23.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxL23.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxL23.Location = new System.Drawing.Point(377, 751);
+            this.BoxL23.Name = "BoxL23";
+            this.BoxL23.Size = new System.Drawing.Size(28, 28);
+            this.BoxL23.TabIndex = 439;
+            this.BoxL23.TabStop = false;
+            // 
+            // BoxK23
+            // 
+            this.BoxK23.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxK23.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxK23.Location = new System.Drawing.Point(343, 751);
+            this.BoxK23.Name = "BoxK23";
+            this.BoxK23.Size = new System.Drawing.Size(28, 28);
+            this.BoxK23.TabIndex = 438;
+            this.BoxK23.TabStop = false;
+            // 
+            // BoxJ23
+            // 
+            this.BoxJ23.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxJ23.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxJ23.Location = new System.Drawing.Point(309, 751);
+            this.BoxJ23.Name = "BoxJ23";
+            this.BoxJ23.Size = new System.Drawing.Size(28, 28);
+            this.BoxJ23.TabIndex = 437;
+            this.BoxJ23.TabStop = false;
+            // 
+            // BoxI23
+            // 
+            this.BoxI23.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxI23.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxI23.Location = new System.Drawing.Point(275, 751);
+            this.BoxI23.Name = "BoxI23";
+            this.BoxI23.Size = new System.Drawing.Size(28, 28);
+            this.BoxI23.TabIndex = 436;
+            this.BoxI23.TabStop = false;
+            // 
+            // BoxH23
+            // 
+            this.BoxH23.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxH23.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxH23.Location = new System.Drawing.Point(241, 751);
+            this.BoxH23.Name = "BoxH23";
+            this.BoxH23.Size = new System.Drawing.Size(28, 28);
+            this.BoxH23.TabIndex = 435;
+            this.BoxH23.TabStop = false;
+            // 
+            // BoxG23
+            // 
+            this.BoxG23.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxG23.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxG23.Location = new System.Drawing.Point(207, 751);
+            this.BoxG23.Name = "BoxG23";
+            this.BoxG23.Size = new System.Drawing.Size(28, 28);
+            this.BoxG23.TabIndex = 434;
+            this.BoxG23.TabStop = false;
+            // 
+            // BoxF23
+            // 
+            this.BoxF23.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxF23.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxF23.Location = new System.Drawing.Point(173, 751);
+            this.BoxF23.Name = "BoxF23";
+            this.BoxF23.Size = new System.Drawing.Size(28, 28);
+            this.BoxF23.TabIndex = 433;
+            this.BoxF23.TabStop = false;
+            // 
+            // BoxE23
+            // 
+            this.BoxE23.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxE23.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxE23.Location = new System.Drawing.Point(139, 751);
+            this.BoxE23.Name = "BoxE23";
+            this.BoxE23.Size = new System.Drawing.Size(28, 28);
+            this.BoxE23.TabIndex = 432;
+            this.BoxE23.TabStop = false;
+            // 
+            // BoxD23
+            // 
+            this.BoxD23.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxD23.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxD23.Location = new System.Drawing.Point(105, 751);
+            this.BoxD23.Name = "BoxD23";
+            this.BoxD23.Size = new System.Drawing.Size(28, 28);
+            this.BoxD23.TabIndex = 431;
+            this.BoxD23.TabStop = false;
+            // 
+            // BoxC23
+            // 
+            this.BoxC23.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxC23.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxC23.Location = new System.Drawing.Point(71, 751);
+            this.BoxC23.Name = "BoxC23";
+            this.BoxC23.Size = new System.Drawing.Size(28, 28);
+            this.BoxC23.TabIndex = 430;
+            this.BoxC23.TabStop = false;
+            // 
+            // BoxB23
+            // 
+            this.BoxB23.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxB23.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxB23.Location = new System.Drawing.Point(37, 751);
+            this.BoxB23.Name = "BoxB23";
+            this.BoxB23.Size = new System.Drawing.Size(28, 28);
+            this.BoxB23.TabIndex = 429;
+            this.BoxB23.TabStop = false;
+            // 
+            // BoxA23
+            // 
+            this.BoxA23.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxA23.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxA23.Location = new System.Drawing.Point(3, 751);
+            this.BoxA23.Name = "BoxA23";
+            this.BoxA23.Size = new System.Drawing.Size(28, 28);
+            this.BoxA23.TabIndex = 428;
+            this.BoxA23.TabStop = false;
+            // 
+            // BoxP22
+            // 
+            this.BoxP22.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxP22.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxP22.Location = new System.Drawing.Point(513, 717);
+            this.BoxP22.Name = "BoxP22";
+            this.BoxP22.Size = new System.Drawing.Size(38, 28);
+            this.BoxP22.TabIndex = 427;
+            this.BoxP22.TabStop = false;
+            // 
+            // BoxO22
+            // 
+            this.BoxO22.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxO22.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxO22.Location = new System.Drawing.Point(479, 717);
+            this.BoxO22.Name = "BoxO22";
+            this.BoxO22.Size = new System.Drawing.Size(28, 28);
+            this.BoxO22.TabIndex = 426;
+            this.BoxO22.TabStop = false;
+            // 
+            // BoxN22
+            // 
+            this.BoxN22.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxN22.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxN22.Location = new System.Drawing.Point(445, 717);
+            this.BoxN22.Name = "BoxN22";
+            this.BoxN22.Size = new System.Drawing.Size(28, 28);
+            this.BoxN22.TabIndex = 425;
+            this.BoxN22.TabStop = false;
+            // 
+            // BoxM22
+            // 
+            this.BoxM22.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxM22.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxM22.Location = new System.Drawing.Point(411, 717);
+            this.BoxM22.Name = "BoxM22";
+            this.BoxM22.Size = new System.Drawing.Size(28, 28);
+            this.BoxM22.TabIndex = 424;
+            this.BoxM22.TabStop = false;
+            // 
+            // BoxL22
+            // 
+            this.BoxL22.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxL22.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxL22.Location = new System.Drawing.Point(377, 717);
+            this.BoxL22.Name = "BoxL22";
+            this.BoxL22.Size = new System.Drawing.Size(28, 28);
+            this.BoxL22.TabIndex = 423;
+            this.BoxL22.TabStop = false;
+            // 
+            // BoxK22
+            // 
+            this.BoxK22.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxK22.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxK22.Location = new System.Drawing.Point(343, 717);
+            this.BoxK22.Name = "BoxK22";
+            this.BoxK22.Size = new System.Drawing.Size(28, 28);
+            this.BoxK22.TabIndex = 422;
+            this.BoxK22.TabStop = false;
+            // 
+            // BoxJ22
+            // 
+            this.BoxJ22.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxJ22.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxJ22.Location = new System.Drawing.Point(309, 717);
+            this.BoxJ22.Name = "BoxJ22";
+            this.BoxJ22.Size = new System.Drawing.Size(28, 28);
+            this.BoxJ22.TabIndex = 421;
+            this.BoxJ22.TabStop = false;
+            // 
+            // BoxI22
+            // 
+            this.BoxI22.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxI22.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxI22.Location = new System.Drawing.Point(275, 717);
+            this.BoxI22.Name = "BoxI22";
+            this.BoxI22.Size = new System.Drawing.Size(28, 28);
+            this.BoxI22.TabIndex = 420;
+            this.BoxI22.TabStop = false;
+            // 
+            // BoxH22
+            // 
+            this.BoxH22.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxH22.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxH22.Location = new System.Drawing.Point(241, 717);
+            this.BoxH22.Name = "BoxH22";
+            this.BoxH22.Size = new System.Drawing.Size(28, 28);
+            this.BoxH22.TabIndex = 419;
+            this.BoxH22.TabStop = false;
+            // 
+            // BoxG22
+            // 
+            this.BoxG22.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxG22.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxG22.Location = new System.Drawing.Point(207, 717);
+            this.BoxG22.Name = "BoxG22";
+            this.BoxG22.Size = new System.Drawing.Size(28, 28);
+            this.BoxG22.TabIndex = 418;
+            this.BoxG22.TabStop = false;
+            // 
+            // BoxF22
+            // 
+            this.BoxF22.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxF22.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxF22.Location = new System.Drawing.Point(173, 717);
+            this.BoxF22.Name = "BoxF22";
+            this.BoxF22.Size = new System.Drawing.Size(28, 28);
+            this.BoxF22.TabIndex = 417;
+            this.BoxF22.TabStop = false;
+            // 
+            // BoxE22
+            // 
+            this.BoxE22.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxE22.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxE22.Location = new System.Drawing.Point(139, 717);
+            this.BoxE22.Name = "BoxE22";
+            this.BoxE22.Size = new System.Drawing.Size(28, 28);
+            this.BoxE22.TabIndex = 416;
+            this.BoxE22.TabStop = false;
+            // 
+            // BoxD22
+            // 
+            this.BoxD22.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxD22.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxD22.Location = new System.Drawing.Point(105, 717);
+            this.BoxD22.Name = "BoxD22";
+            this.BoxD22.Size = new System.Drawing.Size(28, 28);
+            this.BoxD22.TabIndex = 415;
+            this.BoxD22.TabStop = false;
+            // 
+            // BoxC22
+            // 
+            this.BoxC22.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxC22.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxC22.Location = new System.Drawing.Point(71, 717);
+            this.BoxC22.Name = "BoxC22";
+            this.BoxC22.Size = new System.Drawing.Size(28, 28);
+            this.BoxC22.TabIndex = 414;
+            this.BoxC22.TabStop = false;
+            // 
+            // BoxB22
+            // 
+            this.BoxB22.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxB22.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxB22.Location = new System.Drawing.Point(37, 717);
+            this.BoxB22.Name = "BoxB22";
+            this.BoxB22.Size = new System.Drawing.Size(28, 28);
+            this.BoxB22.TabIndex = 413;
+            this.BoxB22.TabStop = false;
+            // 
+            // BoxA22
+            // 
+            this.BoxA22.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxA22.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxA22.Location = new System.Drawing.Point(3, 717);
+            this.BoxA22.Name = "BoxA22";
+            this.BoxA22.Size = new System.Drawing.Size(28, 28);
+            this.BoxA22.TabIndex = 412;
+            this.BoxA22.TabStop = false;
+            // 
+            // BoxP21
+            // 
+            this.BoxP21.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxP21.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxP21.Location = new System.Drawing.Point(513, 683);
+            this.BoxP21.Name = "BoxP21";
+            this.BoxP21.Size = new System.Drawing.Size(38, 28);
+            this.BoxP21.TabIndex = 411;
+            this.BoxP21.TabStop = false;
+            // 
+            // BoxO21
+            // 
+            this.BoxO21.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxO21.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxO21.Location = new System.Drawing.Point(479, 683);
+            this.BoxO21.Name = "BoxO21";
+            this.BoxO21.Size = new System.Drawing.Size(28, 28);
+            this.BoxO21.TabIndex = 410;
+            this.BoxO21.TabStop = false;
+            // 
+            // BoxN21
+            // 
+            this.BoxN21.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxN21.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxN21.Location = new System.Drawing.Point(445, 683);
+            this.BoxN21.Name = "BoxN21";
+            this.BoxN21.Size = new System.Drawing.Size(28, 28);
+            this.BoxN21.TabIndex = 409;
+            this.BoxN21.TabStop = false;
+            // 
+            // BoxM21
+            // 
+            this.BoxM21.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxM21.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxM21.Location = new System.Drawing.Point(411, 683);
+            this.BoxM21.Name = "BoxM21";
+            this.BoxM21.Size = new System.Drawing.Size(28, 28);
+            this.BoxM21.TabIndex = 408;
+            this.BoxM21.TabStop = false;
+            // 
+            // BoxL21
+            // 
+            this.BoxL21.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxL21.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxL21.Location = new System.Drawing.Point(377, 683);
+            this.BoxL21.Name = "BoxL21";
+            this.BoxL21.Size = new System.Drawing.Size(28, 28);
+            this.BoxL21.TabIndex = 407;
+            this.BoxL21.TabStop = false;
+            // 
+            // BoxK21
+            // 
+            this.BoxK21.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxK21.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxK21.Location = new System.Drawing.Point(343, 683);
+            this.BoxK21.Name = "BoxK21";
+            this.BoxK21.Size = new System.Drawing.Size(28, 28);
+            this.BoxK21.TabIndex = 406;
+            this.BoxK21.TabStop = false;
+            // 
+            // BoxJ21
+            // 
+            this.BoxJ21.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxJ21.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxJ21.Location = new System.Drawing.Point(309, 683);
+            this.BoxJ21.Name = "BoxJ21";
+            this.BoxJ21.Size = new System.Drawing.Size(28, 28);
+            this.BoxJ21.TabIndex = 405;
+            this.BoxJ21.TabStop = false;
+            // 
+            // BoxI21
+            // 
+            this.BoxI21.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxI21.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxI21.Location = new System.Drawing.Point(275, 683);
+            this.BoxI21.Name = "BoxI21";
+            this.BoxI21.Size = new System.Drawing.Size(28, 28);
+            this.BoxI21.TabIndex = 404;
+            this.BoxI21.TabStop = false;
+            // 
+            // BoxH21
+            // 
+            this.BoxH21.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxH21.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxH21.Location = new System.Drawing.Point(241, 683);
+            this.BoxH21.Name = "BoxH21";
+            this.BoxH21.Size = new System.Drawing.Size(28, 28);
+            this.BoxH21.TabIndex = 403;
+            this.BoxH21.TabStop = false;
+            // 
+            // BoxG21
+            // 
+            this.BoxG21.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxG21.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxG21.Location = new System.Drawing.Point(207, 683);
+            this.BoxG21.Name = "BoxG21";
+            this.BoxG21.Size = new System.Drawing.Size(28, 28);
+            this.BoxG21.TabIndex = 402;
+            this.BoxG21.TabStop = false;
+            // 
+            // BoxF21
+            // 
+            this.BoxF21.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxF21.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxF21.Location = new System.Drawing.Point(173, 683);
+            this.BoxF21.Name = "BoxF21";
+            this.BoxF21.Size = new System.Drawing.Size(28, 28);
+            this.BoxF21.TabIndex = 401;
+            this.BoxF21.TabStop = false;
+            // 
+            // BoxE21
+            // 
+            this.BoxE21.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxE21.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxE21.Location = new System.Drawing.Point(139, 683);
+            this.BoxE21.Name = "BoxE21";
+            this.BoxE21.Size = new System.Drawing.Size(28, 28);
+            this.BoxE21.TabIndex = 400;
+            this.BoxE21.TabStop = false;
+            // 
+            // BoxD21
+            // 
+            this.BoxD21.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxD21.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxD21.Location = new System.Drawing.Point(105, 683);
+            this.BoxD21.Name = "BoxD21";
+            this.BoxD21.Size = new System.Drawing.Size(28, 28);
+            this.BoxD21.TabIndex = 399;
+            this.BoxD21.TabStop = false;
+            // 
+            // BoxC21
+            // 
+            this.BoxC21.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxC21.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxC21.Location = new System.Drawing.Point(71, 683);
+            this.BoxC21.Name = "BoxC21";
+            this.BoxC21.Size = new System.Drawing.Size(28, 28);
+            this.BoxC21.TabIndex = 398;
+            this.BoxC21.TabStop = false;
+            // 
+            // BoxB21
+            // 
+            this.BoxB21.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxB21.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxB21.Location = new System.Drawing.Point(37, 683);
+            this.BoxB21.Name = "BoxB21";
+            this.BoxB21.Size = new System.Drawing.Size(28, 28);
+            this.BoxB21.TabIndex = 397;
+            this.BoxB21.TabStop = false;
+            // 
+            // BoxA21
+            // 
+            this.BoxA21.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BoxA21.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BoxA21.Location = new System.Drawing.Point(3, 683);
+            this.BoxA21.Name = "BoxA21";
+            this.BoxA21.Size = new System.Drawing.Size(28, 28);
+            this.BoxA21.TabIndex = 396;
+            this.BoxA21.TabStop = false;
             // 
             // BoxP20
             // 
@@ -4269,10 +5320,10 @@
             // countdownLabel
             // 
             this.countdownLabel.BackColor = System.Drawing.Color.DimGray;
-            this.countdownLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.countdownLabel.Location = new System.Drawing.Point(984, 151);
+            this.countdownLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.countdownLabel.Location = new System.Drawing.Point(1100, 140);
             this.countdownLabel.Name = "countdownLabel";
-            this.countdownLabel.Size = new System.Drawing.Size(100, 50);
+            this.countdownLabel.Size = new System.Drawing.Size(150, 90);
             this.countdownLabel.TabIndex = 1;
             this.countdownLabel.Text = "5:00";
             this.countdownLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4282,19 +5333,107 @@
             this.startGameLabel.BackColor = System.Drawing.Color.SlateGray;
             this.startGameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.startGameLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.startGameLabel.Location = new System.Drawing.Point(430, 300);
+            this.startGameLabel.Location = new System.Drawing.Point(610, 400);
             this.startGameLabel.Name = "startGameLabel";
             this.startGameLabel.Size = new System.Drawing.Size(185, 50);
             this.startGameLabel.TabIndex = 1;
             this.startGameLabel.Text = "Press Enter";
             this.startGameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // timeTxtLabel
+            // 
+            this.timeTxtLabel.BackColor = System.Drawing.Color.Transparent;
+            this.timeTxtLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.timeTxtLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.timeTxtLabel.Location = new System.Drawing.Point(1100, 85);
+            this.timeTxtLabel.Name = "timeTxtLabel";
+            this.timeTxtLabel.Size = new System.Drawing.Size(150, 50);
+            this.timeTxtLabel.TabIndex = 2;
+            this.timeTxtLabel.Text = "Time Left:";
+            this.timeTxtLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // scoreTxtLabel
+            // 
+            this.scoreTxtLabel.BackColor = System.Drawing.Color.Transparent;
+            this.scoreTxtLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.scoreTxtLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.scoreTxtLabel.Location = new System.Drawing.Point(140, 85);
+            this.scoreTxtLabel.Name = "scoreTxtLabel";
+            this.scoreTxtLabel.Size = new System.Drawing.Size(150, 50);
+            this.scoreTxtLabel.TabIndex = 3;
+            this.scoreTxtLabel.Text = "Score:";
+            this.scoreTxtLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // scoreLabel
+            // 
+            this.scoreLabel.BackColor = System.Drawing.Color.DimGray;
+            this.scoreLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.scoreLabel.Location = new System.Drawing.Point(140, 140);
+            this.scoreLabel.Name = "scoreLabel";
+            this.scoreLabel.Size = new System.Drawing.Size(150, 90);
+            this.scoreLabel.TabIndex = 4;
+            this.scoreLabel.Text = "0";
+            this.scoreLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // nextPiece
+            // 
+            this.nextPiece.BackColor = System.Drawing.Color.DimGray;
+            this.nextPiece.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nextPiece.Location = new System.Drawing.Point(1060, 510);
+            this.nextPiece.Name = "nextPiece";
+            this.nextPiece.Size = new System.Drawing.Size(250, 250);
+            this.nextPiece.TabIndex = 5;
+            this.nextPiece.Text = "Coming soon";
+            this.nextPiece.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label1.Location = new System.Drawing.Point(1060, 455);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(250, 50);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Next Piece:";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label2.Location = new System.Drawing.Point(90, 455);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(250, 50);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Saved Piece:";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.Color.DimGray;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(90, 510);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(250, 250);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Coming soon";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1178, 744);
+            this.ClientSize = new System.Drawing.Size(1378, 944);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.nextPiece);
+            this.Controls.Add(this.scoreLabel);
+            this.Controls.Add(this.scoreTxtLabel);
+            this.Controls.Add(this.timeTxtLabel);
             this.Controls.Add(this.startGameLabel);
             this.Controls.Add(this.countdownLabel);
             this.Controls.Add(this.grid);
@@ -4302,6 +5441,86 @@
             this.Text = "TetrisClone";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.grid.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.BoxP25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxO25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxN25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxM25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxL25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxK25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxJ25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxI25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxH25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxG25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxF25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxE25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxD25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxC25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxB25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxA25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxP24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxO24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxN24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxM24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxL24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxK24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxJ24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxI24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxH24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxG24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxF24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxE24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxD24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxC24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxB24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxA24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxP23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxO23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxN23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxM23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxL23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxK23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxJ23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxI23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxH23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxG23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxF23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxE23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxD23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxC23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxB23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxA23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxP22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxO22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxN22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxM22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxL22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxK22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxJ22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxI22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxH22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxG22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxF22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxE22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxD22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxC22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxB22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxA22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxP21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxO21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxN21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxM21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxL21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxK21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxJ21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxI21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxH21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxG21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxF21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxE21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxD21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxC21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxB21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxA21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BoxP20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BoxO20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BoxN20)).EndInit();
@@ -4954,6 +6173,93 @@
         private System.Windows.Forms.Timer startLabelFlash;
         private System.Windows.Forms.Label countdownLabel;
         private System.Windows.Forms.Label startGameLabel;
+        private System.Windows.Forms.PictureBox BoxP25;
+        private System.Windows.Forms.PictureBox BoxO25;
+        private System.Windows.Forms.PictureBox BoxN25;
+        private System.Windows.Forms.PictureBox BoxM25;
+        private System.Windows.Forms.PictureBox BoxL25;
+        private System.Windows.Forms.PictureBox BoxK25;
+        private System.Windows.Forms.PictureBox BoxJ25;
+        private System.Windows.Forms.PictureBox BoxI25;
+        private System.Windows.Forms.PictureBox BoxH25;
+        private System.Windows.Forms.PictureBox BoxG25;
+        private System.Windows.Forms.PictureBox BoxF25;
+        private System.Windows.Forms.PictureBox BoxE25;
+        private System.Windows.Forms.PictureBox BoxD25;
+        private System.Windows.Forms.PictureBox BoxC25;
+        private System.Windows.Forms.PictureBox BoxB25;
+        private System.Windows.Forms.PictureBox BoxA25;
+        private System.Windows.Forms.PictureBox BoxP24;
+        private System.Windows.Forms.PictureBox BoxO24;
+        private System.Windows.Forms.PictureBox BoxN24;
+        private System.Windows.Forms.PictureBox BoxM24;
+        private System.Windows.Forms.PictureBox BoxL24;
+        private System.Windows.Forms.PictureBox BoxK24;
+        private System.Windows.Forms.PictureBox BoxJ24;
+        private System.Windows.Forms.PictureBox BoxI24;
+        private System.Windows.Forms.PictureBox BoxH24;
+        private System.Windows.Forms.PictureBox BoxG24;
+        private System.Windows.Forms.PictureBox BoxF24;
+        private System.Windows.Forms.PictureBox BoxE24;
+        private System.Windows.Forms.PictureBox BoxD24;
+        private System.Windows.Forms.PictureBox BoxC24;
+        private System.Windows.Forms.PictureBox BoxB24;
+        private System.Windows.Forms.PictureBox BoxA24;
+        private System.Windows.Forms.PictureBox BoxP23;
+        private System.Windows.Forms.PictureBox BoxO23;
+        private System.Windows.Forms.PictureBox BoxN23;
+        private System.Windows.Forms.PictureBox BoxM23;
+        private System.Windows.Forms.PictureBox BoxL23;
+        private System.Windows.Forms.PictureBox BoxK23;
+        private System.Windows.Forms.PictureBox BoxJ23;
+        private System.Windows.Forms.PictureBox BoxI23;
+        private System.Windows.Forms.PictureBox BoxH23;
+        private System.Windows.Forms.PictureBox BoxG23;
+        private System.Windows.Forms.PictureBox BoxF23;
+        private System.Windows.Forms.PictureBox BoxE23;
+        private System.Windows.Forms.PictureBox BoxD23;
+        private System.Windows.Forms.PictureBox BoxC23;
+        private System.Windows.Forms.PictureBox BoxB23;
+        private System.Windows.Forms.PictureBox BoxA23;
+        private System.Windows.Forms.PictureBox BoxP22;
+        private System.Windows.Forms.PictureBox BoxO22;
+        private System.Windows.Forms.PictureBox BoxN22;
+        private System.Windows.Forms.PictureBox BoxM22;
+        private System.Windows.Forms.PictureBox BoxL22;
+        private System.Windows.Forms.PictureBox BoxK22;
+        private System.Windows.Forms.PictureBox BoxJ22;
+        private System.Windows.Forms.PictureBox BoxI22;
+        private System.Windows.Forms.PictureBox BoxH22;
+        private System.Windows.Forms.PictureBox BoxG22;
+        private System.Windows.Forms.PictureBox BoxF22;
+        private System.Windows.Forms.PictureBox BoxE22;
+        private System.Windows.Forms.PictureBox BoxD22;
+        private System.Windows.Forms.PictureBox BoxC22;
+        private System.Windows.Forms.PictureBox BoxB22;
+        private System.Windows.Forms.PictureBox BoxA22;
+        private System.Windows.Forms.PictureBox BoxP21;
+        private System.Windows.Forms.PictureBox BoxO21;
+        private System.Windows.Forms.PictureBox BoxN21;
+        private System.Windows.Forms.PictureBox BoxM21;
+        private System.Windows.Forms.PictureBox BoxL21;
+        private System.Windows.Forms.PictureBox BoxK21;
+        private System.Windows.Forms.PictureBox BoxJ21;
+        private System.Windows.Forms.PictureBox BoxI21;
+        private System.Windows.Forms.PictureBox BoxH21;
+        private System.Windows.Forms.PictureBox BoxG21;
+        private System.Windows.Forms.PictureBox BoxF21;
+        private System.Windows.Forms.PictureBox BoxE21;
+        private System.Windows.Forms.PictureBox BoxD21;
+        private System.Windows.Forms.PictureBox BoxC21;
+        private System.Windows.Forms.PictureBox BoxB21;
+        private System.Windows.Forms.PictureBox BoxA21;
+        private System.Windows.Forms.Label timeTxtLabel;
+        private System.Windows.Forms.Label scoreTxtLabel;
+        private System.Windows.Forms.Label scoreLabel;
+        private System.Windows.Forms.Label nextPiece;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
 
