@@ -4,6 +4,12 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Windows.Forms;
 
+// ---------- ToDos -------------
+// - Check for complete rows
+// - Clear completed rows and update the others
+// - Update Score
+// - Drop piece as far as it can go
+
 namespace TetrisClone
 {
     public partial class Form1 : Form
@@ -69,7 +75,7 @@ namespace TetrisClone
                     gameTimer.Stop();
                     gameOver = true;
                     MessageBox.Show("No more space", "Game Over!");
-                    return;
+                    Close();
                 }
             }
 
@@ -232,10 +238,32 @@ namespace TetrisClone
 
         }
 
-        // ---------- ToDos -------------
-        // - Check for complete rows and update them
-        // - Update Score
-        // - Drop piece as far as it can go
+        // Update Score
+        public void UpdateScore()
+        {
+            // I should start thinking about giving different score depending on how many rows are cleared
+            // and maybe there should be a combo if they clear new rows within a certain time?
+
+            // Update score label
+        }
+
+        // Clear full rows
+        public void ClearFullRows()
+        {
+            // Should turn the full rows back to DarkSlateGray
+
+            // Should move the inactive pieces down by x (x = number of full rows)
+
+            // Update Score
+        }
+
+        // Check for complete rows
+        /*public int CheckForCompleteRows()
+        {
+            // For each row (there is 25 rows)
+                    // Should check each column in each row
+        }
+        */
 
         // Check for game over
         public bool CheckGameOver()
@@ -258,7 +286,6 @@ namespace TetrisClone
 
             return false;
         }
-
 
 
         // Check if the rotation would make the currentPiece collide with another piece
@@ -778,25 +805,31 @@ namespace TetrisClone
             }
             
             // Left
-            if ((e.KeyCode == Keys.Left || e.KeyCode == Keys.A) && (TestMove("left") == true))
+            if (CheckGameOver() == false & (e.KeyCode == Keys.Left || e.KeyCode == Keys.A) & (TestMove("left") == true))
             {
                 MovePiece("left");
             }
             // Right
-            else if ((e.KeyCode == Keys.Right | e.KeyCode == Keys.D) & (TestMove("right") == true))
+            else if (CheckGameOver() == false & (e.KeyCode == Keys.Right | e.KeyCode == Keys.D) & (TestMove("right") == true))
             {
                 MovePiece("right");
+            }
+            // Down
+            else if (CheckGameOver() == false & (e.KeyCode == Keys.Down | e.KeyCode == Keys.S) & (TestMove("down") == true))
+            {
+                MovePiece("down");
             }
             // Up
             else if(e.KeyCode == Keys.Up | e.KeyCode == Keys.W)
             {
                 Rotate();
             }
-            // Down
-            else if ((e.KeyCode == Keys.Down | e.KeyCode == Keys.S) & (TestMove("down") == true))
+            // Hard drop
+            /*else if(e.KeyCode == Keys.Space)
             {
-                MovePiece("down");
+                // Need to figure out if I should put the logic for the drop in here, or in a seperate function
             }
+            */
         }
 
     }
