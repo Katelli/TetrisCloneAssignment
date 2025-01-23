@@ -16,6 +16,7 @@ namespace TetrisClone
         Control[] movingPieceHolder = { null, null, null, null };
         int currentPieceInt;
         int rotations = 0;
+        bool gameOver = false;
         Random random = new Random();
 
         public Form1()
@@ -57,6 +58,19 @@ namespace TetrisClone
             for(int i = 0; i < 4; i++)
             {
                 currentPiece[i] = pieceArray[currentPieceInt, i];
+            }
+
+            // Check for game over
+            foreach(Control box in currentPiece)
+            {
+                if(box.BackColor != Color.DarkSlateGray)
+                {
+                    pieceTimer.Stop();
+                    gameTimer.Stop();
+                    gameOver = true;
+                    MessageBox.Show("No more space", "Game Over!");
+                    return;
+                }
             }
 
             // Color each box in the currentPiece Array
@@ -219,10 +233,31 @@ namespace TetrisClone
         }
 
         // ---------- ToDos -------------
-        // - Check for game over
         // - Check for complete rows and update them
         // - Update Score
         // - Drop piece as far as it can go
+
+        // Check for game over
+        public bool CheckGameOver()
+        {
+            Control[] topRow = { BoxA1, BoxB1, BoxC1, BoxD1, BoxE1, BoxF1, BoxG1, BoxH1, 
+                BoxI1 , BoxJ1, BoxK1, BoxL1, BoxM1, BoxN1, BoxO1, BoxP1 }; 
+            foreach (Control box in topRow)
+            {
+                if(box.BackColor != Color.DarkSlateGray & !currentPiece.Contains(box))
+                {
+                    // GameOver
+                    return true;
+                }
+            }
+
+            if(gameOver == true)
+            {
+                return true;
+            }
+
+            return false;
+        }
 
 
 
@@ -664,17 +699,36 @@ namespace TetrisClone
         // Moves the current piece down one row every second
         private void pieceTimer_Tick(object sender, EventArgs e)
         {
-            // Check if the current piece can move down
-            if(TestMove("down") == true)
+            // Check for game over
+            if (gameOver == true)
             {
-                MovePiece("down");
+                pieceTimer.Stop();
+                gameTimer.Stop();
+                MessageBox.Show("No more space", "Game Over!");
+                Close();
             }
             else
             {
-                // If the piece can't move down anymore, then it stops the timer and restarts the DropPiece function.
-                pieceTimer.Stop();
-                rotations = 0;
-                DropPiece();
+                // Check if the current piece can move down
+                if (TestMove("down") == true)
+                {
+                    MovePiece("down");
+                }
+                else
+                {
+                    if (gameOver == true)
+                    {
+                        pieceTimer.Stop();
+                        gameTimer.Stop();
+                        MessageBox.Show("No more space", "Game Over!");
+                        Close();
+                    }
+
+                    // If the piece can't move down anymore, then it stops the timer and restarts the DropPiece function.
+                    pieceTimer.Stop();
+                    rotations = 0;
+                    DropPiece();
+                }
             }
         }
 
