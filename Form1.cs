@@ -10,6 +10,7 @@ using System.Windows.Forms;
 // - Update Score
 // - Drop piece as far as it can go
 
+
 namespace TetrisClone
 {
     public partial class Form1 : Form
@@ -84,8 +85,6 @@ namespace TetrisClone
             {
                 box.BackColor = colorArray[currentPieceInt];
             }
-
-            pieceTimer.Start();
         }
 
         // Determines whether the move(right/left/down)/rotation(up) would put the piece outside the grid
@@ -250,20 +249,65 @@ namespace TetrisClone
         // Clear full rows
         public void ClearFullRows()
         {
-            // Should turn the full rows back to DarkSlateGray
-
-            // Should move the inactive pieces down by x (x = number of full rows)
-
             // Update Score
+
+            int completedRow = CheckForCompleteRows();
+
+            // Turn the completed row back into DarkSlateGray
+            for(int x = 0; x <= 15; x++)
+            {
+                Control checkedRow = grid.GetControlFromPosition(x, completedRow);
+                checkedRow.BackColor = Color.DarkSlateGray;
+            }
+
+            // Move the inactive pieces above the completed row down
+            for(int y = completedRow - 1; y >= 0; y--)
+            {
+                for(int x = 0; x <= 15; x++)
+                {
+                    // The current position of the box
+                    Control currentBox = grid.GetControlFromPosition(x, y);
+                    // The box below the current position
+                    Control nextBox = grid.GetControlFromPosition(x, y + 1);
+
+                    // "Move" it down by erasing and redrawing the backColor
+                    nextBox.BackColor = currentBox.BackColor;
+                    currentBox.BackColor = Color.DarkSlateGray;
+                }
+            }
+
+            // Check if there are more than one full row
+            if(CheckForCompleteRows() > -1)
+            {
+                ClearFullRows();
+            }
         }
 
         // Check for complete rows
-        /*public int CheckForCompleteRows()
+        public int CheckForCompleteRows()
         {
-            // For each row (there is 25 rows)
-                    // Should check each column in each row
+            // For each row (there are 25 rows)
+            for(int y = 24; y >= 0; y--)
+            {
+                // For each column in a row (there are 16 columns)
+                for(int x = 0; x <= 15;  x++)
+                {
+                    Control checkedRow = grid.GetControlFromPosition(x, y);
+                    if (checkedRow.BackColor == Color.DarkSlateGray)
+                    {
+                        break;
+                    }
+                    if(x == 15)
+                    {
+                        // Return the number of the full row
+                        return y;
+                    }
+                }
+            }
+            // Return null
+            return -1;
         }
-        */
+        
 
         // Check for game over
         public bool CheckGameOver()
@@ -751,8 +795,12 @@ namespace TetrisClone
                         Close();
                     }
 
+                    if(CheckForCompleteRows() > -1)
+                    {
+                        ClearFullRows();
+                    }
+
                     // If the piece can't move down anymore, then it stops the timer and restarts the DropPiece function.
-                    pieceTimer.Stop();
                     rotations = 0;
                     DropPiece();
                 }
@@ -800,6 +848,7 @@ namespace TetrisClone
                     startLabelFlash.Stop();
                     startGameLabel.Visible = false;
                     gameTimer.Start();
+                    pieceTimer.Start();
                     DropPiece();
                 }
             }
