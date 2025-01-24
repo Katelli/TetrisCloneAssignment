@@ -242,8 +242,7 @@ namespace TetrisClone
         // Update Score
         public void UpdateScore()
         {
-            // I should start thinking about giving different score depending on how many rows are cleared
-            // and maybe there should be a combo if they clear new rows within a certain time?
+            // -- maybe there should be a combo if they clear new rows within a certain time? --
 
             // No combo = 100 points
             if(combo == 0)
@@ -278,6 +277,29 @@ namespace TetrisClone
 
             // Update score label
             scoreLabel.Text = score.ToString();
+
+            // Change the interval of the piecetimer according to the score
+            if(score >= 4000)
+            {
+                pieceTimer.Interval = 200;
+            }
+            else if(score >= 3000)
+            {
+                pieceTimer.Interval = 400;
+            }
+            else if(score >= 2000)
+            {
+                pieceTimer.Interval = 600;
+            }
+            else if(score >= 1000)
+            {
+                pieceTimer.Interval = 800;
+            }
+            else
+            {
+                pieceTimer.Interval = 1000;
+            }
+            
         }
 
         // Clear full rows
@@ -859,7 +881,7 @@ namespace TetrisClone
             {
                 gameTimer.Stop();
                 pieceTimer.Stop();
-                MessageBox.Show("You scored: x", "Time's up!");
+                MessageBox.Show($"You scored: {score.ToString()}", "Time's up!");
                 Close();
             }
         }
