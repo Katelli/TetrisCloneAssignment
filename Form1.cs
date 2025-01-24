@@ -23,6 +23,8 @@ namespace TetrisClone
         Control[] movingPieceHolder = { null, null, null, null };
         int currentPieceInt;
         int rotations = 0;
+        int combo = 0;
+        int score = 0;
         bool gameOver = false;
         Random random = new Random();
 
@@ -243,7 +245,39 @@ namespace TetrisClone
             // I should start thinking about giving different score depending on how many rows are cleared
             // and maybe there should be a combo if they clear new rows within a certain time?
 
+            // No combo = 100 points
+            if(combo == 0)
+            {
+                score += 100;
+            }
+            // One combo = 100 + extra 200 points
+            else if(combo == 1)
+            {
+                score += 200;
+            }
+            // Two combos = 100 + extra 300 points
+            else if(combo == 2)
+            {
+                score += 300;
+            }
+            // Three combos = 100 + extra 400 points
+            else if(combo == 3)
+            {
+                score += 400;
+            }
+            // Four combos = 100 + extra 500 points
+            else if( combo == 4)
+            {
+                score += 500;
+            }
+            // Five or more combos = 100 + extra 1000 points
+            else if(combo >= 5)
+            {
+                score += 1000;
+            }
+
             // Update score label
+            scoreLabel.Text = score.ToString();
         }
 
         // Clear full rows
@@ -280,7 +314,14 @@ namespace TetrisClone
             if(CheckForCompleteRows() > -1)
             {
                 ClearFullRows();
+                combo++;
             }
+            else
+            {
+                combo = 0;
+            }
+
+            UpdateScore();
         }
 
         // Check for complete rows
