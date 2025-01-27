@@ -8,8 +8,6 @@ namespace TetrisClone
 {
     // --- New ToDo ---
     /*
-     - Revamp the HardDrop function to DrawGhostPiece function instead, 
-        and then HardDrop will be another function that takes advantage of the DrawGhostPiece function
     - Add a list to hold at least one other piece so I can display the next piece that will drop
     - Add a function to save a piece with shift, and display it
     - Change it up so the piece starts dropping from above the table instead of creating it in the first
@@ -266,6 +264,14 @@ namespace TetrisClone
                 }
             }
             DrawGhostPiece();
+
+            foreach(PictureBox box in ghostPiece)
+            {
+                if(currentPiece.Contains(box))
+                {
+                    box.BackColor = colorArray[currentPieceInt];
+                }
+            }
 
         }
 
