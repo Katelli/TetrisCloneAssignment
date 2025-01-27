@@ -5,9 +5,6 @@ using System.Runtime.CompilerServices;
 using System.Windows.Forms;
 
 // ---------- ToDos -------------
-// - Check for complete rows
-// - Clear completed rows and update the others
-// - Update Score
 // - Drop piece as far as it can go
 
 
@@ -828,6 +825,37 @@ namespace TetrisClone
                 currentPiece[x] = box;
                 x++;
             }
+        }
+
+        public void HardDrop()
+        {
+            // Needs to check rows, beginning from the bottom, and check if the piece that's hardDropped would collide with another piece
+            // Needs to check each of the boxes in the piece
+            // If the piece's boxes won't collide with another piece, then drop it to the bottom
+            // If it will collide, go up one row, and continue to check until it can
+            int box1Col = grid.GetColumn(currentPiece[0]);
+            int box1Row = grid.GetRow(currentPiece[0]);
+
+            int box2Col = grid.GetColumn(currentPiece[1]);
+            int box2Row = grid.GetRow(currentPiece[1]);
+
+            int box3Col = grid.GetColumn(currentPiece[2]);
+            int box3Row = grid.GetRow(currentPiece[2]);
+
+            int box4Col = grid.GetColumn(currentPiece[3]);
+            int box4Row = grid.GetRow(currentPiece[3]);
+
+            /*
+             Make it recursive?
+            Check bottom row minus current position, add the result the row value
+            check for overlap.
+            - If overlap, either add one to current position or minus one to max height, 
+            and then calculate anew by calling the function recursively.
+            - If not, drop it down.
+
+            Maybe this can be redone later to draw the ghost piece,
+            and space would just make the ghost piece into the active piece?
+             */
         }
 
         // Moves the current piece down one row every second
