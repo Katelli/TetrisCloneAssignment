@@ -22,6 +22,7 @@ namespace TetrisClone
         int rotations = 0;
         int combo = 0;
         int score = 0;
+        int bottom = 24;
         bool gameOver = false;
         Random random = new Random();
 
@@ -833,6 +834,9 @@ namespace TetrisClone
             // Needs to check each of the boxes in the piece
             // If the piece's boxes won't collide with another piece, then drop it to the bottom
             // If it will collide, go up one row, and continue to check until it can
+
+            int newRow;
+
             int box1Col = grid.GetColumn(currentPiece[0]);
             int box1Row = grid.GetRow(currentPiece[0]);
 
@@ -845,17 +849,53 @@ namespace TetrisClone
             int box4Col = grid.GetColumn(currentPiece[3]);
             int box4Row = grid.GetRow(currentPiece[3]);
 
-            /*
-             Make it recursive?
-            Check bottom row minus current position, add the result the row value
-            check for overlap.
-            - If overlap, either add one to current position or minus one to max height, 
-            and then calculate anew by calling the function recursively.
-            - If not, drop it down.
+            if((box1Row >= box2Row) & (box1Row >= box3Row) & ( box1Row >= box4Row))
+            {
+                newRow = bottom - box1Row;
+            }
+            else if ((box2Row >= box1Row) & (box2Row >= box3Row) & (box2Row >= box4Row))
+            {
+                newRow = bottom - box2Row;
+            }
+            else if ((box3Row >= box1Row) & (box3Row >= box2Row) & (box3Row >= box4Row))
+            {
+                newRow = bottom - box3Row;
+            }
+            else
+            {
+                newRow = bottom - box4Row;
+            }
+            
+            movingPieceHolder[0] = grid.GetControlFromPosition(box1Col, box1Row + newRow);
+            movingPieceHolder[1] = grid.GetControlFromPosition(box2Col, box2Row + newRow);
+            movingPieceHolder[2] = grid.GetControlFromPosition(box3Col, box3Row + newRow);
+            movingPieceHolder[3] = grid.GetControlFromPosition(box4Col, box4Row + newRow);
 
-            Maybe this can be redone later to draw the ghost piece,
-            and space would just make the ghost piece into the active piece?
-             */
+            while(TestOverlap() == false)
+            {
+                bottom--;
+                HardDrop();
+                return;
+            }
+
+            if (TestOverlap() == true)
+            {
+                foreach (PictureBox box in currentPiece)
+                {
+                    box.BackColor = Color.DarkSlateGray;
+                }
+
+                // Replace current piece's position with movingPieceHolder's
+                int x = 0;
+                foreach (PictureBox box in movingPieceHolder)
+                {
+                    box.BackColor = colorArray[currentPieceInt];
+                    currentPiece[x] = box;
+                    x++;
+                }
+            }
+
+            bottom = 24;
         }
 
         // Moves the current piece down one row every second
@@ -965,11 +1005,12 @@ namespace TetrisClone
                 Rotate();
             }
             // Hard drop
-            /*else if(e.KeyCode == Keys.Space)
+            else if(e.KeyCode == Keys.Space)
             {
                 // Need to figure out if I should put the logic for the drop in here, or in a seperate function
+                HardDrop();
             }
-            */
+            
         }
 
     }
