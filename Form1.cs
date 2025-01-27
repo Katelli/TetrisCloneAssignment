@@ -4,10 +4,6 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Windows.Forms;
 
-// ---------- ToDos -------------
-// - Drop piece as far as it can go
-
-
 namespace TetrisClone
 {
     public partial class Form1 : Form
@@ -34,8 +30,12 @@ namespace TetrisClone
             startLabelFlash.Start();
         }
 
-        // Draws the black border between the cells.
-        // I didn't like the default color, and there wasn't an easier way (that I found) to change it
+        /// <summary>
+        /// Draws a black border between the cells in the table. That's it.
+        /// I couldn't find an easier way to set the color of the borders, so this is what I ended up doing.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void tableLayoutPanel1_CellPaint(object sender, TableLayoutCellPaintEventArgs e)
         {
             e.Graphics.DrawRectangle(
@@ -46,6 +46,9 @@ namespace TetrisClone
                 e.CellBounds.Height+1);
         }
 
+        /// <summary>
+        /// Randomly generates and colors a tetris piece
+        /// </summary>
         public void DropPiece()
         {
             // Layout option for each pieace
@@ -87,8 +90,12 @@ namespace TetrisClone
             }
         }
 
-        // Determines whether the move(right/left/down)/rotation(up) would put the piece outside the grid
-        // or collide with another piece
+        /// <summary>
+        /// Determines wheter the move (right/left/down) would put the piece outside the grid,
+        /// or if it would collide with another piece
+        /// </summary>
+        /// <param name="direction"></param>
+        /// <returns> true/ false </returns>
         public bool TestMove(string direction)
         {
             // The outer bounds of the grid
@@ -180,7 +187,11 @@ namespace TetrisClone
             return true;
         }
 
-        // Erase the old position of the piece, and determine new position based on inputs 
+        /// <summary>
+        /// Erase the old position of the piece, and determine the new position based on the inputs(received as direction)
+        /// This code will only run after TestMove() returns true
+        /// </summary>
+        /// <param name="direction"></param>
         public void MovePiece(string direction)
         {
             int x = 0;
@@ -237,11 +248,93 @@ namespace TetrisClone
 
         }
 
-        // Update Score
+        /// <summary>
+        /// Checks if there are any complete rows
+        /// </summary>
+        /// <returns> null / the rowNumber of the full row</returns>
+        public int CheckForCompleteRows()
+        {
+            // For each row (there are 25 rows)
+            for (int y = 24; y >= 0; y--)
+            {
+                // For each column in a row (there are 16 columns)
+                for (int x = 0; x <= 15; x++)
+                {
+                    Control checkedRow = grid.GetControlFromPosition(x, y);
+                    if (checkedRow.BackColor == Color.DarkSlateGray)
+                    {
+                        break;
+                    }
+                    if (x == 15)
+                    {
+                        // Return the number of the full row
+                        return y;
+                    }
+                }
+            }
+            // Return null
+            return -1;
+        }
+
+
+        /// <summary>
+        /// Clears full rows by turning the whole row of the rowNumber it gets from CheckForCompleteRows() into DarkSlateGray
+        /// Then it moves all rows above the cleared row down one
+        /// After that it checks if there are more than one full row, if there is it will add to the combo count,
+        /// if not it will reset the combo to 0.
+        /// Lastly, it updates the score
+        /// </summary>
+        public void ClearFullRows()
+        {
+            int completedRow = CheckForCompleteRows();
+
+            // Turn the completed row back into DarkSlateGray
+            for (int x = 0; x <= 15; x++)
+            {
+                Control checkedRow = grid.GetControlFromPosition(x, completedRow);
+                checkedRow.BackColor = Color.DarkSlateGray;
+            }
+
+            // Move the inactive pieces above the completed row down
+            for (int y = completedRow - 1; y >= 0; y--)
+            {
+                for (int x = 0; x <= 15; x++)
+                {
+                    // The current position of the box
+                    Control currentBox = grid.GetControlFromPosition(x, y);
+                    // The box below the current position
+                    Control nextBox = grid.GetControlFromPosition(x, y + 1);
+
+                    // "Move" it down by erasing and redrawing the backColor
+                    nextBox.BackColor = currentBox.BackColor;
+                    currentBox.BackColor = Color.DarkSlateGray;
+                }
+            }
+
+            // Check if there are more than one full row
+            if (CheckForCompleteRows() > -1)
+            {
+                ClearFullRows();
+                combo++;
+            }
+            else
+            {
+                combo = 0;
+            }
+
+            // Update Score
+            UpdateScore();
+        }
+
+
+
+        /// <summary>
+        /// Updates the ScoreLabel
+        /// The user gets a different amount of points depending on how many rows they clear at once
+        /// Decreases the interval of the timer based on the user's score
+        /// </summary>
         public void UpdateScore()
         {
-            // -- maybe there should be a combo if they clear new rows within a certain time? --
-
             // No combo = 100 points
             if(combo == 0)
             {
@@ -299,78 +392,11 @@ namespace TetrisClone
             }
             
         }
-
-        // Clear full rows
-        public void ClearFullRows()
-        {
-            // Update Score
-
-            int completedRow = CheckForCompleteRows();
-
-            // Turn the completed row back into DarkSlateGray
-            for(int x = 0; x <= 15; x++)
-            {
-                Control checkedRow = grid.GetControlFromPosition(x, completedRow);
-                checkedRow.BackColor = Color.DarkSlateGray;
-            }
-
-            // Move the inactive pieces above the completed row down
-            for(int y = completedRow - 1; y >= 0; y--)
-            {
-                for(int x = 0; x <= 15; x++)
-                {
-                    // The current position of the box
-                    Control currentBox = grid.GetControlFromPosition(x, y);
-                    // The box below the current position
-                    Control nextBox = grid.GetControlFromPosition(x, y + 1);
-
-                    // "Move" it down by erasing and redrawing the backColor
-                    nextBox.BackColor = currentBox.BackColor;
-                    currentBox.BackColor = Color.DarkSlateGray;
-                }
-            }
-
-            // Check if there are more than one full row
-            if(CheckForCompleteRows() > -1)
-            {
-                ClearFullRows();
-                combo++;
-            }
-            else
-            {
-                combo = 0;
-            }
-
-            UpdateScore();
-        }
-
-        // Check for complete rows
-        public int CheckForCompleteRows()
-        {
-            // For each row (there are 25 rows)
-            for(int y = 24; y >= 0; y--)
-            {
-                // For each column in a row (there are 16 columns)
-                for(int x = 0; x <= 15;  x++)
-                {
-                    Control checkedRow = grid.GetControlFromPosition(x, y);
-                    if (checkedRow.BackColor == Color.DarkSlateGray)
-                    {
-                        break;
-                    }
-                    if(x == 15)
-                    {
-                        // Return the number of the full row
-                        return y;
-                    }
-                }
-            }
-            // Return null
-            return -1;
-        }
         
-
-        // Check for game over
+        /// <summary>
+        /// Checks for game over by checking if there are any colored boxes(that's not in the current piece) in the top row
+        /// </summary>
+        /// <returns> true/ false </returns>
         public bool CheckGameOver()
         {
             Control[] topRow = { BoxA1, BoxB1, BoxC1, BoxD1, BoxE1, BoxF1, BoxG1, BoxH1, 
@@ -392,8 +418,10 @@ namespace TetrisClone
             return false;
         }
 
-
-        // Check if the rotation would make the currentPiece collide with another piece
+        /// <summary>
+        /// Checks if the rotation would make the piece collide with another
+        /// </summary>
+        /// <returns> true / false </returns>
         public bool TestOverlap()
         {
             foreach (PictureBox box in movingPieceHolder)
@@ -407,6 +435,12 @@ namespace TetrisClone
             return true;
         }
 
+        /// <summary>
+        /// Rotates the piece
+        /// It will check the position of the piece's boxes, then put the potential new location
+        /// of the boxes in a seperate array which it uses to check if the move would be valid through TestOverlap().
+        /// If it's valid, then it will replace the location of the boxes in the current piece's location with the tested ones
+        /// </summary>
         public void Rotate()
         {
             // Each piece consists of four boxes, this gets all four boxes' columns and rows
@@ -828,14 +862,15 @@ namespace TetrisClone
             }
         }
 
+        /// <summary>
+        /// Drops the piece as far down as it can go
+        /// It starts by checking the bottom row, and if that overlaps with another piece,
+        /// then it checks the row above. If it's valid, then it will replace the location 
+        /// of the boxes in the current piece's location with the tested ones
+        /// </summary>
         public void HardDrop()
         {
-            // Needs to check rows, beginning from the bottom, and check if the piece that's hardDropped would collide with another piece
-            // Needs to check each of the boxes in the piece
-            // If the piece's boxes won't collide with another piece, then drop it to the bottom
-            // If it will collide, go up one row, and continue to check until it can
-
-            int newRow;
+            int rowDifference;
 
             int box1Col = grid.GetColumn(currentPiece[0]);
             int box1Row = grid.GetRow(currentPiece[0]);
@@ -851,25 +886,25 @@ namespace TetrisClone
 
             if((box1Row >= box2Row) & (box1Row >= box3Row) & ( box1Row >= box4Row))
             {
-                newRow = bottom - box1Row;
+                rowDifference = bottom - box1Row;
             }
             else if ((box2Row >= box1Row) & (box2Row >= box3Row) & (box2Row >= box4Row))
             {
-                newRow = bottom - box2Row;
+                rowDifference = bottom - box2Row;
             }
             else if ((box3Row >= box1Row) & (box3Row >= box2Row) & (box3Row >= box4Row))
             {
-                newRow = bottom - box3Row;
+                rowDifference = bottom - box3Row;
             }
             else
             {
-                newRow = bottom - box4Row;
+                rowDifference = bottom - box4Row;
             }
             
-            movingPieceHolder[0] = grid.GetControlFromPosition(box1Col, box1Row + newRow);
-            movingPieceHolder[1] = grid.GetControlFromPosition(box2Col, box2Row + newRow);
-            movingPieceHolder[2] = grid.GetControlFromPosition(box3Col, box3Row + newRow);
-            movingPieceHolder[3] = grid.GetControlFromPosition(box4Col, box4Row + newRow);
+            movingPieceHolder[0] = grid.GetControlFromPosition(box1Col, box1Row + rowDifference);
+            movingPieceHolder[1] = grid.GetControlFromPosition(box2Col, box2Row + rowDifference);
+            movingPieceHolder[2] = grid.GetControlFromPosition(box3Col, box3Row + rowDifference);
+            movingPieceHolder[3] = grid.GetControlFromPosition(box4Col, box4Row + rowDifference);
 
             while(TestOverlap() == false)
             {
@@ -898,7 +933,13 @@ namespace TetrisClone
             bottom = 24;
         }
 
-        // Moves the current piece down one row every second
+        /// <summary>
+        /// A tick timer that moves the current piece down one row each tick, and drops a new piece
+        /// once the current piece has gone as far down as it can go.
+        /// It also checks for game over and completed rows
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void pieceTimer_Tick(object sender, EventArgs e)
         {
             // Check for game over
@@ -938,6 +979,12 @@ namespace TetrisClone
             }
         }
 
+        /// <summary>
+        /// The 5 minute timer I made for the game
+        /// Decreases by one second at an interval of 1000 ticks (1 second)
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void gameTimer_Tick(object sender, EventArgs e)
         {            
             // Decrease the time left by 1 second and update the displayed countdown 
@@ -967,6 +1014,12 @@ namespace TetrisClone
             }
         }
 
+        /// <summary>
+        /// The event handler for keys that are pressed on the keyboard.
+        /// Most keys do nothing until the game timer starts, at which point the enter key will be disabled
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
             // Prevents DropPiece() from starting again if the timer is already running
@@ -979,8 +1032,12 @@ namespace TetrisClone
                     startLabelFlash.Stop();
                     startGameLabel.Visible = false;
                     gameTimer.Start();
-                    pieceTimer.Start();
                     DropPiece();
+                    pieceTimer.Start();
+                }
+                else
+                {
+                    return;
                 }
             }
             
@@ -1007,7 +1064,6 @@ namespace TetrisClone
             // Hard drop
             else if(e.KeyCode == Keys.Space)
             {
-                // Need to figure out if I should put the logic for the drop in here, or in a seperate function
                 HardDrop();
             }
             
