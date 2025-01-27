@@ -6,6 +6,15 @@ using System.Windows.Forms;
 
 namespace TetrisClone
 {
+    // --- New ToDo ---
+    /*
+     - Revamp the HardDrop function to DrawGhostPiece function instead, 
+        and then HardDrop will be another function that takes advantage of the DrawGhostPiece function
+    - Add a list to hold at least one other piece so I can display the next piece that will drop
+    - Add a function to save a piece with shift, and display it
+    - Change it up so the piece starts dropping from above the table instead of creating it in the first
+        few rows
+     */
     public partial class Form1 : Form
     {
         // Global variables
@@ -14,6 +23,7 @@ namespace TetrisClone
             Color.Magenta, Color.Cyan, Color.SpringGreen, Color.BlueViolet };
         Control[] currentPiece = { null, null, null, null };
         Control[] movingPieceHolder = { null, null, null, null };
+        Control[] ghostPiece = {null, null, null, null };
         int currentPieceInt;
         int rotations = 0;
         int combo = 0;
@@ -73,7 +83,7 @@ namespace TetrisClone
             // Check for game over
             foreach(Control box in currentPiece)
             {
-                if(box.BackColor != Color.DarkSlateGray)
+                if(box.BackColor != Color.DarkSlateGray & box.BackColor != Color.SlateGray)
                 {
                     pieceTimer.Stop();
                     gameTimer.Stop();
@@ -88,6 +98,8 @@ namespace TetrisClone
             {
                 box.BackColor = colorArray[currentPieceInt];
             }
+
+            DrawGhostPiece();
         }
 
         /// <summary>
@@ -176,7 +188,7 @@ namespace TetrisClone
                         break;
                 }
 
-                if(newBox.BackColor != Color.DarkSlateGray & currentPiece.Contains(newBox) == false & nextBox > 0)
+                if((newBox.BackColor != Color.DarkSlateGray & newBox.BackColor != Color.SlateGray) & currentPiece.Contains(newBox) == false & nextBox > 0)
                 {
                     // Collides with another piece
                     return false;
@@ -245,6 +257,15 @@ namespace TetrisClone
                 box.BackColor = colorArray[currentPieceInt];
                 x++;
             }
+
+            if (ghostPiece != null)
+            {
+                foreach (PictureBox box in ghostPiece)
+                {
+                    box.BackColor = Color.DarkSlateGray;
+                }
+            }
+            DrawGhostPiece();
 
         }
 
@@ -403,7 +424,7 @@ namespace TetrisClone
                 BoxI1 , BoxJ1, BoxK1, BoxL1, BoxM1, BoxN1, BoxO1, BoxP1 }; 
             foreach (Control box in topRow)
             {
-                if(box.BackColor != Color.DarkSlateGray & !currentPiece.Contains(box))
+                if((box.BackColor != Color.DarkSlateGray & box.BackColor != Color.SlateGray) & !currentPiece.Contains(box))
                 {
                     // GameOver
                     return true;
@@ -426,7 +447,7 @@ namespace TetrisClone
         {
             foreach (PictureBox box in movingPieceHolder)
             {
-                if (box.BackColor != Color.DarkSlateGray & currentPiece.Contains(box) == false)
+                if ((box.BackColor != Color.DarkSlateGray & box.BackColor != Color.SlateGray) & currentPiece.Contains(box) == false)
                 {
                     return false;
                 }
@@ -862,13 +883,26 @@ namespace TetrisClone
             }
         }
 
+        public bool TestGhostPiece()
+        {
+            foreach(PictureBox box in ghostPiece)
+            {
+                if(box.BackColor != Color.DarkSlateGray & currentPiece.Contains(box) == false)
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
         /// <summary>
         /// Drops the piece as far down as it can go
         /// It starts by checking the bottom row, and if that overlaps with another piece,
         /// then it checks the row above. If it's valid, then it will replace the location 
         /// of the boxes in the current piece's location with the tested ones
         /// </summary>
-        public void HardDrop()
+        public void DrawGhostPiece()
         {
             int rowDifference;
 
@@ -901,36 +935,42 @@ namespace TetrisClone
                 rowDifference = bottom - box4Row;
             }
             
-            movingPieceHolder[0] = grid.GetControlFromPosition(box1Col, box1Row + rowDifference);
-            movingPieceHolder[1] = grid.GetControlFromPosition(box2Col, box2Row + rowDifference);
-            movingPieceHolder[2] = grid.GetControlFromPosition(box3Col, box3Row + rowDifference);
-            movingPieceHolder[3] = grid.GetControlFromPosition(box4Col, box4Row + rowDifference);
+            ghostPiece[0] = grid.GetControlFromPosition(box1Col, box1Row + rowDifference);
+            ghostPiece[1] = grid.GetControlFromPosition(box2Col, box2Row + rowDifference);
+            ghostPiece[2] = grid.GetControlFromPosition(box3Col, box3Row + rowDifference);
+            ghostPiece[3] = grid.GetControlFromPosition(box4Col, box4Row + rowDifference);
 
-            while(TestOverlap() == false)
+            while(TestGhostPiece() == false)
             {
                 bottom--;
-                HardDrop();
+                DrawGhostPiece();
                 return;
             }
 
-            if (TestOverlap() == true)
+            if(TestGhostPiece() == true)
             {
-                foreach (PictureBox box in currentPiece)
+                foreach(PictureBox box in ghostPiece)
                 {
-                    box.BackColor = Color.DarkSlateGray;
-                }
-
-                // Replace current piece's position with movingPieceHolder's
-                int x = 0;
-                foreach (PictureBox box in movingPieceHolder)
-                {
-                    box.BackColor = colorArray[currentPieceInt];
-                    currentPiece[x] = box;
-                    x++;
+                    box.BackColor = Color.SlateGray;
                 }
             }
-
             bottom = 24;
+        }
+
+        public void HardDrop()
+        {
+            foreach (PictureBox box in currentPiece)
+            {
+                box.BackColor = Color.DarkSlateGray;
+            }
+
+            int x = 0;
+            foreach (PictureBox box in ghostPiece)
+            {
+                box.BackColor = colorArray[currentPieceInt];
+                currentPiece[x] = box;
+                x++;
+            }
         }
 
         /// <summary>
@@ -1060,6 +1100,14 @@ namespace TetrisClone
             else if(e.KeyCode == Keys.Up | e.KeyCode == Keys.W)
             {
                 Rotate();
+                if (ghostPiece != null)
+                {
+                    foreach (PictureBox box in ghostPiece)
+                    {
+                        box.BackColor = Color.DarkSlateGray;
+                    }
+                }
+                DrawGhostPiece();
             }
             // Hard drop
             else if(e.KeyCode == Keys.Space)
