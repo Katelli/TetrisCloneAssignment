@@ -12,6 +12,8 @@ namespace TetrisClone
     - Add a function to save a piece with shift, and display it
     - Change it up so the piece starts dropping from above the table instead of creating it in the first
         few rows
+    - Make rotations more adaptable, if it's too close to the edge, maybe i should just move each box in one column?
+    - Find a way to save the user's high score
      */
     public partial class Form1 : Form
     {
