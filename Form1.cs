@@ -9,12 +9,11 @@ namespace TetrisClone
 {
     // --- New ToDo ---
     /*
-    - Only allow one switch per piece, it could become an infinite loop since switch always makes it start at the top.
-        Maybe I could make use of the transfer int or something similar?
     - Change it up so the piece starts dropping from above the table instead of creating it in the first
         few rows
     - Make rotations more adaptable, if it's too close to the edge, maybe i should just move each box in one column?
     - Find a way to save the user's high score
+    - Add a label or something similar that explains the controls of the game, should disappear when the game starts.
     - Make a combo countdown timer to let the user get more combos (within a limited time)
     - Add music
         - Increase music speed in conjuction with the pieceTimer interval?
@@ -38,6 +37,7 @@ namespace TetrisClone
         int score = 0;
         int bottom = 24;
         int pieceIterationCount = 0;
+        int saveCounter = 0;
         bool gameOver = false;
         Random random = new Random();
         List<int> nextPieceList = new List<int>();
@@ -56,7 +56,6 @@ namespace TetrisClone
             {
                 int n = random.Next(7);
                 nextPieceList.Add(n);
-                Console.WriteLine(n);
             }
 
             // Select the first piece
@@ -85,6 +84,9 @@ namespace TetrisClone
         /// </summary>
         public void DropPiece()
         {
+            // Resets the saveCounter
+            saveCounter = 0;
+
             // Layout option for each active pieace
             Control[,] pieceArray =
             {
@@ -1085,7 +1087,7 @@ namespace TetrisClone
                     { boxSP22, boxSP32, boxSP33, boxSP43 }, // Z piece
                     { boxSP31, boxSP32, boxSP33, boxSP43 }, // L piece
                     { boxSP41, boxSP42, boxSP43, boxSP33 }, // J piece
-                    { boxSP31, boxSP32, boxNP33, boxSP42 } // T piece
+                    { boxSP31, boxSP32, boxSP33, boxSP42 } // T piece
                 };
 
             // Layout option for each active pieace
@@ -1100,71 +1102,94 @@ namespace TetrisClone
                     { BoxH1, BoxH2, BoxH3, BoxI2 }  // T piece
                 };
 
-            // Erase the current piece
-            foreach (Control box in currentPiece)
+            // Prevents infinite swaps, only once per piece!
+            if (saveCounter != 0)
             {
-                box.BackColor = Color.DarkSlateGray;
+                Console.WriteLine("It's the same piece!");
+                return;
             }
-
-            // Erase the ghost piece
-            foreach (Control box in ghostPiece)
-            {
-                box.BackColor = Color.DarkSlateGray;
-            }
-
-            // If no piece has been saved yet
-            if (savedPiece.FirstOrDefault() == null)
-            {
-                // Set the int to the currentPieceInt
-                savedPieceInt = currentPieceInt;
-                // Get the layout for the saved piece
-                for (int i = 0; i < 4; i++)
-                {
-                    savedPiece[i] = savedPieceArray[savedPieceInt, i];
-                }
-
-                // Color each box in the savedPiece Array
-                foreach (Control box in savedPiece)
-                {
-                    box.BackColor = colorArray[savedPieceInt];
-                }
-
-                // Drop a new piece
-                DropPiece();
-            }
-            //If a piece has been saved
             else
             {
-                // Erase the saved piece
-                foreach (Control box in savedPiece)
-                {
-                    box.BackColor = Color.LightSlateGray;
-                }
+                rotations = 0;
 
-                // Swap the pieces through swapping ints with the help of a temporary int for the transfer
-                int transferInt = currentPieceInt;
-                currentPieceInt = savedPieceInt;
-                savedPieceInt = transferInt;
-
-                for (int i = 0; i < 4; i++)
-                {
-                    savedPiece[i] = savedPieceArray[savedPieceInt, i];
-                    currentPiece[i] = pieceArray[currentPieceInt, i];
-                }
-
-                // Color each box in the currentPiece Array
+                // Erase the current piece
                 foreach (Control box in currentPiece)
                 {
-                    box.BackColor = colorArray[currentPieceInt];
+                    box.BackColor = Color.DarkSlateGray;
                 }
 
-                // Color each box in the savedPiece Array
-                foreach (Control box in savedPiece)
+                // Erase the ghost piece
+                foreach (Control box in ghostPiece)
                 {
-                    box.BackColor = colorArray[savedPieceInt];
+                    box.BackColor = Color.DarkSlateGray;
                 }
 
-                DrawGhostPiece();
+                // If no piece has been saved yet
+                if (savedPiece.FirstOrDefault() == null)
+                {
+                    // Set the int to the currentPieceInt
+                    savedPieceInt = currentPieceInt;
+                    // Get the layout for the saved piece
+                    for (int i = 0; i < 4; i++)
+                    {
+                        savedPiece[i] = savedPieceArray[savedPieceInt, i];
+                    }
+
+                    // Color each box in the savedPiece Array
+                    foreach (Control box in savedPiece)
+                    {
+                        box.BackColor = colorArray[savedPieceInt];
+                    }
+
+                    Console.WriteLine($"first saved piece int {savedPieceInt}, and the counter is at {saveCounter}");
+
+                    // Drop a new piece
+                    DropPiece();
+
+                    // Needs to go here since DropPiece() resets it
+                    saveCounter++;
+                }
+                //If a piece has been saved
+                else
+                {
+                    // Temporary int
+                    int transferInt = currentPieceInt;
+
+                    // Erase the saved piece
+                    foreach (Control box in savedPiece)
+                    {
+                        box.BackColor = Color.LightSlateGray;
+                    }
+
+                    // Swap the pieces through swapping ints with the help of a temporary int for the transfer
+                    currentPieceInt = savedPieceInt;
+                    savedPieceInt = transferInt;
+
+                    for (int i = 0; i < 4; i++)
+                    {
+                        savedPiece[i] = savedPieceArray[savedPieceInt, i];
+                        currentPiece[i] = pieceArray[currentPieceInt, i];
+                    }
+
+                    // Color each box in the currentPiece Array
+                    foreach (Control box in currentPiece)
+                    {
+                        box.BackColor = colorArray[currentPieceInt];
+                    }
+
+                    // Color each box in the savedPiece Array
+                    foreach (Control box in savedPiece)
+                    {
+                        box.BackColor = colorArray[savedPieceInt];
+                    }
+
+                    saveCounter++;
+                    Console.WriteLine($"save counter {saveCounter}");
+                    Console.WriteLine("\n");
+
+                    DrawGhostPiece();
+
+                }
             }
         }
 
