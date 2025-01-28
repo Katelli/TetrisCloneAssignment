@@ -280,7 +280,8 @@ namespace TetrisClone
                         break;
                 }
 
-                if((newBox.BackColor != Color.DarkSlateGray & newBox.BackColor != Color.SlateGray) & currentPiece.Contains(newBox) == false & nextBox > 0)
+                if((newBox.BackColor != Color.DarkSlateGray & newBox.BackColor != Color.SlateGray) 
+                    & currentPiece.Contains(newBox) == false & nextBox >= 0)
                 {
                     // Collides with another piece
                     return false;
@@ -709,7 +710,19 @@ namespace TetrisClone
                 {
                     if (box3Col == 15)
                     {
-                        return;
+                        movingPieceHolder[0] = grid.GetControlFromPosition(box1Col - 1, box1Row); // P2 -> O2
+                        movingPieceHolder[1] = grid.GetControlFromPosition(box2Col, box2Row + 1); // O2 -> O3
+                        movingPieceHolder[2] = grid.GetControlFromPosition(box3Col, box3Row - 1); // P3 -> P2
+                        movingPieceHolder[3] = grid.GetControlFromPosition(box4Col - 1, box4Row + 2); // O1 -> N3
+
+                        if (TestOverlap() == true)
+                        {
+                            rotations = 0;
+                        }
+                        else
+                        {
+                            return;
+                        }
                     }
                     else
                     {
@@ -1139,7 +1152,10 @@ namespace TetrisClone
             {
                 foreach(PictureBox box in ghostPiece)
                 {
-                    box.BackColor = Color.SlateGray;
+                    while (box.BackColor == Color.DarkSlateGray)
+                    {
+                        box.BackColor = Color.SlateGray;
+                    }
                 }
             }
             bottom = 24;
