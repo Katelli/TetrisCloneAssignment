@@ -355,18 +355,13 @@ namespace TetrisClone
             {
                 foreach (PictureBox box in ghostPiece)
                 {
-                    box.BackColor = Color.DarkSlateGray;
+                    while (box.BackColor == Color.SlateGray)
+                    {
+                        box.BackColor = Color.DarkSlateGray;
+                    }
                 }
             }
             DrawGhostPiece();
-
-            foreach(PictureBox box in ghostPiece)
-            {
-                if(currentPiece.Contains(box))
-                {
-                    box.BackColor = colorArray[currentPieceInt];
-                }
-            }
 
         }
 
@@ -747,9 +742,21 @@ namespace TetrisClone
             {
                 if(rotations == 0)
                 {
-                    if (box1Row == 23)
+                    if (box3Row == 24)
                     {
-                        return;
+                        movingPieceHolder[0] = grid.GetControlFromPosition(box1Col, box1Row + 1); // M4 -> M5
+                        movingPieceHolder[1] = grid.GetControlFromPosition(box2Col - 1, box2Row); // N4 -> M4
+                        movingPieceHolder[2] = grid.GetControlFromPosition(box3Col, box3Row - 1); // N5 -> N4
+                        movingPieceHolder[3] = grid.GetControlFromPosition(box4Col - 1, box4Row - 2); // O5 -> N3
+
+                        if (TestOverlap() == true)
+                        {
+                            rotations++;
+                        }
+                        else
+                        {
+                            return;
+                        }
                     }
                     else
                     {
@@ -773,7 +780,19 @@ namespace TetrisClone
                 {
                     if (box1Col == 0)
                     {
-                        return;
+                        movingPieceHolder[0] = grid.GetControlFromPosition(box1Col, box1Row - 1);
+                        movingPieceHolder[1] = grid.GetControlFromPosition(box2Col + 1, box2Row);
+                        movingPieceHolder[2] = grid.GetControlFromPosition(box3Col, box3Row + 1); 
+                        movingPieceHolder[3] = grid.GetControlFromPosition(box4Col + 1, box4Row + 2);
+
+                        if (TestOverlap() == true)
+                        {
+                            rotations = 0;
+                        }
+                        else
+                        {
+                            return;
+                        }
                     }
                     else
                     {
@@ -1070,7 +1089,7 @@ namespace TetrisClone
                 }
             }
 
-            foreach(PictureBox box in currentPiece)
+            foreach (PictureBox box in currentPiece)
             {
                 box.BackColor = Color.DarkSlateGray;
             }
@@ -1435,9 +1454,10 @@ namespace TetrisClone
             else if(e.KeyCode == Keys.Up | e.KeyCode == Keys.W)
             {
                 Rotate();
-                if (ghostPiece != null)
+                // Redraw Ghost piece
+                foreach (PictureBox box in ghostPiece)
                 {
-                    foreach (PictureBox box in ghostPiece)
+                    while (box.BackColor == Color.SlateGray)
                     {
                         box.BackColor = Color.DarkSlateGray;
                     }
