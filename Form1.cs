@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -8,12 +9,14 @@ namespace TetrisClone
 {
     // --- New ToDo ---
     /*
-    - Add a list to hold at least one other piece so I can display the next piece that will drop
     - Add a function to save a piece with shift, and display it
     - Change it up so the piece starts dropping from above the table instead of creating it in the first
         few rows
     - Make rotations more adaptable, if it's too close to the edge, maybe i should just move each box in one column?
     - Find a way to save the user's high score
+    - Make a combo countdown timer to let the user get more combos (within a limited time)
+    - Add music
+        - Increase music speed in conjuction with the pieceTimer interval?
      */
     public partial class Form1 : Form
     {
@@ -22,15 +25,22 @@ namespace TetrisClone
         Color[] colorArray = { Color.CornflowerBlue, Color.Yellow, Color.Crimson,
             Color.Magenta, Color.Cyan, Color.SpringGreen, Color.BlueViolet };
         Control[] currentPiece = { null, null, null, null };
+        Control[] nextPiece = { null, null, null, null };
         Control[] movingPieceHolder = { null, null, null, null };
         Control[] ghostPiece = {null, null, null, null };
+        Control[] savedPiece = { null, null, null, null };
+        Control[] transferSavedPiece = { null, null, null, null };
         int currentPieceInt;
+        int nextPieceInt;
         int rotations = 0;
         int combo = 0;
         int score = 0;
         int bottom = 24;
+        int pieceIterationCount = 0;
         bool gameOver = false;
         Random random = new Random();
+        List<int> nextPieceList = new List<int>();
+
 
         public Form1()
         {
@@ -38,6 +48,19 @@ namespace TetrisClone
             this.KeyPreview = true;
             this.grid.CellPaint += tableLayoutPanel1_CellPaint;
             startLabelFlash.Start();
+
+            // Randomly select a int for the pieces through random.Next()
+            // and add it to the nextPieceList.
+            while (nextPieceList.Count < 5)
+            {
+                int n = random.Next(7);
+                nextPieceList.Add(n);
+                Console.WriteLine(n);
+            }
+
+            // Select the first piece
+            nextPieceInt = nextPieceList[0];
+            pieceIterationCount++;
         }
 
         /// <summary>
@@ -61,7 +84,7 @@ namespace TetrisClone
         /// </summary>
         public void DropPiece()
         {
-            // Layout option for each pieace
+            // Layout option for each active pieace
             Control[,] pieceArray =
             {
                 { BoxH1, BoxH2, BoxH3, BoxH4 }, // I piece
@@ -73,15 +96,66 @@ namespace TetrisClone
                 { BoxH1, BoxH2, BoxH3, BoxI2 }  // T piece
             };
 
-            // Randomly select a piece from the pieceArray through random.Next()
-            currentPieceInt = random.Next( 7 );
+            // Layout option for the nextPiece grid
+            Control[,] nextPieceArray =
+            {
+                { boxNP31, boxNP32, boxNP33, boxNP34 }, // I piece
+                { boxNP32, boxNP33, boxNP42, boxNP43 }, // O piece
+                { boxNP32, boxNP33, boxNP42, boxNP23 }, // S piece
+                { boxNP22, boxNP32, boxNP33, boxNP43 }, // Z piece
+                { boxNP31, boxNP32, boxNP33, boxNP43 }, // L piece
+                { boxNP41, boxNP42, boxNP43, boxNP33 }, // J piece
+                { boxNP31, boxNP32, boxNP33, boxNP42 } // T piece
+            };
+
+            // Move the nextPiece to the current piece
+            currentPieceInt = nextPieceInt;
+
+            // If all pieces in the nextPieceList has been used
+            if(pieceIterationCount == 5)
+            {
+                // Reset the counter
+                pieceIterationCount = 0;
+                // Clear the list
+                nextPieceList.Clear();
+
+                while (nextPieceList.Count < 5)
+                {
+                    int n = random.Next(7);
+                    if (!nextPieceList.Contains(n))
+                    {
+                        nextPieceList.Add(n);
+                    }
+                }
+            }
+            
+            // Select the next piece from the list
+            nextPieceInt = nextPieceList[pieceIterationCount];
+            pieceIterationCount++;
+
+            // Clear the nextPieceGrid if it's not the first move
+            if (nextPiece.Contains(null) == false)
+            {
+                foreach (Control box in nextPiece)
+                {
+                    box.BackColor = Color.LightSlateGray;
+                }
+            }
+
+            // Get layout for the current piece
             for(int i = 0; i < 4; i++)
             {
                 currentPiece[i] = pieceArray[currentPieceInt, i];
             }
 
+            // Get layout for the next piece
+            for (int i = 0; i < 4; i++)
+            {
+                nextPiece[i] = nextPieceArray[nextPieceInt, i];
+            }
+
             // Check for game over
-            foreach(Control box in currentPiece)
+            foreach (Control box in currentPiece)
             {
                 if(box.BackColor != Color.DarkSlateGray & box.BackColor != Color.SlateGray)
                 {
@@ -97,6 +171,12 @@ namespace TetrisClone
             foreach(Control box in currentPiece)
             {
                 box.BackColor = colorArray[currentPieceInt];
+            }
+
+            // Color each box in the nextPiece
+            foreach (Control box in nextPiece)
+            {
+                box.BackColor = colorArray[nextPieceInt];
             }
 
             DrawGhostPiece();
@@ -1118,9 +1198,38 @@ namespace TetrisClone
                 DrawGhostPiece();
             }
             // Hard drop
-            else if(e.KeyCode == Keys.Space)
+            else if(CheckGameOver() == false & e.KeyCode == Keys.Space)
             {
                 HardDrop();
+            }
+            else if(CheckGameOver() == false & e.KeyCode == Keys.Shift)
+            {
+                // Needs to save the current piece and drop a new one if there is no piece saved
+                // If there is a piece saved, then it should switch the saved piece and current piece
+
+                // Layout option for each saved piece
+                Control[,] savedPieceArray =
+                {
+                    { boxSP31, boxSP32, boxSP33, boxSP34 }, // I piece
+                    { boxSP32, boxSP33, boxSP42, boxSP43 }, // O piece
+                    { boxSP32, boxSP33, boxSP42, boxSP23 }, // S piece
+                    { boxSP22, boxSP32, boxSP33, boxSP43 }, // Z piece
+                    { boxSP31, boxSP32, boxSP33, boxSP43 }, // L piece
+                    { boxSP41, boxSP42, boxSP43, boxSP33 }, // J piece
+                    { boxSP31, boxSP32, boxNP33, boxSP42 } // T piece
+                };
+
+                // Layout option for each active pieace
+                Control[,] pieceArray =
+                {
+                { BoxH1, BoxH2, BoxH3, BoxH4 }, // I piece
+                { BoxH1, BoxH2, BoxI1, BoxI2 }, // O piece
+                { BoxH1, BoxH2, BoxI1, BoxG2 }, // S piece
+                { BoxH1, BoxI1, BoxI2, BoxJ2 }, // Z piece
+                { BoxH1, BoxH2, BoxH3, BoxI3 }, // L piece
+                { BoxI1, BoxI2, BoxI3, BoxH3 }, // J piece
+                { BoxH1, BoxH2, BoxH3, BoxI2 }  // T piece
+            };
             }
             
         }
