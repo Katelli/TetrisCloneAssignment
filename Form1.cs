@@ -9,7 +9,8 @@ namespace TetrisClone
 {
     // --- New ToDo ---
     /*
-    - Add a function to save a piece with shift, and display it
+    - Only allow one switch per piece, it could become an infinite loop since switch always makes it start at the top.
+        Maybe I could make use of the transfer int or something similar?
     - Change it up so the piece starts dropping from above the table instead of creating it in the first
         few rows
     - Make rotations more adaptable, if it's too close to the edge, maybe i should just move each box in one column?
@@ -29,9 +30,9 @@ namespace TetrisClone
         Control[] movingPieceHolder = { null, null, null, null };
         Control[] ghostPiece = {null, null, null, null };
         Control[] savedPiece = { null, null, null, null };
-        Control[] transferSavedPiece = { null, null, null, null };
         int currentPieceInt;
         int nextPieceInt;
+        int savedPieceInt;
         int rotations = 0;
         int combo = 0;
         int score = 0;
@@ -173,7 +174,7 @@ namespace TetrisClone
                 box.BackColor = colorArray[currentPieceInt];
             }
 
-            // Color each box in the nextPiece
+            // Color each box in the nextPiece Array
             foreach (Control box in nextPiece)
             {
                 box.BackColor = colorArray[nextPieceInt];
@@ -985,10 +986,9 @@ namespace TetrisClone
         }
 
         /// <summary>
-        /// Drops the piece as far down as it can go
+        /// Draws a ghost of the current piece at the lowest row it can go.
         /// It starts by checking the bottom row, and if that overlaps with another piece,
-        /// then it checks the row above. If it's valid, then it will replace the location 
-        /// of the boxes in the current piece's location with the tested ones
+        /// then it checks the row above. It will draw a ghostPiece at the lowest valid row.
         /// </summary>
         public void DrawGhostPiece()
         {
@@ -1045,6 +1045,11 @@ namespace TetrisClone
             bottom = 24;
         }
 
+        /// <summary>
+        /// Drops the piece as far down as it can go.
+        /// Since I've added a ghost piece, this function will simply "erase" the current piece,
+        /// and "redraw it" by adding color to the ghost piece
+        /// </summary>
         public void HardDrop()
         {
             foreach (PictureBox box in currentPiece)
@@ -1058,6 +1063,108 @@ namespace TetrisClone
                 box.BackColor = colorArray[currentPieceInt];
                 currentPiece[x] = box;
                 x++;
+            }
+        }
+
+        /// <summary>
+        /// Saves the current piece and displays it in the savedPieceGrid.
+        /// If there is no piece added, it will add the current piece to the display and erase it from the board.
+        /// If there is a piece that's been saved, then it will switch them.
+        /// </summary>
+        public void SaveAPiece()
+        {
+            // Needs to save the current piece, erase it, and drop a new one if there is no piece saved
+            // If there is a piece saved, then it should switch the saved piece and current piece
+
+            // Layout option for each saved piece
+            Control[,] savedPieceArray =
+            {
+                    { boxSP31, boxSP32, boxSP33, boxSP34 }, // I piece
+                    { boxSP32, boxSP33, boxSP42, boxSP43 }, // O piece
+                    { boxSP32, boxSP33, boxSP42, boxSP23 }, // S piece
+                    { boxSP22, boxSP32, boxSP33, boxSP43 }, // Z piece
+                    { boxSP31, boxSP32, boxSP33, boxSP43 }, // L piece
+                    { boxSP41, boxSP42, boxSP43, boxSP33 }, // J piece
+                    { boxSP31, boxSP32, boxNP33, boxSP42 } // T piece
+                };
+
+            // Layout option for each active pieace
+            Control[,] pieceArray =
+            {
+                    { BoxH1, BoxH2, BoxH3, BoxH4 }, // I piece
+                    { BoxH1, BoxH2, BoxI1, BoxI2 }, // O piece
+                    { BoxH1, BoxH2, BoxI1, BoxG2 }, // S piece
+                    { BoxH1, BoxI1, BoxI2, BoxJ2 }, // Z piece
+                    { BoxH1, BoxH2, BoxH3, BoxI3 }, // L piece
+                    { BoxI1, BoxI2, BoxI3, BoxH3 }, // J piece
+                    { BoxH1, BoxH2, BoxH3, BoxI2 }  // T piece
+                };
+
+            // Erase the current piece
+            foreach (Control box in currentPiece)
+            {
+                box.BackColor = Color.DarkSlateGray;
+            }
+
+            // Erase the ghost piece
+            foreach (Control box in ghostPiece)
+            {
+                box.BackColor = Color.DarkSlateGray;
+            }
+
+            // If no piece has been saved yet
+            if (savedPiece.FirstOrDefault() == null)
+            {
+                // Set the int to the currentPieceInt
+                savedPieceInt = currentPieceInt;
+                // Get the layout for the saved piece
+                for (int i = 0; i < 4; i++)
+                {
+                    savedPiece[i] = savedPieceArray[savedPieceInt, i];
+                }
+
+                // Color each box in the savedPiece Array
+                foreach (Control box in savedPiece)
+                {
+                    box.BackColor = colorArray[savedPieceInt];
+                }
+
+                // Drop a new piece
+                DropPiece();
+            }
+            //If a piece has been saved
+            else
+            {
+                // Erase the saved piece
+                foreach (Control box in savedPiece)
+                {
+                    box.BackColor = Color.LightSlateGray;
+                }
+
+                // Swap the pieces through swapping ints with the help of a temporary int for the transfer
+                int transferInt = currentPieceInt;
+                currentPieceInt = savedPieceInt;
+                savedPieceInt = transferInt;
+
+                for (int i = 0; i < 4; i++)
+                {
+                    savedPiece[i] = savedPieceArray[savedPieceInt, i];
+                    currentPiece[i] = pieceArray[currentPieceInt, i];
+                }
+
+                // Color each box in the currentPiece Array
+                foreach (Control box in currentPiece)
+                {
+                    box.BackColor = colorArray[currentPieceInt];
+                }
+
+                // Color each box in the savedPiece Array
+                foreach (Control box in savedPiece)
+                {
+                    box.BackColor = colorArray[savedPieceInt];
+                }
+
+                DrawGhostPiece();
             }
         }
 
@@ -1165,6 +1272,7 @@ namespace TetrisClone
                 }
                 else
                 {
+                    // Prevents any of the other keys from working until the game has started.
                     return;
                 }
             }
@@ -1202,34 +1310,9 @@ namespace TetrisClone
             {
                 HardDrop();
             }
-            else if(CheckGameOver() == false & e.KeyCode == Keys.Shift)
+            else if(CheckGameOver() == false & e.KeyCode == Keys.ShiftKey)
             {
-                // Needs to save the current piece and drop a new one if there is no piece saved
-                // If there is a piece saved, then it should switch the saved piece and current piece
-
-                // Layout option for each saved piece
-                Control[,] savedPieceArray =
-                {
-                    { boxSP31, boxSP32, boxSP33, boxSP34 }, // I piece
-                    { boxSP32, boxSP33, boxSP42, boxSP43 }, // O piece
-                    { boxSP32, boxSP33, boxSP42, boxSP23 }, // S piece
-                    { boxSP22, boxSP32, boxSP33, boxSP43 }, // Z piece
-                    { boxSP31, boxSP32, boxSP33, boxSP43 }, // L piece
-                    { boxSP41, boxSP42, boxSP43, boxSP33 }, // J piece
-                    { boxSP31, boxSP32, boxNP33, boxSP42 } // T piece
-                };
-
-                // Layout option for each active pieace
-                Control[,] pieceArray =
-                {
-                { BoxH1, BoxH2, BoxH3, BoxH4 }, // I piece
-                { BoxH1, BoxH2, BoxI1, BoxI2 }, // O piece
-                { BoxH1, BoxH2, BoxI1, BoxG2 }, // S piece
-                { BoxH1, BoxI1, BoxI2, BoxJ2 }, // Z piece
-                { BoxH1, BoxH2, BoxH3, BoxI3 }, // L piece
-                { BoxI1, BoxI2, BoxI3, BoxH3 }, // J piece
-                { BoxH1, BoxH2, BoxH3, BoxI2 }  // T piece
-            };
+                SaveAPiece();
             }
             
         }
