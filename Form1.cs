@@ -819,7 +819,19 @@ namespace TetrisClone
                 {
                     if (box4Col == 15)
                     {
-                        return;
+                        movingPieceHolder[0] = grid.GetControlFromPosition(box1Col + 1, box1Row + 1); // O1 -> P2
+                        movingPieceHolder[1] = grid.GetControlFromPosition(box2Col, box2Row); // O2 -> O2
+                        movingPieceHolder[2] = grid.GetControlFromPosition(box3Col - 1, box3Row - 1); // O3 -> N2
+                        movingPieceHolder[3] = grid.GetControlFromPosition(box4Col - 2, box4Row); // P3 -> N3
+
+                        if (TestOverlap() == true)
+                        {
+                            rotations++;
+                        }
+                        else
+                        {
+                            return;
+                        }
                     }
                     else
                     {
@@ -867,7 +879,19 @@ namespace TetrisClone
                 {
                     if (box4Col == 0)
                     {
-                        return;
+                        movingPieceHolder[0] = grid.GetControlFromPosition(box1Col - 1, box1Row - 1); // L3 -> K2
+                        movingPieceHolder[1] = grid.GetControlFromPosition(box2Col, box2Row); // L2 -> L2
+                        movingPieceHolder[2] = grid.GetControlFromPosition(box3Col + 1, box3Row + 1); // L1 -> M2
+                        movingPieceHolder[3] = grid.GetControlFromPosition(box4Col + 2, box4Row); // K1 -> M1
+
+                        if (TestOverlap() == true)
+                        {
+                            rotations++;
+                        }
+                        else
+                        {
+                            return;
+                        }
                     }
                     else
                     {
