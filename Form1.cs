@@ -443,8 +443,6 @@ namespace TetrisClone
             UpdateScore();
         }
 
-
-
         /// <summary>
         /// Updates the ScoreLabel
         /// The user gets a different amount of points depending on how many rows they clear at once
@@ -1262,28 +1260,26 @@ namespace TetrisClone
             // Layout option for each saved piece
             Control[,] savedPieceArray =
             {
-                    { boxSP31, boxSP32, boxSP33, boxSP34 }, // I piece
-                    { boxSP32, boxSP33, boxSP42, boxSP43 }, // O piece
-                    { boxSP32, boxSP33, boxSP42, boxSP23 }, // S piece
-                    { boxSP22, boxSP32, boxSP33, boxSP43 }, // Z piece
-                    { boxSP31, boxSP32, boxSP33, boxSP43 }, // L piece
-                    { boxSP41, boxSP42, boxSP43, boxSP33 }, // J piece
-                    { boxSP31, boxSP32, boxSP33, boxSP42 } // T piece
-                };
+                { boxSP31, boxSP32, boxSP33, boxSP34 }, // I piece
+                { boxSP32, boxSP33, boxSP42, boxSP43 }, // O piece
+                { boxSP32, boxSP33, boxSP42, boxSP23 }, // S piece
+                { boxSP22, boxSP32, boxSP33, boxSP43 }, // Z piece
+                { boxSP31, boxSP32, boxSP33, boxSP43 }, // L piece
+                { boxSP41, boxSP42, boxSP43, boxSP33 }, // J piece
+                { boxSP31, boxSP32, boxSP33, boxSP42 } // T piece
+            };
 
             // Layout option for each active pieace
             Control[,] pieceArray =
             {
-                    { BoxH1, BoxH2, BoxH3, BoxH4 }, // I piece
-                    { BoxH1, BoxH2, BoxI1, BoxI2 }, // O piece
-                    { BoxH1, BoxH2, BoxI1, BoxG2 }, // S piece
-                    { BoxH1, BoxI1, BoxI2, BoxJ2 }, // Z piece
-                    { BoxH1, BoxH2, BoxH3, BoxI3 }, // L piece
-                    { BoxI1, BoxI2, BoxI3, BoxH3 }, // J piece
-                    { BoxH1, BoxH2, BoxH3, BoxI2 }  // T piece
-                };
-
-            rotations = 0;
+                { BoxH1, BoxH2, BoxH3, BoxH4 }, // I piece
+                { BoxH1, BoxH2, BoxI1, BoxI2 }, // O piece
+                { BoxH1, BoxH2, BoxI1, BoxG2 }, // S piece
+                { BoxH1, BoxI1, BoxI2, BoxJ2 }, // Z piece
+                { BoxH1, BoxH2, BoxH3, BoxI3 }, // L piece
+                { BoxI1, BoxI2, BoxI3, BoxH3 }, // J piece
+                { BoxH1, BoxH2, BoxH3, BoxI2 }  // T piece
+            };
 
             // Prevents infinite swaps, only once per piece!
             if (saveCounter != 0)
@@ -1291,8 +1287,14 @@ namespace TetrisClone
                 Console.WriteLine("It's the same piece!");
                 return;
             }
+            else if(TestMove("down") == false)
+            {
+                return;
+            }
             else
-            { 
+            {
+                rotations = 0;
+
                 // Erase the current piece
                 foreach (Control box in currentPiece)
                 {
