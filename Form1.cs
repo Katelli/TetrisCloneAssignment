@@ -933,10 +933,10 @@ namespace TetrisClone
                 {
                     if (box4Col == 14)
                     {
-                        movingPieceHolder[0] = grid.GetControlFromPosition(box1Col, box1Row + 2); // P1 -> P3
-                        movingPieceHolder[1] = grid.GetControlFromPosition(box2Col - 1, box2Row + 1); // P2 -> O3
-                        movingPieceHolder[2] = grid.GetControlFromPosition(box3Col - 2, box3Row); // P3 -> N3
-                        movingPieceHolder[3] = grid.GetControlFromPosition(box4Col - 1, box4Row - 1); // O3 -> N2
+                        movingPieceHolder[0] = grid.GetControlFromPosition(box1Col, box1Row + 2);
+                        movingPieceHolder[1] = grid.GetControlFromPosition(box2Col - 1, box2Row + 1); 
+                        movingPieceHolder[2] = grid.GetControlFromPosition(box3Col - 2, box3Row); 
+                        movingPieceHolder[3] = grid.GetControlFromPosition(box4Col - 1, box4Row - 1); 
 
                         if (TestOverlap() == true)
                         {
@@ -993,10 +993,10 @@ namespace TetrisClone
                 {
                     if (box1Col == 0)
                     {
-                        movingPieceHolder[0] = grid.GetControlFromPosition(box1Col, box1Row - 2); // K3 -> K1
-                        movingPieceHolder[1] = grid.GetControlFromPosition(box2Col + 1, box2Row - 1); // K2 -> L1
-                        movingPieceHolder[2] = grid.GetControlFromPosition(box3Col + 2, box3Row); // K1 -> M1
-                        movingPieceHolder[3] = grid.GetControlFromPosition(box4Col + 1, box4Row + 1); // L1 -> M2
+                        movingPieceHolder[0] = grid.GetControlFromPosition(box1Col, box1Row - 2); 
+                        movingPieceHolder[1] = grid.GetControlFromPosition(box2Col + 1, box2Row - 1); 
+                        movingPieceHolder[2] = grid.GetControlFromPosition(box3Col + 2, box3Row); 
+                        movingPieceHolder[3] = grid.GetControlFromPosition(box4Col + 1, box4Row + 1);
 
                         if (TestOverlap() == true)
                         {
@@ -1049,7 +1049,19 @@ namespace TetrisClone
                 {
                     if (box4Col == 15)
                     {
-                        return;
+                        movingPieceHolder[0] = grid.GetControlFromPosition(box1Col + 1, box1Row + 1); 
+                        movingPieceHolder[1] = grid.GetControlFromPosition(box2Col, box2Row); 
+                        movingPieceHolder[2] = grid.GetControlFromPosition(box3Col - 1, box3Row - 1); 
+                        movingPieceHolder[3] = grid.GetControlFromPosition(box4Col - 1, box4Row + 1); 
+
+                        if (TestOverlap() == true)
+                        {
+                            rotations++;
+                        }
+                        else
+                        {
+                            return;
+                        }
                     }
                     else
                     {
@@ -1097,7 +1109,19 @@ namespace TetrisClone
                 {
                     if (box4Col == 0)
                     {
-                        return;
+                        movingPieceHolder[0] = grid.GetControlFromPosition(box1Col - 1, box1Row - 1);
+                        movingPieceHolder[1] = grid.GetControlFromPosition(box2Col, box2Row); 
+                        movingPieceHolder[2] = grid.GetControlFromPosition(box3Col + 1, box3Row + 1); 
+                        movingPieceHolder[3] = grid.GetControlFromPosition(box4Col + 1, box4Row - 1); 
+
+                        if (TestOverlap() == true)
+                        {
+                            rotations++;
+                        }
+                        else
+                        {
+                            return;
+                        }
                     }
                     else
                     {
@@ -1501,7 +1525,7 @@ namespace TetrisClone
                 MovePiece("down");
             }
             // Up
-            else if(e.KeyCode == Keys.Up | e.KeyCode == Keys.W)
+            else if(e.KeyCode == Keys.Up | e.KeyCode == Keys.W | e.KeyCode == Keys.Z)
             {
                 Rotate();
                 // Redraw Ghost piece
