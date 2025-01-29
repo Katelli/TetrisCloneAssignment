@@ -12,7 +12,6 @@ namespace TetrisClone
     /*
     - Change it up so the piece starts dropping from above the table instead of creating it in the first
         few rows
-    - Make rotations more adaptable, if it's too close to the edge, maybe i should just move each box in one column?
     - Find a way to save the user's high score
     - Add a label or something similar that explains the controls of the game, should disappear when the game starts.
     - Make a combo countdown timer to let the user get more combos (within a limited time)
@@ -1194,6 +1193,9 @@ namespace TetrisClone
         /// </summary>
         public void DrawGhostPiece()
         {
+            // I should redo this so it starts the check at the piece's position, and go down from there
+            // instead of from the bottom since it can show impossible positions as possible
+            // Maybe make a while loop that adds +1 to the row as long as it's true? 
             int rowDifference;
 
             int box1Col = grid.GetColumn(currentPiece[0]);
@@ -1224,17 +1226,28 @@ namespace TetrisClone
             {
                 rowDifference = bottom - box4Row;
             }
-            
-            ghostPiece[0] = grid.GetControlFromPosition(box1Col, box1Row + rowDifference);
-            ghostPiece[1] = grid.GetControlFromPosition(box2Col, box2Row + rowDifference);
-            ghostPiece[2] = grid.GetControlFromPosition(box3Col, box3Row + rowDifference);
-            ghostPiece[3] = grid.GetControlFromPosition(box4Col, box4Row + rowDifference);
 
-            while(TestGhostPiece() == false)
+            if(TestMove("down") == false)
             {
-                bottom--;
-                DrawGhostPiece();
                 return;
+            }
+
+            for(int i = 0; i < rowDifference + 1; i++)
+            {
+                if (TestMove("down") == true)
+                {
+                    ghostPiece[0] = grid.GetControlFromPosition(box1Col, box1Row + i);
+                    ghostPiece[1] = grid.GetControlFromPosition(box2Col, box2Row + i);
+                    ghostPiece[2] = grid.GetControlFromPosition(box3Col, box3Row + i);
+                    ghostPiece[3] = grid.GetControlFromPosition(box4Col, box4Row + i);
+
+                    if (TestGhostPiece() == false)
+                    {
+                        bottom--;
+                        DrawGhostPiece();
+                        return;
+                    }
+                }
             }
 
             if(TestGhostPiece() == true)
