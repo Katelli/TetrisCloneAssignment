@@ -502,6 +502,7 @@
             this.boxSP30 = new System.Windows.Forms.PictureBox();
             this.boxSP20 = new System.Windows.Forms.PictureBox();
             this.boxSP10 = new System.Windows.Forms.PictureBox();
+            this.comboTimer = new System.Windows.Forms.Timer(this.components);
             this.grid.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BoxP25)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BoxO25)).BeginInit();
@@ -6230,6 +6231,11 @@
             this.boxSP10.TabIndex = 0;
             this.boxSP10.TabStop = false;
             // 
+            // comboTimer
+            // 
+            this.comboTimer.Interval = 5000;
+            this.comboTimer.Tick += new System.EventHandler(this.comboTimer_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -7195,6 +7201,7 @@
         private System.Windows.Forms.PictureBox boxSP30;
         private System.Windows.Forms.PictureBox boxSP20;
         private System.Windows.Forms.PictureBox boxSP10;
+        private System.Windows.Forms.Timer comboTimer;
     }
 }
 

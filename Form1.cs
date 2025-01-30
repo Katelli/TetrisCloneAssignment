@@ -14,7 +14,6 @@ namespace TetrisClone
         few rows
     - Find a way to save the user's high score
     - Add a label or something similar that explains the controls of the game, should disappear when the game starts.
-    - Make a combo countdown timer to let the user get more combos (within a limited time)
     - Add music
         - Increase music speed in conjuction with the pieceTimer interval?
      */
@@ -434,10 +433,16 @@ namespace TetrisClone
                 ClearFullRows();
                 combo++;
             }
+            else if(comboTimer.Enabled == true)
+            {
+                combo++;
+            }
             else
             {
                 combo = 0;
             }
+
+            comboTimer.Start();
 
             // Update Score
             UpdateScore();
@@ -1501,6 +1506,11 @@ namespace TetrisClone
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
+
+        private void comboTimer_Tick(object sender, EventArgs e)
+        {
+            comboTimer.Stop();
+        }
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
             // Prevents DropPiece() from starting again if the timer is already running
@@ -1563,6 +1573,5 @@ namespace TetrisClone
             }
             
         }
-
     }
 }
