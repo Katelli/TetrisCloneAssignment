@@ -1509,6 +1509,23 @@ namespace TetrisClone
 
         private void comboTimer_Tick(object sender, EventArgs e)
         {
+            /*
+             Just writing down an idea I had if I want to somehow show how much time the user has until 
+            the combo resets
+            - First set the interval to 1000 ticks, as it's currently set to 5000 ticks
+            int comboCountDown = 5
+            comboCountDown --;
+            if(comboCountDown == 0)
+            {
+                comboTimer.Stop()
+            }
+            else
+            {
+                comboCountDownLabel.Text = "combo resets in " + comboCountDown; 
+            }
+
+            - Maybe I should show how many combos the user has too if I do this?
+             */
             comboTimer.Stop();
         }
         private void Form1_KeyDown(object sender, KeyEventArgs e)
@@ -1522,6 +1539,7 @@ namespace TetrisClone
                 {
                     startLabelFlash.Stop();
                     startGameLabel.Visible = false;
+                    ControllersImage.Visible = false;
                     gameTimer.Start();
                     DropPiece();
                     pieceTimer.Start();

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.grid = new System.Windows.Forms.TableLayoutPanel();
             this.BoxP25 = new System.Windows.Forms.PictureBox();
             this.BoxO25 = new System.Windows.Forms.PictureBox();
@@ -503,6 +504,7 @@
             this.boxSP20 = new System.Windows.Forms.PictureBox();
             this.boxSP10 = new System.Windows.Forms.PictureBox();
             this.comboTimer = new System.Windows.Forms.Timer(this.components);
+            this.ControllersImage = new System.Windows.Forms.PictureBox();
             this.grid.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BoxP25)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BoxO25)).BeginInit();
@@ -966,6 +968,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.boxSP30)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.boxSP20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.boxSP10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ControllersImage)).BeginInit();
             this.SuspendLayout();
             // 
             // grid
@@ -5462,7 +5465,7 @@
             this.startGameLabel.BackColor = System.Drawing.Color.SlateGray;
             this.startGameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.startGameLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.startGameLabel.Location = new System.Drawing.Point(610, 400);
+            this.startGameLabel.Location = new System.Drawing.Point(610, 300);
             this.startGameLabel.Name = "startGameLabel";
             this.startGameLabel.Size = new System.Drawing.Size(181, 46);
             this.startGameLabel.TabIndex = 1;
@@ -6236,12 +6239,29 @@
             this.comboTimer.Interval = 5000;
             this.comboTimer.Tick += new System.EventHandler(this.comboTimer_Tick);
             // 
+            // ControllersImage
+            // 
+            this.ControllersImage.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ControllersImage.BackColor = System.Drawing.Color.Transparent;
+            this.ControllersImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ControllersImage.Image = ((System.Drawing.Image)(resources.GetObject("ControllersImage.Image")));
+            this.ControllersImage.Location = new System.Drawing.Point(400, 400);
+            this.ControllersImage.Margin = new System.Windows.Forms.Padding(0);
+            this.ControllersImage.Name = "ControllersImage";
+            this.ControllersImage.Size = new System.Drawing.Size(600, 450);
+            this.ControllersImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ControllersImage.TabIndex = 11;
+            this.ControllersImage.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1374, 940);
+            this.Controls.Add(this.ControllersImage);
             this.Controls.Add(this.savedPieceGrid);
             this.Controls.Add(this.nextPieceGrid);
             this.Controls.Add(this.savedPieceLabel);
@@ -6722,6 +6742,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.boxSP30)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.boxSP20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.boxSP10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ControllersImage)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -7202,6 +7223,7 @@
         private System.Windows.Forms.PictureBox boxSP20;
         private System.Windows.Forms.PictureBox boxSP10;
         private System.Windows.Forms.Timer comboTimer;
+        private System.Windows.Forms.PictureBox ControllersImage;
     }
 }
 
