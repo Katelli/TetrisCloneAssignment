@@ -186,11 +186,6 @@ namespace TetrisClone
             }
 
             DrawGhostPiece();
-
-            if (currentPieceInt == 0)
-            {
-                Console.WriteLine(rotations.ToString());
-            }
         }
 
         /// <summary>
