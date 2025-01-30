@@ -165,11 +165,12 @@ namespace TetrisClone
             {
                 if(box.BackColor != Color.DarkSlateGray & box.BackColor != Color.SlateGray)
                 {
+                    gameOver = true;
                     pieceTimer.Stop();
                     gameTimer.Stop();
-                    gameOver = true;
                     MessageBox.Show("No more space", "Game Over!");
                     Close();
+                    return;
                 }
             }
 
@@ -1552,7 +1553,7 @@ namespace TetrisClone
                 DrawGhostPiece();
             }
             // Hard drop
-            else if(CheckGameOver() == false & e.KeyCode == Keys.Space)
+            else if(CheckGameOver() == false & e.KeyCode == Keys.Space & TestMove("down") == true)
             {
                 HardDrop();
             }
