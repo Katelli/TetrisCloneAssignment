@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
-using System.Runtime.CompilerServices;
+using System.Threading.Tasks;
 using System.Windows.Forms;
+using WMPLib;
+
 
 namespace TetrisClone
 {
@@ -40,6 +41,10 @@ namespace TetrisClone
         bool gameOver = false;
         Random random = new Random();
         List<int> nextPieceList = new List<int>();
+        WindowsMediaPlayer player = new WindowsMediaPlayer();
+        WindowsMediaPlayer speedUpChime = new WindowsMediaPlayer();
+        double previousN = 0;
+
 
 
         public Form1()
@@ -49,6 +54,17 @@ namespace TetrisClone
             this.grid.CellPaint += tableLayoutPanel1_CellPaint;
             startLabelFlash.Start();
 
+            /* Credit for the music
+            Yay by Sakura Girl | https://soundcloud.com/sakuragirl_official
+            Music promoted by https://www.chosic.com/free-music/all/
+            Creative Commons CC BY 3.0
+            https://creativecommons.org/licenses/by/3.0/
+             */
+            player.URL = "Sakura-Girl-Yay.mp3";
+            player.settings.setMode("Loop", true);
+            player.settings.volume = 10;
+
+            
             // Randomly select a int for the pieces through random.Next()
             // and add it to the nextPieceList.
             while (nextPieceList.Count < 5)
@@ -60,6 +76,8 @@ namespace TetrisClone
             // Select the first piece
             nextPieceInt = nextPieceList[0];
             pieceIterationCount++;
+
+            
         }
 
         /// <summary>
@@ -276,10 +294,10 @@ namespace TetrisClone
         /// The user gets a different amount of points depending on how many rows they clear at once
         /// Decreases the interval of the timer based on the user's score
         /// </summary>
-        public void UpdateScore()
+        public async void UpdateScore()
         {
             // No combo = 100 points
-            if(combo == 0)
+            if (combo == 0)
             {
                 score += 100;
             }
@@ -312,27 +330,35 @@ namespace TetrisClone
             // Update score label
             scoreLabel.Text = score.ToString();
 
+            double n;
             // Change the interval of the piecetimer according to the score
             if(score >= 4000)
             {
                 pieceTimer.Interval = 200;
+                n = 1.4; 
             }
             else if(score >= 3000)
             {
                 pieceTimer.Interval = 400;
+                n = 1.3;
             }
             else if(score >= 2000)
             {
                 pieceTimer.Interval = 600;
+                n = 1.2;
             }
             else if(score >= 1000)
             {
                 pieceTimer.Interval = 800;
+                n = 1.1;
             }
             else
             {
                 pieceTimer.Interval = 1000;
+                n = 1;
             }
+
+            await ChangeMusicSpeed(n);
             
         }
         
@@ -404,6 +430,36 @@ namespace TetrisClone
                     rotations = 0;
                     DropPiece();
                 }
+            }
+        }
+
+        private async Task ChangeMusicSpeed(double n)
+        {
+            if(previousN == 0)
+            {
+                previousN = n;
+                return;
+            }
+            else if(previousN == n)
+            {
+                return;
+            }
+            else if (previousN != n)
+            {
+                previousN = n;
+                player.controls.pause();
+
+                /* Credit for the music
+                Party-horn by PD music
+                Music promoted by https://www.chosic.com/free-music/all/
+                */
+                speedUpChime.URL = "Party-horn.mp3";
+                speedUpChime.settings.volume = 10;
+                speedUpChime.controls.play();
+
+                await Task.Delay(50);
+                player.settings.rate = n;
+                player.controls.play();
             }
         }
 

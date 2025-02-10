@@ -1396,7 +1396,7 @@
             this.grid.Controls.Add(this.BoxB1, 1, 0);
             this.grid.Controls.Add(this.BoxA1, 0, 0);
             this.grid.ForeColor = System.Drawing.Color.Black;
-            this.grid.Location = new System.Drawing.Point(430, 40);
+            this.grid.Location = new System.Drawing.Point(382, 32);
             this.grid.Margin = new System.Windows.Forms.Padding(0);
             this.grid.Name = "grid";
             this.grid.RowCount = 25;
@@ -1425,17 +1425,18 @@
             this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
             this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
             this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
-            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.grid.Size = new System.Drawing.Size(552, 848);
+            this.grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
+            this.grid.Size = new System.Drawing.Size(491, 771);
             this.grid.TabIndex = 0;
             // 
             // BoxP25
             // 
             this.BoxP25.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxP25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxP25.Location = new System.Drawing.Point(513, 795);
+            this.BoxP25.Location = new System.Drawing.Point(453, 722);
+            this.BoxP25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxP25.Name = "BoxP25";
-            this.BoxP25.Size = new System.Drawing.Size(36, 50);
+            this.BoxP25.Size = new System.Drawing.Size(35, 47);
             this.BoxP25.TabIndex = 475;
             this.BoxP25.TabStop = false;
             // 
@@ -1443,9 +1444,10 @@
             // 
             this.BoxO25.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxO25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxO25.Location = new System.Drawing.Point(479, 795);
+            this.BoxO25.Location = new System.Drawing.Point(423, 722);
+            this.BoxO25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxO25.Name = "BoxO25";
-            this.BoxO25.Size = new System.Drawing.Size(28, 50);
+            this.BoxO25.Size = new System.Drawing.Size(24, 47);
             this.BoxO25.TabIndex = 474;
             this.BoxO25.TabStop = false;
             // 
@@ -1453,9 +1455,10 @@
             // 
             this.BoxN25.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxN25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxN25.Location = new System.Drawing.Point(445, 795);
+            this.BoxN25.Location = new System.Drawing.Point(393, 722);
+            this.BoxN25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxN25.Name = "BoxN25";
-            this.BoxN25.Size = new System.Drawing.Size(28, 50);
+            this.BoxN25.Size = new System.Drawing.Size(24, 47);
             this.BoxN25.TabIndex = 473;
             this.BoxN25.TabStop = false;
             // 
@@ -1463,9 +1466,10 @@
             // 
             this.BoxM25.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxM25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxM25.Location = new System.Drawing.Point(411, 795);
+            this.BoxM25.Location = new System.Drawing.Point(363, 722);
+            this.BoxM25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxM25.Name = "BoxM25";
-            this.BoxM25.Size = new System.Drawing.Size(28, 50);
+            this.BoxM25.Size = new System.Drawing.Size(24, 47);
             this.BoxM25.TabIndex = 472;
             this.BoxM25.TabStop = false;
             // 
@@ -1473,9 +1477,10 @@
             // 
             this.BoxL25.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxL25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxL25.Location = new System.Drawing.Point(377, 795);
+            this.BoxL25.Location = new System.Drawing.Point(333, 722);
+            this.BoxL25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxL25.Name = "BoxL25";
-            this.BoxL25.Size = new System.Drawing.Size(28, 50);
+            this.BoxL25.Size = new System.Drawing.Size(24, 47);
             this.BoxL25.TabIndex = 471;
             this.BoxL25.TabStop = false;
             // 
@@ -1483,9 +1488,10 @@
             // 
             this.BoxK25.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxK25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxK25.Location = new System.Drawing.Point(343, 795);
+            this.BoxK25.Location = new System.Drawing.Point(303, 722);
+            this.BoxK25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxK25.Name = "BoxK25";
-            this.BoxK25.Size = new System.Drawing.Size(28, 50);
+            this.BoxK25.Size = new System.Drawing.Size(24, 47);
             this.BoxK25.TabIndex = 470;
             this.BoxK25.TabStop = false;
             // 
@@ -1493,9 +1499,10 @@
             // 
             this.BoxJ25.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxJ25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxJ25.Location = new System.Drawing.Point(309, 795);
+            this.BoxJ25.Location = new System.Drawing.Point(273, 722);
+            this.BoxJ25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxJ25.Name = "BoxJ25";
-            this.BoxJ25.Size = new System.Drawing.Size(28, 50);
+            this.BoxJ25.Size = new System.Drawing.Size(24, 47);
             this.BoxJ25.TabIndex = 469;
             this.BoxJ25.TabStop = false;
             // 
@@ -1503,9 +1510,10 @@
             // 
             this.BoxI25.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxI25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxI25.Location = new System.Drawing.Point(275, 795);
+            this.BoxI25.Location = new System.Drawing.Point(243, 722);
+            this.BoxI25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxI25.Name = "BoxI25";
-            this.BoxI25.Size = new System.Drawing.Size(28, 50);
+            this.BoxI25.Size = new System.Drawing.Size(24, 47);
             this.BoxI25.TabIndex = 468;
             this.BoxI25.TabStop = false;
             // 
@@ -1513,9 +1521,10 @@
             // 
             this.BoxH25.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxH25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxH25.Location = new System.Drawing.Point(241, 795);
+            this.BoxH25.Location = new System.Drawing.Point(213, 722);
+            this.BoxH25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxH25.Name = "BoxH25";
-            this.BoxH25.Size = new System.Drawing.Size(28, 50);
+            this.BoxH25.Size = new System.Drawing.Size(24, 47);
             this.BoxH25.TabIndex = 467;
             this.BoxH25.TabStop = false;
             // 
@@ -1523,9 +1532,10 @@
             // 
             this.BoxG25.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxG25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxG25.Location = new System.Drawing.Point(207, 795);
+            this.BoxG25.Location = new System.Drawing.Point(183, 722);
+            this.BoxG25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxG25.Name = "BoxG25";
-            this.BoxG25.Size = new System.Drawing.Size(28, 50);
+            this.BoxG25.Size = new System.Drawing.Size(24, 47);
             this.BoxG25.TabIndex = 466;
             this.BoxG25.TabStop = false;
             // 
@@ -1533,9 +1543,10 @@
             // 
             this.BoxF25.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxF25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxF25.Location = new System.Drawing.Point(173, 795);
+            this.BoxF25.Location = new System.Drawing.Point(153, 722);
+            this.BoxF25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxF25.Name = "BoxF25";
-            this.BoxF25.Size = new System.Drawing.Size(28, 50);
+            this.BoxF25.Size = new System.Drawing.Size(24, 47);
             this.BoxF25.TabIndex = 465;
             this.BoxF25.TabStop = false;
             // 
@@ -1543,9 +1554,10 @@
             // 
             this.BoxE25.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxE25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxE25.Location = new System.Drawing.Point(139, 795);
+            this.BoxE25.Location = new System.Drawing.Point(123, 722);
+            this.BoxE25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxE25.Name = "BoxE25";
-            this.BoxE25.Size = new System.Drawing.Size(28, 50);
+            this.BoxE25.Size = new System.Drawing.Size(24, 47);
             this.BoxE25.TabIndex = 464;
             this.BoxE25.TabStop = false;
             // 
@@ -1553,9 +1565,10 @@
             // 
             this.BoxD25.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxD25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxD25.Location = new System.Drawing.Point(105, 795);
+            this.BoxD25.Location = new System.Drawing.Point(93, 722);
+            this.BoxD25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxD25.Name = "BoxD25";
-            this.BoxD25.Size = new System.Drawing.Size(28, 50);
+            this.BoxD25.Size = new System.Drawing.Size(24, 47);
             this.BoxD25.TabIndex = 463;
             this.BoxD25.TabStop = false;
             // 
@@ -1563,9 +1576,10 @@
             // 
             this.BoxC25.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxC25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxC25.Location = new System.Drawing.Point(71, 795);
+            this.BoxC25.Location = new System.Drawing.Point(63, 722);
+            this.BoxC25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxC25.Name = "BoxC25";
-            this.BoxC25.Size = new System.Drawing.Size(28, 50);
+            this.BoxC25.Size = new System.Drawing.Size(24, 47);
             this.BoxC25.TabIndex = 462;
             this.BoxC25.TabStop = false;
             // 
@@ -1573,9 +1587,10 @@
             // 
             this.BoxB25.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxB25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxB25.Location = new System.Drawing.Point(37, 795);
+            this.BoxB25.Location = new System.Drawing.Point(33, 722);
+            this.BoxB25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxB25.Name = "BoxB25";
-            this.BoxB25.Size = new System.Drawing.Size(28, 50);
+            this.BoxB25.Size = new System.Drawing.Size(24, 47);
             this.BoxB25.TabIndex = 461;
             this.BoxB25.TabStop = false;
             // 
@@ -1583,9 +1598,10 @@
             // 
             this.BoxA25.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxA25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxA25.Location = new System.Drawing.Point(3, 795);
+            this.BoxA25.Location = new System.Drawing.Point(3, 722);
+            this.BoxA25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxA25.Name = "BoxA25";
-            this.BoxA25.Size = new System.Drawing.Size(28, 50);
+            this.BoxA25.Size = new System.Drawing.Size(24, 47);
             this.BoxA25.TabIndex = 460;
             this.BoxA25.TabStop = false;
             // 
@@ -1593,9 +1609,10 @@
             // 
             this.BoxP24.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxP24.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxP24.Location = new System.Drawing.Point(513, 762);
+            this.BoxP24.Location = new System.Drawing.Point(453, 692);
+            this.BoxP24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxP24.Name = "BoxP24";
-            this.BoxP24.Size = new System.Drawing.Size(36, 27);
+            this.BoxP24.Size = new System.Drawing.Size(35, 26);
             this.BoxP24.TabIndex = 459;
             this.BoxP24.TabStop = false;
             // 
@@ -1603,9 +1620,10 @@
             // 
             this.BoxO24.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxO24.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxO24.Location = new System.Drawing.Point(479, 762);
+            this.BoxO24.Location = new System.Drawing.Point(423, 692);
+            this.BoxO24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxO24.Name = "BoxO24";
-            this.BoxO24.Size = new System.Drawing.Size(28, 27);
+            this.BoxO24.Size = new System.Drawing.Size(24, 26);
             this.BoxO24.TabIndex = 458;
             this.BoxO24.TabStop = false;
             // 
@@ -1613,9 +1631,10 @@
             // 
             this.BoxN24.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxN24.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxN24.Location = new System.Drawing.Point(445, 762);
+            this.BoxN24.Location = new System.Drawing.Point(393, 692);
+            this.BoxN24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxN24.Name = "BoxN24";
-            this.BoxN24.Size = new System.Drawing.Size(28, 27);
+            this.BoxN24.Size = new System.Drawing.Size(24, 26);
             this.BoxN24.TabIndex = 457;
             this.BoxN24.TabStop = false;
             // 
@@ -1623,9 +1642,10 @@
             // 
             this.BoxM24.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxM24.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxM24.Location = new System.Drawing.Point(411, 762);
+            this.BoxM24.Location = new System.Drawing.Point(363, 692);
+            this.BoxM24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxM24.Name = "BoxM24";
-            this.BoxM24.Size = new System.Drawing.Size(28, 27);
+            this.BoxM24.Size = new System.Drawing.Size(24, 26);
             this.BoxM24.TabIndex = 456;
             this.BoxM24.TabStop = false;
             // 
@@ -1633,9 +1653,10 @@
             // 
             this.BoxL24.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxL24.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxL24.Location = new System.Drawing.Point(377, 762);
+            this.BoxL24.Location = new System.Drawing.Point(333, 692);
+            this.BoxL24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxL24.Name = "BoxL24";
-            this.BoxL24.Size = new System.Drawing.Size(28, 27);
+            this.BoxL24.Size = new System.Drawing.Size(24, 26);
             this.BoxL24.TabIndex = 455;
             this.BoxL24.TabStop = false;
             // 
@@ -1643,9 +1664,10 @@
             // 
             this.BoxK24.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxK24.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxK24.Location = new System.Drawing.Point(343, 762);
+            this.BoxK24.Location = new System.Drawing.Point(303, 692);
+            this.BoxK24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxK24.Name = "BoxK24";
-            this.BoxK24.Size = new System.Drawing.Size(28, 27);
+            this.BoxK24.Size = new System.Drawing.Size(24, 26);
             this.BoxK24.TabIndex = 454;
             this.BoxK24.TabStop = false;
             // 
@@ -1653,9 +1675,10 @@
             // 
             this.BoxJ24.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxJ24.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxJ24.Location = new System.Drawing.Point(309, 762);
+            this.BoxJ24.Location = new System.Drawing.Point(273, 692);
+            this.BoxJ24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxJ24.Name = "BoxJ24";
-            this.BoxJ24.Size = new System.Drawing.Size(28, 27);
+            this.BoxJ24.Size = new System.Drawing.Size(24, 26);
             this.BoxJ24.TabIndex = 453;
             this.BoxJ24.TabStop = false;
             // 
@@ -1663,9 +1686,10 @@
             // 
             this.BoxI24.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxI24.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxI24.Location = new System.Drawing.Point(275, 762);
+            this.BoxI24.Location = new System.Drawing.Point(243, 692);
+            this.BoxI24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxI24.Name = "BoxI24";
-            this.BoxI24.Size = new System.Drawing.Size(28, 27);
+            this.BoxI24.Size = new System.Drawing.Size(24, 26);
             this.BoxI24.TabIndex = 452;
             this.BoxI24.TabStop = false;
             // 
@@ -1673,9 +1697,10 @@
             // 
             this.BoxH24.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxH24.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxH24.Location = new System.Drawing.Point(241, 762);
+            this.BoxH24.Location = new System.Drawing.Point(213, 692);
+            this.BoxH24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxH24.Name = "BoxH24";
-            this.BoxH24.Size = new System.Drawing.Size(28, 27);
+            this.BoxH24.Size = new System.Drawing.Size(24, 26);
             this.BoxH24.TabIndex = 451;
             this.BoxH24.TabStop = false;
             // 
@@ -1683,9 +1708,10 @@
             // 
             this.BoxG24.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxG24.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxG24.Location = new System.Drawing.Point(207, 762);
+            this.BoxG24.Location = new System.Drawing.Point(183, 692);
+            this.BoxG24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxG24.Name = "BoxG24";
-            this.BoxG24.Size = new System.Drawing.Size(28, 27);
+            this.BoxG24.Size = new System.Drawing.Size(24, 26);
             this.BoxG24.TabIndex = 450;
             this.BoxG24.TabStop = false;
             // 
@@ -1693,9 +1719,10 @@
             // 
             this.BoxF24.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxF24.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxF24.Location = new System.Drawing.Point(173, 762);
+            this.BoxF24.Location = new System.Drawing.Point(153, 692);
+            this.BoxF24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxF24.Name = "BoxF24";
-            this.BoxF24.Size = new System.Drawing.Size(28, 27);
+            this.BoxF24.Size = new System.Drawing.Size(24, 26);
             this.BoxF24.TabIndex = 449;
             this.BoxF24.TabStop = false;
             // 
@@ -1703,9 +1730,10 @@
             // 
             this.BoxE24.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxE24.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxE24.Location = new System.Drawing.Point(139, 762);
+            this.BoxE24.Location = new System.Drawing.Point(123, 692);
+            this.BoxE24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxE24.Name = "BoxE24";
-            this.BoxE24.Size = new System.Drawing.Size(28, 27);
+            this.BoxE24.Size = new System.Drawing.Size(24, 26);
             this.BoxE24.TabIndex = 448;
             this.BoxE24.TabStop = false;
             // 
@@ -1713,9 +1741,10 @@
             // 
             this.BoxD24.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxD24.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxD24.Location = new System.Drawing.Point(105, 762);
+            this.BoxD24.Location = new System.Drawing.Point(93, 692);
+            this.BoxD24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxD24.Name = "BoxD24";
-            this.BoxD24.Size = new System.Drawing.Size(28, 27);
+            this.BoxD24.Size = new System.Drawing.Size(24, 26);
             this.BoxD24.TabIndex = 447;
             this.BoxD24.TabStop = false;
             // 
@@ -1723,9 +1752,10 @@
             // 
             this.BoxC24.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxC24.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxC24.Location = new System.Drawing.Point(71, 762);
+            this.BoxC24.Location = new System.Drawing.Point(63, 692);
+            this.BoxC24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxC24.Name = "BoxC24";
-            this.BoxC24.Size = new System.Drawing.Size(28, 27);
+            this.BoxC24.Size = new System.Drawing.Size(24, 26);
             this.BoxC24.TabIndex = 446;
             this.BoxC24.TabStop = false;
             // 
@@ -1733,9 +1763,10 @@
             // 
             this.BoxB24.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxB24.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxB24.Location = new System.Drawing.Point(37, 762);
+            this.BoxB24.Location = new System.Drawing.Point(33, 692);
+            this.BoxB24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxB24.Name = "BoxB24";
-            this.BoxB24.Size = new System.Drawing.Size(28, 27);
+            this.BoxB24.Size = new System.Drawing.Size(24, 26);
             this.BoxB24.TabIndex = 445;
             this.BoxB24.TabStop = false;
             // 
@@ -1743,9 +1774,10 @@
             // 
             this.BoxA24.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxA24.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxA24.Location = new System.Drawing.Point(3, 762);
+            this.BoxA24.Location = new System.Drawing.Point(3, 692);
+            this.BoxA24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxA24.Name = "BoxA24";
-            this.BoxA24.Size = new System.Drawing.Size(28, 27);
+            this.BoxA24.Size = new System.Drawing.Size(24, 26);
             this.BoxA24.TabIndex = 444;
             this.BoxA24.TabStop = false;
             // 
@@ -1753,9 +1785,10 @@
             // 
             this.BoxP23.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxP23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxP23.Location = new System.Drawing.Point(513, 729);
+            this.BoxP23.Location = new System.Drawing.Point(453, 662);
+            this.BoxP23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxP23.Name = "BoxP23";
-            this.BoxP23.Size = new System.Drawing.Size(36, 27);
+            this.BoxP23.Size = new System.Drawing.Size(35, 26);
             this.BoxP23.TabIndex = 443;
             this.BoxP23.TabStop = false;
             // 
@@ -1763,9 +1796,10 @@
             // 
             this.BoxO23.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxO23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxO23.Location = new System.Drawing.Point(479, 729);
+            this.BoxO23.Location = new System.Drawing.Point(423, 662);
+            this.BoxO23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxO23.Name = "BoxO23";
-            this.BoxO23.Size = new System.Drawing.Size(28, 27);
+            this.BoxO23.Size = new System.Drawing.Size(24, 26);
             this.BoxO23.TabIndex = 442;
             this.BoxO23.TabStop = false;
             // 
@@ -1773,9 +1807,10 @@
             // 
             this.BoxN23.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxN23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxN23.Location = new System.Drawing.Point(445, 729);
+            this.BoxN23.Location = new System.Drawing.Point(393, 662);
+            this.BoxN23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxN23.Name = "BoxN23";
-            this.BoxN23.Size = new System.Drawing.Size(28, 27);
+            this.BoxN23.Size = new System.Drawing.Size(24, 26);
             this.BoxN23.TabIndex = 441;
             this.BoxN23.TabStop = false;
             // 
@@ -1783,9 +1818,10 @@
             // 
             this.BoxM23.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxM23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxM23.Location = new System.Drawing.Point(411, 729);
+            this.BoxM23.Location = new System.Drawing.Point(363, 662);
+            this.BoxM23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxM23.Name = "BoxM23";
-            this.BoxM23.Size = new System.Drawing.Size(28, 27);
+            this.BoxM23.Size = new System.Drawing.Size(24, 26);
             this.BoxM23.TabIndex = 440;
             this.BoxM23.TabStop = false;
             // 
@@ -1793,9 +1829,10 @@
             // 
             this.BoxL23.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxL23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxL23.Location = new System.Drawing.Point(377, 729);
+            this.BoxL23.Location = new System.Drawing.Point(333, 662);
+            this.BoxL23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxL23.Name = "BoxL23";
-            this.BoxL23.Size = new System.Drawing.Size(28, 27);
+            this.BoxL23.Size = new System.Drawing.Size(24, 26);
             this.BoxL23.TabIndex = 439;
             this.BoxL23.TabStop = false;
             // 
@@ -1803,9 +1840,10 @@
             // 
             this.BoxK23.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxK23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxK23.Location = new System.Drawing.Point(343, 729);
+            this.BoxK23.Location = new System.Drawing.Point(303, 662);
+            this.BoxK23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxK23.Name = "BoxK23";
-            this.BoxK23.Size = new System.Drawing.Size(28, 27);
+            this.BoxK23.Size = new System.Drawing.Size(24, 26);
             this.BoxK23.TabIndex = 438;
             this.BoxK23.TabStop = false;
             // 
@@ -1813,9 +1851,10 @@
             // 
             this.BoxJ23.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxJ23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxJ23.Location = new System.Drawing.Point(309, 729);
+            this.BoxJ23.Location = new System.Drawing.Point(273, 662);
+            this.BoxJ23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxJ23.Name = "BoxJ23";
-            this.BoxJ23.Size = new System.Drawing.Size(28, 27);
+            this.BoxJ23.Size = new System.Drawing.Size(24, 26);
             this.BoxJ23.TabIndex = 437;
             this.BoxJ23.TabStop = false;
             // 
@@ -1823,9 +1862,10 @@
             // 
             this.BoxI23.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxI23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxI23.Location = new System.Drawing.Point(275, 729);
+            this.BoxI23.Location = new System.Drawing.Point(243, 662);
+            this.BoxI23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxI23.Name = "BoxI23";
-            this.BoxI23.Size = new System.Drawing.Size(28, 27);
+            this.BoxI23.Size = new System.Drawing.Size(24, 26);
             this.BoxI23.TabIndex = 436;
             this.BoxI23.TabStop = false;
             // 
@@ -1833,9 +1873,10 @@
             // 
             this.BoxH23.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxH23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxH23.Location = new System.Drawing.Point(241, 729);
+            this.BoxH23.Location = new System.Drawing.Point(213, 662);
+            this.BoxH23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxH23.Name = "BoxH23";
-            this.BoxH23.Size = new System.Drawing.Size(28, 27);
+            this.BoxH23.Size = new System.Drawing.Size(24, 26);
             this.BoxH23.TabIndex = 435;
             this.BoxH23.TabStop = false;
             // 
@@ -1843,9 +1884,10 @@
             // 
             this.BoxG23.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxG23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxG23.Location = new System.Drawing.Point(207, 729);
+            this.BoxG23.Location = new System.Drawing.Point(183, 662);
+            this.BoxG23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxG23.Name = "BoxG23";
-            this.BoxG23.Size = new System.Drawing.Size(28, 27);
+            this.BoxG23.Size = new System.Drawing.Size(24, 26);
             this.BoxG23.TabIndex = 434;
             this.BoxG23.TabStop = false;
             // 
@@ -1853,9 +1895,10 @@
             // 
             this.BoxF23.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxF23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxF23.Location = new System.Drawing.Point(173, 729);
+            this.BoxF23.Location = new System.Drawing.Point(153, 662);
+            this.BoxF23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxF23.Name = "BoxF23";
-            this.BoxF23.Size = new System.Drawing.Size(28, 27);
+            this.BoxF23.Size = new System.Drawing.Size(24, 26);
             this.BoxF23.TabIndex = 433;
             this.BoxF23.TabStop = false;
             // 
@@ -1863,9 +1906,10 @@
             // 
             this.BoxE23.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxE23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxE23.Location = new System.Drawing.Point(139, 729);
+            this.BoxE23.Location = new System.Drawing.Point(123, 662);
+            this.BoxE23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxE23.Name = "BoxE23";
-            this.BoxE23.Size = new System.Drawing.Size(28, 27);
+            this.BoxE23.Size = new System.Drawing.Size(24, 26);
             this.BoxE23.TabIndex = 432;
             this.BoxE23.TabStop = false;
             // 
@@ -1873,9 +1917,10 @@
             // 
             this.BoxD23.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxD23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxD23.Location = new System.Drawing.Point(105, 729);
+            this.BoxD23.Location = new System.Drawing.Point(93, 662);
+            this.BoxD23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxD23.Name = "BoxD23";
-            this.BoxD23.Size = new System.Drawing.Size(28, 27);
+            this.BoxD23.Size = new System.Drawing.Size(24, 26);
             this.BoxD23.TabIndex = 431;
             this.BoxD23.TabStop = false;
             // 
@@ -1883,9 +1928,10 @@
             // 
             this.BoxC23.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxC23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxC23.Location = new System.Drawing.Point(71, 729);
+            this.BoxC23.Location = new System.Drawing.Point(63, 662);
+            this.BoxC23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxC23.Name = "BoxC23";
-            this.BoxC23.Size = new System.Drawing.Size(28, 27);
+            this.BoxC23.Size = new System.Drawing.Size(24, 26);
             this.BoxC23.TabIndex = 430;
             this.BoxC23.TabStop = false;
             // 
@@ -1893,9 +1939,10 @@
             // 
             this.BoxB23.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxB23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxB23.Location = new System.Drawing.Point(37, 729);
+            this.BoxB23.Location = new System.Drawing.Point(33, 662);
+            this.BoxB23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxB23.Name = "BoxB23";
-            this.BoxB23.Size = new System.Drawing.Size(28, 27);
+            this.BoxB23.Size = new System.Drawing.Size(24, 26);
             this.BoxB23.TabIndex = 429;
             this.BoxB23.TabStop = false;
             // 
@@ -1903,9 +1950,10 @@
             // 
             this.BoxA23.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxA23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxA23.Location = new System.Drawing.Point(3, 729);
+            this.BoxA23.Location = new System.Drawing.Point(3, 662);
+            this.BoxA23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxA23.Name = "BoxA23";
-            this.BoxA23.Size = new System.Drawing.Size(28, 27);
+            this.BoxA23.Size = new System.Drawing.Size(24, 26);
             this.BoxA23.TabIndex = 428;
             this.BoxA23.TabStop = false;
             // 
@@ -1913,9 +1961,10 @@
             // 
             this.BoxP22.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxP22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxP22.Location = new System.Drawing.Point(513, 696);
+            this.BoxP22.Location = new System.Drawing.Point(453, 632);
+            this.BoxP22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxP22.Name = "BoxP22";
-            this.BoxP22.Size = new System.Drawing.Size(36, 27);
+            this.BoxP22.Size = new System.Drawing.Size(35, 26);
             this.BoxP22.TabIndex = 427;
             this.BoxP22.TabStop = false;
             // 
@@ -1923,9 +1972,10 @@
             // 
             this.BoxO22.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxO22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxO22.Location = new System.Drawing.Point(479, 696);
+            this.BoxO22.Location = new System.Drawing.Point(423, 632);
+            this.BoxO22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxO22.Name = "BoxO22";
-            this.BoxO22.Size = new System.Drawing.Size(28, 27);
+            this.BoxO22.Size = new System.Drawing.Size(24, 26);
             this.BoxO22.TabIndex = 426;
             this.BoxO22.TabStop = false;
             // 
@@ -1933,9 +1983,10 @@
             // 
             this.BoxN22.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxN22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxN22.Location = new System.Drawing.Point(445, 696);
+            this.BoxN22.Location = new System.Drawing.Point(393, 632);
+            this.BoxN22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxN22.Name = "BoxN22";
-            this.BoxN22.Size = new System.Drawing.Size(28, 27);
+            this.BoxN22.Size = new System.Drawing.Size(24, 26);
             this.BoxN22.TabIndex = 425;
             this.BoxN22.TabStop = false;
             // 
@@ -1943,9 +1994,10 @@
             // 
             this.BoxM22.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxM22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxM22.Location = new System.Drawing.Point(411, 696);
+            this.BoxM22.Location = new System.Drawing.Point(363, 632);
+            this.BoxM22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxM22.Name = "BoxM22";
-            this.BoxM22.Size = new System.Drawing.Size(28, 27);
+            this.BoxM22.Size = new System.Drawing.Size(24, 26);
             this.BoxM22.TabIndex = 424;
             this.BoxM22.TabStop = false;
             // 
@@ -1953,9 +2005,10 @@
             // 
             this.BoxL22.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxL22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxL22.Location = new System.Drawing.Point(377, 696);
+            this.BoxL22.Location = new System.Drawing.Point(333, 632);
+            this.BoxL22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxL22.Name = "BoxL22";
-            this.BoxL22.Size = new System.Drawing.Size(28, 27);
+            this.BoxL22.Size = new System.Drawing.Size(24, 26);
             this.BoxL22.TabIndex = 423;
             this.BoxL22.TabStop = false;
             // 
@@ -1963,9 +2016,10 @@
             // 
             this.BoxK22.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxK22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxK22.Location = new System.Drawing.Point(343, 696);
+            this.BoxK22.Location = new System.Drawing.Point(303, 632);
+            this.BoxK22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxK22.Name = "BoxK22";
-            this.BoxK22.Size = new System.Drawing.Size(28, 27);
+            this.BoxK22.Size = new System.Drawing.Size(24, 26);
             this.BoxK22.TabIndex = 422;
             this.BoxK22.TabStop = false;
             // 
@@ -1973,9 +2027,10 @@
             // 
             this.BoxJ22.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxJ22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxJ22.Location = new System.Drawing.Point(309, 696);
+            this.BoxJ22.Location = new System.Drawing.Point(273, 632);
+            this.BoxJ22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxJ22.Name = "BoxJ22";
-            this.BoxJ22.Size = new System.Drawing.Size(28, 27);
+            this.BoxJ22.Size = new System.Drawing.Size(24, 26);
             this.BoxJ22.TabIndex = 421;
             this.BoxJ22.TabStop = false;
             // 
@@ -1983,9 +2038,10 @@
             // 
             this.BoxI22.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxI22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxI22.Location = new System.Drawing.Point(275, 696);
+            this.BoxI22.Location = new System.Drawing.Point(243, 632);
+            this.BoxI22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxI22.Name = "BoxI22";
-            this.BoxI22.Size = new System.Drawing.Size(28, 27);
+            this.BoxI22.Size = new System.Drawing.Size(24, 26);
             this.BoxI22.TabIndex = 420;
             this.BoxI22.TabStop = false;
             // 
@@ -1993,9 +2049,10 @@
             // 
             this.BoxH22.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxH22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxH22.Location = new System.Drawing.Point(241, 696);
+            this.BoxH22.Location = new System.Drawing.Point(213, 632);
+            this.BoxH22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxH22.Name = "BoxH22";
-            this.BoxH22.Size = new System.Drawing.Size(28, 27);
+            this.BoxH22.Size = new System.Drawing.Size(24, 26);
             this.BoxH22.TabIndex = 419;
             this.BoxH22.TabStop = false;
             // 
@@ -2003,9 +2060,10 @@
             // 
             this.BoxG22.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxG22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxG22.Location = new System.Drawing.Point(207, 696);
+            this.BoxG22.Location = new System.Drawing.Point(183, 632);
+            this.BoxG22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxG22.Name = "BoxG22";
-            this.BoxG22.Size = new System.Drawing.Size(28, 27);
+            this.BoxG22.Size = new System.Drawing.Size(24, 26);
             this.BoxG22.TabIndex = 418;
             this.BoxG22.TabStop = false;
             // 
@@ -2013,9 +2071,10 @@
             // 
             this.BoxF22.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxF22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxF22.Location = new System.Drawing.Point(173, 696);
+            this.BoxF22.Location = new System.Drawing.Point(153, 632);
+            this.BoxF22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxF22.Name = "BoxF22";
-            this.BoxF22.Size = new System.Drawing.Size(28, 27);
+            this.BoxF22.Size = new System.Drawing.Size(24, 26);
             this.BoxF22.TabIndex = 417;
             this.BoxF22.TabStop = false;
             // 
@@ -2023,9 +2082,10 @@
             // 
             this.BoxE22.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxE22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxE22.Location = new System.Drawing.Point(139, 696);
+            this.BoxE22.Location = new System.Drawing.Point(123, 632);
+            this.BoxE22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxE22.Name = "BoxE22";
-            this.BoxE22.Size = new System.Drawing.Size(28, 27);
+            this.BoxE22.Size = new System.Drawing.Size(24, 26);
             this.BoxE22.TabIndex = 416;
             this.BoxE22.TabStop = false;
             // 
@@ -2033,9 +2093,10 @@
             // 
             this.BoxD22.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxD22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxD22.Location = new System.Drawing.Point(105, 696);
+            this.BoxD22.Location = new System.Drawing.Point(93, 632);
+            this.BoxD22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxD22.Name = "BoxD22";
-            this.BoxD22.Size = new System.Drawing.Size(28, 27);
+            this.BoxD22.Size = new System.Drawing.Size(24, 26);
             this.BoxD22.TabIndex = 415;
             this.BoxD22.TabStop = false;
             // 
@@ -2043,9 +2104,10 @@
             // 
             this.BoxC22.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxC22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxC22.Location = new System.Drawing.Point(71, 696);
+            this.BoxC22.Location = new System.Drawing.Point(63, 632);
+            this.BoxC22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxC22.Name = "BoxC22";
-            this.BoxC22.Size = new System.Drawing.Size(28, 27);
+            this.BoxC22.Size = new System.Drawing.Size(24, 26);
             this.BoxC22.TabIndex = 414;
             this.BoxC22.TabStop = false;
             // 
@@ -2053,9 +2115,10 @@
             // 
             this.BoxB22.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxB22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxB22.Location = new System.Drawing.Point(37, 696);
+            this.BoxB22.Location = new System.Drawing.Point(33, 632);
+            this.BoxB22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxB22.Name = "BoxB22";
-            this.BoxB22.Size = new System.Drawing.Size(28, 27);
+            this.BoxB22.Size = new System.Drawing.Size(24, 26);
             this.BoxB22.TabIndex = 413;
             this.BoxB22.TabStop = false;
             // 
@@ -2063,9 +2126,10 @@
             // 
             this.BoxA22.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxA22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxA22.Location = new System.Drawing.Point(3, 696);
+            this.BoxA22.Location = new System.Drawing.Point(3, 632);
+            this.BoxA22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxA22.Name = "BoxA22";
-            this.BoxA22.Size = new System.Drawing.Size(28, 27);
+            this.BoxA22.Size = new System.Drawing.Size(24, 26);
             this.BoxA22.TabIndex = 412;
             this.BoxA22.TabStop = false;
             // 
@@ -2073,9 +2137,10 @@
             // 
             this.BoxP21.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxP21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxP21.Location = new System.Drawing.Point(513, 663);
+            this.BoxP21.Location = new System.Drawing.Point(453, 602);
+            this.BoxP21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxP21.Name = "BoxP21";
-            this.BoxP21.Size = new System.Drawing.Size(36, 27);
+            this.BoxP21.Size = new System.Drawing.Size(35, 26);
             this.BoxP21.TabIndex = 411;
             this.BoxP21.TabStop = false;
             // 
@@ -2083,9 +2148,10 @@
             // 
             this.BoxO21.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxO21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxO21.Location = new System.Drawing.Point(479, 663);
+            this.BoxO21.Location = new System.Drawing.Point(423, 602);
+            this.BoxO21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxO21.Name = "BoxO21";
-            this.BoxO21.Size = new System.Drawing.Size(28, 27);
+            this.BoxO21.Size = new System.Drawing.Size(24, 26);
             this.BoxO21.TabIndex = 410;
             this.BoxO21.TabStop = false;
             // 
@@ -2093,9 +2159,10 @@
             // 
             this.BoxN21.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxN21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxN21.Location = new System.Drawing.Point(445, 663);
+            this.BoxN21.Location = new System.Drawing.Point(393, 602);
+            this.BoxN21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxN21.Name = "BoxN21";
-            this.BoxN21.Size = new System.Drawing.Size(28, 27);
+            this.BoxN21.Size = new System.Drawing.Size(24, 26);
             this.BoxN21.TabIndex = 409;
             this.BoxN21.TabStop = false;
             // 
@@ -2103,9 +2170,10 @@
             // 
             this.BoxM21.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxM21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxM21.Location = new System.Drawing.Point(411, 663);
+            this.BoxM21.Location = new System.Drawing.Point(363, 602);
+            this.BoxM21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxM21.Name = "BoxM21";
-            this.BoxM21.Size = new System.Drawing.Size(28, 27);
+            this.BoxM21.Size = new System.Drawing.Size(24, 26);
             this.BoxM21.TabIndex = 408;
             this.BoxM21.TabStop = false;
             // 
@@ -2113,9 +2181,10 @@
             // 
             this.BoxL21.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxL21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxL21.Location = new System.Drawing.Point(377, 663);
+            this.BoxL21.Location = new System.Drawing.Point(333, 602);
+            this.BoxL21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxL21.Name = "BoxL21";
-            this.BoxL21.Size = new System.Drawing.Size(28, 27);
+            this.BoxL21.Size = new System.Drawing.Size(24, 26);
             this.BoxL21.TabIndex = 407;
             this.BoxL21.TabStop = false;
             // 
@@ -2123,9 +2192,10 @@
             // 
             this.BoxK21.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxK21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxK21.Location = new System.Drawing.Point(343, 663);
+            this.BoxK21.Location = new System.Drawing.Point(303, 602);
+            this.BoxK21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxK21.Name = "BoxK21";
-            this.BoxK21.Size = new System.Drawing.Size(28, 27);
+            this.BoxK21.Size = new System.Drawing.Size(24, 26);
             this.BoxK21.TabIndex = 406;
             this.BoxK21.TabStop = false;
             // 
@@ -2133,9 +2203,10 @@
             // 
             this.BoxJ21.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxJ21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxJ21.Location = new System.Drawing.Point(309, 663);
+            this.BoxJ21.Location = new System.Drawing.Point(273, 602);
+            this.BoxJ21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxJ21.Name = "BoxJ21";
-            this.BoxJ21.Size = new System.Drawing.Size(28, 27);
+            this.BoxJ21.Size = new System.Drawing.Size(24, 26);
             this.BoxJ21.TabIndex = 405;
             this.BoxJ21.TabStop = false;
             // 
@@ -2143,9 +2214,10 @@
             // 
             this.BoxI21.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxI21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxI21.Location = new System.Drawing.Point(275, 663);
+            this.BoxI21.Location = new System.Drawing.Point(243, 602);
+            this.BoxI21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxI21.Name = "BoxI21";
-            this.BoxI21.Size = new System.Drawing.Size(28, 27);
+            this.BoxI21.Size = new System.Drawing.Size(24, 26);
             this.BoxI21.TabIndex = 404;
             this.BoxI21.TabStop = false;
             // 
@@ -2153,9 +2225,10 @@
             // 
             this.BoxH21.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxH21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxH21.Location = new System.Drawing.Point(241, 663);
+            this.BoxH21.Location = new System.Drawing.Point(213, 602);
+            this.BoxH21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxH21.Name = "BoxH21";
-            this.BoxH21.Size = new System.Drawing.Size(28, 27);
+            this.BoxH21.Size = new System.Drawing.Size(24, 26);
             this.BoxH21.TabIndex = 403;
             this.BoxH21.TabStop = false;
             // 
@@ -2163,9 +2236,10 @@
             // 
             this.BoxG21.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxG21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxG21.Location = new System.Drawing.Point(207, 663);
+            this.BoxG21.Location = new System.Drawing.Point(183, 602);
+            this.BoxG21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxG21.Name = "BoxG21";
-            this.BoxG21.Size = new System.Drawing.Size(28, 27);
+            this.BoxG21.Size = new System.Drawing.Size(24, 26);
             this.BoxG21.TabIndex = 402;
             this.BoxG21.TabStop = false;
             // 
@@ -2173,9 +2247,10 @@
             // 
             this.BoxF21.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxF21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxF21.Location = new System.Drawing.Point(173, 663);
+            this.BoxF21.Location = new System.Drawing.Point(153, 602);
+            this.BoxF21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxF21.Name = "BoxF21";
-            this.BoxF21.Size = new System.Drawing.Size(28, 27);
+            this.BoxF21.Size = new System.Drawing.Size(24, 26);
             this.BoxF21.TabIndex = 401;
             this.BoxF21.TabStop = false;
             // 
@@ -2183,9 +2258,10 @@
             // 
             this.BoxE21.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxE21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxE21.Location = new System.Drawing.Point(139, 663);
+            this.BoxE21.Location = new System.Drawing.Point(123, 602);
+            this.BoxE21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxE21.Name = "BoxE21";
-            this.BoxE21.Size = new System.Drawing.Size(28, 27);
+            this.BoxE21.Size = new System.Drawing.Size(24, 26);
             this.BoxE21.TabIndex = 400;
             this.BoxE21.TabStop = false;
             // 
@@ -2193,9 +2269,10 @@
             // 
             this.BoxD21.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxD21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxD21.Location = new System.Drawing.Point(105, 663);
+            this.BoxD21.Location = new System.Drawing.Point(93, 602);
+            this.BoxD21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxD21.Name = "BoxD21";
-            this.BoxD21.Size = new System.Drawing.Size(28, 27);
+            this.BoxD21.Size = new System.Drawing.Size(24, 26);
             this.BoxD21.TabIndex = 399;
             this.BoxD21.TabStop = false;
             // 
@@ -2203,9 +2280,10 @@
             // 
             this.BoxC21.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxC21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxC21.Location = new System.Drawing.Point(71, 663);
+            this.BoxC21.Location = new System.Drawing.Point(63, 602);
+            this.BoxC21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxC21.Name = "BoxC21";
-            this.BoxC21.Size = new System.Drawing.Size(28, 27);
+            this.BoxC21.Size = new System.Drawing.Size(24, 26);
             this.BoxC21.TabIndex = 398;
             this.BoxC21.TabStop = false;
             // 
@@ -2213,9 +2291,10 @@
             // 
             this.BoxB21.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxB21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxB21.Location = new System.Drawing.Point(37, 663);
+            this.BoxB21.Location = new System.Drawing.Point(33, 602);
+            this.BoxB21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxB21.Name = "BoxB21";
-            this.BoxB21.Size = new System.Drawing.Size(28, 27);
+            this.BoxB21.Size = new System.Drawing.Size(24, 26);
             this.BoxB21.TabIndex = 397;
             this.BoxB21.TabStop = false;
             // 
@@ -2223,9 +2302,10 @@
             // 
             this.BoxA21.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxA21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxA21.Location = new System.Drawing.Point(3, 663);
+            this.BoxA21.Location = new System.Drawing.Point(3, 602);
+            this.BoxA21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxA21.Name = "BoxA21";
-            this.BoxA21.Size = new System.Drawing.Size(28, 27);
+            this.BoxA21.Size = new System.Drawing.Size(24, 26);
             this.BoxA21.TabIndex = 396;
             this.BoxA21.TabStop = false;
             // 
@@ -2233,9 +2313,10 @@
             // 
             this.BoxP20.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxP20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxP20.Location = new System.Drawing.Point(513, 630);
+            this.BoxP20.Location = new System.Drawing.Point(453, 572);
+            this.BoxP20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxP20.Name = "BoxP20";
-            this.BoxP20.Size = new System.Drawing.Size(36, 27);
+            this.BoxP20.Size = new System.Drawing.Size(35, 26);
             this.BoxP20.TabIndex = 395;
             this.BoxP20.TabStop = false;
             // 
@@ -2243,9 +2324,10 @@
             // 
             this.BoxO20.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxO20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxO20.Location = new System.Drawing.Point(479, 630);
+            this.BoxO20.Location = new System.Drawing.Point(423, 572);
+            this.BoxO20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxO20.Name = "BoxO20";
-            this.BoxO20.Size = new System.Drawing.Size(28, 27);
+            this.BoxO20.Size = new System.Drawing.Size(24, 26);
             this.BoxO20.TabIndex = 394;
             this.BoxO20.TabStop = false;
             // 
@@ -2253,9 +2335,10 @@
             // 
             this.BoxN20.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxN20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxN20.Location = new System.Drawing.Point(445, 630);
+            this.BoxN20.Location = new System.Drawing.Point(393, 572);
+            this.BoxN20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxN20.Name = "BoxN20";
-            this.BoxN20.Size = new System.Drawing.Size(28, 27);
+            this.BoxN20.Size = new System.Drawing.Size(24, 26);
             this.BoxN20.TabIndex = 393;
             this.BoxN20.TabStop = false;
             // 
@@ -2263,9 +2346,10 @@
             // 
             this.BoxM20.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxM20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxM20.Location = new System.Drawing.Point(411, 630);
+            this.BoxM20.Location = new System.Drawing.Point(363, 572);
+            this.BoxM20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxM20.Name = "BoxM20";
-            this.BoxM20.Size = new System.Drawing.Size(28, 27);
+            this.BoxM20.Size = new System.Drawing.Size(24, 26);
             this.BoxM20.TabIndex = 392;
             this.BoxM20.TabStop = false;
             // 
@@ -2273,9 +2357,10 @@
             // 
             this.BoxL20.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxL20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxL20.Location = new System.Drawing.Point(377, 630);
+            this.BoxL20.Location = new System.Drawing.Point(333, 572);
+            this.BoxL20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxL20.Name = "BoxL20";
-            this.BoxL20.Size = new System.Drawing.Size(28, 27);
+            this.BoxL20.Size = new System.Drawing.Size(24, 26);
             this.BoxL20.TabIndex = 391;
             this.BoxL20.TabStop = false;
             // 
@@ -2283,9 +2368,10 @@
             // 
             this.BoxK20.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxK20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxK20.Location = new System.Drawing.Point(343, 630);
+            this.BoxK20.Location = new System.Drawing.Point(303, 572);
+            this.BoxK20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxK20.Name = "BoxK20";
-            this.BoxK20.Size = new System.Drawing.Size(28, 27);
+            this.BoxK20.Size = new System.Drawing.Size(24, 26);
             this.BoxK20.TabIndex = 390;
             this.BoxK20.TabStop = false;
             // 
@@ -2293,9 +2379,10 @@
             // 
             this.BoxJ20.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxJ20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxJ20.Location = new System.Drawing.Point(309, 630);
+            this.BoxJ20.Location = new System.Drawing.Point(273, 572);
+            this.BoxJ20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxJ20.Name = "BoxJ20";
-            this.BoxJ20.Size = new System.Drawing.Size(28, 27);
+            this.BoxJ20.Size = new System.Drawing.Size(24, 26);
             this.BoxJ20.TabIndex = 389;
             this.BoxJ20.TabStop = false;
             // 
@@ -2303,9 +2390,10 @@
             // 
             this.BoxI20.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxI20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxI20.Location = new System.Drawing.Point(275, 630);
+            this.BoxI20.Location = new System.Drawing.Point(243, 572);
+            this.BoxI20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxI20.Name = "BoxI20";
-            this.BoxI20.Size = new System.Drawing.Size(28, 27);
+            this.BoxI20.Size = new System.Drawing.Size(24, 26);
             this.BoxI20.TabIndex = 388;
             this.BoxI20.TabStop = false;
             // 
@@ -2313,9 +2401,10 @@
             // 
             this.BoxH20.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxH20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxH20.Location = new System.Drawing.Point(241, 630);
+            this.BoxH20.Location = new System.Drawing.Point(213, 572);
+            this.BoxH20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxH20.Name = "BoxH20";
-            this.BoxH20.Size = new System.Drawing.Size(28, 27);
+            this.BoxH20.Size = new System.Drawing.Size(24, 26);
             this.BoxH20.TabIndex = 387;
             this.BoxH20.TabStop = false;
             // 
@@ -2323,9 +2412,10 @@
             // 
             this.BoxG20.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxG20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxG20.Location = new System.Drawing.Point(207, 630);
+            this.BoxG20.Location = new System.Drawing.Point(183, 572);
+            this.BoxG20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxG20.Name = "BoxG20";
-            this.BoxG20.Size = new System.Drawing.Size(28, 27);
+            this.BoxG20.Size = new System.Drawing.Size(24, 26);
             this.BoxG20.TabIndex = 386;
             this.BoxG20.TabStop = false;
             // 
@@ -2333,9 +2423,10 @@
             // 
             this.BoxF20.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxF20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxF20.Location = new System.Drawing.Point(173, 630);
+            this.BoxF20.Location = new System.Drawing.Point(153, 572);
+            this.BoxF20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxF20.Name = "BoxF20";
-            this.BoxF20.Size = new System.Drawing.Size(28, 27);
+            this.BoxF20.Size = new System.Drawing.Size(24, 26);
             this.BoxF20.TabIndex = 385;
             this.BoxF20.TabStop = false;
             // 
@@ -2343,9 +2434,10 @@
             // 
             this.BoxE20.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxE20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxE20.Location = new System.Drawing.Point(139, 630);
+            this.BoxE20.Location = new System.Drawing.Point(123, 572);
+            this.BoxE20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxE20.Name = "BoxE20";
-            this.BoxE20.Size = new System.Drawing.Size(28, 27);
+            this.BoxE20.Size = new System.Drawing.Size(24, 26);
             this.BoxE20.TabIndex = 384;
             this.BoxE20.TabStop = false;
             // 
@@ -2353,9 +2445,10 @@
             // 
             this.BoxD20.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxD20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxD20.Location = new System.Drawing.Point(105, 630);
+            this.BoxD20.Location = new System.Drawing.Point(93, 572);
+            this.BoxD20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxD20.Name = "BoxD20";
-            this.BoxD20.Size = new System.Drawing.Size(28, 27);
+            this.BoxD20.Size = new System.Drawing.Size(24, 26);
             this.BoxD20.TabIndex = 383;
             this.BoxD20.TabStop = false;
             // 
@@ -2363,9 +2456,10 @@
             // 
             this.BoxC20.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxC20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxC20.Location = new System.Drawing.Point(71, 630);
+            this.BoxC20.Location = new System.Drawing.Point(63, 572);
+            this.BoxC20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxC20.Name = "BoxC20";
-            this.BoxC20.Size = new System.Drawing.Size(28, 27);
+            this.BoxC20.Size = new System.Drawing.Size(24, 26);
             this.BoxC20.TabIndex = 382;
             this.BoxC20.TabStop = false;
             // 
@@ -2373,9 +2467,10 @@
             // 
             this.BoxB20.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxB20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxB20.Location = new System.Drawing.Point(37, 630);
+            this.BoxB20.Location = new System.Drawing.Point(33, 572);
+            this.BoxB20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxB20.Name = "BoxB20";
-            this.BoxB20.Size = new System.Drawing.Size(28, 27);
+            this.BoxB20.Size = new System.Drawing.Size(24, 26);
             this.BoxB20.TabIndex = 381;
             this.BoxB20.TabStop = false;
             // 
@@ -2383,9 +2478,10 @@
             // 
             this.BoxA20.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxA20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxA20.Location = new System.Drawing.Point(3, 630);
+            this.BoxA20.Location = new System.Drawing.Point(3, 572);
+            this.BoxA20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxA20.Name = "BoxA20";
-            this.BoxA20.Size = new System.Drawing.Size(28, 27);
+            this.BoxA20.Size = new System.Drawing.Size(24, 26);
             this.BoxA20.TabIndex = 380;
             this.BoxA20.TabStop = false;
             // 
@@ -2393,9 +2489,10 @@
             // 
             this.BoxP19.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxP19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxP19.Location = new System.Drawing.Point(513, 597);
+            this.BoxP19.Location = new System.Drawing.Point(453, 542);
+            this.BoxP19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxP19.Name = "BoxP19";
-            this.BoxP19.Size = new System.Drawing.Size(36, 27);
+            this.BoxP19.Size = new System.Drawing.Size(35, 26);
             this.BoxP19.TabIndex = 375;
             this.BoxP19.TabStop = false;
             // 
@@ -2403,9 +2500,10 @@
             // 
             this.BoxO19.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxO19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxO19.Location = new System.Drawing.Point(479, 597);
+            this.BoxO19.Location = new System.Drawing.Point(423, 542);
+            this.BoxO19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxO19.Name = "BoxO19";
-            this.BoxO19.Size = new System.Drawing.Size(28, 27);
+            this.BoxO19.Size = new System.Drawing.Size(24, 26);
             this.BoxO19.TabIndex = 374;
             this.BoxO19.TabStop = false;
             // 
@@ -2413,9 +2511,10 @@
             // 
             this.BoxN19.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxN19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxN19.Location = new System.Drawing.Point(445, 597);
+            this.BoxN19.Location = new System.Drawing.Point(393, 542);
+            this.BoxN19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxN19.Name = "BoxN19";
-            this.BoxN19.Size = new System.Drawing.Size(28, 27);
+            this.BoxN19.Size = new System.Drawing.Size(24, 26);
             this.BoxN19.TabIndex = 373;
             this.BoxN19.TabStop = false;
             // 
@@ -2423,9 +2522,10 @@
             // 
             this.BoxM19.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxM19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxM19.Location = new System.Drawing.Point(411, 597);
+            this.BoxM19.Location = new System.Drawing.Point(363, 542);
+            this.BoxM19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxM19.Name = "BoxM19";
-            this.BoxM19.Size = new System.Drawing.Size(28, 27);
+            this.BoxM19.Size = new System.Drawing.Size(24, 26);
             this.BoxM19.TabIndex = 372;
             this.BoxM19.TabStop = false;
             // 
@@ -2433,9 +2533,10 @@
             // 
             this.BoxL19.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxL19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxL19.Location = new System.Drawing.Point(377, 597);
+            this.BoxL19.Location = new System.Drawing.Point(333, 542);
+            this.BoxL19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxL19.Name = "BoxL19";
-            this.BoxL19.Size = new System.Drawing.Size(28, 27);
+            this.BoxL19.Size = new System.Drawing.Size(24, 26);
             this.BoxL19.TabIndex = 371;
             this.BoxL19.TabStop = false;
             // 
@@ -2443,9 +2544,10 @@
             // 
             this.BoxK19.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxK19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxK19.Location = new System.Drawing.Point(343, 597);
+            this.BoxK19.Location = new System.Drawing.Point(303, 542);
+            this.BoxK19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxK19.Name = "BoxK19";
-            this.BoxK19.Size = new System.Drawing.Size(28, 27);
+            this.BoxK19.Size = new System.Drawing.Size(24, 26);
             this.BoxK19.TabIndex = 370;
             this.BoxK19.TabStop = false;
             // 
@@ -2453,9 +2555,10 @@
             // 
             this.BoxJ19.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxJ19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxJ19.Location = new System.Drawing.Point(309, 597);
+            this.BoxJ19.Location = new System.Drawing.Point(273, 542);
+            this.BoxJ19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxJ19.Name = "BoxJ19";
-            this.BoxJ19.Size = new System.Drawing.Size(28, 27);
+            this.BoxJ19.Size = new System.Drawing.Size(24, 26);
             this.BoxJ19.TabIndex = 369;
             this.BoxJ19.TabStop = false;
             // 
@@ -2463,9 +2566,10 @@
             // 
             this.BoxI19.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxI19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxI19.Location = new System.Drawing.Point(275, 597);
+            this.BoxI19.Location = new System.Drawing.Point(243, 542);
+            this.BoxI19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxI19.Name = "BoxI19";
-            this.BoxI19.Size = new System.Drawing.Size(28, 27);
+            this.BoxI19.Size = new System.Drawing.Size(24, 26);
             this.BoxI19.TabIndex = 368;
             this.BoxI19.TabStop = false;
             // 
@@ -2473,9 +2577,10 @@
             // 
             this.BoxH19.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxH19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxH19.Location = new System.Drawing.Point(241, 597);
+            this.BoxH19.Location = new System.Drawing.Point(213, 542);
+            this.BoxH19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxH19.Name = "BoxH19";
-            this.BoxH19.Size = new System.Drawing.Size(28, 27);
+            this.BoxH19.Size = new System.Drawing.Size(24, 26);
             this.BoxH19.TabIndex = 367;
             this.BoxH19.TabStop = false;
             // 
@@ -2483,9 +2588,10 @@
             // 
             this.BoxG19.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxG19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxG19.Location = new System.Drawing.Point(207, 597);
+            this.BoxG19.Location = new System.Drawing.Point(183, 542);
+            this.BoxG19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxG19.Name = "BoxG19";
-            this.BoxG19.Size = new System.Drawing.Size(28, 27);
+            this.BoxG19.Size = new System.Drawing.Size(24, 26);
             this.BoxG19.TabIndex = 366;
             this.BoxG19.TabStop = false;
             // 
@@ -2493,9 +2599,10 @@
             // 
             this.BoxF19.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxF19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxF19.Location = new System.Drawing.Point(173, 597);
+            this.BoxF19.Location = new System.Drawing.Point(153, 542);
+            this.BoxF19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxF19.Name = "BoxF19";
-            this.BoxF19.Size = new System.Drawing.Size(28, 27);
+            this.BoxF19.Size = new System.Drawing.Size(24, 26);
             this.BoxF19.TabIndex = 365;
             this.BoxF19.TabStop = false;
             // 
@@ -2503,9 +2610,10 @@
             // 
             this.BoxE19.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxE19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxE19.Location = new System.Drawing.Point(139, 597);
+            this.BoxE19.Location = new System.Drawing.Point(123, 542);
+            this.BoxE19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxE19.Name = "BoxE19";
-            this.BoxE19.Size = new System.Drawing.Size(28, 27);
+            this.BoxE19.Size = new System.Drawing.Size(24, 26);
             this.BoxE19.TabIndex = 364;
             this.BoxE19.TabStop = false;
             // 
@@ -2513,9 +2621,10 @@
             // 
             this.BoxD19.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxD19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxD19.Location = new System.Drawing.Point(105, 597);
+            this.BoxD19.Location = new System.Drawing.Point(93, 542);
+            this.BoxD19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxD19.Name = "BoxD19";
-            this.BoxD19.Size = new System.Drawing.Size(28, 27);
+            this.BoxD19.Size = new System.Drawing.Size(24, 26);
             this.BoxD19.TabIndex = 363;
             this.BoxD19.TabStop = false;
             // 
@@ -2523,9 +2632,10 @@
             // 
             this.BoxC19.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxC19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxC19.Location = new System.Drawing.Point(71, 597);
+            this.BoxC19.Location = new System.Drawing.Point(63, 542);
+            this.BoxC19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxC19.Name = "BoxC19";
-            this.BoxC19.Size = new System.Drawing.Size(28, 27);
+            this.BoxC19.Size = new System.Drawing.Size(24, 26);
             this.BoxC19.TabIndex = 362;
             this.BoxC19.TabStop = false;
             // 
@@ -2533,9 +2643,10 @@
             // 
             this.BoxB19.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxB19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxB19.Location = new System.Drawing.Point(37, 597);
+            this.BoxB19.Location = new System.Drawing.Point(33, 542);
+            this.BoxB19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxB19.Name = "BoxB19";
-            this.BoxB19.Size = new System.Drawing.Size(28, 27);
+            this.BoxB19.Size = new System.Drawing.Size(24, 26);
             this.BoxB19.TabIndex = 361;
             this.BoxB19.TabStop = false;
             // 
@@ -2543,9 +2654,10 @@
             // 
             this.BoxA19.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxA19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxA19.Location = new System.Drawing.Point(3, 597);
+            this.BoxA19.Location = new System.Drawing.Point(3, 542);
+            this.BoxA19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxA19.Name = "BoxA19";
-            this.BoxA19.Size = new System.Drawing.Size(28, 27);
+            this.BoxA19.Size = new System.Drawing.Size(24, 26);
             this.BoxA19.TabIndex = 360;
             this.BoxA19.TabStop = false;
             // 
@@ -2553,9 +2665,10 @@
             // 
             this.BoxP18.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxP18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxP18.Location = new System.Drawing.Point(513, 564);
+            this.BoxP18.Location = new System.Drawing.Point(453, 512);
+            this.BoxP18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxP18.Name = "BoxP18";
-            this.BoxP18.Size = new System.Drawing.Size(36, 27);
+            this.BoxP18.Size = new System.Drawing.Size(35, 26);
             this.BoxP18.TabIndex = 355;
             this.BoxP18.TabStop = false;
             // 
@@ -2563,9 +2676,10 @@
             // 
             this.BoxO18.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxO18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxO18.Location = new System.Drawing.Point(479, 564);
+            this.BoxO18.Location = new System.Drawing.Point(423, 512);
+            this.BoxO18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxO18.Name = "BoxO18";
-            this.BoxO18.Size = new System.Drawing.Size(28, 27);
+            this.BoxO18.Size = new System.Drawing.Size(24, 26);
             this.BoxO18.TabIndex = 354;
             this.BoxO18.TabStop = false;
             // 
@@ -2573,9 +2687,10 @@
             // 
             this.BoxN18.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxN18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxN18.Location = new System.Drawing.Point(445, 564);
+            this.BoxN18.Location = new System.Drawing.Point(393, 512);
+            this.BoxN18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxN18.Name = "BoxN18";
-            this.BoxN18.Size = new System.Drawing.Size(28, 27);
+            this.BoxN18.Size = new System.Drawing.Size(24, 26);
             this.BoxN18.TabIndex = 353;
             this.BoxN18.TabStop = false;
             // 
@@ -2583,9 +2698,10 @@
             // 
             this.BoxM18.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxM18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxM18.Location = new System.Drawing.Point(411, 564);
+            this.BoxM18.Location = new System.Drawing.Point(363, 512);
+            this.BoxM18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxM18.Name = "BoxM18";
-            this.BoxM18.Size = new System.Drawing.Size(28, 27);
+            this.BoxM18.Size = new System.Drawing.Size(24, 26);
             this.BoxM18.TabIndex = 352;
             this.BoxM18.TabStop = false;
             // 
@@ -2593,9 +2709,10 @@
             // 
             this.BoxL18.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxL18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxL18.Location = new System.Drawing.Point(377, 564);
+            this.BoxL18.Location = new System.Drawing.Point(333, 512);
+            this.BoxL18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxL18.Name = "BoxL18";
-            this.BoxL18.Size = new System.Drawing.Size(28, 27);
+            this.BoxL18.Size = new System.Drawing.Size(24, 26);
             this.BoxL18.TabIndex = 351;
             this.BoxL18.TabStop = false;
             // 
@@ -2603,9 +2720,10 @@
             // 
             this.BoxK18.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxK18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxK18.Location = new System.Drawing.Point(343, 564);
+            this.BoxK18.Location = new System.Drawing.Point(303, 512);
+            this.BoxK18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxK18.Name = "BoxK18";
-            this.BoxK18.Size = new System.Drawing.Size(28, 27);
+            this.BoxK18.Size = new System.Drawing.Size(24, 26);
             this.BoxK18.TabIndex = 350;
             this.BoxK18.TabStop = false;
             // 
@@ -2613,9 +2731,10 @@
             // 
             this.BoxJ18.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxJ18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxJ18.Location = new System.Drawing.Point(309, 564);
+            this.BoxJ18.Location = new System.Drawing.Point(273, 512);
+            this.BoxJ18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxJ18.Name = "BoxJ18";
-            this.BoxJ18.Size = new System.Drawing.Size(28, 27);
+            this.BoxJ18.Size = new System.Drawing.Size(24, 26);
             this.BoxJ18.TabIndex = 349;
             this.BoxJ18.TabStop = false;
             // 
@@ -2623,9 +2742,10 @@
             // 
             this.BoxI18.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxI18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxI18.Location = new System.Drawing.Point(275, 564);
+            this.BoxI18.Location = new System.Drawing.Point(243, 512);
+            this.BoxI18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxI18.Name = "BoxI18";
-            this.BoxI18.Size = new System.Drawing.Size(28, 27);
+            this.BoxI18.Size = new System.Drawing.Size(24, 26);
             this.BoxI18.TabIndex = 348;
             this.BoxI18.TabStop = false;
             // 
@@ -2633,9 +2753,10 @@
             // 
             this.BoxH18.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxH18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxH18.Location = new System.Drawing.Point(241, 564);
+            this.BoxH18.Location = new System.Drawing.Point(213, 512);
+            this.BoxH18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxH18.Name = "BoxH18";
-            this.BoxH18.Size = new System.Drawing.Size(28, 27);
+            this.BoxH18.Size = new System.Drawing.Size(24, 26);
             this.BoxH18.TabIndex = 347;
             this.BoxH18.TabStop = false;
             // 
@@ -2643,9 +2764,10 @@
             // 
             this.BoxG18.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxG18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxG18.Location = new System.Drawing.Point(207, 564);
+            this.BoxG18.Location = new System.Drawing.Point(183, 512);
+            this.BoxG18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxG18.Name = "BoxG18";
-            this.BoxG18.Size = new System.Drawing.Size(28, 27);
+            this.BoxG18.Size = new System.Drawing.Size(24, 26);
             this.BoxG18.TabIndex = 346;
             this.BoxG18.TabStop = false;
             // 
@@ -2653,9 +2775,10 @@
             // 
             this.BoxF18.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxF18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxF18.Location = new System.Drawing.Point(173, 564);
+            this.BoxF18.Location = new System.Drawing.Point(153, 512);
+            this.BoxF18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxF18.Name = "BoxF18";
-            this.BoxF18.Size = new System.Drawing.Size(28, 27);
+            this.BoxF18.Size = new System.Drawing.Size(24, 26);
             this.BoxF18.TabIndex = 345;
             this.BoxF18.TabStop = false;
             // 
@@ -2663,9 +2786,10 @@
             // 
             this.BoxE18.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxE18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxE18.Location = new System.Drawing.Point(139, 564);
+            this.BoxE18.Location = new System.Drawing.Point(123, 512);
+            this.BoxE18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxE18.Name = "BoxE18";
-            this.BoxE18.Size = new System.Drawing.Size(28, 27);
+            this.BoxE18.Size = new System.Drawing.Size(24, 26);
             this.BoxE18.TabIndex = 344;
             this.BoxE18.TabStop = false;
             // 
@@ -2673,9 +2797,10 @@
             // 
             this.BoxD18.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxD18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxD18.Location = new System.Drawing.Point(105, 564);
+            this.BoxD18.Location = new System.Drawing.Point(93, 512);
+            this.BoxD18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxD18.Name = "BoxD18";
-            this.BoxD18.Size = new System.Drawing.Size(28, 27);
+            this.BoxD18.Size = new System.Drawing.Size(24, 26);
             this.BoxD18.TabIndex = 343;
             this.BoxD18.TabStop = false;
             // 
@@ -2683,9 +2808,10 @@
             // 
             this.BoxC18.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxC18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxC18.Location = new System.Drawing.Point(71, 564);
+            this.BoxC18.Location = new System.Drawing.Point(63, 512);
+            this.BoxC18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxC18.Name = "BoxC18";
-            this.BoxC18.Size = new System.Drawing.Size(28, 27);
+            this.BoxC18.Size = new System.Drawing.Size(24, 26);
             this.BoxC18.TabIndex = 342;
             this.BoxC18.TabStop = false;
             // 
@@ -2693,9 +2819,10 @@
             // 
             this.BoxB18.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxB18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxB18.Location = new System.Drawing.Point(37, 564);
+            this.BoxB18.Location = new System.Drawing.Point(33, 512);
+            this.BoxB18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxB18.Name = "BoxB18";
-            this.BoxB18.Size = new System.Drawing.Size(28, 27);
+            this.BoxB18.Size = new System.Drawing.Size(24, 26);
             this.BoxB18.TabIndex = 341;
             this.BoxB18.TabStop = false;
             // 
@@ -2703,9 +2830,10 @@
             // 
             this.BoxA18.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxA18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxA18.Location = new System.Drawing.Point(3, 564);
+            this.BoxA18.Location = new System.Drawing.Point(3, 512);
+            this.BoxA18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxA18.Name = "BoxA18";
-            this.BoxA18.Size = new System.Drawing.Size(28, 27);
+            this.BoxA18.Size = new System.Drawing.Size(24, 26);
             this.BoxA18.TabIndex = 340;
             this.BoxA18.TabStop = false;
             // 
@@ -2713,9 +2841,10 @@
             // 
             this.BoxP17.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxP17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxP17.Location = new System.Drawing.Point(513, 531);
+            this.BoxP17.Location = new System.Drawing.Point(453, 482);
+            this.BoxP17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxP17.Name = "BoxP17";
-            this.BoxP17.Size = new System.Drawing.Size(36, 27);
+            this.BoxP17.Size = new System.Drawing.Size(35, 26);
             this.BoxP17.TabIndex = 335;
             this.BoxP17.TabStop = false;
             // 
@@ -2723,9 +2852,10 @@
             // 
             this.BoxO17.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxO17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxO17.Location = new System.Drawing.Point(479, 531);
+            this.BoxO17.Location = new System.Drawing.Point(423, 482);
+            this.BoxO17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxO17.Name = "BoxO17";
-            this.BoxO17.Size = new System.Drawing.Size(28, 27);
+            this.BoxO17.Size = new System.Drawing.Size(24, 26);
             this.BoxO17.TabIndex = 334;
             this.BoxO17.TabStop = false;
             // 
@@ -2733,9 +2863,10 @@
             // 
             this.BoxN17.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxN17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxN17.Location = new System.Drawing.Point(445, 531);
+            this.BoxN17.Location = new System.Drawing.Point(393, 482);
+            this.BoxN17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxN17.Name = "BoxN17";
-            this.BoxN17.Size = new System.Drawing.Size(28, 27);
+            this.BoxN17.Size = new System.Drawing.Size(24, 26);
             this.BoxN17.TabIndex = 333;
             this.BoxN17.TabStop = false;
             // 
@@ -2743,9 +2874,10 @@
             // 
             this.BoxM17.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxM17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxM17.Location = new System.Drawing.Point(411, 531);
+            this.BoxM17.Location = new System.Drawing.Point(363, 482);
+            this.BoxM17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxM17.Name = "BoxM17";
-            this.BoxM17.Size = new System.Drawing.Size(28, 27);
+            this.BoxM17.Size = new System.Drawing.Size(24, 26);
             this.BoxM17.TabIndex = 332;
             this.BoxM17.TabStop = false;
             // 
@@ -2753,9 +2885,10 @@
             // 
             this.BoxL17.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxL17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxL17.Location = new System.Drawing.Point(377, 531);
+            this.BoxL17.Location = new System.Drawing.Point(333, 482);
+            this.BoxL17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxL17.Name = "BoxL17";
-            this.BoxL17.Size = new System.Drawing.Size(28, 27);
+            this.BoxL17.Size = new System.Drawing.Size(24, 26);
             this.BoxL17.TabIndex = 331;
             this.BoxL17.TabStop = false;
             // 
@@ -2763,9 +2896,10 @@
             // 
             this.BoxK17.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxK17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxK17.Location = new System.Drawing.Point(343, 531);
+            this.BoxK17.Location = new System.Drawing.Point(303, 482);
+            this.BoxK17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxK17.Name = "BoxK17";
-            this.BoxK17.Size = new System.Drawing.Size(28, 27);
+            this.BoxK17.Size = new System.Drawing.Size(24, 26);
             this.BoxK17.TabIndex = 330;
             this.BoxK17.TabStop = false;
             // 
@@ -2773,9 +2907,10 @@
             // 
             this.BoxJ17.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxJ17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxJ17.Location = new System.Drawing.Point(309, 531);
+            this.BoxJ17.Location = new System.Drawing.Point(273, 482);
+            this.BoxJ17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxJ17.Name = "BoxJ17";
-            this.BoxJ17.Size = new System.Drawing.Size(28, 27);
+            this.BoxJ17.Size = new System.Drawing.Size(24, 26);
             this.BoxJ17.TabIndex = 329;
             this.BoxJ17.TabStop = false;
             // 
@@ -2783,9 +2918,10 @@
             // 
             this.BoxI17.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxI17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxI17.Location = new System.Drawing.Point(275, 531);
+            this.BoxI17.Location = new System.Drawing.Point(243, 482);
+            this.BoxI17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxI17.Name = "BoxI17";
-            this.BoxI17.Size = new System.Drawing.Size(28, 27);
+            this.BoxI17.Size = new System.Drawing.Size(24, 26);
             this.BoxI17.TabIndex = 328;
             this.BoxI17.TabStop = false;
             // 
@@ -2793,9 +2929,10 @@
             // 
             this.BoxH17.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxH17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxH17.Location = new System.Drawing.Point(241, 531);
+            this.BoxH17.Location = new System.Drawing.Point(213, 482);
+            this.BoxH17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxH17.Name = "BoxH17";
-            this.BoxH17.Size = new System.Drawing.Size(28, 27);
+            this.BoxH17.Size = new System.Drawing.Size(24, 26);
             this.BoxH17.TabIndex = 327;
             this.BoxH17.TabStop = false;
             // 
@@ -2803,9 +2940,10 @@
             // 
             this.BoxG17.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxG17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxG17.Location = new System.Drawing.Point(207, 531);
+            this.BoxG17.Location = new System.Drawing.Point(183, 482);
+            this.BoxG17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxG17.Name = "BoxG17";
-            this.BoxG17.Size = new System.Drawing.Size(28, 27);
+            this.BoxG17.Size = new System.Drawing.Size(24, 26);
             this.BoxG17.TabIndex = 326;
             this.BoxG17.TabStop = false;
             // 
@@ -2813,9 +2951,10 @@
             // 
             this.BoxF17.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxF17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxF17.Location = new System.Drawing.Point(173, 531);
+            this.BoxF17.Location = new System.Drawing.Point(153, 482);
+            this.BoxF17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxF17.Name = "BoxF17";
-            this.BoxF17.Size = new System.Drawing.Size(28, 27);
+            this.BoxF17.Size = new System.Drawing.Size(24, 26);
             this.BoxF17.TabIndex = 325;
             this.BoxF17.TabStop = false;
             // 
@@ -2823,9 +2962,10 @@
             // 
             this.BoxE17.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxE17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxE17.Location = new System.Drawing.Point(139, 531);
+            this.BoxE17.Location = new System.Drawing.Point(123, 482);
+            this.BoxE17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxE17.Name = "BoxE17";
-            this.BoxE17.Size = new System.Drawing.Size(28, 27);
+            this.BoxE17.Size = new System.Drawing.Size(24, 26);
             this.BoxE17.TabIndex = 324;
             this.BoxE17.TabStop = false;
             // 
@@ -2833,9 +2973,10 @@
             // 
             this.BoxD17.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxD17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxD17.Location = new System.Drawing.Point(105, 531);
+            this.BoxD17.Location = new System.Drawing.Point(93, 482);
+            this.BoxD17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxD17.Name = "BoxD17";
-            this.BoxD17.Size = new System.Drawing.Size(28, 27);
+            this.BoxD17.Size = new System.Drawing.Size(24, 26);
             this.BoxD17.TabIndex = 323;
             this.BoxD17.TabStop = false;
             // 
@@ -2843,9 +2984,10 @@
             // 
             this.BoxC17.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxC17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxC17.Location = new System.Drawing.Point(71, 531);
+            this.BoxC17.Location = new System.Drawing.Point(63, 482);
+            this.BoxC17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxC17.Name = "BoxC17";
-            this.BoxC17.Size = new System.Drawing.Size(28, 27);
+            this.BoxC17.Size = new System.Drawing.Size(24, 26);
             this.BoxC17.TabIndex = 322;
             this.BoxC17.TabStop = false;
             // 
@@ -2853,9 +2995,10 @@
             // 
             this.BoxB17.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxB17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxB17.Location = new System.Drawing.Point(37, 531);
+            this.BoxB17.Location = new System.Drawing.Point(33, 482);
+            this.BoxB17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxB17.Name = "BoxB17";
-            this.BoxB17.Size = new System.Drawing.Size(28, 27);
+            this.BoxB17.Size = new System.Drawing.Size(24, 26);
             this.BoxB17.TabIndex = 321;
             this.BoxB17.TabStop = false;
             // 
@@ -2863,9 +3006,10 @@
             // 
             this.BoxA17.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxA17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxA17.Location = new System.Drawing.Point(3, 531);
+            this.BoxA17.Location = new System.Drawing.Point(3, 482);
+            this.BoxA17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxA17.Name = "BoxA17";
-            this.BoxA17.Size = new System.Drawing.Size(28, 27);
+            this.BoxA17.Size = new System.Drawing.Size(24, 26);
             this.BoxA17.TabIndex = 320;
             this.BoxA17.TabStop = false;
             // 
@@ -2873,9 +3017,10 @@
             // 
             this.BoxP16.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxP16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxP16.Location = new System.Drawing.Point(513, 498);
+            this.BoxP16.Location = new System.Drawing.Point(453, 452);
+            this.BoxP16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxP16.Name = "BoxP16";
-            this.BoxP16.Size = new System.Drawing.Size(36, 27);
+            this.BoxP16.Size = new System.Drawing.Size(35, 26);
             this.BoxP16.TabIndex = 315;
             this.BoxP16.TabStop = false;
             // 
@@ -2883,9 +3028,10 @@
             // 
             this.BoxO16.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxO16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxO16.Location = new System.Drawing.Point(479, 498);
+            this.BoxO16.Location = new System.Drawing.Point(423, 452);
+            this.BoxO16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxO16.Name = "BoxO16";
-            this.BoxO16.Size = new System.Drawing.Size(28, 27);
+            this.BoxO16.Size = new System.Drawing.Size(24, 26);
             this.BoxO16.TabIndex = 314;
             this.BoxO16.TabStop = false;
             // 
@@ -2893,9 +3039,10 @@
             // 
             this.BoxN16.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxN16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxN16.Location = new System.Drawing.Point(445, 498);
+            this.BoxN16.Location = new System.Drawing.Point(393, 452);
+            this.BoxN16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxN16.Name = "BoxN16";
-            this.BoxN16.Size = new System.Drawing.Size(28, 27);
+            this.BoxN16.Size = new System.Drawing.Size(24, 26);
             this.BoxN16.TabIndex = 313;
             this.BoxN16.TabStop = false;
             // 
@@ -2903,9 +3050,10 @@
             // 
             this.BoxM16.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxM16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxM16.Location = new System.Drawing.Point(411, 498);
+            this.BoxM16.Location = new System.Drawing.Point(363, 452);
+            this.BoxM16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxM16.Name = "BoxM16";
-            this.BoxM16.Size = new System.Drawing.Size(28, 27);
+            this.BoxM16.Size = new System.Drawing.Size(24, 26);
             this.BoxM16.TabIndex = 312;
             this.BoxM16.TabStop = false;
             // 
@@ -2913,9 +3061,10 @@
             // 
             this.BoxL16.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxL16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxL16.Location = new System.Drawing.Point(377, 498);
+            this.BoxL16.Location = new System.Drawing.Point(333, 452);
+            this.BoxL16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxL16.Name = "BoxL16";
-            this.BoxL16.Size = new System.Drawing.Size(28, 27);
+            this.BoxL16.Size = new System.Drawing.Size(24, 26);
             this.BoxL16.TabIndex = 311;
             this.BoxL16.TabStop = false;
             // 
@@ -2923,9 +3072,10 @@
             // 
             this.BoxK16.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxK16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxK16.Location = new System.Drawing.Point(343, 498);
+            this.BoxK16.Location = new System.Drawing.Point(303, 452);
+            this.BoxK16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxK16.Name = "BoxK16";
-            this.BoxK16.Size = new System.Drawing.Size(28, 27);
+            this.BoxK16.Size = new System.Drawing.Size(24, 26);
             this.BoxK16.TabIndex = 310;
             this.BoxK16.TabStop = false;
             // 
@@ -2933,9 +3083,10 @@
             // 
             this.BoxJ16.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxJ16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxJ16.Location = new System.Drawing.Point(309, 498);
+            this.BoxJ16.Location = new System.Drawing.Point(273, 452);
+            this.BoxJ16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxJ16.Name = "BoxJ16";
-            this.BoxJ16.Size = new System.Drawing.Size(28, 27);
+            this.BoxJ16.Size = new System.Drawing.Size(24, 26);
             this.BoxJ16.TabIndex = 309;
             this.BoxJ16.TabStop = false;
             // 
@@ -2943,9 +3094,10 @@
             // 
             this.BoxI16.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxI16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxI16.Location = new System.Drawing.Point(275, 498);
+            this.BoxI16.Location = new System.Drawing.Point(243, 452);
+            this.BoxI16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxI16.Name = "BoxI16";
-            this.BoxI16.Size = new System.Drawing.Size(28, 27);
+            this.BoxI16.Size = new System.Drawing.Size(24, 26);
             this.BoxI16.TabIndex = 308;
             this.BoxI16.TabStop = false;
             // 
@@ -2953,9 +3105,10 @@
             // 
             this.BoxH16.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxH16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxH16.Location = new System.Drawing.Point(241, 498);
+            this.BoxH16.Location = new System.Drawing.Point(213, 452);
+            this.BoxH16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxH16.Name = "BoxH16";
-            this.BoxH16.Size = new System.Drawing.Size(28, 27);
+            this.BoxH16.Size = new System.Drawing.Size(24, 26);
             this.BoxH16.TabIndex = 307;
             this.BoxH16.TabStop = false;
             // 
@@ -2963,9 +3116,10 @@
             // 
             this.BoxG16.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxG16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxG16.Location = new System.Drawing.Point(207, 498);
+            this.BoxG16.Location = new System.Drawing.Point(183, 452);
+            this.BoxG16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxG16.Name = "BoxG16";
-            this.BoxG16.Size = new System.Drawing.Size(28, 27);
+            this.BoxG16.Size = new System.Drawing.Size(24, 26);
             this.BoxG16.TabIndex = 306;
             this.BoxG16.TabStop = false;
             // 
@@ -2973,9 +3127,10 @@
             // 
             this.BoxF16.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxF16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxF16.Location = new System.Drawing.Point(173, 498);
+            this.BoxF16.Location = new System.Drawing.Point(153, 452);
+            this.BoxF16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxF16.Name = "BoxF16";
-            this.BoxF16.Size = new System.Drawing.Size(28, 27);
+            this.BoxF16.Size = new System.Drawing.Size(24, 26);
             this.BoxF16.TabIndex = 305;
             this.BoxF16.TabStop = false;
             // 
@@ -2983,9 +3138,10 @@
             // 
             this.BoxE16.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxE16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxE16.Location = new System.Drawing.Point(139, 498);
+            this.BoxE16.Location = new System.Drawing.Point(123, 452);
+            this.BoxE16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxE16.Name = "BoxE16";
-            this.BoxE16.Size = new System.Drawing.Size(28, 27);
+            this.BoxE16.Size = new System.Drawing.Size(24, 26);
             this.BoxE16.TabIndex = 304;
             this.BoxE16.TabStop = false;
             // 
@@ -2993,9 +3149,10 @@
             // 
             this.BoxD16.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxD16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxD16.Location = new System.Drawing.Point(105, 498);
+            this.BoxD16.Location = new System.Drawing.Point(93, 452);
+            this.BoxD16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxD16.Name = "BoxD16";
-            this.BoxD16.Size = new System.Drawing.Size(28, 27);
+            this.BoxD16.Size = new System.Drawing.Size(24, 26);
             this.BoxD16.TabIndex = 303;
             this.BoxD16.TabStop = false;
             // 
@@ -3003,9 +3160,10 @@
             // 
             this.BoxC16.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxC16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxC16.Location = new System.Drawing.Point(71, 498);
+            this.BoxC16.Location = new System.Drawing.Point(63, 452);
+            this.BoxC16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxC16.Name = "BoxC16";
-            this.BoxC16.Size = new System.Drawing.Size(28, 27);
+            this.BoxC16.Size = new System.Drawing.Size(24, 26);
             this.BoxC16.TabIndex = 302;
             this.BoxC16.TabStop = false;
             // 
@@ -3013,9 +3171,10 @@
             // 
             this.BoxB16.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxB16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxB16.Location = new System.Drawing.Point(37, 498);
+            this.BoxB16.Location = new System.Drawing.Point(33, 452);
+            this.BoxB16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxB16.Name = "BoxB16";
-            this.BoxB16.Size = new System.Drawing.Size(28, 27);
+            this.BoxB16.Size = new System.Drawing.Size(24, 26);
             this.BoxB16.TabIndex = 301;
             this.BoxB16.TabStop = false;
             // 
@@ -3023,9 +3182,10 @@
             // 
             this.BoxA16.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxA16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxA16.Location = new System.Drawing.Point(3, 498);
+            this.BoxA16.Location = new System.Drawing.Point(3, 452);
+            this.BoxA16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxA16.Name = "BoxA16";
-            this.BoxA16.Size = new System.Drawing.Size(28, 27);
+            this.BoxA16.Size = new System.Drawing.Size(24, 26);
             this.BoxA16.TabIndex = 300;
             this.BoxA16.TabStop = false;
             // 
@@ -3033,9 +3193,10 @@
             // 
             this.BoxP15.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxP15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxP15.Location = new System.Drawing.Point(513, 465);
+            this.BoxP15.Location = new System.Drawing.Point(453, 422);
+            this.BoxP15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxP15.Name = "BoxP15";
-            this.BoxP15.Size = new System.Drawing.Size(36, 27);
+            this.BoxP15.Size = new System.Drawing.Size(35, 26);
             this.BoxP15.TabIndex = 295;
             this.BoxP15.TabStop = false;
             // 
@@ -3043,9 +3204,10 @@
             // 
             this.BoxO15.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxO15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxO15.Location = new System.Drawing.Point(479, 465);
+            this.BoxO15.Location = new System.Drawing.Point(423, 422);
+            this.BoxO15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxO15.Name = "BoxO15";
-            this.BoxO15.Size = new System.Drawing.Size(28, 27);
+            this.BoxO15.Size = new System.Drawing.Size(24, 26);
             this.BoxO15.TabIndex = 294;
             this.BoxO15.TabStop = false;
             // 
@@ -3053,9 +3215,10 @@
             // 
             this.BoxN15.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxN15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxN15.Location = new System.Drawing.Point(445, 465);
+            this.BoxN15.Location = new System.Drawing.Point(393, 422);
+            this.BoxN15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxN15.Name = "BoxN15";
-            this.BoxN15.Size = new System.Drawing.Size(28, 27);
+            this.BoxN15.Size = new System.Drawing.Size(24, 26);
             this.BoxN15.TabIndex = 293;
             this.BoxN15.TabStop = false;
             // 
@@ -3063,9 +3226,10 @@
             // 
             this.BoxM15.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxM15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxM15.Location = new System.Drawing.Point(411, 465);
+            this.BoxM15.Location = new System.Drawing.Point(363, 422);
+            this.BoxM15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxM15.Name = "BoxM15";
-            this.BoxM15.Size = new System.Drawing.Size(28, 27);
+            this.BoxM15.Size = new System.Drawing.Size(24, 26);
             this.BoxM15.TabIndex = 292;
             this.BoxM15.TabStop = false;
             // 
@@ -3073,9 +3237,10 @@
             // 
             this.BoxL15.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxL15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxL15.Location = new System.Drawing.Point(377, 465);
+            this.BoxL15.Location = new System.Drawing.Point(333, 422);
+            this.BoxL15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxL15.Name = "BoxL15";
-            this.BoxL15.Size = new System.Drawing.Size(28, 27);
+            this.BoxL15.Size = new System.Drawing.Size(24, 26);
             this.BoxL15.TabIndex = 291;
             this.BoxL15.TabStop = false;
             // 
@@ -3083,9 +3248,10 @@
             // 
             this.BoxK15.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxK15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxK15.Location = new System.Drawing.Point(343, 465);
+            this.BoxK15.Location = new System.Drawing.Point(303, 422);
+            this.BoxK15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxK15.Name = "BoxK15";
-            this.BoxK15.Size = new System.Drawing.Size(28, 27);
+            this.BoxK15.Size = new System.Drawing.Size(24, 26);
             this.BoxK15.TabIndex = 290;
             this.BoxK15.TabStop = false;
             // 
@@ -3093,9 +3259,10 @@
             // 
             this.BoxJ15.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxJ15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxJ15.Location = new System.Drawing.Point(309, 465);
+            this.BoxJ15.Location = new System.Drawing.Point(273, 422);
+            this.BoxJ15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxJ15.Name = "BoxJ15";
-            this.BoxJ15.Size = new System.Drawing.Size(28, 27);
+            this.BoxJ15.Size = new System.Drawing.Size(24, 26);
             this.BoxJ15.TabIndex = 289;
             this.BoxJ15.TabStop = false;
             // 
@@ -3103,9 +3270,10 @@
             // 
             this.BoxI15.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxI15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxI15.Location = new System.Drawing.Point(275, 465);
+            this.BoxI15.Location = new System.Drawing.Point(243, 422);
+            this.BoxI15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxI15.Name = "BoxI15";
-            this.BoxI15.Size = new System.Drawing.Size(28, 27);
+            this.BoxI15.Size = new System.Drawing.Size(24, 26);
             this.BoxI15.TabIndex = 288;
             this.BoxI15.TabStop = false;
             // 
@@ -3113,9 +3281,10 @@
             // 
             this.BoxH15.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxH15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxH15.Location = new System.Drawing.Point(241, 465);
+            this.BoxH15.Location = new System.Drawing.Point(213, 422);
+            this.BoxH15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxH15.Name = "BoxH15";
-            this.BoxH15.Size = new System.Drawing.Size(28, 27);
+            this.BoxH15.Size = new System.Drawing.Size(24, 26);
             this.BoxH15.TabIndex = 287;
             this.BoxH15.TabStop = false;
             // 
@@ -3123,9 +3292,10 @@
             // 
             this.BoxG15.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxG15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxG15.Location = new System.Drawing.Point(207, 465);
+            this.BoxG15.Location = new System.Drawing.Point(183, 422);
+            this.BoxG15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxG15.Name = "BoxG15";
-            this.BoxG15.Size = new System.Drawing.Size(28, 27);
+            this.BoxG15.Size = new System.Drawing.Size(24, 26);
             this.BoxG15.TabIndex = 286;
             this.BoxG15.TabStop = false;
             // 
@@ -3133,9 +3303,10 @@
             // 
             this.BoxF15.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxF15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxF15.Location = new System.Drawing.Point(173, 465);
+            this.BoxF15.Location = new System.Drawing.Point(153, 422);
+            this.BoxF15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxF15.Name = "BoxF15";
-            this.BoxF15.Size = new System.Drawing.Size(28, 27);
+            this.BoxF15.Size = new System.Drawing.Size(24, 26);
             this.BoxF15.TabIndex = 285;
             this.BoxF15.TabStop = false;
             // 
@@ -3143,9 +3314,10 @@
             // 
             this.BoxE15.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxE15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxE15.Location = new System.Drawing.Point(139, 465);
+            this.BoxE15.Location = new System.Drawing.Point(123, 422);
+            this.BoxE15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxE15.Name = "BoxE15";
-            this.BoxE15.Size = new System.Drawing.Size(28, 27);
+            this.BoxE15.Size = new System.Drawing.Size(24, 26);
             this.BoxE15.TabIndex = 284;
             this.BoxE15.TabStop = false;
             // 
@@ -3153,9 +3325,10 @@
             // 
             this.BoxD15.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxD15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxD15.Location = new System.Drawing.Point(105, 465);
+            this.BoxD15.Location = new System.Drawing.Point(93, 422);
+            this.BoxD15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxD15.Name = "BoxD15";
-            this.BoxD15.Size = new System.Drawing.Size(28, 27);
+            this.BoxD15.Size = new System.Drawing.Size(24, 26);
             this.BoxD15.TabIndex = 283;
             this.BoxD15.TabStop = false;
             // 
@@ -3163,9 +3336,10 @@
             // 
             this.BoxC15.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxC15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxC15.Location = new System.Drawing.Point(71, 465);
+            this.BoxC15.Location = new System.Drawing.Point(63, 422);
+            this.BoxC15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxC15.Name = "BoxC15";
-            this.BoxC15.Size = new System.Drawing.Size(28, 27);
+            this.BoxC15.Size = new System.Drawing.Size(24, 26);
             this.BoxC15.TabIndex = 282;
             this.BoxC15.TabStop = false;
             // 
@@ -3173,9 +3347,10 @@
             // 
             this.BoxB15.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxB15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxB15.Location = new System.Drawing.Point(37, 465);
+            this.BoxB15.Location = new System.Drawing.Point(33, 422);
+            this.BoxB15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxB15.Name = "BoxB15";
-            this.BoxB15.Size = new System.Drawing.Size(28, 27);
+            this.BoxB15.Size = new System.Drawing.Size(24, 26);
             this.BoxB15.TabIndex = 281;
             this.BoxB15.TabStop = false;
             // 
@@ -3183,9 +3358,10 @@
             // 
             this.BoxA15.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxA15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxA15.Location = new System.Drawing.Point(3, 465);
+            this.BoxA15.Location = new System.Drawing.Point(3, 422);
+            this.BoxA15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxA15.Name = "BoxA15";
-            this.BoxA15.Size = new System.Drawing.Size(28, 27);
+            this.BoxA15.Size = new System.Drawing.Size(24, 26);
             this.BoxA15.TabIndex = 280;
             this.BoxA15.TabStop = false;
             // 
@@ -3193,9 +3369,10 @@
             // 
             this.BoxP14.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxP14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxP14.Location = new System.Drawing.Point(513, 432);
+            this.BoxP14.Location = new System.Drawing.Point(453, 392);
+            this.BoxP14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxP14.Name = "BoxP14";
-            this.BoxP14.Size = new System.Drawing.Size(36, 27);
+            this.BoxP14.Size = new System.Drawing.Size(35, 26);
             this.BoxP14.TabIndex = 275;
             this.BoxP14.TabStop = false;
             // 
@@ -3203,9 +3380,10 @@
             // 
             this.BoxO14.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxO14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxO14.Location = new System.Drawing.Point(479, 432);
+            this.BoxO14.Location = new System.Drawing.Point(423, 392);
+            this.BoxO14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxO14.Name = "BoxO14";
-            this.BoxO14.Size = new System.Drawing.Size(28, 27);
+            this.BoxO14.Size = new System.Drawing.Size(24, 26);
             this.BoxO14.TabIndex = 274;
             this.BoxO14.TabStop = false;
             // 
@@ -3213,9 +3391,10 @@
             // 
             this.BoxN14.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxN14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxN14.Location = new System.Drawing.Point(445, 432);
+            this.BoxN14.Location = new System.Drawing.Point(393, 392);
+            this.BoxN14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxN14.Name = "BoxN14";
-            this.BoxN14.Size = new System.Drawing.Size(28, 27);
+            this.BoxN14.Size = new System.Drawing.Size(24, 26);
             this.BoxN14.TabIndex = 273;
             this.BoxN14.TabStop = false;
             // 
@@ -3223,9 +3402,10 @@
             // 
             this.BoxM14.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxM14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxM14.Location = new System.Drawing.Point(411, 432);
+            this.BoxM14.Location = new System.Drawing.Point(363, 392);
+            this.BoxM14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxM14.Name = "BoxM14";
-            this.BoxM14.Size = new System.Drawing.Size(28, 27);
+            this.BoxM14.Size = new System.Drawing.Size(24, 26);
             this.BoxM14.TabIndex = 272;
             this.BoxM14.TabStop = false;
             // 
@@ -3233,9 +3413,10 @@
             // 
             this.BoxL14.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxL14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxL14.Location = new System.Drawing.Point(377, 432);
+            this.BoxL14.Location = new System.Drawing.Point(333, 392);
+            this.BoxL14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxL14.Name = "BoxL14";
-            this.BoxL14.Size = new System.Drawing.Size(28, 27);
+            this.BoxL14.Size = new System.Drawing.Size(24, 26);
             this.BoxL14.TabIndex = 271;
             this.BoxL14.TabStop = false;
             // 
@@ -3243,9 +3424,10 @@
             // 
             this.BoxK14.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxK14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxK14.Location = new System.Drawing.Point(343, 432);
+            this.BoxK14.Location = new System.Drawing.Point(303, 392);
+            this.BoxK14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxK14.Name = "BoxK14";
-            this.BoxK14.Size = new System.Drawing.Size(28, 27);
+            this.BoxK14.Size = new System.Drawing.Size(24, 26);
             this.BoxK14.TabIndex = 270;
             this.BoxK14.TabStop = false;
             // 
@@ -3253,9 +3435,10 @@
             // 
             this.BoxJ14.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxJ14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxJ14.Location = new System.Drawing.Point(309, 432);
+            this.BoxJ14.Location = new System.Drawing.Point(273, 392);
+            this.BoxJ14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxJ14.Name = "BoxJ14";
-            this.BoxJ14.Size = new System.Drawing.Size(28, 27);
+            this.BoxJ14.Size = new System.Drawing.Size(24, 26);
             this.BoxJ14.TabIndex = 269;
             this.BoxJ14.TabStop = false;
             // 
@@ -3263,9 +3446,10 @@
             // 
             this.BoxI14.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxI14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxI14.Location = new System.Drawing.Point(275, 432);
+            this.BoxI14.Location = new System.Drawing.Point(243, 392);
+            this.BoxI14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxI14.Name = "BoxI14";
-            this.BoxI14.Size = new System.Drawing.Size(28, 27);
+            this.BoxI14.Size = new System.Drawing.Size(24, 26);
             this.BoxI14.TabIndex = 268;
             this.BoxI14.TabStop = false;
             // 
@@ -3273,9 +3457,10 @@
             // 
             this.BoxH14.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxH14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxH14.Location = new System.Drawing.Point(241, 432);
+            this.BoxH14.Location = new System.Drawing.Point(213, 392);
+            this.BoxH14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxH14.Name = "BoxH14";
-            this.BoxH14.Size = new System.Drawing.Size(28, 27);
+            this.BoxH14.Size = new System.Drawing.Size(24, 26);
             this.BoxH14.TabIndex = 267;
             this.BoxH14.TabStop = false;
             // 
@@ -3283,9 +3468,10 @@
             // 
             this.BoxG14.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxG14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxG14.Location = new System.Drawing.Point(207, 432);
+            this.BoxG14.Location = new System.Drawing.Point(183, 392);
+            this.BoxG14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxG14.Name = "BoxG14";
-            this.BoxG14.Size = new System.Drawing.Size(28, 27);
+            this.BoxG14.Size = new System.Drawing.Size(24, 26);
             this.BoxG14.TabIndex = 266;
             this.BoxG14.TabStop = false;
             // 
@@ -3293,9 +3479,10 @@
             // 
             this.BoxF14.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxF14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxF14.Location = new System.Drawing.Point(173, 432);
+            this.BoxF14.Location = new System.Drawing.Point(153, 392);
+            this.BoxF14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxF14.Name = "BoxF14";
-            this.BoxF14.Size = new System.Drawing.Size(28, 27);
+            this.BoxF14.Size = new System.Drawing.Size(24, 26);
             this.BoxF14.TabIndex = 265;
             this.BoxF14.TabStop = false;
             // 
@@ -3303,9 +3490,10 @@
             // 
             this.BoxE14.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxE14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxE14.Location = new System.Drawing.Point(139, 432);
+            this.BoxE14.Location = new System.Drawing.Point(123, 392);
+            this.BoxE14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxE14.Name = "BoxE14";
-            this.BoxE14.Size = new System.Drawing.Size(28, 27);
+            this.BoxE14.Size = new System.Drawing.Size(24, 26);
             this.BoxE14.TabIndex = 264;
             this.BoxE14.TabStop = false;
             // 
@@ -3313,9 +3501,10 @@
             // 
             this.BoxD14.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxD14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxD14.Location = new System.Drawing.Point(105, 432);
+            this.BoxD14.Location = new System.Drawing.Point(93, 392);
+            this.BoxD14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxD14.Name = "BoxD14";
-            this.BoxD14.Size = new System.Drawing.Size(28, 27);
+            this.BoxD14.Size = new System.Drawing.Size(24, 26);
             this.BoxD14.TabIndex = 263;
             this.BoxD14.TabStop = false;
             // 
@@ -3323,9 +3512,10 @@
             // 
             this.BoxC14.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxC14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxC14.Location = new System.Drawing.Point(71, 432);
+            this.BoxC14.Location = new System.Drawing.Point(63, 392);
+            this.BoxC14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxC14.Name = "BoxC14";
-            this.BoxC14.Size = new System.Drawing.Size(28, 27);
+            this.BoxC14.Size = new System.Drawing.Size(24, 26);
             this.BoxC14.TabIndex = 262;
             this.BoxC14.TabStop = false;
             // 
@@ -3333,9 +3523,10 @@
             // 
             this.BoxB14.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxB14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxB14.Location = new System.Drawing.Point(37, 432);
+            this.BoxB14.Location = new System.Drawing.Point(33, 392);
+            this.BoxB14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxB14.Name = "BoxB14";
-            this.BoxB14.Size = new System.Drawing.Size(28, 27);
+            this.BoxB14.Size = new System.Drawing.Size(24, 26);
             this.BoxB14.TabIndex = 261;
             this.BoxB14.TabStop = false;
             // 
@@ -3343,9 +3534,10 @@
             // 
             this.BoxA14.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxA14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxA14.Location = new System.Drawing.Point(3, 432);
+            this.BoxA14.Location = new System.Drawing.Point(3, 392);
+            this.BoxA14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxA14.Name = "BoxA14";
-            this.BoxA14.Size = new System.Drawing.Size(28, 27);
+            this.BoxA14.Size = new System.Drawing.Size(24, 26);
             this.BoxA14.TabIndex = 260;
             this.BoxA14.TabStop = false;
             // 
@@ -3353,9 +3545,10 @@
             // 
             this.BoxP13.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxP13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxP13.Location = new System.Drawing.Point(513, 399);
+            this.BoxP13.Location = new System.Drawing.Point(453, 362);
+            this.BoxP13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxP13.Name = "BoxP13";
-            this.BoxP13.Size = new System.Drawing.Size(36, 27);
+            this.BoxP13.Size = new System.Drawing.Size(35, 26);
             this.BoxP13.TabIndex = 255;
             this.BoxP13.TabStop = false;
             // 
@@ -3363,9 +3556,10 @@
             // 
             this.BoxO13.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxO13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxO13.Location = new System.Drawing.Point(479, 399);
+            this.BoxO13.Location = new System.Drawing.Point(423, 362);
+            this.BoxO13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxO13.Name = "BoxO13";
-            this.BoxO13.Size = new System.Drawing.Size(28, 27);
+            this.BoxO13.Size = new System.Drawing.Size(24, 26);
             this.BoxO13.TabIndex = 254;
             this.BoxO13.TabStop = false;
             // 
@@ -3373,9 +3567,10 @@
             // 
             this.BoxN13.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxN13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxN13.Location = new System.Drawing.Point(445, 399);
+            this.BoxN13.Location = new System.Drawing.Point(393, 362);
+            this.BoxN13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxN13.Name = "BoxN13";
-            this.BoxN13.Size = new System.Drawing.Size(28, 27);
+            this.BoxN13.Size = new System.Drawing.Size(24, 26);
             this.BoxN13.TabIndex = 253;
             this.BoxN13.TabStop = false;
             // 
@@ -3383,9 +3578,10 @@
             // 
             this.BoxM13.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxM13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxM13.Location = new System.Drawing.Point(411, 399);
+            this.BoxM13.Location = new System.Drawing.Point(363, 362);
+            this.BoxM13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxM13.Name = "BoxM13";
-            this.BoxM13.Size = new System.Drawing.Size(28, 27);
+            this.BoxM13.Size = new System.Drawing.Size(24, 26);
             this.BoxM13.TabIndex = 252;
             this.BoxM13.TabStop = false;
             // 
@@ -3393,9 +3589,10 @@
             // 
             this.BoxL13.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxL13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxL13.Location = new System.Drawing.Point(377, 399);
+            this.BoxL13.Location = new System.Drawing.Point(333, 362);
+            this.BoxL13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxL13.Name = "BoxL13";
-            this.BoxL13.Size = new System.Drawing.Size(28, 27);
+            this.BoxL13.Size = new System.Drawing.Size(24, 26);
             this.BoxL13.TabIndex = 251;
             this.BoxL13.TabStop = false;
             // 
@@ -3403,9 +3600,10 @@
             // 
             this.BoxK13.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxK13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxK13.Location = new System.Drawing.Point(343, 399);
+            this.BoxK13.Location = new System.Drawing.Point(303, 362);
+            this.BoxK13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxK13.Name = "BoxK13";
-            this.BoxK13.Size = new System.Drawing.Size(28, 27);
+            this.BoxK13.Size = new System.Drawing.Size(24, 26);
             this.BoxK13.TabIndex = 250;
             this.BoxK13.TabStop = false;
             // 
@@ -3413,9 +3611,10 @@
             // 
             this.BoxJ13.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxJ13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxJ13.Location = new System.Drawing.Point(309, 399);
+            this.BoxJ13.Location = new System.Drawing.Point(273, 362);
+            this.BoxJ13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxJ13.Name = "BoxJ13";
-            this.BoxJ13.Size = new System.Drawing.Size(28, 27);
+            this.BoxJ13.Size = new System.Drawing.Size(24, 26);
             this.BoxJ13.TabIndex = 249;
             this.BoxJ13.TabStop = false;
             // 
@@ -3423,9 +3622,10 @@
             // 
             this.BoxI13.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxI13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxI13.Location = new System.Drawing.Point(275, 399);
+            this.BoxI13.Location = new System.Drawing.Point(243, 362);
+            this.BoxI13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxI13.Name = "BoxI13";
-            this.BoxI13.Size = new System.Drawing.Size(28, 27);
+            this.BoxI13.Size = new System.Drawing.Size(24, 26);
             this.BoxI13.TabIndex = 248;
             this.BoxI13.TabStop = false;
             // 
@@ -3433,9 +3633,10 @@
             // 
             this.BoxH13.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxH13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxH13.Location = new System.Drawing.Point(241, 399);
+            this.BoxH13.Location = new System.Drawing.Point(213, 362);
+            this.BoxH13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxH13.Name = "BoxH13";
-            this.BoxH13.Size = new System.Drawing.Size(28, 27);
+            this.BoxH13.Size = new System.Drawing.Size(24, 26);
             this.BoxH13.TabIndex = 247;
             this.BoxH13.TabStop = false;
             // 
@@ -3443,9 +3644,10 @@
             // 
             this.BoxG13.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxG13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxG13.Location = new System.Drawing.Point(207, 399);
+            this.BoxG13.Location = new System.Drawing.Point(183, 362);
+            this.BoxG13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxG13.Name = "BoxG13";
-            this.BoxG13.Size = new System.Drawing.Size(28, 27);
+            this.BoxG13.Size = new System.Drawing.Size(24, 26);
             this.BoxG13.TabIndex = 246;
             this.BoxG13.TabStop = false;
             // 
@@ -3453,9 +3655,10 @@
             // 
             this.BoxF13.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxF13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxF13.Location = new System.Drawing.Point(173, 399);
+            this.BoxF13.Location = new System.Drawing.Point(153, 362);
+            this.BoxF13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxF13.Name = "BoxF13";
-            this.BoxF13.Size = new System.Drawing.Size(28, 27);
+            this.BoxF13.Size = new System.Drawing.Size(24, 26);
             this.BoxF13.TabIndex = 245;
             this.BoxF13.TabStop = false;
             // 
@@ -3463,9 +3666,10 @@
             // 
             this.BoxE13.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxE13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxE13.Location = new System.Drawing.Point(139, 399);
+            this.BoxE13.Location = new System.Drawing.Point(123, 362);
+            this.BoxE13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxE13.Name = "BoxE13";
-            this.BoxE13.Size = new System.Drawing.Size(28, 27);
+            this.BoxE13.Size = new System.Drawing.Size(24, 26);
             this.BoxE13.TabIndex = 244;
             this.BoxE13.TabStop = false;
             // 
@@ -3473,9 +3677,10 @@
             // 
             this.BoxD13.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxD13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxD13.Location = new System.Drawing.Point(105, 399);
+            this.BoxD13.Location = new System.Drawing.Point(93, 362);
+            this.BoxD13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxD13.Name = "BoxD13";
-            this.BoxD13.Size = new System.Drawing.Size(28, 27);
+            this.BoxD13.Size = new System.Drawing.Size(24, 26);
             this.BoxD13.TabIndex = 243;
             this.BoxD13.TabStop = false;
             // 
@@ -3483,9 +3688,10 @@
             // 
             this.BoxC13.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxC13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxC13.Location = new System.Drawing.Point(71, 399);
+            this.BoxC13.Location = new System.Drawing.Point(63, 362);
+            this.BoxC13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxC13.Name = "BoxC13";
-            this.BoxC13.Size = new System.Drawing.Size(28, 27);
+            this.BoxC13.Size = new System.Drawing.Size(24, 26);
             this.BoxC13.TabIndex = 242;
             this.BoxC13.TabStop = false;
             // 
@@ -3493,9 +3699,10 @@
             // 
             this.BoxB13.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxB13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxB13.Location = new System.Drawing.Point(37, 399);
+            this.BoxB13.Location = new System.Drawing.Point(33, 362);
+            this.BoxB13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxB13.Name = "BoxB13";
-            this.BoxB13.Size = new System.Drawing.Size(28, 27);
+            this.BoxB13.Size = new System.Drawing.Size(24, 26);
             this.BoxB13.TabIndex = 241;
             this.BoxB13.TabStop = false;
             // 
@@ -3503,9 +3710,10 @@
             // 
             this.BoxA13.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxA13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxA13.Location = new System.Drawing.Point(3, 399);
+            this.BoxA13.Location = new System.Drawing.Point(3, 362);
+            this.BoxA13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxA13.Name = "BoxA13";
-            this.BoxA13.Size = new System.Drawing.Size(28, 27);
+            this.BoxA13.Size = new System.Drawing.Size(24, 26);
             this.BoxA13.TabIndex = 240;
             this.BoxA13.TabStop = false;
             // 
@@ -3513,9 +3721,10 @@
             // 
             this.BoxP12.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxP12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxP12.Location = new System.Drawing.Point(513, 366);
+            this.BoxP12.Location = new System.Drawing.Point(453, 332);
+            this.BoxP12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxP12.Name = "BoxP12";
-            this.BoxP12.Size = new System.Drawing.Size(36, 27);
+            this.BoxP12.Size = new System.Drawing.Size(35, 26);
             this.BoxP12.TabIndex = 235;
             this.BoxP12.TabStop = false;
             // 
@@ -3523,9 +3732,10 @@
             // 
             this.BoxO12.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxO12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxO12.Location = new System.Drawing.Point(479, 366);
+            this.BoxO12.Location = new System.Drawing.Point(423, 332);
+            this.BoxO12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxO12.Name = "BoxO12";
-            this.BoxO12.Size = new System.Drawing.Size(28, 27);
+            this.BoxO12.Size = new System.Drawing.Size(24, 26);
             this.BoxO12.TabIndex = 234;
             this.BoxO12.TabStop = false;
             // 
@@ -3533,9 +3743,10 @@
             // 
             this.BoxN12.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxN12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxN12.Location = new System.Drawing.Point(445, 366);
+            this.BoxN12.Location = new System.Drawing.Point(393, 332);
+            this.BoxN12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxN12.Name = "BoxN12";
-            this.BoxN12.Size = new System.Drawing.Size(28, 27);
+            this.BoxN12.Size = new System.Drawing.Size(24, 26);
             this.BoxN12.TabIndex = 233;
             this.BoxN12.TabStop = false;
             // 
@@ -3543,9 +3754,10 @@
             // 
             this.BoxM12.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxM12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxM12.Location = new System.Drawing.Point(411, 366);
+            this.BoxM12.Location = new System.Drawing.Point(363, 332);
+            this.BoxM12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxM12.Name = "BoxM12";
-            this.BoxM12.Size = new System.Drawing.Size(28, 27);
+            this.BoxM12.Size = new System.Drawing.Size(24, 26);
             this.BoxM12.TabIndex = 232;
             this.BoxM12.TabStop = false;
             // 
@@ -3553,9 +3765,10 @@
             // 
             this.BoxL12.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxL12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxL12.Location = new System.Drawing.Point(377, 366);
+            this.BoxL12.Location = new System.Drawing.Point(333, 332);
+            this.BoxL12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxL12.Name = "BoxL12";
-            this.BoxL12.Size = new System.Drawing.Size(28, 27);
+            this.BoxL12.Size = new System.Drawing.Size(24, 26);
             this.BoxL12.TabIndex = 231;
             this.BoxL12.TabStop = false;
             // 
@@ -3563,9 +3776,10 @@
             // 
             this.BoxK12.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxK12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxK12.Location = new System.Drawing.Point(343, 366);
+            this.BoxK12.Location = new System.Drawing.Point(303, 332);
+            this.BoxK12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxK12.Name = "BoxK12";
-            this.BoxK12.Size = new System.Drawing.Size(28, 27);
+            this.BoxK12.Size = new System.Drawing.Size(24, 26);
             this.BoxK12.TabIndex = 230;
             this.BoxK12.TabStop = false;
             // 
@@ -3573,9 +3787,10 @@
             // 
             this.BoxJ12.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxJ12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxJ12.Location = new System.Drawing.Point(309, 366);
+            this.BoxJ12.Location = new System.Drawing.Point(273, 332);
+            this.BoxJ12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxJ12.Name = "BoxJ12";
-            this.BoxJ12.Size = new System.Drawing.Size(28, 27);
+            this.BoxJ12.Size = new System.Drawing.Size(24, 26);
             this.BoxJ12.TabIndex = 229;
             this.BoxJ12.TabStop = false;
             // 
@@ -3583,9 +3798,10 @@
             // 
             this.BoxI12.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxI12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxI12.Location = new System.Drawing.Point(275, 366);
+            this.BoxI12.Location = new System.Drawing.Point(243, 332);
+            this.BoxI12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxI12.Name = "BoxI12";
-            this.BoxI12.Size = new System.Drawing.Size(28, 27);
+            this.BoxI12.Size = new System.Drawing.Size(24, 26);
             this.BoxI12.TabIndex = 228;
             this.BoxI12.TabStop = false;
             // 
@@ -3593,9 +3809,10 @@
             // 
             this.BoxH12.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxH12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxH12.Location = new System.Drawing.Point(241, 366);
+            this.BoxH12.Location = new System.Drawing.Point(213, 332);
+            this.BoxH12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxH12.Name = "BoxH12";
-            this.BoxH12.Size = new System.Drawing.Size(28, 27);
+            this.BoxH12.Size = new System.Drawing.Size(24, 26);
             this.BoxH12.TabIndex = 227;
             this.BoxH12.TabStop = false;
             // 
@@ -3603,9 +3820,10 @@
             // 
             this.BoxG12.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxG12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxG12.Location = new System.Drawing.Point(207, 366);
+            this.BoxG12.Location = new System.Drawing.Point(183, 332);
+            this.BoxG12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxG12.Name = "BoxG12";
-            this.BoxG12.Size = new System.Drawing.Size(28, 27);
+            this.BoxG12.Size = new System.Drawing.Size(24, 26);
             this.BoxG12.TabIndex = 226;
             this.BoxG12.TabStop = false;
             // 
@@ -3613,9 +3831,10 @@
             // 
             this.BoxF12.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxF12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxF12.Location = new System.Drawing.Point(173, 366);
+            this.BoxF12.Location = new System.Drawing.Point(153, 332);
+            this.BoxF12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxF12.Name = "BoxF12";
-            this.BoxF12.Size = new System.Drawing.Size(28, 27);
+            this.BoxF12.Size = new System.Drawing.Size(24, 26);
             this.BoxF12.TabIndex = 225;
             this.BoxF12.TabStop = false;
             // 
@@ -3623,9 +3842,10 @@
             // 
             this.BoxE12.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxE12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxE12.Location = new System.Drawing.Point(139, 366);
+            this.BoxE12.Location = new System.Drawing.Point(123, 332);
+            this.BoxE12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxE12.Name = "BoxE12";
-            this.BoxE12.Size = new System.Drawing.Size(28, 27);
+            this.BoxE12.Size = new System.Drawing.Size(24, 26);
             this.BoxE12.TabIndex = 224;
             this.BoxE12.TabStop = false;
             // 
@@ -3633,9 +3853,10 @@
             // 
             this.BoxD12.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxD12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxD12.Location = new System.Drawing.Point(105, 366);
+            this.BoxD12.Location = new System.Drawing.Point(93, 332);
+            this.BoxD12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxD12.Name = "BoxD12";
-            this.BoxD12.Size = new System.Drawing.Size(28, 27);
+            this.BoxD12.Size = new System.Drawing.Size(24, 26);
             this.BoxD12.TabIndex = 223;
             this.BoxD12.TabStop = false;
             // 
@@ -3643,9 +3864,10 @@
             // 
             this.BoxC12.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxC12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxC12.Location = new System.Drawing.Point(71, 366);
+            this.BoxC12.Location = new System.Drawing.Point(63, 332);
+            this.BoxC12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxC12.Name = "BoxC12";
-            this.BoxC12.Size = new System.Drawing.Size(28, 27);
+            this.BoxC12.Size = new System.Drawing.Size(24, 26);
             this.BoxC12.TabIndex = 222;
             this.BoxC12.TabStop = false;
             // 
@@ -3653,9 +3875,10 @@
             // 
             this.BoxB12.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxB12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxB12.Location = new System.Drawing.Point(37, 366);
+            this.BoxB12.Location = new System.Drawing.Point(33, 332);
+            this.BoxB12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxB12.Name = "BoxB12";
-            this.BoxB12.Size = new System.Drawing.Size(28, 27);
+            this.BoxB12.Size = new System.Drawing.Size(24, 26);
             this.BoxB12.TabIndex = 221;
             this.BoxB12.TabStop = false;
             // 
@@ -3663,9 +3886,10 @@
             // 
             this.BoxA12.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxA12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxA12.Location = new System.Drawing.Point(3, 366);
+            this.BoxA12.Location = new System.Drawing.Point(3, 332);
+            this.BoxA12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxA12.Name = "BoxA12";
-            this.BoxA12.Size = new System.Drawing.Size(28, 27);
+            this.BoxA12.Size = new System.Drawing.Size(24, 26);
             this.BoxA12.TabIndex = 220;
             this.BoxA12.TabStop = false;
             // 
@@ -3673,9 +3897,10 @@
             // 
             this.BoxP11.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxP11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxP11.Location = new System.Drawing.Point(513, 333);
+            this.BoxP11.Location = new System.Drawing.Point(453, 302);
+            this.BoxP11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxP11.Name = "BoxP11";
-            this.BoxP11.Size = new System.Drawing.Size(36, 27);
+            this.BoxP11.Size = new System.Drawing.Size(35, 26);
             this.BoxP11.TabIndex = 215;
             this.BoxP11.TabStop = false;
             // 
@@ -3683,9 +3908,10 @@
             // 
             this.BoxO11.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxO11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxO11.Location = new System.Drawing.Point(479, 333);
+            this.BoxO11.Location = new System.Drawing.Point(423, 302);
+            this.BoxO11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxO11.Name = "BoxO11";
-            this.BoxO11.Size = new System.Drawing.Size(28, 27);
+            this.BoxO11.Size = new System.Drawing.Size(24, 26);
             this.BoxO11.TabIndex = 214;
             this.BoxO11.TabStop = false;
             // 
@@ -3693,9 +3919,10 @@
             // 
             this.BoxN11.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxN11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxN11.Location = new System.Drawing.Point(445, 333);
+            this.BoxN11.Location = new System.Drawing.Point(393, 302);
+            this.BoxN11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxN11.Name = "BoxN11";
-            this.BoxN11.Size = new System.Drawing.Size(28, 27);
+            this.BoxN11.Size = new System.Drawing.Size(24, 26);
             this.BoxN11.TabIndex = 213;
             this.BoxN11.TabStop = false;
             // 
@@ -3703,9 +3930,10 @@
             // 
             this.BoxM11.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxM11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxM11.Location = new System.Drawing.Point(411, 333);
+            this.BoxM11.Location = new System.Drawing.Point(363, 302);
+            this.BoxM11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxM11.Name = "BoxM11";
-            this.BoxM11.Size = new System.Drawing.Size(28, 27);
+            this.BoxM11.Size = new System.Drawing.Size(24, 26);
             this.BoxM11.TabIndex = 212;
             this.BoxM11.TabStop = false;
             // 
@@ -3713,9 +3941,10 @@
             // 
             this.BoxL11.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxL11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxL11.Location = new System.Drawing.Point(377, 333);
+            this.BoxL11.Location = new System.Drawing.Point(333, 302);
+            this.BoxL11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxL11.Name = "BoxL11";
-            this.BoxL11.Size = new System.Drawing.Size(28, 27);
+            this.BoxL11.Size = new System.Drawing.Size(24, 26);
             this.BoxL11.TabIndex = 211;
             this.BoxL11.TabStop = false;
             // 
@@ -3723,9 +3952,10 @@
             // 
             this.BoxK11.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxK11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxK11.Location = new System.Drawing.Point(343, 333);
+            this.BoxK11.Location = new System.Drawing.Point(303, 302);
+            this.BoxK11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxK11.Name = "BoxK11";
-            this.BoxK11.Size = new System.Drawing.Size(28, 27);
+            this.BoxK11.Size = new System.Drawing.Size(24, 26);
             this.BoxK11.TabIndex = 210;
             this.BoxK11.TabStop = false;
             // 
@@ -3733,9 +3963,10 @@
             // 
             this.BoxJ11.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxJ11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxJ11.Location = new System.Drawing.Point(309, 333);
+            this.BoxJ11.Location = new System.Drawing.Point(273, 302);
+            this.BoxJ11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxJ11.Name = "BoxJ11";
-            this.BoxJ11.Size = new System.Drawing.Size(28, 27);
+            this.BoxJ11.Size = new System.Drawing.Size(24, 26);
             this.BoxJ11.TabIndex = 209;
             this.BoxJ11.TabStop = false;
             // 
@@ -3743,9 +3974,10 @@
             // 
             this.BoxI11.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxI11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxI11.Location = new System.Drawing.Point(275, 333);
+            this.BoxI11.Location = new System.Drawing.Point(243, 302);
+            this.BoxI11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxI11.Name = "BoxI11";
-            this.BoxI11.Size = new System.Drawing.Size(28, 27);
+            this.BoxI11.Size = new System.Drawing.Size(24, 26);
             this.BoxI11.TabIndex = 208;
             this.BoxI11.TabStop = false;
             // 
@@ -3753,9 +3985,10 @@
             // 
             this.BoxH11.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxH11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxH11.Location = new System.Drawing.Point(241, 333);
+            this.BoxH11.Location = new System.Drawing.Point(213, 302);
+            this.BoxH11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxH11.Name = "BoxH11";
-            this.BoxH11.Size = new System.Drawing.Size(28, 27);
+            this.BoxH11.Size = new System.Drawing.Size(24, 26);
             this.BoxH11.TabIndex = 207;
             this.BoxH11.TabStop = false;
             // 
@@ -3763,9 +3996,10 @@
             // 
             this.BoxG11.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxG11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxG11.Location = new System.Drawing.Point(207, 333);
+            this.BoxG11.Location = new System.Drawing.Point(183, 302);
+            this.BoxG11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxG11.Name = "BoxG11";
-            this.BoxG11.Size = new System.Drawing.Size(28, 27);
+            this.BoxG11.Size = new System.Drawing.Size(24, 26);
             this.BoxG11.TabIndex = 206;
             this.BoxG11.TabStop = false;
             // 
@@ -3773,9 +4007,10 @@
             // 
             this.BoxF11.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxF11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxF11.Location = new System.Drawing.Point(173, 333);
+            this.BoxF11.Location = new System.Drawing.Point(153, 302);
+            this.BoxF11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxF11.Name = "BoxF11";
-            this.BoxF11.Size = new System.Drawing.Size(28, 27);
+            this.BoxF11.Size = new System.Drawing.Size(24, 26);
             this.BoxF11.TabIndex = 205;
             this.BoxF11.TabStop = false;
             // 
@@ -3783,9 +4018,10 @@
             // 
             this.BoxE11.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxE11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxE11.Location = new System.Drawing.Point(139, 333);
+            this.BoxE11.Location = new System.Drawing.Point(123, 302);
+            this.BoxE11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxE11.Name = "BoxE11";
-            this.BoxE11.Size = new System.Drawing.Size(28, 27);
+            this.BoxE11.Size = new System.Drawing.Size(24, 26);
             this.BoxE11.TabIndex = 204;
             this.BoxE11.TabStop = false;
             // 
@@ -3793,9 +4029,10 @@
             // 
             this.BoxD11.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxD11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxD11.Location = new System.Drawing.Point(105, 333);
+            this.BoxD11.Location = new System.Drawing.Point(93, 302);
+            this.BoxD11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxD11.Name = "BoxD11";
-            this.BoxD11.Size = new System.Drawing.Size(28, 27);
+            this.BoxD11.Size = new System.Drawing.Size(24, 26);
             this.BoxD11.TabIndex = 203;
             this.BoxD11.TabStop = false;
             // 
@@ -3803,9 +4040,10 @@
             // 
             this.BoxC11.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxC11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxC11.Location = new System.Drawing.Point(71, 333);
+            this.BoxC11.Location = new System.Drawing.Point(63, 302);
+            this.BoxC11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxC11.Name = "BoxC11";
-            this.BoxC11.Size = new System.Drawing.Size(28, 27);
+            this.BoxC11.Size = new System.Drawing.Size(24, 26);
             this.BoxC11.TabIndex = 202;
             this.BoxC11.TabStop = false;
             // 
@@ -3813,9 +4051,10 @@
             // 
             this.BoxB11.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxB11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxB11.Location = new System.Drawing.Point(37, 333);
+            this.BoxB11.Location = new System.Drawing.Point(33, 302);
+            this.BoxB11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxB11.Name = "BoxB11";
-            this.BoxB11.Size = new System.Drawing.Size(28, 27);
+            this.BoxB11.Size = new System.Drawing.Size(24, 26);
             this.BoxB11.TabIndex = 201;
             this.BoxB11.TabStop = false;
             // 
@@ -3823,9 +4062,10 @@
             // 
             this.BoxA11.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxA11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxA11.Location = new System.Drawing.Point(3, 333);
+            this.BoxA11.Location = new System.Drawing.Point(3, 302);
+            this.BoxA11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxA11.Name = "BoxA11";
-            this.BoxA11.Size = new System.Drawing.Size(28, 27);
+            this.BoxA11.Size = new System.Drawing.Size(24, 26);
             this.BoxA11.TabIndex = 200;
             this.BoxA11.TabStop = false;
             // 
@@ -3833,9 +4073,10 @@
             // 
             this.BoxP10.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxP10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxP10.Location = new System.Drawing.Point(513, 300);
+            this.BoxP10.Location = new System.Drawing.Point(453, 272);
+            this.BoxP10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxP10.Name = "BoxP10";
-            this.BoxP10.Size = new System.Drawing.Size(36, 27);
+            this.BoxP10.Size = new System.Drawing.Size(35, 26);
             this.BoxP10.TabIndex = 195;
             this.BoxP10.TabStop = false;
             // 
@@ -3843,9 +4084,10 @@
             // 
             this.BoxO10.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxO10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxO10.Location = new System.Drawing.Point(479, 300);
+            this.BoxO10.Location = new System.Drawing.Point(423, 272);
+            this.BoxO10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxO10.Name = "BoxO10";
-            this.BoxO10.Size = new System.Drawing.Size(28, 27);
+            this.BoxO10.Size = new System.Drawing.Size(24, 26);
             this.BoxO10.TabIndex = 194;
             this.BoxO10.TabStop = false;
             // 
@@ -3853,9 +4095,10 @@
             // 
             this.BoxN10.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxN10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxN10.Location = new System.Drawing.Point(445, 300);
+            this.BoxN10.Location = new System.Drawing.Point(393, 272);
+            this.BoxN10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxN10.Name = "BoxN10";
-            this.BoxN10.Size = new System.Drawing.Size(28, 27);
+            this.BoxN10.Size = new System.Drawing.Size(24, 26);
             this.BoxN10.TabIndex = 193;
             this.BoxN10.TabStop = false;
             // 
@@ -3863,9 +4106,10 @@
             // 
             this.BoxM10.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxM10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxM10.Location = new System.Drawing.Point(411, 300);
+            this.BoxM10.Location = new System.Drawing.Point(363, 272);
+            this.BoxM10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxM10.Name = "BoxM10";
-            this.BoxM10.Size = new System.Drawing.Size(28, 27);
+            this.BoxM10.Size = new System.Drawing.Size(24, 26);
             this.BoxM10.TabIndex = 192;
             this.BoxM10.TabStop = false;
             // 
@@ -3873,9 +4117,10 @@
             // 
             this.BoxL10.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxL10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxL10.Location = new System.Drawing.Point(377, 300);
+            this.BoxL10.Location = new System.Drawing.Point(333, 272);
+            this.BoxL10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxL10.Name = "BoxL10";
-            this.BoxL10.Size = new System.Drawing.Size(28, 27);
+            this.BoxL10.Size = new System.Drawing.Size(24, 26);
             this.BoxL10.TabIndex = 191;
             this.BoxL10.TabStop = false;
             // 
@@ -3883,9 +4128,10 @@
             // 
             this.BoxK10.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxK10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxK10.Location = new System.Drawing.Point(343, 300);
+            this.BoxK10.Location = new System.Drawing.Point(303, 272);
+            this.BoxK10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxK10.Name = "BoxK10";
-            this.BoxK10.Size = new System.Drawing.Size(28, 27);
+            this.BoxK10.Size = new System.Drawing.Size(24, 26);
             this.BoxK10.TabIndex = 190;
             this.BoxK10.TabStop = false;
             // 
@@ -3893,9 +4139,10 @@
             // 
             this.BoxJ10.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxJ10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxJ10.Location = new System.Drawing.Point(309, 300);
+            this.BoxJ10.Location = new System.Drawing.Point(273, 272);
+            this.BoxJ10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxJ10.Name = "BoxJ10";
-            this.BoxJ10.Size = new System.Drawing.Size(28, 27);
+            this.BoxJ10.Size = new System.Drawing.Size(24, 26);
             this.BoxJ10.TabIndex = 189;
             this.BoxJ10.TabStop = false;
             // 
@@ -3903,9 +4150,10 @@
             // 
             this.BoxI10.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxI10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxI10.Location = new System.Drawing.Point(275, 300);
+            this.BoxI10.Location = new System.Drawing.Point(243, 272);
+            this.BoxI10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxI10.Name = "BoxI10";
-            this.BoxI10.Size = new System.Drawing.Size(28, 27);
+            this.BoxI10.Size = new System.Drawing.Size(24, 26);
             this.BoxI10.TabIndex = 188;
             this.BoxI10.TabStop = false;
             // 
@@ -3913,9 +4161,10 @@
             // 
             this.BoxH10.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxH10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxH10.Location = new System.Drawing.Point(241, 300);
+            this.BoxH10.Location = new System.Drawing.Point(213, 272);
+            this.BoxH10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxH10.Name = "BoxH10";
-            this.BoxH10.Size = new System.Drawing.Size(28, 27);
+            this.BoxH10.Size = new System.Drawing.Size(24, 26);
             this.BoxH10.TabIndex = 187;
             this.BoxH10.TabStop = false;
             // 
@@ -3923,9 +4172,10 @@
             // 
             this.BoxG10.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxG10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxG10.Location = new System.Drawing.Point(207, 300);
+            this.BoxG10.Location = new System.Drawing.Point(183, 272);
+            this.BoxG10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxG10.Name = "BoxG10";
-            this.BoxG10.Size = new System.Drawing.Size(28, 27);
+            this.BoxG10.Size = new System.Drawing.Size(24, 26);
             this.BoxG10.TabIndex = 186;
             this.BoxG10.TabStop = false;
             // 
@@ -3933,9 +4183,10 @@
             // 
             this.BoxF10.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxF10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxF10.Location = new System.Drawing.Point(173, 300);
+            this.BoxF10.Location = new System.Drawing.Point(153, 272);
+            this.BoxF10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxF10.Name = "BoxF10";
-            this.BoxF10.Size = new System.Drawing.Size(28, 27);
+            this.BoxF10.Size = new System.Drawing.Size(24, 26);
             this.BoxF10.TabIndex = 185;
             this.BoxF10.TabStop = false;
             // 
@@ -3943,9 +4194,10 @@
             // 
             this.BoxE10.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxE10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxE10.Location = new System.Drawing.Point(139, 300);
+            this.BoxE10.Location = new System.Drawing.Point(123, 272);
+            this.BoxE10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxE10.Name = "BoxE10";
-            this.BoxE10.Size = new System.Drawing.Size(28, 27);
+            this.BoxE10.Size = new System.Drawing.Size(24, 26);
             this.BoxE10.TabIndex = 184;
             this.BoxE10.TabStop = false;
             // 
@@ -3953,9 +4205,10 @@
             // 
             this.BoxD10.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxD10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxD10.Location = new System.Drawing.Point(105, 300);
+            this.BoxD10.Location = new System.Drawing.Point(93, 272);
+            this.BoxD10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxD10.Name = "BoxD10";
-            this.BoxD10.Size = new System.Drawing.Size(28, 27);
+            this.BoxD10.Size = new System.Drawing.Size(24, 26);
             this.BoxD10.TabIndex = 183;
             this.BoxD10.TabStop = false;
             // 
@@ -3963,9 +4216,10 @@
             // 
             this.BoxC10.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxC10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxC10.Location = new System.Drawing.Point(71, 300);
+            this.BoxC10.Location = new System.Drawing.Point(63, 272);
+            this.BoxC10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxC10.Name = "BoxC10";
-            this.BoxC10.Size = new System.Drawing.Size(28, 27);
+            this.BoxC10.Size = new System.Drawing.Size(24, 26);
             this.BoxC10.TabIndex = 182;
             this.BoxC10.TabStop = false;
             // 
@@ -3973,9 +4227,10 @@
             // 
             this.BoxB10.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxB10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxB10.Location = new System.Drawing.Point(37, 300);
+            this.BoxB10.Location = new System.Drawing.Point(33, 272);
+            this.BoxB10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxB10.Name = "BoxB10";
-            this.BoxB10.Size = new System.Drawing.Size(28, 27);
+            this.BoxB10.Size = new System.Drawing.Size(24, 26);
             this.BoxB10.TabIndex = 181;
             this.BoxB10.TabStop = false;
             // 
@@ -3983,9 +4238,10 @@
             // 
             this.BoxA10.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxA10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxA10.Location = new System.Drawing.Point(3, 300);
+            this.BoxA10.Location = new System.Drawing.Point(3, 272);
+            this.BoxA10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxA10.Name = "BoxA10";
-            this.BoxA10.Size = new System.Drawing.Size(28, 27);
+            this.BoxA10.Size = new System.Drawing.Size(24, 26);
             this.BoxA10.TabIndex = 180;
             this.BoxA10.TabStop = false;
             // 
@@ -3993,9 +4249,10 @@
             // 
             this.BoxP9.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxP9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxP9.Location = new System.Drawing.Point(513, 267);
+            this.BoxP9.Location = new System.Drawing.Point(453, 242);
+            this.BoxP9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxP9.Name = "BoxP9";
-            this.BoxP9.Size = new System.Drawing.Size(36, 27);
+            this.BoxP9.Size = new System.Drawing.Size(35, 26);
             this.BoxP9.TabIndex = 175;
             this.BoxP9.TabStop = false;
             // 
@@ -4003,9 +4260,10 @@
             // 
             this.BoxO9.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxO9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxO9.Location = new System.Drawing.Point(479, 267);
+            this.BoxO9.Location = new System.Drawing.Point(423, 242);
+            this.BoxO9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxO9.Name = "BoxO9";
-            this.BoxO9.Size = new System.Drawing.Size(28, 27);
+            this.BoxO9.Size = new System.Drawing.Size(24, 26);
             this.BoxO9.TabIndex = 174;
             this.BoxO9.TabStop = false;
             // 
@@ -4013,9 +4271,10 @@
             // 
             this.BoxN9.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxN9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxN9.Location = new System.Drawing.Point(445, 267);
+            this.BoxN9.Location = new System.Drawing.Point(393, 242);
+            this.BoxN9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxN9.Name = "BoxN9";
-            this.BoxN9.Size = new System.Drawing.Size(28, 27);
+            this.BoxN9.Size = new System.Drawing.Size(24, 26);
             this.BoxN9.TabIndex = 173;
             this.BoxN9.TabStop = false;
             // 
@@ -4023,9 +4282,10 @@
             // 
             this.BoxM9.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxM9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxM9.Location = new System.Drawing.Point(411, 267);
+            this.BoxM9.Location = new System.Drawing.Point(363, 242);
+            this.BoxM9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxM9.Name = "BoxM9";
-            this.BoxM9.Size = new System.Drawing.Size(28, 27);
+            this.BoxM9.Size = new System.Drawing.Size(24, 26);
             this.BoxM9.TabIndex = 172;
             this.BoxM9.TabStop = false;
             // 
@@ -4033,9 +4293,10 @@
             // 
             this.BoxL9.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxL9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxL9.Location = new System.Drawing.Point(377, 267);
+            this.BoxL9.Location = new System.Drawing.Point(333, 242);
+            this.BoxL9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxL9.Name = "BoxL9";
-            this.BoxL9.Size = new System.Drawing.Size(28, 27);
+            this.BoxL9.Size = new System.Drawing.Size(24, 26);
             this.BoxL9.TabIndex = 171;
             this.BoxL9.TabStop = false;
             // 
@@ -4043,9 +4304,10 @@
             // 
             this.BoxK9.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxK9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxK9.Location = new System.Drawing.Point(343, 267);
+            this.BoxK9.Location = new System.Drawing.Point(303, 242);
+            this.BoxK9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxK9.Name = "BoxK9";
-            this.BoxK9.Size = new System.Drawing.Size(28, 27);
+            this.BoxK9.Size = new System.Drawing.Size(24, 26);
             this.BoxK9.TabIndex = 170;
             this.BoxK9.TabStop = false;
             // 
@@ -4053,9 +4315,10 @@
             // 
             this.BoxJ9.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxJ9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxJ9.Location = new System.Drawing.Point(309, 267);
+            this.BoxJ9.Location = new System.Drawing.Point(273, 242);
+            this.BoxJ9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxJ9.Name = "BoxJ9";
-            this.BoxJ9.Size = new System.Drawing.Size(28, 27);
+            this.BoxJ9.Size = new System.Drawing.Size(24, 26);
             this.BoxJ9.TabIndex = 169;
             this.BoxJ9.TabStop = false;
             // 
@@ -4063,9 +4326,10 @@
             // 
             this.BoxI9.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxI9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxI9.Location = new System.Drawing.Point(275, 267);
+            this.BoxI9.Location = new System.Drawing.Point(243, 242);
+            this.BoxI9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxI9.Name = "BoxI9";
-            this.BoxI9.Size = new System.Drawing.Size(28, 27);
+            this.BoxI9.Size = new System.Drawing.Size(24, 26);
             this.BoxI9.TabIndex = 168;
             this.BoxI9.TabStop = false;
             // 
@@ -4073,9 +4337,10 @@
             // 
             this.BoxH9.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxH9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxH9.Location = new System.Drawing.Point(241, 267);
+            this.BoxH9.Location = new System.Drawing.Point(213, 242);
+            this.BoxH9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxH9.Name = "BoxH9";
-            this.BoxH9.Size = new System.Drawing.Size(28, 27);
+            this.BoxH9.Size = new System.Drawing.Size(24, 26);
             this.BoxH9.TabIndex = 167;
             this.BoxH9.TabStop = false;
             // 
@@ -4083,9 +4348,10 @@
             // 
             this.BoxG9.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxG9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxG9.Location = new System.Drawing.Point(207, 267);
+            this.BoxG9.Location = new System.Drawing.Point(183, 242);
+            this.BoxG9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxG9.Name = "BoxG9";
-            this.BoxG9.Size = new System.Drawing.Size(28, 27);
+            this.BoxG9.Size = new System.Drawing.Size(24, 26);
             this.BoxG9.TabIndex = 166;
             this.BoxG9.TabStop = false;
             // 
@@ -4093,9 +4359,10 @@
             // 
             this.BoxF9.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxF9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxF9.Location = new System.Drawing.Point(173, 267);
+            this.BoxF9.Location = new System.Drawing.Point(153, 242);
+            this.BoxF9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxF9.Name = "BoxF9";
-            this.BoxF9.Size = new System.Drawing.Size(28, 27);
+            this.BoxF9.Size = new System.Drawing.Size(24, 26);
             this.BoxF9.TabIndex = 165;
             this.BoxF9.TabStop = false;
             // 
@@ -4103,9 +4370,10 @@
             // 
             this.BoxE9.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxE9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxE9.Location = new System.Drawing.Point(139, 267);
+            this.BoxE9.Location = new System.Drawing.Point(123, 242);
+            this.BoxE9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxE9.Name = "BoxE9";
-            this.BoxE9.Size = new System.Drawing.Size(28, 27);
+            this.BoxE9.Size = new System.Drawing.Size(24, 26);
             this.BoxE9.TabIndex = 164;
             this.BoxE9.TabStop = false;
             // 
@@ -4113,9 +4381,10 @@
             // 
             this.BoxD9.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxD9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxD9.Location = new System.Drawing.Point(105, 267);
+            this.BoxD9.Location = new System.Drawing.Point(93, 242);
+            this.BoxD9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxD9.Name = "BoxD9";
-            this.BoxD9.Size = new System.Drawing.Size(28, 27);
+            this.BoxD9.Size = new System.Drawing.Size(24, 26);
             this.BoxD9.TabIndex = 163;
             this.BoxD9.TabStop = false;
             // 
@@ -4123,9 +4392,10 @@
             // 
             this.BoxC9.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxC9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxC9.Location = new System.Drawing.Point(71, 267);
+            this.BoxC9.Location = new System.Drawing.Point(63, 242);
+            this.BoxC9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxC9.Name = "BoxC9";
-            this.BoxC9.Size = new System.Drawing.Size(28, 27);
+            this.BoxC9.Size = new System.Drawing.Size(24, 26);
             this.BoxC9.TabIndex = 162;
             this.BoxC9.TabStop = false;
             // 
@@ -4133,9 +4403,10 @@
             // 
             this.BoxB9.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxB9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxB9.Location = new System.Drawing.Point(37, 267);
+            this.BoxB9.Location = new System.Drawing.Point(33, 242);
+            this.BoxB9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxB9.Name = "BoxB9";
-            this.BoxB9.Size = new System.Drawing.Size(28, 27);
+            this.BoxB9.Size = new System.Drawing.Size(24, 26);
             this.BoxB9.TabIndex = 161;
             this.BoxB9.TabStop = false;
             // 
@@ -4143,9 +4414,10 @@
             // 
             this.BoxA9.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxA9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxA9.Location = new System.Drawing.Point(3, 267);
+            this.BoxA9.Location = new System.Drawing.Point(3, 242);
+            this.BoxA9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxA9.Name = "BoxA9";
-            this.BoxA9.Size = new System.Drawing.Size(28, 27);
+            this.BoxA9.Size = new System.Drawing.Size(24, 26);
             this.BoxA9.TabIndex = 160;
             this.BoxA9.TabStop = false;
             // 
@@ -4153,9 +4425,10 @@
             // 
             this.BoxP8.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxP8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxP8.Location = new System.Drawing.Point(513, 234);
+            this.BoxP8.Location = new System.Drawing.Point(453, 212);
+            this.BoxP8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxP8.Name = "BoxP8";
-            this.BoxP8.Size = new System.Drawing.Size(36, 27);
+            this.BoxP8.Size = new System.Drawing.Size(35, 26);
             this.BoxP8.TabIndex = 155;
             this.BoxP8.TabStop = false;
             // 
@@ -4163,9 +4436,10 @@
             // 
             this.BoxO8.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxO8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxO8.Location = new System.Drawing.Point(479, 234);
+            this.BoxO8.Location = new System.Drawing.Point(423, 212);
+            this.BoxO8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxO8.Name = "BoxO8";
-            this.BoxO8.Size = new System.Drawing.Size(28, 27);
+            this.BoxO8.Size = new System.Drawing.Size(24, 26);
             this.BoxO8.TabIndex = 154;
             this.BoxO8.TabStop = false;
             // 
@@ -4173,9 +4447,10 @@
             // 
             this.BoxN8.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxN8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxN8.Location = new System.Drawing.Point(445, 234);
+            this.BoxN8.Location = new System.Drawing.Point(393, 212);
+            this.BoxN8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxN8.Name = "BoxN8";
-            this.BoxN8.Size = new System.Drawing.Size(28, 27);
+            this.BoxN8.Size = new System.Drawing.Size(24, 26);
             this.BoxN8.TabIndex = 153;
             this.BoxN8.TabStop = false;
             // 
@@ -4183,9 +4458,10 @@
             // 
             this.BoxM8.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxM8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxM8.Location = new System.Drawing.Point(411, 234);
+            this.BoxM8.Location = new System.Drawing.Point(363, 212);
+            this.BoxM8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxM8.Name = "BoxM8";
-            this.BoxM8.Size = new System.Drawing.Size(28, 27);
+            this.BoxM8.Size = new System.Drawing.Size(24, 26);
             this.BoxM8.TabIndex = 152;
             this.BoxM8.TabStop = false;
             // 
@@ -4193,9 +4469,10 @@
             // 
             this.BoxL8.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxL8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxL8.Location = new System.Drawing.Point(377, 234);
+            this.BoxL8.Location = new System.Drawing.Point(333, 212);
+            this.BoxL8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxL8.Name = "BoxL8";
-            this.BoxL8.Size = new System.Drawing.Size(28, 27);
+            this.BoxL8.Size = new System.Drawing.Size(24, 26);
             this.BoxL8.TabIndex = 151;
             this.BoxL8.TabStop = false;
             // 
@@ -4203,9 +4480,10 @@
             // 
             this.BoxK8.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxK8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxK8.Location = new System.Drawing.Point(343, 234);
+            this.BoxK8.Location = new System.Drawing.Point(303, 212);
+            this.BoxK8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxK8.Name = "BoxK8";
-            this.BoxK8.Size = new System.Drawing.Size(28, 27);
+            this.BoxK8.Size = new System.Drawing.Size(24, 26);
             this.BoxK8.TabIndex = 150;
             this.BoxK8.TabStop = false;
             // 
@@ -4213,9 +4491,10 @@
             // 
             this.BoxJ8.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxJ8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxJ8.Location = new System.Drawing.Point(309, 234);
+            this.BoxJ8.Location = new System.Drawing.Point(273, 212);
+            this.BoxJ8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxJ8.Name = "BoxJ8";
-            this.BoxJ8.Size = new System.Drawing.Size(28, 27);
+            this.BoxJ8.Size = new System.Drawing.Size(24, 26);
             this.BoxJ8.TabIndex = 149;
             this.BoxJ8.TabStop = false;
             // 
@@ -4223,9 +4502,10 @@
             // 
             this.BoxI8.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxI8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxI8.Location = new System.Drawing.Point(275, 234);
+            this.BoxI8.Location = new System.Drawing.Point(243, 212);
+            this.BoxI8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxI8.Name = "BoxI8";
-            this.BoxI8.Size = new System.Drawing.Size(28, 27);
+            this.BoxI8.Size = new System.Drawing.Size(24, 26);
             this.BoxI8.TabIndex = 148;
             this.BoxI8.TabStop = false;
             // 
@@ -4233,9 +4513,10 @@
             // 
             this.BoxH8.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxH8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxH8.Location = new System.Drawing.Point(241, 234);
+            this.BoxH8.Location = new System.Drawing.Point(213, 212);
+            this.BoxH8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxH8.Name = "BoxH8";
-            this.BoxH8.Size = new System.Drawing.Size(28, 27);
+            this.BoxH8.Size = new System.Drawing.Size(24, 26);
             this.BoxH8.TabIndex = 147;
             this.BoxH8.TabStop = false;
             // 
@@ -4243,9 +4524,10 @@
             // 
             this.BoxG8.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxG8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxG8.Location = new System.Drawing.Point(207, 234);
+            this.BoxG8.Location = new System.Drawing.Point(183, 212);
+            this.BoxG8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxG8.Name = "BoxG8";
-            this.BoxG8.Size = new System.Drawing.Size(28, 27);
+            this.BoxG8.Size = new System.Drawing.Size(24, 26);
             this.BoxG8.TabIndex = 146;
             this.BoxG8.TabStop = false;
             // 
@@ -4253,9 +4535,10 @@
             // 
             this.BoxF8.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxF8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxF8.Location = new System.Drawing.Point(173, 234);
+            this.BoxF8.Location = new System.Drawing.Point(153, 212);
+            this.BoxF8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxF8.Name = "BoxF8";
-            this.BoxF8.Size = new System.Drawing.Size(28, 27);
+            this.BoxF8.Size = new System.Drawing.Size(24, 26);
             this.BoxF8.TabIndex = 145;
             this.BoxF8.TabStop = false;
             // 
@@ -4263,9 +4546,10 @@
             // 
             this.BoxE8.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxE8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxE8.Location = new System.Drawing.Point(139, 234);
+            this.BoxE8.Location = new System.Drawing.Point(123, 212);
+            this.BoxE8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxE8.Name = "BoxE8";
-            this.BoxE8.Size = new System.Drawing.Size(28, 27);
+            this.BoxE8.Size = new System.Drawing.Size(24, 26);
             this.BoxE8.TabIndex = 144;
             this.BoxE8.TabStop = false;
             // 
@@ -4273,9 +4557,10 @@
             // 
             this.BoxD8.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxD8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxD8.Location = new System.Drawing.Point(105, 234);
+            this.BoxD8.Location = new System.Drawing.Point(93, 212);
+            this.BoxD8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxD8.Name = "BoxD8";
-            this.BoxD8.Size = new System.Drawing.Size(28, 27);
+            this.BoxD8.Size = new System.Drawing.Size(24, 26);
             this.BoxD8.TabIndex = 143;
             this.BoxD8.TabStop = false;
             // 
@@ -4283,9 +4568,10 @@
             // 
             this.BoxC8.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxC8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxC8.Location = new System.Drawing.Point(71, 234);
+            this.BoxC8.Location = new System.Drawing.Point(63, 212);
+            this.BoxC8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxC8.Name = "BoxC8";
-            this.BoxC8.Size = new System.Drawing.Size(28, 27);
+            this.BoxC8.Size = new System.Drawing.Size(24, 26);
             this.BoxC8.TabIndex = 142;
             this.BoxC8.TabStop = false;
             // 
@@ -4293,9 +4579,10 @@
             // 
             this.BoxB8.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxB8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxB8.Location = new System.Drawing.Point(37, 234);
+            this.BoxB8.Location = new System.Drawing.Point(33, 212);
+            this.BoxB8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxB8.Name = "BoxB8";
-            this.BoxB8.Size = new System.Drawing.Size(28, 27);
+            this.BoxB8.Size = new System.Drawing.Size(24, 26);
             this.BoxB8.TabIndex = 141;
             this.BoxB8.TabStop = false;
             // 
@@ -4303,9 +4590,10 @@
             // 
             this.BoxA8.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxA8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxA8.Location = new System.Drawing.Point(3, 234);
+            this.BoxA8.Location = new System.Drawing.Point(3, 212);
+            this.BoxA8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxA8.Name = "BoxA8";
-            this.BoxA8.Size = new System.Drawing.Size(28, 27);
+            this.BoxA8.Size = new System.Drawing.Size(24, 26);
             this.BoxA8.TabIndex = 140;
             this.BoxA8.TabStop = false;
             // 
@@ -4313,9 +4601,10 @@
             // 
             this.BoxP7.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxP7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxP7.Location = new System.Drawing.Point(513, 201);
+            this.BoxP7.Location = new System.Drawing.Point(453, 182);
+            this.BoxP7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxP7.Name = "BoxP7";
-            this.BoxP7.Size = new System.Drawing.Size(36, 27);
+            this.BoxP7.Size = new System.Drawing.Size(35, 26);
             this.BoxP7.TabIndex = 135;
             this.BoxP7.TabStop = false;
             // 
@@ -4323,9 +4612,10 @@
             // 
             this.BoxO7.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxO7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxO7.Location = new System.Drawing.Point(479, 201);
+            this.BoxO7.Location = new System.Drawing.Point(423, 182);
+            this.BoxO7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxO7.Name = "BoxO7";
-            this.BoxO7.Size = new System.Drawing.Size(28, 27);
+            this.BoxO7.Size = new System.Drawing.Size(24, 26);
             this.BoxO7.TabIndex = 134;
             this.BoxO7.TabStop = false;
             // 
@@ -4333,9 +4623,10 @@
             // 
             this.BoxN7.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxN7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxN7.Location = new System.Drawing.Point(445, 201);
+            this.BoxN7.Location = new System.Drawing.Point(393, 182);
+            this.BoxN7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxN7.Name = "BoxN7";
-            this.BoxN7.Size = new System.Drawing.Size(28, 27);
+            this.BoxN7.Size = new System.Drawing.Size(24, 26);
             this.BoxN7.TabIndex = 133;
             this.BoxN7.TabStop = false;
             // 
@@ -4343,9 +4634,10 @@
             // 
             this.BoxM7.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxM7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxM7.Location = new System.Drawing.Point(411, 201);
+            this.BoxM7.Location = new System.Drawing.Point(363, 182);
+            this.BoxM7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxM7.Name = "BoxM7";
-            this.BoxM7.Size = new System.Drawing.Size(28, 27);
+            this.BoxM7.Size = new System.Drawing.Size(24, 26);
             this.BoxM7.TabIndex = 132;
             this.BoxM7.TabStop = false;
             // 
@@ -4353,9 +4645,10 @@
             // 
             this.BoxL7.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxL7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxL7.Location = new System.Drawing.Point(377, 201);
+            this.BoxL7.Location = new System.Drawing.Point(333, 182);
+            this.BoxL7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxL7.Name = "BoxL7";
-            this.BoxL7.Size = new System.Drawing.Size(28, 27);
+            this.BoxL7.Size = new System.Drawing.Size(24, 26);
             this.BoxL7.TabIndex = 131;
             this.BoxL7.TabStop = false;
             // 
@@ -4363,9 +4656,10 @@
             // 
             this.BoxK7.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxK7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxK7.Location = new System.Drawing.Point(343, 201);
+            this.BoxK7.Location = new System.Drawing.Point(303, 182);
+            this.BoxK7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxK7.Name = "BoxK7";
-            this.BoxK7.Size = new System.Drawing.Size(28, 27);
+            this.BoxK7.Size = new System.Drawing.Size(24, 26);
             this.BoxK7.TabIndex = 130;
             this.BoxK7.TabStop = false;
             // 
@@ -4373,9 +4667,10 @@
             // 
             this.BoxJ7.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxJ7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxJ7.Location = new System.Drawing.Point(309, 201);
+            this.BoxJ7.Location = new System.Drawing.Point(273, 182);
+            this.BoxJ7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxJ7.Name = "BoxJ7";
-            this.BoxJ7.Size = new System.Drawing.Size(28, 27);
+            this.BoxJ7.Size = new System.Drawing.Size(24, 26);
             this.BoxJ7.TabIndex = 129;
             this.BoxJ7.TabStop = false;
             // 
@@ -4383,9 +4678,10 @@
             // 
             this.BoxI7.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxI7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxI7.Location = new System.Drawing.Point(275, 201);
+            this.BoxI7.Location = new System.Drawing.Point(243, 182);
+            this.BoxI7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxI7.Name = "BoxI7";
-            this.BoxI7.Size = new System.Drawing.Size(28, 27);
+            this.BoxI7.Size = new System.Drawing.Size(24, 26);
             this.BoxI7.TabIndex = 128;
             this.BoxI7.TabStop = false;
             // 
@@ -4393,9 +4689,10 @@
             // 
             this.BoxH7.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxH7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxH7.Location = new System.Drawing.Point(241, 201);
+            this.BoxH7.Location = new System.Drawing.Point(213, 182);
+            this.BoxH7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxH7.Name = "BoxH7";
-            this.BoxH7.Size = new System.Drawing.Size(28, 27);
+            this.BoxH7.Size = new System.Drawing.Size(24, 26);
             this.BoxH7.TabIndex = 127;
             this.BoxH7.TabStop = false;
             // 
@@ -4403,9 +4700,10 @@
             // 
             this.BoxG7.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxG7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxG7.Location = new System.Drawing.Point(207, 201);
+            this.BoxG7.Location = new System.Drawing.Point(183, 182);
+            this.BoxG7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxG7.Name = "BoxG7";
-            this.BoxG7.Size = new System.Drawing.Size(28, 27);
+            this.BoxG7.Size = new System.Drawing.Size(24, 26);
             this.BoxG7.TabIndex = 126;
             this.BoxG7.TabStop = false;
             // 
@@ -4413,9 +4711,10 @@
             // 
             this.BoxF7.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxF7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxF7.Location = new System.Drawing.Point(173, 201);
+            this.BoxF7.Location = new System.Drawing.Point(153, 182);
+            this.BoxF7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxF7.Name = "BoxF7";
-            this.BoxF7.Size = new System.Drawing.Size(28, 27);
+            this.BoxF7.Size = new System.Drawing.Size(24, 26);
             this.BoxF7.TabIndex = 125;
             this.BoxF7.TabStop = false;
             // 
@@ -4423,9 +4722,10 @@
             // 
             this.BoxE7.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxE7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxE7.Location = new System.Drawing.Point(139, 201);
+            this.BoxE7.Location = new System.Drawing.Point(123, 182);
+            this.BoxE7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxE7.Name = "BoxE7";
-            this.BoxE7.Size = new System.Drawing.Size(28, 27);
+            this.BoxE7.Size = new System.Drawing.Size(24, 26);
             this.BoxE7.TabIndex = 124;
             this.BoxE7.TabStop = false;
             // 
@@ -4433,9 +4733,10 @@
             // 
             this.BoxD7.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxD7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxD7.Location = new System.Drawing.Point(105, 201);
+            this.BoxD7.Location = new System.Drawing.Point(93, 182);
+            this.BoxD7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxD7.Name = "BoxD7";
-            this.BoxD7.Size = new System.Drawing.Size(28, 27);
+            this.BoxD7.Size = new System.Drawing.Size(24, 26);
             this.BoxD7.TabIndex = 123;
             this.BoxD7.TabStop = false;
             // 
@@ -4443,9 +4744,10 @@
             // 
             this.BoxC7.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxC7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxC7.Location = new System.Drawing.Point(71, 201);
+            this.BoxC7.Location = new System.Drawing.Point(63, 182);
+            this.BoxC7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxC7.Name = "BoxC7";
-            this.BoxC7.Size = new System.Drawing.Size(28, 27);
+            this.BoxC7.Size = new System.Drawing.Size(24, 26);
             this.BoxC7.TabIndex = 122;
             this.BoxC7.TabStop = false;
             // 
@@ -4453,9 +4755,10 @@
             // 
             this.BoxB7.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxB7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxB7.Location = new System.Drawing.Point(37, 201);
+            this.BoxB7.Location = new System.Drawing.Point(33, 182);
+            this.BoxB7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxB7.Name = "BoxB7";
-            this.BoxB7.Size = new System.Drawing.Size(28, 27);
+            this.BoxB7.Size = new System.Drawing.Size(24, 26);
             this.BoxB7.TabIndex = 121;
             this.BoxB7.TabStop = false;
             // 
@@ -4463,9 +4766,10 @@
             // 
             this.BoxA7.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxA7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxA7.Location = new System.Drawing.Point(3, 201);
+            this.BoxA7.Location = new System.Drawing.Point(3, 182);
+            this.BoxA7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxA7.Name = "BoxA7";
-            this.BoxA7.Size = new System.Drawing.Size(28, 27);
+            this.BoxA7.Size = new System.Drawing.Size(24, 26);
             this.BoxA7.TabIndex = 120;
             this.BoxA7.TabStop = false;
             // 
@@ -4473,9 +4777,10 @@
             // 
             this.BoxP6.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxP6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxP6.Location = new System.Drawing.Point(513, 168);
+            this.BoxP6.Location = new System.Drawing.Point(453, 152);
+            this.BoxP6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxP6.Name = "BoxP6";
-            this.BoxP6.Size = new System.Drawing.Size(36, 27);
+            this.BoxP6.Size = new System.Drawing.Size(35, 26);
             this.BoxP6.TabIndex = 115;
             this.BoxP6.TabStop = false;
             // 
@@ -4483,9 +4788,10 @@
             // 
             this.BoxO6.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxO6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxO6.Location = new System.Drawing.Point(479, 168);
+            this.BoxO6.Location = new System.Drawing.Point(423, 152);
+            this.BoxO6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxO6.Name = "BoxO6";
-            this.BoxO6.Size = new System.Drawing.Size(28, 27);
+            this.BoxO6.Size = new System.Drawing.Size(24, 26);
             this.BoxO6.TabIndex = 114;
             this.BoxO6.TabStop = false;
             // 
@@ -4493,9 +4799,10 @@
             // 
             this.BoxN6.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxN6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxN6.Location = new System.Drawing.Point(445, 168);
+            this.BoxN6.Location = new System.Drawing.Point(393, 152);
+            this.BoxN6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxN6.Name = "BoxN6";
-            this.BoxN6.Size = new System.Drawing.Size(28, 27);
+            this.BoxN6.Size = new System.Drawing.Size(24, 26);
             this.BoxN6.TabIndex = 113;
             this.BoxN6.TabStop = false;
             // 
@@ -4503,9 +4810,10 @@
             // 
             this.BoxM6.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxM6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxM6.Location = new System.Drawing.Point(411, 168);
+            this.BoxM6.Location = new System.Drawing.Point(363, 152);
+            this.BoxM6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxM6.Name = "BoxM6";
-            this.BoxM6.Size = new System.Drawing.Size(28, 27);
+            this.BoxM6.Size = new System.Drawing.Size(24, 26);
             this.BoxM6.TabIndex = 112;
             this.BoxM6.TabStop = false;
             // 
@@ -4513,9 +4821,10 @@
             // 
             this.BoxL6.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxL6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxL6.Location = new System.Drawing.Point(377, 168);
+            this.BoxL6.Location = new System.Drawing.Point(333, 152);
+            this.BoxL6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxL6.Name = "BoxL6";
-            this.BoxL6.Size = new System.Drawing.Size(28, 27);
+            this.BoxL6.Size = new System.Drawing.Size(24, 26);
             this.BoxL6.TabIndex = 111;
             this.BoxL6.TabStop = false;
             // 
@@ -4523,9 +4832,10 @@
             // 
             this.BoxK6.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxK6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxK6.Location = new System.Drawing.Point(343, 168);
+            this.BoxK6.Location = new System.Drawing.Point(303, 152);
+            this.BoxK6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxK6.Name = "BoxK6";
-            this.BoxK6.Size = new System.Drawing.Size(28, 27);
+            this.BoxK6.Size = new System.Drawing.Size(24, 26);
             this.BoxK6.TabIndex = 110;
             this.BoxK6.TabStop = false;
             // 
@@ -4533,9 +4843,10 @@
             // 
             this.BoxJ6.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxJ6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxJ6.Location = new System.Drawing.Point(309, 168);
+            this.BoxJ6.Location = new System.Drawing.Point(273, 152);
+            this.BoxJ6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxJ6.Name = "BoxJ6";
-            this.BoxJ6.Size = new System.Drawing.Size(28, 27);
+            this.BoxJ6.Size = new System.Drawing.Size(24, 26);
             this.BoxJ6.TabIndex = 109;
             this.BoxJ6.TabStop = false;
             // 
@@ -4543,9 +4854,10 @@
             // 
             this.BoxI6.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxI6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxI6.Location = new System.Drawing.Point(275, 168);
+            this.BoxI6.Location = new System.Drawing.Point(243, 152);
+            this.BoxI6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxI6.Name = "BoxI6";
-            this.BoxI6.Size = new System.Drawing.Size(28, 27);
+            this.BoxI6.Size = new System.Drawing.Size(24, 26);
             this.BoxI6.TabIndex = 108;
             this.BoxI6.TabStop = false;
             // 
@@ -4553,9 +4865,10 @@
             // 
             this.BoxH6.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxH6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxH6.Location = new System.Drawing.Point(241, 168);
+            this.BoxH6.Location = new System.Drawing.Point(213, 152);
+            this.BoxH6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxH6.Name = "BoxH6";
-            this.BoxH6.Size = new System.Drawing.Size(28, 27);
+            this.BoxH6.Size = new System.Drawing.Size(24, 26);
             this.BoxH6.TabIndex = 107;
             this.BoxH6.TabStop = false;
             // 
@@ -4563,9 +4876,10 @@
             // 
             this.BoxG6.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxG6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxG6.Location = new System.Drawing.Point(207, 168);
+            this.BoxG6.Location = new System.Drawing.Point(183, 152);
+            this.BoxG6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxG6.Name = "BoxG6";
-            this.BoxG6.Size = new System.Drawing.Size(28, 27);
+            this.BoxG6.Size = new System.Drawing.Size(24, 26);
             this.BoxG6.TabIndex = 106;
             this.BoxG6.TabStop = false;
             // 
@@ -4573,9 +4887,10 @@
             // 
             this.BoxF6.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxF6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxF6.Location = new System.Drawing.Point(173, 168);
+            this.BoxF6.Location = new System.Drawing.Point(153, 152);
+            this.BoxF6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxF6.Name = "BoxF6";
-            this.BoxF6.Size = new System.Drawing.Size(28, 27);
+            this.BoxF6.Size = new System.Drawing.Size(24, 26);
             this.BoxF6.TabIndex = 105;
             this.BoxF6.TabStop = false;
             // 
@@ -4583,9 +4898,10 @@
             // 
             this.BoxE6.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxE6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxE6.Location = new System.Drawing.Point(139, 168);
+            this.BoxE6.Location = new System.Drawing.Point(123, 152);
+            this.BoxE6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxE6.Name = "BoxE6";
-            this.BoxE6.Size = new System.Drawing.Size(28, 27);
+            this.BoxE6.Size = new System.Drawing.Size(24, 26);
             this.BoxE6.TabIndex = 104;
             this.BoxE6.TabStop = false;
             // 
@@ -4593,9 +4909,10 @@
             // 
             this.BoxD6.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxD6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxD6.Location = new System.Drawing.Point(105, 168);
+            this.BoxD6.Location = new System.Drawing.Point(93, 152);
+            this.BoxD6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxD6.Name = "BoxD6";
-            this.BoxD6.Size = new System.Drawing.Size(28, 27);
+            this.BoxD6.Size = new System.Drawing.Size(24, 26);
             this.BoxD6.TabIndex = 103;
             this.BoxD6.TabStop = false;
             // 
@@ -4603,9 +4920,10 @@
             // 
             this.BoxC6.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxC6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxC6.Location = new System.Drawing.Point(71, 168);
+            this.BoxC6.Location = new System.Drawing.Point(63, 152);
+            this.BoxC6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxC6.Name = "BoxC6";
-            this.BoxC6.Size = new System.Drawing.Size(28, 27);
+            this.BoxC6.Size = new System.Drawing.Size(24, 26);
             this.BoxC6.TabIndex = 102;
             this.BoxC6.TabStop = false;
             // 
@@ -4613,9 +4931,10 @@
             // 
             this.BoxB6.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxB6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxB6.Location = new System.Drawing.Point(37, 168);
+            this.BoxB6.Location = new System.Drawing.Point(33, 152);
+            this.BoxB6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxB6.Name = "BoxB6";
-            this.BoxB6.Size = new System.Drawing.Size(28, 27);
+            this.BoxB6.Size = new System.Drawing.Size(24, 26);
             this.BoxB6.TabIndex = 101;
             this.BoxB6.TabStop = false;
             // 
@@ -4623,9 +4942,10 @@
             // 
             this.BoxA6.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxA6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxA6.Location = new System.Drawing.Point(3, 168);
+            this.BoxA6.Location = new System.Drawing.Point(3, 152);
+            this.BoxA6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxA6.Name = "BoxA6";
-            this.BoxA6.Size = new System.Drawing.Size(28, 27);
+            this.BoxA6.Size = new System.Drawing.Size(24, 26);
             this.BoxA6.TabIndex = 100;
             this.BoxA6.TabStop = false;
             // 
@@ -4633,9 +4953,10 @@
             // 
             this.BoxP5.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxP5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxP5.Location = new System.Drawing.Point(513, 135);
+            this.BoxP5.Location = new System.Drawing.Point(453, 122);
+            this.BoxP5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxP5.Name = "BoxP5";
-            this.BoxP5.Size = new System.Drawing.Size(36, 27);
+            this.BoxP5.Size = new System.Drawing.Size(35, 26);
             this.BoxP5.TabIndex = 95;
             this.BoxP5.TabStop = false;
             // 
@@ -4643,9 +4964,10 @@
             // 
             this.BoxO5.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxO5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxO5.Location = new System.Drawing.Point(479, 135);
+            this.BoxO5.Location = new System.Drawing.Point(423, 122);
+            this.BoxO5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxO5.Name = "BoxO5";
-            this.BoxO5.Size = new System.Drawing.Size(28, 27);
+            this.BoxO5.Size = new System.Drawing.Size(24, 26);
             this.BoxO5.TabIndex = 94;
             this.BoxO5.TabStop = false;
             // 
@@ -4653,9 +4975,10 @@
             // 
             this.BoxN5.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxN5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxN5.Location = new System.Drawing.Point(445, 135);
+            this.BoxN5.Location = new System.Drawing.Point(393, 122);
+            this.BoxN5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxN5.Name = "BoxN5";
-            this.BoxN5.Size = new System.Drawing.Size(28, 27);
+            this.BoxN5.Size = new System.Drawing.Size(24, 26);
             this.BoxN5.TabIndex = 93;
             this.BoxN5.TabStop = false;
             // 
@@ -4663,9 +4986,10 @@
             // 
             this.BoxM5.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxM5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxM5.Location = new System.Drawing.Point(411, 135);
+            this.BoxM5.Location = new System.Drawing.Point(363, 122);
+            this.BoxM5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxM5.Name = "BoxM5";
-            this.BoxM5.Size = new System.Drawing.Size(28, 27);
+            this.BoxM5.Size = new System.Drawing.Size(24, 26);
             this.BoxM5.TabIndex = 92;
             this.BoxM5.TabStop = false;
             // 
@@ -4673,9 +4997,10 @@
             // 
             this.BoxL5.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxL5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxL5.Location = new System.Drawing.Point(377, 135);
+            this.BoxL5.Location = new System.Drawing.Point(333, 122);
+            this.BoxL5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxL5.Name = "BoxL5";
-            this.BoxL5.Size = new System.Drawing.Size(28, 27);
+            this.BoxL5.Size = new System.Drawing.Size(24, 26);
             this.BoxL5.TabIndex = 91;
             this.BoxL5.TabStop = false;
             // 
@@ -4683,9 +5008,10 @@
             // 
             this.BoxK5.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxK5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxK5.Location = new System.Drawing.Point(343, 135);
+            this.BoxK5.Location = new System.Drawing.Point(303, 122);
+            this.BoxK5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxK5.Name = "BoxK5";
-            this.BoxK5.Size = new System.Drawing.Size(28, 27);
+            this.BoxK5.Size = new System.Drawing.Size(24, 26);
             this.BoxK5.TabIndex = 90;
             this.BoxK5.TabStop = false;
             // 
@@ -4693,9 +5019,10 @@
             // 
             this.BoxJ5.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxJ5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxJ5.Location = new System.Drawing.Point(309, 135);
+            this.BoxJ5.Location = new System.Drawing.Point(273, 122);
+            this.BoxJ5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxJ5.Name = "BoxJ5";
-            this.BoxJ5.Size = new System.Drawing.Size(28, 27);
+            this.BoxJ5.Size = new System.Drawing.Size(24, 26);
             this.BoxJ5.TabIndex = 89;
             this.BoxJ5.TabStop = false;
             // 
@@ -4703,9 +5030,10 @@
             // 
             this.BoxI5.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxI5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxI5.Location = new System.Drawing.Point(275, 135);
+            this.BoxI5.Location = new System.Drawing.Point(243, 122);
+            this.BoxI5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxI5.Name = "BoxI5";
-            this.BoxI5.Size = new System.Drawing.Size(28, 27);
+            this.BoxI5.Size = new System.Drawing.Size(24, 26);
             this.BoxI5.TabIndex = 88;
             this.BoxI5.TabStop = false;
             // 
@@ -4713,9 +5041,10 @@
             // 
             this.BoxH5.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxH5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxH5.Location = new System.Drawing.Point(241, 135);
+            this.BoxH5.Location = new System.Drawing.Point(213, 122);
+            this.BoxH5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxH5.Name = "BoxH5";
-            this.BoxH5.Size = new System.Drawing.Size(28, 27);
+            this.BoxH5.Size = new System.Drawing.Size(24, 26);
             this.BoxH5.TabIndex = 87;
             this.BoxH5.TabStop = false;
             // 
@@ -4723,9 +5052,10 @@
             // 
             this.BoxG5.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxG5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxG5.Location = new System.Drawing.Point(207, 135);
+            this.BoxG5.Location = new System.Drawing.Point(183, 122);
+            this.BoxG5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxG5.Name = "BoxG5";
-            this.BoxG5.Size = new System.Drawing.Size(28, 27);
+            this.BoxG5.Size = new System.Drawing.Size(24, 26);
             this.BoxG5.TabIndex = 86;
             this.BoxG5.TabStop = false;
             // 
@@ -4733,9 +5063,10 @@
             // 
             this.BoxF5.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxF5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxF5.Location = new System.Drawing.Point(173, 135);
+            this.BoxF5.Location = new System.Drawing.Point(153, 122);
+            this.BoxF5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxF5.Name = "BoxF5";
-            this.BoxF5.Size = new System.Drawing.Size(28, 27);
+            this.BoxF5.Size = new System.Drawing.Size(24, 26);
             this.BoxF5.TabIndex = 85;
             this.BoxF5.TabStop = false;
             // 
@@ -4743,9 +5074,10 @@
             // 
             this.BoxE5.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxE5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxE5.Location = new System.Drawing.Point(139, 135);
+            this.BoxE5.Location = new System.Drawing.Point(123, 122);
+            this.BoxE5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxE5.Name = "BoxE5";
-            this.BoxE5.Size = new System.Drawing.Size(28, 27);
+            this.BoxE5.Size = new System.Drawing.Size(24, 26);
             this.BoxE5.TabIndex = 84;
             this.BoxE5.TabStop = false;
             // 
@@ -4753,9 +5085,10 @@
             // 
             this.BoxD5.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxD5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxD5.Location = new System.Drawing.Point(105, 135);
+            this.BoxD5.Location = new System.Drawing.Point(93, 122);
+            this.BoxD5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxD5.Name = "BoxD5";
-            this.BoxD5.Size = new System.Drawing.Size(28, 27);
+            this.BoxD5.Size = new System.Drawing.Size(24, 26);
             this.BoxD5.TabIndex = 83;
             this.BoxD5.TabStop = false;
             // 
@@ -4763,9 +5096,10 @@
             // 
             this.BoxC5.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxC5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxC5.Location = new System.Drawing.Point(71, 135);
+            this.BoxC5.Location = new System.Drawing.Point(63, 122);
+            this.BoxC5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxC5.Name = "BoxC5";
-            this.BoxC5.Size = new System.Drawing.Size(28, 27);
+            this.BoxC5.Size = new System.Drawing.Size(24, 26);
             this.BoxC5.TabIndex = 82;
             this.BoxC5.TabStop = false;
             // 
@@ -4773,9 +5107,10 @@
             // 
             this.BoxB5.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxB5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxB5.Location = new System.Drawing.Point(37, 135);
+            this.BoxB5.Location = new System.Drawing.Point(33, 122);
+            this.BoxB5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxB5.Name = "BoxB5";
-            this.BoxB5.Size = new System.Drawing.Size(28, 27);
+            this.BoxB5.Size = new System.Drawing.Size(24, 26);
             this.BoxB5.TabIndex = 81;
             this.BoxB5.TabStop = false;
             // 
@@ -4783,9 +5118,10 @@
             // 
             this.BoxA5.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxA5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxA5.Location = new System.Drawing.Point(3, 135);
+            this.BoxA5.Location = new System.Drawing.Point(3, 122);
+            this.BoxA5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxA5.Name = "BoxA5";
-            this.BoxA5.Size = new System.Drawing.Size(28, 27);
+            this.BoxA5.Size = new System.Drawing.Size(24, 26);
             this.BoxA5.TabIndex = 80;
             this.BoxA5.TabStop = false;
             // 
@@ -4793,9 +5129,10 @@
             // 
             this.BoxP4.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxP4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxP4.Location = new System.Drawing.Point(513, 102);
+            this.BoxP4.Location = new System.Drawing.Point(453, 92);
+            this.BoxP4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxP4.Name = "BoxP4";
-            this.BoxP4.Size = new System.Drawing.Size(36, 27);
+            this.BoxP4.Size = new System.Drawing.Size(35, 26);
             this.BoxP4.TabIndex = 75;
             this.BoxP4.TabStop = false;
             // 
@@ -4803,9 +5140,10 @@
             // 
             this.BoxO4.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxO4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxO4.Location = new System.Drawing.Point(479, 102);
+            this.BoxO4.Location = new System.Drawing.Point(423, 92);
+            this.BoxO4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxO4.Name = "BoxO4";
-            this.BoxO4.Size = new System.Drawing.Size(28, 27);
+            this.BoxO4.Size = new System.Drawing.Size(24, 26);
             this.BoxO4.TabIndex = 74;
             this.BoxO4.TabStop = false;
             // 
@@ -4813,9 +5151,10 @@
             // 
             this.BoxN4.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxN4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxN4.Location = new System.Drawing.Point(445, 102);
+            this.BoxN4.Location = new System.Drawing.Point(393, 92);
+            this.BoxN4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxN4.Name = "BoxN4";
-            this.BoxN4.Size = new System.Drawing.Size(28, 27);
+            this.BoxN4.Size = new System.Drawing.Size(24, 26);
             this.BoxN4.TabIndex = 73;
             this.BoxN4.TabStop = false;
             // 
@@ -4823,9 +5162,10 @@
             // 
             this.BoxM4.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxM4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxM4.Location = new System.Drawing.Point(411, 102);
+            this.BoxM4.Location = new System.Drawing.Point(363, 92);
+            this.BoxM4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxM4.Name = "BoxM4";
-            this.BoxM4.Size = new System.Drawing.Size(28, 27);
+            this.BoxM4.Size = new System.Drawing.Size(24, 26);
             this.BoxM4.TabIndex = 72;
             this.BoxM4.TabStop = false;
             // 
@@ -4833,9 +5173,10 @@
             // 
             this.BoxL4.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxL4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxL4.Location = new System.Drawing.Point(377, 102);
+            this.BoxL4.Location = new System.Drawing.Point(333, 92);
+            this.BoxL4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxL4.Name = "BoxL4";
-            this.BoxL4.Size = new System.Drawing.Size(28, 27);
+            this.BoxL4.Size = new System.Drawing.Size(24, 26);
             this.BoxL4.TabIndex = 71;
             this.BoxL4.TabStop = false;
             // 
@@ -4843,9 +5184,10 @@
             // 
             this.BoxK4.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxK4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxK4.Location = new System.Drawing.Point(343, 102);
+            this.BoxK4.Location = new System.Drawing.Point(303, 92);
+            this.BoxK4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxK4.Name = "BoxK4";
-            this.BoxK4.Size = new System.Drawing.Size(28, 27);
+            this.BoxK4.Size = new System.Drawing.Size(24, 26);
             this.BoxK4.TabIndex = 70;
             this.BoxK4.TabStop = false;
             // 
@@ -4853,9 +5195,10 @@
             // 
             this.BoxJ4.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxJ4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxJ4.Location = new System.Drawing.Point(309, 102);
+            this.BoxJ4.Location = new System.Drawing.Point(273, 92);
+            this.BoxJ4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxJ4.Name = "BoxJ4";
-            this.BoxJ4.Size = new System.Drawing.Size(28, 27);
+            this.BoxJ4.Size = new System.Drawing.Size(24, 26);
             this.BoxJ4.TabIndex = 69;
             this.BoxJ4.TabStop = false;
             // 
@@ -4863,9 +5206,10 @@
             // 
             this.BoxI4.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxI4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxI4.Location = new System.Drawing.Point(275, 102);
+            this.BoxI4.Location = new System.Drawing.Point(243, 92);
+            this.BoxI4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxI4.Name = "BoxI4";
-            this.BoxI4.Size = new System.Drawing.Size(28, 27);
+            this.BoxI4.Size = new System.Drawing.Size(24, 26);
             this.BoxI4.TabIndex = 68;
             this.BoxI4.TabStop = false;
             // 
@@ -4873,9 +5217,10 @@
             // 
             this.BoxH4.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxH4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxH4.Location = new System.Drawing.Point(241, 102);
+            this.BoxH4.Location = new System.Drawing.Point(213, 92);
+            this.BoxH4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxH4.Name = "BoxH4";
-            this.BoxH4.Size = new System.Drawing.Size(28, 27);
+            this.BoxH4.Size = new System.Drawing.Size(24, 26);
             this.BoxH4.TabIndex = 67;
             this.BoxH4.TabStop = false;
             // 
@@ -4883,9 +5228,10 @@
             // 
             this.BoxG4.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxG4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxG4.Location = new System.Drawing.Point(207, 102);
+            this.BoxG4.Location = new System.Drawing.Point(183, 92);
+            this.BoxG4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxG4.Name = "BoxG4";
-            this.BoxG4.Size = new System.Drawing.Size(28, 27);
+            this.BoxG4.Size = new System.Drawing.Size(24, 26);
             this.BoxG4.TabIndex = 66;
             this.BoxG4.TabStop = false;
             // 
@@ -4893,9 +5239,10 @@
             // 
             this.BoxF4.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxF4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxF4.Location = new System.Drawing.Point(173, 102);
+            this.BoxF4.Location = new System.Drawing.Point(153, 92);
+            this.BoxF4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxF4.Name = "BoxF4";
-            this.BoxF4.Size = new System.Drawing.Size(28, 27);
+            this.BoxF4.Size = new System.Drawing.Size(24, 26);
             this.BoxF4.TabIndex = 65;
             this.BoxF4.TabStop = false;
             // 
@@ -4903,9 +5250,10 @@
             // 
             this.BoxE4.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxE4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxE4.Location = new System.Drawing.Point(139, 102);
+            this.BoxE4.Location = new System.Drawing.Point(123, 92);
+            this.BoxE4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxE4.Name = "BoxE4";
-            this.BoxE4.Size = new System.Drawing.Size(28, 27);
+            this.BoxE4.Size = new System.Drawing.Size(24, 26);
             this.BoxE4.TabIndex = 64;
             this.BoxE4.TabStop = false;
             // 
@@ -4913,9 +5261,10 @@
             // 
             this.BoxD4.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxD4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxD4.Location = new System.Drawing.Point(105, 102);
+            this.BoxD4.Location = new System.Drawing.Point(93, 92);
+            this.BoxD4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxD4.Name = "BoxD4";
-            this.BoxD4.Size = new System.Drawing.Size(28, 27);
+            this.BoxD4.Size = new System.Drawing.Size(24, 26);
             this.BoxD4.TabIndex = 63;
             this.BoxD4.TabStop = false;
             // 
@@ -4923,9 +5272,10 @@
             // 
             this.BoxC4.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxC4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxC4.Location = new System.Drawing.Point(71, 102);
+            this.BoxC4.Location = new System.Drawing.Point(63, 92);
+            this.BoxC4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxC4.Name = "BoxC4";
-            this.BoxC4.Size = new System.Drawing.Size(28, 27);
+            this.BoxC4.Size = new System.Drawing.Size(24, 26);
             this.BoxC4.TabIndex = 62;
             this.BoxC4.TabStop = false;
             // 
@@ -4933,9 +5283,10 @@
             // 
             this.BoxB4.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxB4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxB4.Location = new System.Drawing.Point(37, 102);
+            this.BoxB4.Location = new System.Drawing.Point(33, 92);
+            this.BoxB4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxB4.Name = "BoxB4";
-            this.BoxB4.Size = new System.Drawing.Size(28, 27);
+            this.BoxB4.Size = new System.Drawing.Size(24, 26);
             this.BoxB4.TabIndex = 61;
             this.BoxB4.TabStop = false;
             // 
@@ -4943,9 +5294,10 @@
             // 
             this.BoxA4.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxA4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxA4.Location = new System.Drawing.Point(3, 102);
+            this.BoxA4.Location = new System.Drawing.Point(3, 92);
+            this.BoxA4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxA4.Name = "BoxA4";
-            this.BoxA4.Size = new System.Drawing.Size(28, 27);
+            this.BoxA4.Size = new System.Drawing.Size(24, 26);
             this.BoxA4.TabIndex = 60;
             this.BoxA4.TabStop = false;
             // 
@@ -4953,9 +5305,10 @@
             // 
             this.BoxP3.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxP3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxP3.Location = new System.Drawing.Point(513, 69);
+            this.BoxP3.Location = new System.Drawing.Point(453, 62);
+            this.BoxP3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxP3.Name = "BoxP3";
-            this.BoxP3.Size = new System.Drawing.Size(36, 27);
+            this.BoxP3.Size = new System.Drawing.Size(35, 26);
             this.BoxP3.TabIndex = 55;
             this.BoxP3.TabStop = false;
             // 
@@ -4963,9 +5316,10 @@
             // 
             this.BoxO3.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxO3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxO3.Location = new System.Drawing.Point(479, 69);
+            this.BoxO3.Location = new System.Drawing.Point(423, 62);
+            this.BoxO3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxO3.Name = "BoxO3";
-            this.BoxO3.Size = new System.Drawing.Size(28, 27);
+            this.BoxO3.Size = new System.Drawing.Size(24, 26);
             this.BoxO3.TabIndex = 54;
             this.BoxO3.TabStop = false;
             // 
@@ -4973,9 +5327,10 @@
             // 
             this.BoxN3.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxN3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxN3.Location = new System.Drawing.Point(445, 69);
+            this.BoxN3.Location = new System.Drawing.Point(393, 62);
+            this.BoxN3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxN3.Name = "BoxN3";
-            this.BoxN3.Size = new System.Drawing.Size(28, 27);
+            this.BoxN3.Size = new System.Drawing.Size(24, 26);
             this.BoxN3.TabIndex = 53;
             this.BoxN3.TabStop = false;
             // 
@@ -4983,9 +5338,10 @@
             // 
             this.BoxM3.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxM3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxM3.Location = new System.Drawing.Point(411, 69);
+            this.BoxM3.Location = new System.Drawing.Point(363, 62);
+            this.BoxM3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxM3.Name = "BoxM3";
-            this.BoxM3.Size = new System.Drawing.Size(28, 27);
+            this.BoxM3.Size = new System.Drawing.Size(24, 26);
             this.BoxM3.TabIndex = 52;
             this.BoxM3.TabStop = false;
             // 
@@ -4993,9 +5349,10 @@
             // 
             this.BoxL3.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxL3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxL3.Location = new System.Drawing.Point(377, 69);
+            this.BoxL3.Location = new System.Drawing.Point(333, 62);
+            this.BoxL3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxL3.Name = "BoxL3";
-            this.BoxL3.Size = new System.Drawing.Size(28, 27);
+            this.BoxL3.Size = new System.Drawing.Size(24, 26);
             this.BoxL3.TabIndex = 51;
             this.BoxL3.TabStop = false;
             // 
@@ -5003,9 +5360,10 @@
             // 
             this.BoxK3.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxK3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxK3.Location = new System.Drawing.Point(343, 69);
+            this.BoxK3.Location = new System.Drawing.Point(303, 62);
+            this.BoxK3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxK3.Name = "BoxK3";
-            this.BoxK3.Size = new System.Drawing.Size(28, 27);
+            this.BoxK3.Size = new System.Drawing.Size(24, 26);
             this.BoxK3.TabIndex = 50;
             this.BoxK3.TabStop = false;
             // 
@@ -5013,9 +5371,10 @@
             // 
             this.BoxJ3.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxJ3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxJ3.Location = new System.Drawing.Point(309, 69);
+            this.BoxJ3.Location = new System.Drawing.Point(273, 62);
+            this.BoxJ3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxJ3.Name = "BoxJ3";
-            this.BoxJ3.Size = new System.Drawing.Size(28, 27);
+            this.BoxJ3.Size = new System.Drawing.Size(24, 26);
             this.BoxJ3.TabIndex = 49;
             this.BoxJ3.TabStop = false;
             // 
@@ -5023,9 +5382,10 @@
             // 
             this.BoxI3.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxI3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxI3.Location = new System.Drawing.Point(275, 69);
+            this.BoxI3.Location = new System.Drawing.Point(243, 62);
+            this.BoxI3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxI3.Name = "BoxI3";
-            this.BoxI3.Size = new System.Drawing.Size(28, 27);
+            this.BoxI3.Size = new System.Drawing.Size(24, 26);
             this.BoxI3.TabIndex = 48;
             this.BoxI3.TabStop = false;
             // 
@@ -5033,9 +5393,10 @@
             // 
             this.BoxH3.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxH3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxH3.Location = new System.Drawing.Point(241, 69);
+            this.BoxH3.Location = new System.Drawing.Point(213, 62);
+            this.BoxH3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxH3.Name = "BoxH3";
-            this.BoxH3.Size = new System.Drawing.Size(28, 27);
+            this.BoxH3.Size = new System.Drawing.Size(24, 26);
             this.BoxH3.TabIndex = 47;
             this.BoxH3.TabStop = false;
             // 
@@ -5043,9 +5404,10 @@
             // 
             this.BoxG3.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxG3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxG3.Location = new System.Drawing.Point(207, 69);
+            this.BoxG3.Location = new System.Drawing.Point(183, 62);
+            this.BoxG3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxG3.Name = "BoxG3";
-            this.BoxG3.Size = new System.Drawing.Size(28, 27);
+            this.BoxG3.Size = new System.Drawing.Size(24, 26);
             this.BoxG3.TabIndex = 46;
             this.BoxG3.TabStop = false;
             // 
@@ -5053,9 +5415,10 @@
             // 
             this.BoxF3.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxF3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxF3.Location = new System.Drawing.Point(173, 69);
+            this.BoxF3.Location = new System.Drawing.Point(153, 62);
+            this.BoxF3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxF3.Name = "BoxF3";
-            this.BoxF3.Size = new System.Drawing.Size(28, 27);
+            this.BoxF3.Size = new System.Drawing.Size(24, 26);
             this.BoxF3.TabIndex = 45;
             this.BoxF3.TabStop = false;
             // 
@@ -5063,9 +5426,10 @@
             // 
             this.BoxE3.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxE3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxE3.Location = new System.Drawing.Point(139, 69);
+            this.BoxE3.Location = new System.Drawing.Point(123, 62);
+            this.BoxE3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxE3.Name = "BoxE3";
-            this.BoxE3.Size = new System.Drawing.Size(28, 27);
+            this.BoxE3.Size = new System.Drawing.Size(24, 26);
             this.BoxE3.TabIndex = 44;
             this.BoxE3.TabStop = false;
             // 
@@ -5073,9 +5437,10 @@
             // 
             this.BoxD3.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxD3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxD3.Location = new System.Drawing.Point(105, 69);
+            this.BoxD3.Location = new System.Drawing.Point(93, 62);
+            this.BoxD3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxD3.Name = "BoxD3";
-            this.BoxD3.Size = new System.Drawing.Size(28, 27);
+            this.BoxD3.Size = new System.Drawing.Size(24, 26);
             this.BoxD3.TabIndex = 43;
             this.BoxD3.TabStop = false;
             // 
@@ -5083,9 +5448,10 @@
             // 
             this.BoxC3.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxC3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxC3.Location = new System.Drawing.Point(71, 69);
+            this.BoxC3.Location = new System.Drawing.Point(63, 62);
+            this.BoxC3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxC3.Name = "BoxC3";
-            this.BoxC3.Size = new System.Drawing.Size(28, 27);
+            this.BoxC3.Size = new System.Drawing.Size(24, 26);
             this.BoxC3.TabIndex = 42;
             this.BoxC3.TabStop = false;
             // 
@@ -5093,9 +5459,10 @@
             // 
             this.BoxB3.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxB3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxB3.Location = new System.Drawing.Point(37, 69);
+            this.BoxB3.Location = new System.Drawing.Point(33, 62);
+            this.BoxB3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxB3.Name = "BoxB3";
-            this.BoxB3.Size = new System.Drawing.Size(28, 27);
+            this.BoxB3.Size = new System.Drawing.Size(24, 26);
             this.BoxB3.TabIndex = 41;
             this.BoxB3.TabStop = false;
             // 
@@ -5103,9 +5470,10 @@
             // 
             this.BoxA3.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxA3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxA3.Location = new System.Drawing.Point(3, 69);
+            this.BoxA3.Location = new System.Drawing.Point(3, 62);
+            this.BoxA3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxA3.Name = "BoxA3";
-            this.BoxA3.Size = new System.Drawing.Size(28, 27);
+            this.BoxA3.Size = new System.Drawing.Size(24, 26);
             this.BoxA3.TabIndex = 40;
             this.BoxA3.TabStop = false;
             // 
@@ -5113,9 +5481,10 @@
             // 
             this.BoxP2.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxP2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxP2.Location = new System.Drawing.Point(513, 36);
+            this.BoxP2.Location = new System.Drawing.Point(453, 32);
+            this.BoxP2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxP2.Name = "BoxP2";
-            this.BoxP2.Size = new System.Drawing.Size(36, 27);
+            this.BoxP2.Size = new System.Drawing.Size(35, 26);
             this.BoxP2.TabIndex = 35;
             this.BoxP2.TabStop = false;
             // 
@@ -5123,9 +5492,10 @@
             // 
             this.BoxO2.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxO2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxO2.Location = new System.Drawing.Point(479, 36);
+            this.BoxO2.Location = new System.Drawing.Point(423, 32);
+            this.BoxO2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxO2.Name = "BoxO2";
-            this.BoxO2.Size = new System.Drawing.Size(28, 27);
+            this.BoxO2.Size = new System.Drawing.Size(24, 26);
             this.BoxO2.TabIndex = 34;
             this.BoxO2.TabStop = false;
             // 
@@ -5133,9 +5503,10 @@
             // 
             this.BoxN2.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxN2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxN2.Location = new System.Drawing.Point(445, 36);
+            this.BoxN2.Location = new System.Drawing.Point(393, 32);
+            this.BoxN2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxN2.Name = "BoxN2";
-            this.BoxN2.Size = new System.Drawing.Size(28, 27);
+            this.BoxN2.Size = new System.Drawing.Size(24, 26);
             this.BoxN2.TabIndex = 33;
             this.BoxN2.TabStop = false;
             // 
@@ -5143,9 +5514,10 @@
             // 
             this.BoxM2.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxM2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxM2.Location = new System.Drawing.Point(411, 36);
+            this.BoxM2.Location = new System.Drawing.Point(363, 32);
+            this.BoxM2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxM2.Name = "BoxM2";
-            this.BoxM2.Size = new System.Drawing.Size(28, 27);
+            this.BoxM2.Size = new System.Drawing.Size(24, 26);
             this.BoxM2.TabIndex = 32;
             this.BoxM2.TabStop = false;
             // 
@@ -5153,9 +5525,10 @@
             // 
             this.BoxL2.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxL2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxL2.Location = new System.Drawing.Point(377, 36);
+            this.BoxL2.Location = new System.Drawing.Point(333, 32);
+            this.BoxL2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxL2.Name = "BoxL2";
-            this.BoxL2.Size = new System.Drawing.Size(28, 27);
+            this.BoxL2.Size = new System.Drawing.Size(24, 26);
             this.BoxL2.TabIndex = 31;
             this.BoxL2.TabStop = false;
             // 
@@ -5163,9 +5536,10 @@
             // 
             this.BoxK2.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxK2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxK2.Location = new System.Drawing.Point(343, 36);
+            this.BoxK2.Location = new System.Drawing.Point(303, 32);
+            this.BoxK2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxK2.Name = "BoxK2";
-            this.BoxK2.Size = new System.Drawing.Size(28, 27);
+            this.BoxK2.Size = new System.Drawing.Size(24, 26);
             this.BoxK2.TabIndex = 30;
             this.BoxK2.TabStop = false;
             // 
@@ -5173,9 +5547,10 @@
             // 
             this.BoxJ2.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxJ2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxJ2.Location = new System.Drawing.Point(309, 36);
+            this.BoxJ2.Location = new System.Drawing.Point(273, 32);
+            this.BoxJ2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxJ2.Name = "BoxJ2";
-            this.BoxJ2.Size = new System.Drawing.Size(28, 27);
+            this.BoxJ2.Size = new System.Drawing.Size(24, 26);
             this.BoxJ2.TabIndex = 29;
             this.BoxJ2.TabStop = false;
             // 
@@ -5183,9 +5558,10 @@
             // 
             this.BoxI2.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxI2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxI2.Location = new System.Drawing.Point(275, 36);
+            this.BoxI2.Location = new System.Drawing.Point(243, 32);
+            this.BoxI2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxI2.Name = "BoxI2";
-            this.BoxI2.Size = new System.Drawing.Size(28, 27);
+            this.BoxI2.Size = new System.Drawing.Size(24, 26);
             this.BoxI2.TabIndex = 28;
             this.BoxI2.TabStop = false;
             // 
@@ -5193,9 +5569,10 @@
             // 
             this.BoxH2.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxH2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxH2.Location = new System.Drawing.Point(241, 36);
+            this.BoxH2.Location = new System.Drawing.Point(213, 32);
+            this.BoxH2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxH2.Name = "BoxH2";
-            this.BoxH2.Size = new System.Drawing.Size(28, 27);
+            this.BoxH2.Size = new System.Drawing.Size(24, 26);
             this.BoxH2.TabIndex = 27;
             this.BoxH2.TabStop = false;
             // 
@@ -5203,9 +5580,10 @@
             // 
             this.BoxG2.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxG2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxG2.Location = new System.Drawing.Point(207, 36);
+            this.BoxG2.Location = new System.Drawing.Point(183, 32);
+            this.BoxG2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxG2.Name = "BoxG2";
-            this.BoxG2.Size = new System.Drawing.Size(28, 27);
+            this.BoxG2.Size = new System.Drawing.Size(24, 26);
             this.BoxG2.TabIndex = 26;
             this.BoxG2.TabStop = false;
             // 
@@ -5213,9 +5591,10 @@
             // 
             this.BoxF2.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxF2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxF2.Location = new System.Drawing.Point(173, 36);
+            this.BoxF2.Location = new System.Drawing.Point(153, 32);
+            this.BoxF2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxF2.Name = "BoxF2";
-            this.BoxF2.Size = new System.Drawing.Size(28, 27);
+            this.BoxF2.Size = new System.Drawing.Size(24, 26);
             this.BoxF2.TabIndex = 25;
             this.BoxF2.TabStop = false;
             // 
@@ -5223,9 +5602,10 @@
             // 
             this.BoxE2.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxE2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxE2.Location = new System.Drawing.Point(139, 36);
+            this.BoxE2.Location = new System.Drawing.Point(123, 32);
+            this.BoxE2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxE2.Name = "BoxE2";
-            this.BoxE2.Size = new System.Drawing.Size(28, 27);
+            this.BoxE2.Size = new System.Drawing.Size(24, 26);
             this.BoxE2.TabIndex = 24;
             this.BoxE2.TabStop = false;
             // 
@@ -5233,9 +5613,10 @@
             // 
             this.BoxD2.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxD2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxD2.Location = new System.Drawing.Point(105, 36);
+            this.BoxD2.Location = new System.Drawing.Point(93, 32);
+            this.BoxD2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxD2.Name = "BoxD2";
-            this.BoxD2.Size = new System.Drawing.Size(28, 27);
+            this.BoxD2.Size = new System.Drawing.Size(24, 26);
             this.BoxD2.TabIndex = 23;
             this.BoxD2.TabStop = false;
             // 
@@ -5243,9 +5624,10 @@
             // 
             this.BoxC2.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxC2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxC2.Location = new System.Drawing.Point(71, 36);
+            this.BoxC2.Location = new System.Drawing.Point(63, 32);
+            this.BoxC2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxC2.Name = "BoxC2";
-            this.BoxC2.Size = new System.Drawing.Size(28, 27);
+            this.BoxC2.Size = new System.Drawing.Size(24, 26);
             this.BoxC2.TabIndex = 22;
             this.BoxC2.TabStop = false;
             // 
@@ -5253,9 +5635,10 @@
             // 
             this.BoxB2.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxB2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxB2.Location = new System.Drawing.Point(37, 36);
+            this.BoxB2.Location = new System.Drawing.Point(33, 32);
+            this.BoxB2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxB2.Name = "BoxB2";
-            this.BoxB2.Size = new System.Drawing.Size(28, 27);
+            this.BoxB2.Size = new System.Drawing.Size(24, 26);
             this.BoxB2.TabIndex = 21;
             this.BoxB2.TabStop = false;
             // 
@@ -5263,9 +5646,10 @@
             // 
             this.BoxA2.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxA2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxA2.Location = new System.Drawing.Point(3, 36);
+            this.BoxA2.Location = new System.Drawing.Point(3, 32);
+            this.BoxA2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxA2.Name = "BoxA2";
-            this.BoxA2.Size = new System.Drawing.Size(28, 27);
+            this.BoxA2.Size = new System.Drawing.Size(24, 26);
             this.BoxA2.TabIndex = 20;
             this.BoxA2.TabStop = false;
             // 
@@ -5273,9 +5657,10 @@
             // 
             this.BoxP1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxP1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxP1.Location = new System.Drawing.Point(513, 3);
+            this.BoxP1.Location = new System.Drawing.Point(453, 2);
+            this.BoxP1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxP1.Name = "BoxP1";
-            this.BoxP1.Size = new System.Drawing.Size(36, 27);
+            this.BoxP1.Size = new System.Drawing.Size(35, 26);
             this.BoxP1.TabIndex = 15;
             this.BoxP1.TabStop = false;
             // 
@@ -5283,9 +5668,10 @@
             // 
             this.BoxO1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxO1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxO1.Location = new System.Drawing.Point(479, 3);
+            this.BoxO1.Location = new System.Drawing.Point(423, 2);
+            this.BoxO1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxO1.Name = "BoxO1";
-            this.BoxO1.Size = new System.Drawing.Size(28, 27);
+            this.BoxO1.Size = new System.Drawing.Size(24, 26);
             this.BoxO1.TabIndex = 14;
             this.BoxO1.TabStop = false;
             // 
@@ -5293,9 +5679,10 @@
             // 
             this.BoxN1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxN1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxN1.Location = new System.Drawing.Point(445, 3);
+            this.BoxN1.Location = new System.Drawing.Point(393, 2);
+            this.BoxN1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxN1.Name = "BoxN1";
-            this.BoxN1.Size = new System.Drawing.Size(28, 27);
+            this.BoxN1.Size = new System.Drawing.Size(24, 26);
             this.BoxN1.TabIndex = 13;
             this.BoxN1.TabStop = false;
             // 
@@ -5303,9 +5690,10 @@
             // 
             this.BoxM1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxM1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxM1.Location = new System.Drawing.Point(411, 3);
+            this.BoxM1.Location = new System.Drawing.Point(363, 2);
+            this.BoxM1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxM1.Name = "BoxM1";
-            this.BoxM1.Size = new System.Drawing.Size(28, 27);
+            this.BoxM1.Size = new System.Drawing.Size(24, 26);
             this.BoxM1.TabIndex = 12;
             this.BoxM1.TabStop = false;
             // 
@@ -5313,9 +5701,10 @@
             // 
             this.BoxL1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxL1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxL1.Location = new System.Drawing.Point(377, 3);
+            this.BoxL1.Location = new System.Drawing.Point(333, 2);
+            this.BoxL1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxL1.Name = "BoxL1";
-            this.BoxL1.Size = new System.Drawing.Size(28, 27);
+            this.BoxL1.Size = new System.Drawing.Size(24, 26);
             this.BoxL1.TabIndex = 11;
             this.BoxL1.TabStop = false;
             // 
@@ -5323,9 +5712,10 @@
             // 
             this.BoxK1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxK1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxK1.Location = new System.Drawing.Point(343, 3);
+            this.BoxK1.Location = new System.Drawing.Point(303, 2);
+            this.BoxK1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxK1.Name = "BoxK1";
-            this.BoxK1.Size = new System.Drawing.Size(28, 27);
+            this.BoxK1.Size = new System.Drawing.Size(24, 26);
             this.BoxK1.TabIndex = 10;
             this.BoxK1.TabStop = false;
             // 
@@ -5333,9 +5723,10 @@
             // 
             this.BoxJ1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxJ1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxJ1.Location = new System.Drawing.Point(309, 3);
+            this.BoxJ1.Location = new System.Drawing.Point(273, 2);
+            this.BoxJ1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxJ1.Name = "BoxJ1";
-            this.BoxJ1.Size = new System.Drawing.Size(28, 27);
+            this.BoxJ1.Size = new System.Drawing.Size(24, 26);
             this.BoxJ1.TabIndex = 9;
             this.BoxJ1.TabStop = false;
             // 
@@ -5343,9 +5734,10 @@
             // 
             this.BoxI1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxI1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxI1.Location = new System.Drawing.Point(275, 3);
+            this.BoxI1.Location = new System.Drawing.Point(243, 2);
+            this.BoxI1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxI1.Name = "BoxI1";
-            this.BoxI1.Size = new System.Drawing.Size(28, 27);
+            this.BoxI1.Size = new System.Drawing.Size(24, 26);
             this.BoxI1.TabIndex = 8;
             this.BoxI1.TabStop = false;
             // 
@@ -5353,9 +5745,10 @@
             // 
             this.BoxH1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxH1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxH1.Location = new System.Drawing.Point(241, 3);
+            this.BoxH1.Location = new System.Drawing.Point(213, 2);
+            this.BoxH1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxH1.Name = "BoxH1";
-            this.BoxH1.Size = new System.Drawing.Size(28, 27);
+            this.BoxH1.Size = new System.Drawing.Size(24, 26);
             this.BoxH1.TabIndex = 7;
             this.BoxH1.TabStop = false;
             // 
@@ -5363,9 +5756,10 @@
             // 
             this.BoxG1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxG1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxG1.Location = new System.Drawing.Point(207, 3);
+            this.BoxG1.Location = new System.Drawing.Point(183, 2);
+            this.BoxG1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxG1.Name = "BoxG1";
-            this.BoxG1.Size = new System.Drawing.Size(28, 27);
+            this.BoxG1.Size = new System.Drawing.Size(24, 26);
             this.BoxG1.TabIndex = 6;
             this.BoxG1.TabStop = false;
             // 
@@ -5373,9 +5767,10 @@
             // 
             this.BoxF1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxF1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxF1.Location = new System.Drawing.Point(173, 3);
+            this.BoxF1.Location = new System.Drawing.Point(153, 2);
+            this.BoxF1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxF1.Name = "BoxF1";
-            this.BoxF1.Size = new System.Drawing.Size(28, 27);
+            this.BoxF1.Size = new System.Drawing.Size(24, 26);
             this.BoxF1.TabIndex = 5;
             this.BoxF1.TabStop = false;
             // 
@@ -5383,9 +5778,10 @@
             // 
             this.BoxE1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxE1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxE1.Location = new System.Drawing.Point(139, 3);
+            this.BoxE1.Location = new System.Drawing.Point(123, 2);
+            this.BoxE1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxE1.Name = "BoxE1";
-            this.BoxE1.Size = new System.Drawing.Size(28, 27);
+            this.BoxE1.Size = new System.Drawing.Size(24, 26);
             this.BoxE1.TabIndex = 4;
             this.BoxE1.TabStop = false;
             // 
@@ -5393,9 +5789,10 @@
             // 
             this.BoxD1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxD1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxD1.Location = new System.Drawing.Point(105, 3);
+            this.BoxD1.Location = new System.Drawing.Point(93, 2);
+            this.BoxD1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxD1.Name = "BoxD1";
-            this.BoxD1.Size = new System.Drawing.Size(28, 27);
+            this.BoxD1.Size = new System.Drawing.Size(24, 26);
             this.BoxD1.TabIndex = 3;
             this.BoxD1.TabStop = false;
             // 
@@ -5403,9 +5800,10 @@
             // 
             this.BoxC1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxC1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxC1.Location = new System.Drawing.Point(71, 3);
+            this.BoxC1.Location = new System.Drawing.Point(63, 2);
+            this.BoxC1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxC1.Name = "BoxC1";
-            this.BoxC1.Size = new System.Drawing.Size(28, 27);
+            this.BoxC1.Size = new System.Drawing.Size(24, 26);
             this.BoxC1.TabIndex = 2;
             this.BoxC1.TabStop = false;
             // 
@@ -5413,9 +5811,10 @@
             // 
             this.BoxB1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxB1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxB1.Location = new System.Drawing.Point(37, 3);
+            this.BoxB1.Location = new System.Drawing.Point(33, 2);
+            this.BoxB1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxB1.Name = "BoxB1";
-            this.BoxB1.Size = new System.Drawing.Size(28, 27);
+            this.BoxB1.Size = new System.Drawing.Size(24, 26);
             this.BoxB1.TabIndex = 1;
             this.BoxB1.TabStop = false;
             // 
@@ -5423,9 +5822,10 @@
             // 
             this.BoxA1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BoxA1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxA1.Location = new System.Drawing.Point(3, 3);
+            this.BoxA1.Location = new System.Drawing.Point(3, 2);
+            this.BoxA1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BoxA1.Name = "BoxA1";
-            this.BoxA1.Size = new System.Drawing.Size(28, 27);
+            this.BoxA1.Size = new System.Drawing.Size(24, 26);
             this.BoxA1.TabIndex = 0;
             this.BoxA1.TabStop = false;
             // 
@@ -5450,9 +5850,9 @@
             this.countdownLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.countdownLabel.BackColor = System.Drawing.Color.DimGray;
             this.countdownLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.countdownLabel.Location = new System.Drawing.Point(1096, 140);
+            this.countdownLabel.Location = new System.Drawing.Point(974, 112);
             this.countdownLabel.Name = "countdownLabel";
-            this.countdownLabel.Size = new System.Drawing.Size(150, 90);
+            this.countdownLabel.Size = new System.Drawing.Size(133, 72);
             this.countdownLabel.TabIndex = 1;
             this.countdownLabel.Text = "5:00";
             this.countdownLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -5465,9 +5865,9 @@
             this.startGameLabel.BackColor = System.Drawing.Color.SlateGray;
             this.startGameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.startGameLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.startGameLabel.Location = new System.Drawing.Point(610, 300);
+            this.startGameLabel.Location = new System.Drawing.Point(542, 240);
             this.startGameLabel.Name = "startGameLabel";
-            this.startGameLabel.Size = new System.Drawing.Size(181, 46);
+            this.startGameLabel.Size = new System.Drawing.Size(161, 130);
             this.startGameLabel.TabIndex = 1;
             this.startGameLabel.Text = "Press Enter";
             this.startGameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -5478,9 +5878,9 @@
             this.timeTxtLabel.BackColor = System.Drawing.Color.Transparent;
             this.timeTxtLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.timeTxtLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.timeTxtLabel.Location = new System.Drawing.Point(1096, 85);
+            this.timeTxtLabel.Location = new System.Drawing.Point(974, 68);
             this.timeTxtLabel.Name = "timeTxtLabel";
-            this.timeTxtLabel.Size = new System.Drawing.Size(150, 50);
+            this.timeTxtLabel.Size = new System.Drawing.Size(133, 40);
             this.timeTxtLabel.TabIndex = 2;
             this.timeTxtLabel.Text = "Time Left:";
             this.timeTxtLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -5490,9 +5890,9 @@
             this.scoreTxtLabel.BackColor = System.Drawing.Color.Transparent;
             this.scoreTxtLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.scoreTxtLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.scoreTxtLabel.Location = new System.Drawing.Point(140, 85);
+            this.scoreTxtLabel.Location = new System.Drawing.Point(124, 68);
             this.scoreTxtLabel.Name = "scoreTxtLabel";
-            this.scoreTxtLabel.Size = new System.Drawing.Size(150, 50);
+            this.scoreTxtLabel.Size = new System.Drawing.Size(133, 40);
             this.scoreTxtLabel.TabIndex = 3;
             this.scoreTxtLabel.Text = "Score:";
             this.scoreTxtLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -5501,9 +5901,9 @@
             // 
             this.scoreLabel.BackColor = System.Drawing.Color.DimGray;
             this.scoreLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.scoreLabel.Location = new System.Drawing.Point(140, 140);
+            this.scoreLabel.Location = new System.Drawing.Point(124, 112);
             this.scoreLabel.Name = "scoreLabel";
-            this.scoreLabel.Size = new System.Drawing.Size(150, 90);
+            this.scoreLabel.Size = new System.Drawing.Size(133, 72);
             this.scoreLabel.TabIndex = 4;
             this.scoreLabel.Text = "0";
             this.scoreLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -5514,9 +5914,9 @@
             this.nextPieceLabel.BackColor = System.Drawing.Color.Transparent;
             this.nextPieceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nextPieceLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.nextPieceLabel.Location = new System.Drawing.Point(1066, 426);
+            this.nextPieceLabel.Location = new System.Drawing.Point(948, 434);
             this.nextPieceLabel.Name = "nextPieceLabel";
-            this.nextPieceLabel.Size = new System.Drawing.Size(220, 50);
+            this.nextPieceLabel.Size = new System.Drawing.Size(196, 40);
             this.nextPieceLabel.TabIndex = 6;
             this.nextPieceLabel.Text = "Next Piece:";
             this.nextPieceLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -5527,9 +5927,9 @@
             this.savedPieceLabel.BackColor = System.Drawing.Color.Transparent;
             this.savedPieceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.savedPieceLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.savedPieceLabel.Location = new System.Drawing.Point(105, 426);
+            this.savedPieceLabel.Location = new System.Drawing.Point(93, 434);
             this.savedPieceLabel.Name = "savedPieceLabel";
-            this.savedPieceLabel.Size = new System.Drawing.Size(220, 50);
+            this.savedPieceLabel.Size = new System.Drawing.Size(196, 40);
             this.savedPieceLabel.TabIndex = 7;
             this.savedPieceLabel.Text = "Saved Piece:";
             this.savedPieceLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -5572,7 +5972,8 @@
             this.nextPieceGrid.Controls.Add(this.boxNP30, 2, 0);
             this.nextPieceGrid.Controls.Add(this.boxNP20, 1, 0);
             this.nextPieceGrid.Controls.Add(this.boxNP10, 0, 0);
-            this.nextPieceGrid.Location = new System.Drawing.Point(1070, 480);
+            this.nextPieceGrid.Location = new System.Drawing.Point(951, 384);
+            this.nextPieceGrid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nextPieceGrid.Name = "nextPieceGrid";
             this.nextPieceGrid.RowCount = 6;
             this.nextPieceGrid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
@@ -5581,16 +5982,17 @@
             this.nextPieceGrid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.nextPieceGrid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.nextPieceGrid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.nextPieceGrid.Size = new System.Drawing.Size(220, 260);
+            this.nextPieceGrid.Size = new System.Drawing.Size(196, 208);
             this.nextPieceGrid.TabIndex = 9;
             // 
             // boxNP55
             // 
             this.boxNP55.BackColor = System.Drawing.Color.LightSlateGray;
             this.boxNP55.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.boxNP55.Location = new System.Drawing.Point(176, 218);
+            this.boxNP55.Location = new System.Drawing.Point(159, 172);
+            this.boxNP55.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxNP55.Name = "boxNP55";
-            this.boxNP55.Size = new System.Drawing.Size(41, 39);
+            this.boxNP55.Size = new System.Drawing.Size(34, 34);
             this.boxNP55.TabIndex = 29;
             this.boxNP55.TabStop = false;
             // 
@@ -5598,9 +6000,10 @@
             // 
             this.boxNP45.BackColor = System.Drawing.Color.LightSlateGray;
             this.boxNP45.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.boxNP45.Location = new System.Drawing.Point(133, 218);
+            this.boxNP45.Location = new System.Drawing.Point(120, 172);
+            this.boxNP45.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxNP45.Name = "boxNP45";
-            this.boxNP45.Size = new System.Drawing.Size(37, 39);
+            this.boxNP45.Size = new System.Drawing.Size(33, 34);
             this.boxNP45.TabIndex = 28;
             this.boxNP45.TabStop = false;
             // 
@@ -5608,9 +6011,10 @@
             // 
             this.boxNP35.BackColor = System.Drawing.Color.LightSlateGray;
             this.boxNP35.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.boxNP35.Location = new System.Drawing.Point(90, 218);
+            this.boxNP35.Location = new System.Drawing.Point(81, 172);
+            this.boxNP35.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxNP35.Name = "boxNP35";
-            this.boxNP35.Size = new System.Drawing.Size(37, 39);
+            this.boxNP35.Size = new System.Drawing.Size(33, 34);
             this.boxNP35.TabIndex = 27;
             this.boxNP35.TabStop = false;
             // 
@@ -5618,9 +6022,10 @@
             // 
             this.boxNP25.BackColor = System.Drawing.Color.LightSlateGray;
             this.boxNP25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.boxNP25.Location = new System.Drawing.Point(47, 218);
+            this.boxNP25.Location = new System.Drawing.Point(42, 172);
+            this.boxNP25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxNP25.Name = "boxNP25";
-            this.boxNP25.Size = new System.Drawing.Size(37, 39);
+            this.boxNP25.Size = new System.Drawing.Size(33, 34);
             this.boxNP25.TabIndex = 26;
             this.boxNP25.TabStop = false;
             // 
@@ -5628,9 +6033,10 @@
             // 
             this.boxNP15.BackColor = System.Drawing.Color.LightSlateGray;
             this.boxNP15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.boxNP15.Location = new System.Drawing.Point(3, 218);
+            this.boxNP15.Location = new System.Drawing.Point(3, 172);
+            this.boxNP15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxNP15.Name = "boxNP15";
-            this.boxNP15.Size = new System.Drawing.Size(38, 39);
+            this.boxNP15.Size = new System.Drawing.Size(33, 34);
             this.boxNP15.TabIndex = 25;
             this.boxNP15.TabStop = false;
             // 
@@ -5638,9 +6044,10 @@
             // 
             this.boxNP54.BackColor = System.Drawing.Color.LightSlateGray;
             this.boxNP54.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.boxNP54.Location = new System.Drawing.Point(176, 175);
+            this.boxNP54.Location = new System.Drawing.Point(159, 138);
+            this.boxNP54.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxNP54.Name = "boxNP54";
-            this.boxNP54.Size = new System.Drawing.Size(41, 37);
+            this.boxNP54.Size = new System.Drawing.Size(34, 30);
             this.boxNP54.TabIndex = 24;
             this.boxNP54.TabStop = false;
             // 
@@ -5648,9 +6055,10 @@
             // 
             this.boxNP44.BackColor = System.Drawing.Color.LightSlateGray;
             this.boxNP44.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.boxNP44.Location = new System.Drawing.Point(133, 175);
+            this.boxNP44.Location = new System.Drawing.Point(120, 138);
+            this.boxNP44.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxNP44.Name = "boxNP44";
-            this.boxNP44.Size = new System.Drawing.Size(37, 37);
+            this.boxNP44.Size = new System.Drawing.Size(33, 30);
             this.boxNP44.TabIndex = 23;
             this.boxNP44.TabStop = false;
             // 
@@ -5658,9 +6066,10 @@
             // 
             this.boxNP34.BackColor = System.Drawing.Color.LightSlateGray;
             this.boxNP34.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.boxNP34.Location = new System.Drawing.Point(90, 175);
+            this.boxNP34.Location = new System.Drawing.Point(81, 138);
+            this.boxNP34.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxNP34.Name = "boxNP34";
-            this.boxNP34.Size = new System.Drawing.Size(37, 37);
+            this.boxNP34.Size = new System.Drawing.Size(33, 30);
             this.boxNP34.TabIndex = 22;
             this.boxNP34.TabStop = false;
             // 
@@ -5668,9 +6077,10 @@
             // 
             this.boxNP24.BackColor = System.Drawing.Color.LightSlateGray;
             this.boxNP24.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.boxNP24.Location = new System.Drawing.Point(47, 175);
+            this.boxNP24.Location = new System.Drawing.Point(42, 138);
+            this.boxNP24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxNP24.Name = "boxNP24";
-            this.boxNP24.Size = new System.Drawing.Size(37, 37);
+            this.boxNP24.Size = new System.Drawing.Size(33, 30);
             this.boxNP24.TabIndex = 21;
             this.boxNP24.TabStop = false;
             // 
@@ -5678,9 +6088,10 @@
             // 
             this.boxNP14.BackColor = System.Drawing.Color.LightSlateGray;
             this.boxNP14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.boxNP14.Location = new System.Drawing.Point(3, 175);
+            this.boxNP14.Location = new System.Drawing.Point(3, 138);
+            this.boxNP14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxNP14.Name = "boxNP14";
-            this.boxNP14.Size = new System.Drawing.Size(38, 37);
+            this.boxNP14.Size = new System.Drawing.Size(33, 30);
             this.boxNP14.TabIndex = 20;
             this.boxNP14.TabStop = false;
             // 
@@ -5688,9 +6099,10 @@
             // 
             this.boxNP53.BackColor = System.Drawing.Color.LightSlateGray;
             this.boxNP53.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.boxNP53.Location = new System.Drawing.Point(176, 132);
+            this.boxNP53.Location = new System.Drawing.Point(159, 104);
+            this.boxNP53.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxNP53.Name = "boxNP53";
-            this.boxNP53.Size = new System.Drawing.Size(41, 37);
+            this.boxNP53.Size = new System.Drawing.Size(34, 30);
             this.boxNP53.TabIndex = 19;
             this.boxNP53.TabStop = false;
             // 
@@ -5698,9 +6110,10 @@
             // 
             this.boxNP43.BackColor = System.Drawing.Color.LightSlateGray;
             this.boxNP43.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.boxNP43.Location = new System.Drawing.Point(133, 132);
+            this.boxNP43.Location = new System.Drawing.Point(120, 104);
+            this.boxNP43.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxNP43.Name = "boxNP43";
-            this.boxNP43.Size = new System.Drawing.Size(37, 37);
+            this.boxNP43.Size = new System.Drawing.Size(33, 30);
             this.boxNP43.TabIndex = 18;
             this.boxNP43.TabStop = false;
             // 
@@ -5708,9 +6121,10 @@
             // 
             this.boxNP33.BackColor = System.Drawing.Color.LightSlateGray;
             this.boxNP33.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.boxNP33.Location = new System.Drawing.Point(90, 132);
+            this.boxNP33.Location = new System.Drawing.Point(81, 104);
+            this.boxNP33.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxNP33.Name = "boxNP33";
-            this.boxNP33.Size = new System.Drawing.Size(37, 37);
+            this.boxNP33.Size = new System.Drawing.Size(33, 30);
             this.boxNP33.TabIndex = 17;
             this.boxNP33.TabStop = false;
             // 
@@ -5718,9 +6132,10 @@
             // 
             this.boxNP23.BackColor = System.Drawing.Color.LightSlateGray;
             this.boxNP23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.boxNP23.Location = new System.Drawing.Point(47, 132);
+            this.boxNP23.Location = new System.Drawing.Point(42, 104);
+            this.boxNP23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxNP23.Name = "boxNP23";
-            this.boxNP23.Size = new System.Drawing.Size(37, 37);
+            this.boxNP23.Size = new System.Drawing.Size(33, 30);
             this.boxNP23.TabIndex = 16;
             this.boxNP23.TabStop = false;
             // 
@@ -5728,9 +6143,10 @@
             // 
             this.boxNP13.BackColor = System.Drawing.Color.LightSlateGray;
             this.boxNP13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.boxNP13.Location = new System.Drawing.Point(3, 132);
+            this.boxNP13.Location = new System.Drawing.Point(3, 104);
+            this.boxNP13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxNP13.Name = "boxNP13";
-            this.boxNP13.Size = new System.Drawing.Size(38, 37);
+            this.boxNP13.Size = new System.Drawing.Size(33, 30);
             this.boxNP13.TabIndex = 15;
             this.boxNP13.TabStop = false;
             // 
@@ -5738,9 +6154,10 @@
             // 
             this.boxNP52.BackColor = System.Drawing.Color.LightSlateGray;
             this.boxNP52.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.boxNP52.Location = new System.Drawing.Point(176, 89);
+            this.boxNP52.Location = new System.Drawing.Point(159, 70);
+            this.boxNP52.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxNP52.Name = "boxNP52";
-            this.boxNP52.Size = new System.Drawing.Size(41, 37);
+            this.boxNP52.Size = new System.Drawing.Size(34, 30);
             this.boxNP52.TabIndex = 14;
             this.boxNP52.TabStop = false;
             // 
@@ -5748,9 +6165,10 @@
             // 
             this.boxNP42.BackColor = System.Drawing.Color.LightSlateGray;
             this.boxNP42.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.boxNP42.Location = new System.Drawing.Point(133, 89);
+            this.boxNP42.Location = new System.Drawing.Point(120, 70);
+            this.boxNP42.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxNP42.Name = "boxNP42";
-            this.boxNP42.Size = new System.Drawing.Size(37, 37);
+            this.boxNP42.Size = new System.Drawing.Size(33, 30);
             this.boxNP42.TabIndex = 13;
             this.boxNP42.TabStop = false;
             // 
@@ -5758,9 +6176,10 @@
             // 
             this.boxNP32.BackColor = System.Drawing.Color.LightSlateGray;
             this.boxNP32.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.boxNP32.Location = new System.Drawing.Point(90, 89);
+            this.boxNP32.Location = new System.Drawing.Point(81, 70);
+            this.boxNP32.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxNP32.Name = "boxNP32";
-            this.boxNP32.Size = new System.Drawing.Size(37, 37);
+            this.boxNP32.Size = new System.Drawing.Size(33, 30);
             this.boxNP32.TabIndex = 12;
             this.boxNP32.TabStop = false;
             // 
@@ -5768,9 +6187,10 @@
             // 
             this.boxNP22.BackColor = System.Drawing.Color.LightSlateGray;
             this.boxNP22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.boxNP22.Location = new System.Drawing.Point(47, 89);
+            this.boxNP22.Location = new System.Drawing.Point(42, 70);
+            this.boxNP22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxNP22.Name = "boxNP22";
-            this.boxNP22.Size = new System.Drawing.Size(37, 37);
+            this.boxNP22.Size = new System.Drawing.Size(33, 30);
             this.boxNP22.TabIndex = 11;
             this.boxNP22.TabStop = false;
             // 
@@ -5778,9 +6198,10 @@
             // 
             this.boxNP12.BackColor = System.Drawing.Color.LightSlateGray;
             this.boxNP12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.boxNP12.Location = new System.Drawing.Point(3, 89);
+            this.boxNP12.Location = new System.Drawing.Point(3, 70);
+            this.boxNP12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxNP12.Name = "boxNP12";
-            this.boxNP12.Size = new System.Drawing.Size(38, 37);
+            this.boxNP12.Size = new System.Drawing.Size(33, 30);
             this.boxNP12.TabIndex = 10;
             this.boxNP12.TabStop = false;
             // 
@@ -5788,9 +6209,10 @@
             // 
             this.boxNP51.BackColor = System.Drawing.Color.LightSlateGray;
             this.boxNP51.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.boxNP51.Location = new System.Drawing.Point(176, 46);
+            this.boxNP51.Location = new System.Drawing.Point(159, 36);
+            this.boxNP51.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxNP51.Name = "boxNP51";
-            this.boxNP51.Size = new System.Drawing.Size(41, 37);
+            this.boxNP51.Size = new System.Drawing.Size(34, 30);
             this.boxNP51.TabIndex = 9;
             this.boxNP51.TabStop = false;
             // 
@@ -5798,9 +6220,10 @@
             // 
             this.boxNP41.BackColor = System.Drawing.Color.LightSlateGray;
             this.boxNP41.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.boxNP41.Location = new System.Drawing.Point(133, 46);
+            this.boxNP41.Location = new System.Drawing.Point(120, 36);
+            this.boxNP41.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxNP41.Name = "boxNP41";
-            this.boxNP41.Size = new System.Drawing.Size(37, 37);
+            this.boxNP41.Size = new System.Drawing.Size(33, 30);
             this.boxNP41.TabIndex = 8;
             this.boxNP41.TabStop = false;
             // 
@@ -5808,9 +6231,10 @@
             // 
             this.boxNP31.BackColor = System.Drawing.Color.LightSlateGray;
             this.boxNP31.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.boxNP31.Location = new System.Drawing.Point(90, 46);
+            this.boxNP31.Location = new System.Drawing.Point(81, 36);
+            this.boxNP31.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxNP31.Name = "boxNP31";
-            this.boxNP31.Size = new System.Drawing.Size(37, 37);
+            this.boxNP31.Size = new System.Drawing.Size(33, 30);
             this.boxNP31.TabIndex = 7;
             this.boxNP31.TabStop = false;
             // 
@@ -5818,9 +6242,10 @@
             // 
             this.boxNP21.BackColor = System.Drawing.Color.LightSlateGray;
             this.boxNP21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.boxNP21.Location = new System.Drawing.Point(47, 46);
+            this.boxNP21.Location = new System.Drawing.Point(42, 36);
+            this.boxNP21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxNP21.Name = "boxNP21";
-            this.boxNP21.Size = new System.Drawing.Size(37, 37);
+            this.boxNP21.Size = new System.Drawing.Size(33, 30);
             this.boxNP21.TabIndex = 6;
             this.boxNP21.TabStop = false;
             // 
@@ -5828,9 +6253,10 @@
             // 
             this.boxNP11.BackColor = System.Drawing.Color.LightSlateGray;
             this.boxNP11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.boxNP11.Location = new System.Drawing.Point(3, 46);
+            this.boxNP11.Location = new System.Drawing.Point(3, 36);
+            this.boxNP11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxNP11.Name = "boxNP11";
-            this.boxNP11.Size = new System.Drawing.Size(38, 37);
+            this.boxNP11.Size = new System.Drawing.Size(33, 30);
             this.boxNP11.TabIndex = 5;
             this.boxNP11.TabStop = false;
             // 
@@ -5838,9 +6264,10 @@
             // 
             this.boxNP50.BackColor = System.Drawing.Color.LightSlateGray;
             this.boxNP50.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.boxNP50.Location = new System.Drawing.Point(176, 3);
+            this.boxNP50.Location = new System.Drawing.Point(159, 2);
+            this.boxNP50.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxNP50.Name = "boxNP50";
-            this.boxNP50.Size = new System.Drawing.Size(41, 37);
+            this.boxNP50.Size = new System.Drawing.Size(34, 30);
             this.boxNP50.TabIndex = 4;
             this.boxNP50.TabStop = false;
             // 
@@ -5848,9 +6275,10 @@
             // 
             this.boxNP40.BackColor = System.Drawing.Color.LightSlateGray;
             this.boxNP40.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.boxNP40.Location = new System.Drawing.Point(133, 3);
+            this.boxNP40.Location = new System.Drawing.Point(120, 2);
+            this.boxNP40.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxNP40.Name = "boxNP40";
-            this.boxNP40.Size = new System.Drawing.Size(37, 37);
+            this.boxNP40.Size = new System.Drawing.Size(33, 30);
             this.boxNP40.TabIndex = 3;
             this.boxNP40.TabStop = false;
             // 
@@ -5858,9 +6286,10 @@
             // 
             this.boxNP30.BackColor = System.Drawing.Color.LightSlateGray;
             this.boxNP30.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.boxNP30.Location = new System.Drawing.Point(90, 3);
+            this.boxNP30.Location = new System.Drawing.Point(81, 2);
+            this.boxNP30.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxNP30.Name = "boxNP30";
-            this.boxNP30.Size = new System.Drawing.Size(37, 37);
+            this.boxNP30.Size = new System.Drawing.Size(33, 30);
             this.boxNP30.TabIndex = 2;
             this.boxNP30.TabStop = false;
             // 
@@ -5868,9 +6297,10 @@
             // 
             this.boxNP20.BackColor = System.Drawing.Color.LightSlateGray;
             this.boxNP20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.boxNP20.Location = new System.Drawing.Point(47, 3);
+            this.boxNP20.Location = new System.Drawing.Point(42, 2);
+            this.boxNP20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxNP20.Name = "boxNP20";
-            this.boxNP20.Size = new System.Drawing.Size(37, 37);
+            this.boxNP20.Size = new System.Drawing.Size(33, 30);
             this.boxNP20.TabIndex = 1;
             this.boxNP20.TabStop = false;
             // 
@@ -5878,9 +6308,10 @@
             // 
             this.boxNP10.BackColor = System.Drawing.Color.LightSlateGray;
             this.boxNP10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.boxNP10.Location = new System.Drawing.Point(3, 3);
+            this.boxNP10.Location = new System.Drawing.Point(3, 2);
+            this.boxNP10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxNP10.Name = "boxNP10";
-            this.boxNP10.Size = new System.Drawing.Size(38, 37);
+            this.boxNP10.Size = new System.Drawing.Size(33, 30);
             this.boxNP10.TabIndex = 0;
             this.boxNP10.TabStop = false;
             // 
@@ -5922,7 +6353,8 @@
             this.savedPieceGrid.Controls.Add(this.boxSP30, 2, 0);
             this.savedPieceGrid.Controls.Add(this.boxSP20, 1, 0);
             this.savedPieceGrid.Controls.Add(this.boxSP10, 0, 0);
-            this.savedPieceGrid.Location = new System.Drawing.Point(105, 480);
+            this.savedPieceGrid.Location = new System.Drawing.Point(93, 384);
+            this.savedPieceGrid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.savedPieceGrid.Name = "savedPieceGrid";
             this.savedPieceGrid.RowCount = 6;
             this.savedPieceGrid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
@@ -5931,16 +6363,17 @@
             this.savedPieceGrid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.savedPieceGrid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.savedPieceGrid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.savedPieceGrid.Size = new System.Drawing.Size(220, 260);
+            this.savedPieceGrid.Size = new System.Drawing.Size(196, 208);
             this.savedPieceGrid.TabIndex = 10;
             // 
             // boxSP55
             // 
             this.boxSP55.BackColor = System.Drawing.Color.LightSlateGray;
             this.boxSP55.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.boxSP55.Location = new System.Drawing.Point(176, 218);
+            this.boxSP55.Location = new System.Drawing.Point(159, 172);
+            this.boxSP55.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxSP55.Name = "boxSP55";
-            this.boxSP55.Size = new System.Drawing.Size(41, 39);
+            this.boxSP55.Size = new System.Drawing.Size(34, 34);
             this.boxSP55.TabIndex = 29;
             this.boxSP55.TabStop = false;
             // 
@@ -5948,9 +6381,10 @@
             // 
             this.boxSP45.BackColor = System.Drawing.Color.LightSlateGray;
             this.boxSP45.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.boxSP45.Location = new System.Drawing.Point(133, 218);
+            this.boxSP45.Location = new System.Drawing.Point(120, 172);
+            this.boxSP45.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxSP45.Name = "boxSP45";
-            this.boxSP45.Size = new System.Drawing.Size(37, 39);
+            this.boxSP45.Size = new System.Drawing.Size(33, 34);
             this.boxSP45.TabIndex = 28;
             this.boxSP45.TabStop = false;
             // 
@@ -5958,9 +6392,10 @@
             // 
             this.boxSP35.BackColor = System.Drawing.Color.LightSlateGray;
             this.boxSP35.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.boxSP35.Location = new System.Drawing.Point(90, 218);
+            this.boxSP35.Location = new System.Drawing.Point(81, 172);
+            this.boxSP35.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxSP35.Name = "boxSP35";
-            this.boxSP35.Size = new System.Drawing.Size(37, 39);
+            this.boxSP35.Size = new System.Drawing.Size(33, 34);
             this.boxSP35.TabIndex = 27;
             this.boxSP35.TabStop = false;
             // 
@@ -5968,9 +6403,10 @@
             // 
             this.boxSP25.BackColor = System.Drawing.Color.LightSlateGray;
             this.boxSP25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.boxSP25.Location = new System.Drawing.Point(47, 218);
+            this.boxSP25.Location = new System.Drawing.Point(42, 172);
+            this.boxSP25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxSP25.Name = "boxSP25";
-            this.boxSP25.Size = new System.Drawing.Size(37, 39);
+            this.boxSP25.Size = new System.Drawing.Size(33, 34);
             this.boxSP25.TabIndex = 26;
             this.boxSP25.TabStop = false;
             // 
@@ -5978,9 +6414,10 @@
             // 
             this.boxSP15.BackColor = System.Drawing.Color.LightSlateGray;
             this.boxSP15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.boxSP15.Location = new System.Drawing.Point(3, 218);
+            this.boxSP15.Location = new System.Drawing.Point(3, 172);
+            this.boxSP15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxSP15.Name = "boxSP15";
-            this.boxSP15.Size = new System.Drawing.Size(38, 39);
+            this.boxSP15.Size = new System.Drawing.Size(33, 34);
             this.boxSP15.TabIndex = 25;
             this.boxSP15.TabStop = false;
             // 
@@ -5988,9 +6425,10 @@
             // 
             this.boxSP54.BackColor = System.Drawing.Color.LightSlateGray;
             this.boxSP54.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.boxSP54.Location = new System.Drawing.Point(176, 175);
+            this.boxSP54.Location = new System.Drawing.Point(159, 138);
+            this.boxSP54.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxSP54.Name = "boxSP54";
-            this.boxSP54.Size = new System.Drawing.Size(41, 37);
+            this.boxSP54.Size = new System.Drawing.Size(34, 30);
             this.boxSP54.TabIndex = 24;
             this.boxSP54.TabStop = false;
             // 
@@ -5998,9 +6436,10 @@
             // 
             this.boxSP44.BackColor = System.Drawing.Color.LightSlateGray;
             this.boxSP44.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.boxSP44.Location = new System.Drawing.Point(133, 175);
+            this.boxSP44.Location = new System.Drawing.Point(120, 138);
+            this.boxSP44.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxSP44.Name = "boxSP44";
-            this.boxSP44.Size = new System.Drawing.Size(37, 37);
+            this.boxSP44.Size = new System.Drawing.Size(33, 30);
             this.boxSP44.TabIndex = 23;
             this.boxSP44.TabStop = false;
             // 
@@ -6008,9 +6447,10 @@
             // 
             this.boxSP34.BackColor = System.Drawing.Color.LightSlateGray;
             this.boxSP34.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.boxSP34.Location = new System.Drawing.Point(90, 175);
+            this.boxSP34.Location = new System.Drawing.Point(81, 138);
+            this.boxSP34.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxSP34.Name = "boxSP34";
-            this.boxSP34.Size = new System.Drawing.Size(37, 37);
+            this.boxSP34.Size = new System.Drawing.Size(33, 30);
             this.boxSP34.TabIndex = 22;
             this.boxSP34.TabStop = false;
             // 
@@ -6018,9 +6458,10 @@
             // 
             this.boxSP24.BackColor = System.Drawing.Color.LightSlateGray;
             this.boxSP24.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.boxSP24.Location = new System.Drawing.Point(47, 175);
+            this.boxSP24.Location = new System.Drawing.Point(42, 138);
+            this.boxSP24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxSP24.Name = "boxSP24";
-            this.boxSP24.Size = new System.Drawing.Size(37, 37);
+            this.boxSP24.Size = new System.Drawing.Size(33, 30);
             this.boxSP24.TabIndex = 21;
             this.boxSP24.TabStop = false;
             // 
@@ -6028,9 +6469,10 @@
             // 
             this.boxSP14.BackColor = System.Drawing.Color.LightSlateGray;
             this.boxSP14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.boxSP14.Location = new System.Drawing.Point(3, 175);
+            this.boxSP14.Location = new System.Drawing.Point(3, 138);
+            this.boxSP14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxSP14.Name = "boxSP14";
-            this.boxSP14.Size = new System.Drawing.Size(38, 37);
+            this.boxSP14.Size = new System.Drawing.Size(33, 30);
             this.boxSP14.TabIndex = 20;
             this.boxSP14.TabStop = false;
             // 
@@ -6038,9 +6480,10 @@
             // 
             this.boxSP53.BackColor = System.Drawing.Color.LightSlateGray;
             this.boxSP53.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.boxSP53.Location = new System.Drawing.Point(176, 132);
+            this.boxSP53.Location = new System.Drawing.Point(159, 104);
+            this.boxSP53.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxSP53.Name = "boxSP53";
-            this.boxSP53.Size = new System.Drawing.Size(41, 37);
+            this.boxSP53.Size = new System.Drawing.Size(34, 30);
             this.boxSP53.TabIndex = 19;
             this.boxSP53.TabStop = false;
             // 
@@ -6048,9 +6491,10 @@
             // 
             this.boxSP43.BackColor = System.Drawing.Color.LightSlateGray;
             this.boxSP43.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.boxSP43.Location = new System.Drawing.Point(133, 132);
+            this.boxSP43.Location = new System.Drawing.Point(120, 104);
+            this.boxSP43.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxSP43.Name = "boxSP43";
-            this.boxSP43.Size = new System.Drawing.Size(37, 37);
+            this.boxSP43.Size = new System.Drawing.Size(33, 30);
             this.boxSP43.TabIndex = 18;
             this.boxSP43.TabStop = false;
             // 
@@ -6058,9 +6502,10 @@
             // 
             this.boxSP33.BackColor = System.Drawing.Color.LightSlateGray;
             this.boxSP33.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.boxSP33.Location = new System.Drawing.Point(90, 132);
+            this.boxSP33.Location = new System.Drawing.Point(81, 104);
+            this.boxSP33.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxSP33.Name = "boxSP33";
-            this.boxSP33.Size = new System.Drawing.Size(37, 37);
+            this.boxSP33.Size = new System.Drawing.Size(33, 30);
             this.boxSP33.TabIndex = 17;
             this.boxSP33.TabStop = false;
             // 
@@ -6068,9 +6513,10 @@
             // 
             this.boxSP23.BackColor = System.Drawing.Color.LightSlateGray;
             this.boxSP23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.boxSP23.Location = new System.Drawing.Point(47, 132);
+            this.boxSP23.Location = new System.Drawing.Point(42, 104);
+            this.boxSP23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxSP23.Name = "boxSP23";
-            this.boxSP23.Size = new System.Drawing.Size(37, 37);
+            this.boxSP23.Size = new System.Drawing.Size(33, 30);
             this.boxSP23.TabIndex = 16;
             this.boxSP23.TabStop = false;
             // 
@@ -6078,9 +6524,10 @@
             // 
             this.boxSP13.BackColor = System.Drawing.Color.LightSlateGray;
             this.boxSP13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.boxSP13.Location = new System.Drawing.Point(3, 132);
+            this.boxSP13.Location = new System.Drawing.Point(3, 104);
+            this.boxSP13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxSP13.Name = "boxSP13";
-            this.boxSP13.Size = new System.Drawing.Size(38, 37);
+            this.boxSP13.Size = new System.Drawing.Size(33, 30);
             this.boxSP13.TabIndex = 15;
             this.boxSP13.TabStop = false;
             // 
@@ -6088,9 +6535,10 @@
             // 
             this.boxSP52.BackColor = System.Drawing.Color.LightSlateGray;
             this.boxSP52.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.boxSP52.Location = new System.Drawing.Point(176, 89);
+            this.boxSP52.Location = new System.Drawing.Point(159, 70);
+            this.boxSP52.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxSP52.Name = "boxSP52";
-            this.boxSP52.Size = new System.Drawing.Size(41, 37);
+            this.boxSP52.Size = new System.Drawing.Size(34, 30);
             this.boxSP52.TabIndex = 14;
             this.boxSP52.TabStop = false;
             // 
@@ -6098,9 +6546,10 @@
             // 
             this.boxSP42.BackColor = System.Drawing.Color.LightSlateGray;
             this.boxSP42.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.boxSP42.Location = new System.Drawing.Point(133, 89);
+            this.boxSP42.Location = new System.Drawing.Point(120, 70);
+            this.boxSP42.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxSP42.Name = "boxSP42";
-            this.boxSP42.Size = new System.Drawing.Size(37, 37);
+            this.boxSP42.Size = new System.Drawing.Size(33, 30);
             this.boxSP42.TabIndex = 13;
             this.boxSP42.TabStop = false;
             // 
@@ -6108,9 +6557,10 @@
             // 
             this.boxSP32.BackColor = System.Drawing.Color.LightSlateGray;
             this.boxSP32.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.boxSP32.Location = new System.Drawing.Point(90, 89);
+            this.boxSP32.Location = new System.Drawing.Point(81, 70);
+            this.boxSP32.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxSP32.Name = "boxSP32";
-            this.boxSP32.Size = new System.Drawing.Size(37, 37);
+            this.boxSP32.Size = new System.Drawing.Size(33, 30);
             this.boxSP32.TabIndex = 12;
             this.boxSP32.TabStop = false;
             // 
@@ -6118,9 +6568,10 @@
             // 
             this.boxSP22.BackColor = System.Drawing.Color.LightSlateGray;
             this.boxSP22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.boxSP22.Location = new System.Drawing.Point(47, 89);
+            this.boxSP22.Location = new System.Drawing.Point(42, 70);
+            this.boxSP22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxSP22.Name = "boxSP22";
-            this.boxSP22.Size = new System.Drawing.Size(37, 37);
+            this.boxSP22.Size = new System.Drawing.Size(33, 30);
             this.boxSP22.TabIndex = 11;
             this.boxSP22.TabStop = false;
             // 
@@ -6128,9 +6579,10 @@
             // 
             this.boxSP12.BackColor = System.Drawing.Color.LightSlateGray;
             this.boxSP12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.boxSP12.Location = new System.Drawing.Point(3, 89);
+            this.boxSP12.Location = new System.Drawing.Point(3, 70);
+            this.boxSP12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxSP12.Name = "boxSP12";
-            this.boxSP12.Size = new System.Drawing.Size(38, 37);
+            this.boxSP12.Size = new System.Drawing.Size(33, 30);
             this.boxSP12.TabIndex = 10;
             this.boxSP12.TabStop = false;
             // 
@@ -6138,9 +6590,10 @@
             // 
             this.boxSP51.BackColor = System.Drawing.Color.LightSlateGray;
             this.boxSP51.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.boxSP51.Location = new System.Drawing.Point(176, 46);
+            this.boxSP51.Location = new System.Drawing.Point(159, 36);
+            this.boxSP51.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxSP51.Name = "boxSP51";
-            this.boxSP51.Size = new System.Drawing.Size(41, 37);
+            this.boxSP51.Size = new System.Drawing.Size(34, 30);
             this.boxSP51.TabIndex = 9;
             this.boxSP51.TabStop = false;
             // 
@@ -6148,9 +6601,10 @@
             // 
             this.boxSP41.BackColor = System.Drawing.Color.LightSlateGray;
             this.boxSP41.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.boxSP41.Location = new System.Drawing.Point(133, 46);
+            this.boxSP41.Location = new System.Drawing.Point(120, 36);
+            this.boxSP41.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxSP41.Name = "boxSP41";
-            this.boxSP41.Size = new System.Drawing.Size(37, 37);
+            this.boxSP41.Size = new System.Drawing.Size(33, 30);
             this.boxSP41.TabIndex = 8;
             this.boxSP41.TabStop = false;
             // 
@@ -6158,9 +6612,10 @@
             // 
             this.boxSP31.BackColor = System.Drawing.Color.LightSlateGray;
             this.boxSP31.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.boxSP31.Location = new System.Drawing.Point(90, 46);
+            this.boxSP31.Location = new System.Drawing.Point(81, 36);
+            this.boxSP31.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxSP31.Name = "boxSP31";
-            this.boxSP31.Size = new System.Drawing.Size(37, 37);
+            this.boxSP31.Size = new System.Drawing.Size(33, 30);
             this.boxSP31.TabIndex = 7;
             this.boxSP31.TabStop = false;
             // 
@@ -6168,9 +6623,10 @@
             // 
             this.boxSP21.BackColor = System.Drawing.Color.LightSlateGray;
             this.boxSP21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.boxSP21.Location = new System.Drawing.Point(47, 46);
+            this.boxSP21.Location = new System.Drawing.Point(42, 36);
+            this.boxSP21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxSP21.Name = "boxSP21";
-            this.boxSP21.Size = new System.Drawing.Size(37, 37);
+            this.boxSP21.Size = new System.Drawing.Size(33, 30);
             this.boxSP21.TabIndex = 6;
             this.boxSP21.TabStop = false;
             // 
@@ -6178,9 +6634,10 @@
             // 
             this.boxSP11.BackColor = System.Drawing.Color.LightSlateGray;
             this.boxSP11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.boxSP11.Location = new System.Drawing.Point(3, 46);
+            this.boxSP11.Location = new System.Drawing.Point(3, 36);
+            this.boxSP11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxSP11.Name = "boxSP11";
-            this.boxSP11.Size = new System.Drawing.Size(38, 37);
+            this.boxSP11.Size = new System.Drawing.Size(33, 30);
             this.boxSP11.TabIndex = 5;
             this.boxSP11.TabStop = false;
             // 
@@ -6188,9 +6645,10 @@
             // 
             this.boxSP50.BackColor = System.Drawing.Color.LightSlateGray;
             this.boxSP50.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.boxSP50.Location = new System.Drawing.Point(176, 3);
+            this.boxSP50.Location = new System.Drawing.Point(159, 2);
+            this.boxSP50.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxSP50.Name = "boxSP50";
-            this.boxSP50.Size = new System.Drawing.Size(41, 37);
+            this.boxSP50.Size = new System.Drawing.Size(34, 30);
             this.boxSP50.TabIndex = 4;
             this.boxSP50.TabStop = false;
             // 
@@ -6198,9 +6656,10 @@
             // 
             this.boxSP40.BackColor = System.Drawing.Color.LightSlateGray;
             this.boxSP40.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.boxSP40.Location = new System.Drawing.Point(133, 3);
+            this.boxSP40.Location = new System.Drawing.Point(120, 2);
+            this.boxSP40.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxSP40.Name = "boxSP40";
-            this.boxSP40.Size = new System.Drawing.Size(37, 37);
+            this.boxSP40.Size = new System.Drawing.Size(33, 30);
             this.boxSP40.TabIndex = 3;
             this.boxSP40.TabStop = false;
             // 
@@ -6208,9 +6667,10 @@
             // 
             this.boxSP30.BackColor = System.Drawing.Color.LightSlateGray;
             this.boxSP30.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.boxSP30.Location = new System.Drawing.Point(90, 3);
+            this.boxSP30.Location = new System.Drawing.Point(81, 2);
+            this.boxSP30.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxSP30.Name = "boxSP30";
-            this.boxSP30.Size = new System.Drawing.Size(37, 37);
+            this.boxSP30.Size = new System.Drawing.Size(33, 30);
             this.boxSP30.TabIndex = 2;
             this.boxSP30.TabStop = false;
             // 
@@ -6218,9 +6678,10 @@
             // 
             this.boxSP20.BackColor = System.Drawing.Color.LightSlateGray;
             this.boxSP20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.boxSP20.Location = new System.Drawing.Point(47, 3);
+            this.boxSP20.Location = new System.Drawing.Point(42, 2);
+            this.boxSP20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxSP20.Name = "boxSP20";
-            this.boxSP20.Size = new System.Drawing.Size(37, 37);
+            this.boxSP20.Size = new System.Drawing.Size(33, 30);
             this.boxSP20.TabIndex = 1;
             this.boxSP20.TabStop = false;
             // 
@@ -6228,9 +6689,10 @@
             // 
             this.boxSP10.BackColor = System.Drawing.Color.LightSlateGray;
             this.boxSP10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.boxSP10.Location = new System.Drawing.Point(3, 3);
+            this.boxSP10.Location = new System.Drawing.Point(3, 2);
+            this.boxSP10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxSP10.Name = "boxSP10";
-            this.boxSP10.Size = new System.Drawing.Size(38, 37);
+            this.boxSP10.Size = new System.Drawing.Size(33, 30);
             this.boxSP10.TabIndex = 0;
             this.boxSP10.TabStop = false;
             // 
@@ -6247,20 +6709,20 @@
             this.ControllersImage.BackColor = System.Drawing.Color.Transparent;
             this.ControllersImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ControllersImage.Image = ((System.Drawing.Image)(resources.GetObject("ControllersImage.Image")));
-            this.ControllersImage.Location = new System.Drawing.Point(400, 400);
+            this.ControllersImage.Location = new System.Drawing.Point(356, 320);
             this.ControllersImage.Margin = new System.Windows.Forms.Padding(0);
             this.ControllersImage.Name = "ControllersImage";
-            this.ControllersImage.Size = new System.Drawing.Size(600, 450);
+            this.ControllersImage.Size = new System.Drawing.Size(533, 453);
             this.ControllersImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ControllersImage.TabIndex = 11;
             this.ControllersImage.TabStop = false;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1374, 940);
+            this.ClientSize = new System.Drawing.Size(1221, 845);
             this.Controls.Add(this.ControllersImage);
             this.Controls.Add(this.savedPieceGrid);
             this.Controls.Add(this.nextPieceGrid);
@@ -6273,10 +6735,12 @@
             this.Controls.Add(this.countdownLabel);
             this.Controls.Add(this.grid);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TetrisClone";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.grid.ResumeLayout(false);
