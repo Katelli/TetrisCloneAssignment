@@ -17,7 +17,12 @@ namespace TetrisClone
                 control.PreviewKeyDown += new PreviewKeyDownEventHandler(control_PreviewKeyDown);
             }
         }
-
+        /// <summary>
+        /// Prevents the arrow keys from being used to move between elements on the form, 
+        /// as that would prevent them from being used in the game
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void control_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
             if (e.KeyCode == Keys.Left || e.KeyCode == Keys.Up || e.KeyCode == Keys.Right || e.KeyCode == Keys.Down)
@@ -26,6 +31,12 @@ namespace TetrisClone
             }
         }
 
+        /// <summary>
+        /// Mute/Unmute music and sound effect, change image used for the Volume checkbox.
+        /// Makes sure the focus stays on the grid.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Volume_CheckedChanged(object sender, EventArgs e)
         {
             if (Volume.Checked == false)
@@ -143,7 +154,7 @@ namespace TetrisClone
         }
 
         /// <summary>
-        /// Erase the old position of the piece, and determine the new position based on the inputs(received as direction)
+        /// Erase the old position of the piece, and determine the new position based on the inputs(direction)
         /// This code will only run after TestMove() returns true
         /// </summary>
         /// <param name="direction"></param>
@@ -222,9 +233,6 @@ namespace TetrisClone
         /// </summary>
         public void SaveAPiece()
         {
-            // Needs to save the current piece, erase it, and drop a new one if there is no piece saved
-            // If there is a piece saved, then it should switch the saved piece and current piece
-
             // Layout option for each saved piece
             Control[,] savedPieceArray =
             {
@@ -261,6 +269,7 @@ namespace TetrisClone
             }
             else
             {
+                // Resets the piece's rotation
                 rotations = 0;
 
                 // Erase the current piece
@@ -291,8 +300,6 @@ namespace TetrisClone
                     {
                         box.BackColor = colorArray[savedPieceInt];
                     }
-
-                    Console.WriteLine($"first saved piece int {savedPieceInt}, and the counter is at {saveCounter}");
 
                     // Drop a new piece
                     DropPiece();
@@ -335,8 +342,6 @@ namespace TetrisClone
                     }
 
                     saveCounter++;
-                    Console.WriteLine($"save counter {saveCounter}");
-                    Console.WriteLine("\n");
 
                     DrawGhostPiece();
 
@@ -384,8 +389,8 @@ namespace TetrisClone
 
         /// <summary>
         /// Rotates the piece
-        /// It will check the position of the piece's boxes, then put the potential new location
-        /// of the boxes in a seperate array which it uses to check if the move would be valid through TestOverlap().
+        /// It will check the position of the piece's boxes, then put the potential new location of
+        /// the boxes in a seperate array which it uses to check if the move would be valid through TestOverlap().
         /// If it's valid, then it will replace the location of the boxes in the current piece's location with the tested ones
         /// </summary>
         public void Rotate()
@@ -991,6 +996,7 @@ namespace TetrisClone
                 }
             }
 
+            // Erase the currentPiece
             foreach (PictureBox box in currentPiece)
             {
                 box.BackColor = Color.DarkSlateGray;
@@ -1006,6 +1012,11 @@ namespace TetrisClone
             }
         }
 
+        /// <summary>
+        /// Checks if the ghostPiece overlaps with another piece,
+        /// though it ignores the currentPiece
+        /// </summary>
+        /// <returns> true/false </returns>
         public bool TestGhostPiece()
         {
             foreach (PictureBox box in ghostPiece)
@@ -1020,15 +1031,11 @@ namespace TetrisClone
         }
 
         /// <summary>
-        /// Draws a ghost of the current piece at the lowest row it can go.
-        /// It starts by checking the bottom row, and if that overlaps with another piece,
-        /// then it checks the row above. It will draw a ghostPiece at the lowest valid row.
+        /// Checks for the lowest possible row the piece can go, then it uses TestMove("down") to check for obstacles
+        /// It only draws the ghostPiece after encountering an obstacle or reaching the bottom 
         /// </summary>
         public void DrawGhostPiece()
         {
-            // I should redo this so it starts the check at the piece's position, and go down from there
-            // instead of from the bottom since it can show impossible positions as possible
-            // Maybe make a while loop that adds +1 to the row as long as it's true? 
             int rowDifference;
 
             int box1Col = grid.GetColumn(currentPiece[0]);
@@ -1043,6 +1050,7 @@ namespace TetrisClone
             int box4Col = grid.GetColumn(currentPiece[3]);
             int box4Row = grid.GetRow(currentPiece[3]);
 
+            // Checks which box is lowest, and then finds the difference between that and the bottom row
             if ((box1Row >= box2Row) & (box1Row >= box3Row) & (box1Row >= box4Row))
             {
                 rowDifference = bottom - box1Row;
@@ -1060,11 +1068,13 @@ namespace TetrisClone
                 rowDifference = bottom - box4Row;
             }
 
+            // Stops if the piece can't move down any further 
             if (TestMove("down") == false)
             {
                 return;
             }
 
+            // Checks each row from the piece's postion for obstacles until it reaches the lowest row
             for (int i = 0; i < rowDifference + 1; i++)
             {
                 if (TestMove("down") == true)
@@ -1083,6 +1093,7 @@ namespace TetrisClone
                 }
             }
 
+            // Draws the GhostPiece, but won't overwrite the currentPiece's color
             foreach (PictureBox box in ghostPiece)
             {
                 while (box.BackColor == Color.DarkSlateGray)
@@ -1102,6 +1113,19 @@ namespace TetrisClone
         /// <param name="e"></param>
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
+            // Mute/Unmute music and soundeffects
+            if (e.KeyCode == Keys.M)
+            {
+                if (Volume.Checked == true)
+                {
+                    Volume.Checked = false;
+                }
+                else
+                {
+                    Volume.Checked = true;
+                }
+            }
+
             // Prevents DropPiece() from starting again if the timer is already running
             if (gameTimer.Enabled == false)
             {
@@ -1121,18 +1145,6 @@ namespace TetrisClone
                 {
                     // Prevents any of the other keys from working until the game has started.
                     return;
-                }
-            }
-
-            if(e.KeyCode == Keys.M)
-            {
-                if(Volume.Checked == true)
-                {
-                    Volume.Checked = false;
-                }
-                else
-                {
-                    Volume.Checked = true;
                 }
             }
 
@@ -1170,6 +1182,7 @@ namespace TetrisClone
             {
                 HardDrop();
             }
+            // Save piece
             else if (CheckGameOver() == false & e.KeyCode == Keys.ShiftKey)
             {
                 SaveAPiece();
