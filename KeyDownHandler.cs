@@ -10,6 +10,40 @@ namespace TetrisClone
 {
     public partial class Form1 : Form
     {
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            foreach (Control control in this.Controls)
+            {
+                control.PreviewKeyDown += new PreviewKeyDownEventHandler(control_PreviewKeyDown);
+            }
+        }
+
+        private void control_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
+        {
+            if (e.KeyCode == Keys.Left || e.KeyCode == Keys.Up || e.KeyCode == Keys.Right || e.KeyCode == Keys.Down)
+            {
+                e.IsInputKey = true;
+            }
+        }
+
+        private void Volume_CheckedChanged(object sender, EventArgs e)
+        {
+            if (Volume.Checked == false)
+            {
+                Volume.Image = imageList1.Images[0];
+                player.settings.mute = false;
+                speedUpChime.settings.mute = false;
+            }
+            else
+            {
+                Volume.Image = imageList1.Images[1];
+                player.settings.mute = true;
+                speedUpChime.settings.mute = true;
+            }
+
+            grid.Focus();
+        }
+
         /// <summary>
         /// Determines wheter the move (right/left/down) would put the piece outside the grid,
         /// or if it would collide with another piece
@@ -1081,11 +1115,24 @@ namespace TetrisClone
                     gameTimer.Start();
                     DropPiece();
                     pieceTimer.Start();
+                    grid.Focus();
                 }
                 else
                 {
                     // Prevents any of the other keys from working until the game has started.
                     return;
+                }
+            }
+
+            if(e.KeyCode == Keys.M)
+            {
+                if(Volume.Checked == true)
+                {
+                    Volume.Checked = false;
+                }
+                else
+                {
+                    Volume.Checked = true;
                 }
             }
 

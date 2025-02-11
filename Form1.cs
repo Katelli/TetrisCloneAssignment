@@ -64,6 +64,8 @@ namespace TetrisClone
             player.settings.setMode("Loop", true);
             player.settings.volume = 10;
 
+            Volume.Image = imageList1.Images[0];
+
             
             // Randomly select a int for the pieces through random.Next()
             // and add it to the nextPieceList.

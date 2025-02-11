@@ -505,6 +505,8 @@
             this.boxSP10 = new System.Windows.Forms.PictureBox();
             this.comboTimer = new System.Windows.Forms.Timer(this.components);
             this.ControllersImage = new System.Windows.Forms.PictureBox();
+            this.Volume = new System.Windows.Forms.CheckBox();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.grid.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BoxP25)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BoxO25)).BeginInit();
@@ -6717,12 +6719,38 @@
             this.ControllersImage.TabIndex = 11;
             this.ControllersImage.TabStop = false;
             // 
+            // Volume
+            // 
+            this.Volume.Appearance = System.Windows.Forms.Appearance.Button;
+            this.Volume.BackColor = System.Drawing.Color.Black;
+            this.Volume.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.Volume.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Volume.FlatAppearance.BorderSize = 0;
+            this.Volume.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
+            this.Volume.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Volume.ImageList = this.imageList1;
+            this.Volume.Location = new System.Drawing.Point(1151, 24);
+            this.Volume.Name = "Volume";
+            this.Volume.Size = new System.Drawing.Size(50, 50);
+            this.Volume.TabIndex = 12;
+            this.Volume.TabStop = false;
+            this.Volume.UseVisualStyleBackColor = false;
+            this.Volume.CheckedChanged += new System.EventHandler(this.Volume_CheckedChanged);
+            // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "bx--volume-full (1).png");
+            this.imageList1.Images.SetKeyName(1, "bx--volume-mute.png");
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1221, 845);
+            this.Controls.Add(this.Volume);
             this.Controls.Add(this.ControllersImage);
             this.Controls.Add(this.savedPieceGrid);
             this.Controls.Add(this.nextPieceGrid);
@@ -6742,6 +6770,7 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TetrisClone";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.grid.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.BoxP25)).EndInit();
@@ -7688,6 +7717,8 @@
         private System.Windows.Forms.PictureBox boxSP10;
         private System.Windows.Forms.Timer comboTimer;
         private System.Windows.Forms.PictureBox ControllersImage;
+        private System.Windows.Forms.CheckBox Volume;
+        private System.Windows.Forms.ImageList imageList1;
     }
 }
 
