@@ -14,9 +14,6 @@ namespace TetrisClone
     - Change it up so the piece starts dropping from above the table instead of creating it in the first
         few rows
     - Find a way to save the user's high score
-    - Add music
-        - Increase music speed in conjuction with the pieceTimer interval?
-    - Multiplayer?
      */
     public partial class Form1 : Form
     {
@@ -44,8 +41,6 @@ namespace TetrisClone
         WindowsMediaPlayer player = new WindowsMediaPlayer();
         WindowsMediaPlayer speedUpChime = new WindowsMediaPlayer();
         double previousN = 0;
-
-
 
         public Form1()
         {
@@ -211,7 +206,7 @@ namespace TetrisClone
         /// <summary>
         /// Checks if there are any complete rows
         /// </summary>
-        /// <returns> null / the rowNumber of the full row</returns>
+        /// <returns> null/the rowNumber of the full row </returns>
         public int CheckForCompleteRows()
         {
             // For each row (there are 25 rows)
@@ -237,8 +232,8 @@ namespace TetrisClone
         }
 
         /// <summary>
-        /// Clears full rows by turning the whole row of the rowNumber it gets from CheckForCompleteRows() into DarkSlateGray
-        /// Then it moves all rows above the cleared row down one
+        /// Clears full rows by turning the whole row of the rowNumber it gets from CheckForCompleteRows() 
+        /// into DarkSlateGray, then it moves all rows above the cleared row down
         /// After that it checks if there are more than one full row, if there is it will add to the combo count,
         /// if not it will reset the combo to 0.
         /// Lastly, it updates the score
@@ -276,15 +271,18 @@ namespace TetrisClone
                 ClearFullRows();
                 combo++;
             }
+            // If the comboTimer is running 
             else if(comboTimer.Enabled == true)
             {
                 combo++;
             }
+            // Reset the combo counter
             else
             {
                 combo = 0;
             }
 
+            // Starts the comboTimer
             comboTimer.Start();
 
             // Update Score
@@ -293,40 +291,40 @@ namespace TetrisClone
 
         /// <summary>
         /// Updates the ScoreLabel
-        /// The user gets a different amount of points depending on how many rows they clear at once
-        /// Decreases the interval of the timer based on the user's score
+        /// The user gets a different amount of points depending on the combo counter
+        /// Decreases the interval of the pieceTimer based on the user's score
         /// </summary>
         public async void UpdateScore()
         {
-            // No combo = 100 points
-            if (combo == 0)
+            //  Five or more combos = 100 + extra 1000 points
+            if (combo >= 5)
             {
-                score += 100;
+                score += 1000;
             }
-            // One combo = 100 + extra 200 points
-            else if(combo == 1)
+            // Four combos = 500 points
+            else if(combo == 4)
             {
-                score += 200;
+                score += 500;
             }
-            // Two combos = 100 + extra 300 points
-            else if(combo == 2)
-            {
-                score += 300;
-            }
-            // Three combos = 100 + extra 400 points
+            // Three combos = 400 points
             else if(combo == 3)
             {
                 score += 400;
             }
-            // Four combos = 100 + extra 500 points
-            else if( combo == 4)
+            // Two combos = 300 points
+            else if(combo == 2)
             {
-                score += 500;
+                score += 300;
             }
-            // Five or more combos = 100 + extra 1000 points
-            else if(combo >= 5)
+            // One combo = 200 points
+            else if( combo == 1)
             {
-                score += 1000;
+                score += 200;
+            }
+            // No combo = 100 points
+            else if(combo == 0)
+            {
+                score += 100;
             }
 
             // Update score label
@@ -367,7 +365,7 @@ namespace TetrisClone
         /// <summary>
         /// Checks for game over by checking if there are any colored boxes(that's not in the current piece) in the top row
         /// </summary>
-        /// <returns> true/ false </returns>
+        /// <returns> true/false </returns>
         public bool CheckGameOver()
         {
             Control[] topRow = { BoxA1, BoxB1, BoxC1, BoxD1, BoxE1, BoxF1, BoxG1, BoxH1, 
@@ -435,6 +433,12 @@ namespace TetrisClone
             }
         }
 
+        /// <summary>
+        /// Changes the music speed through the variable it recieves for UpdateScore()
+        /// Plays a soundeffect to signal the change
+        /// </summary>
+        /// <param name="n"></param>
+        /// <returns></returns>
         private async Task ChangeMusicSpeed(double n)
         {
             if(previousN == 0)
