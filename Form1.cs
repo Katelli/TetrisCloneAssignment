@@ -32,7 +32,7 @@ namespace TetrisClone
         int rotations = 0;
         int combo = 0;
         int score = 0;
-        int bottom = 24;
+        int bottom = 21;
         int pieceIterationCount = 0;
         int saveCounter = 0;
         bool gameOver = false;
@@ -74,7 +74,15 @@ namespace TetrisClone
             nextPieceInt = nextPieceList[0];
             pieceIterationCount++;
 
-            
+            // Hide top four rows
+            for (int y = 0; y <= 3; y++)
+            {
+                for (int x = 0; x <= 11; x++)
+                {
+                    Control topRows = grid.GetControlFromPosition(x, y);
+                    topRows.Hide();
+                }
+            }
         }
 
         /// <summary>
@@ -104,16 +112,17 @@ namespace TetrisClone
             // Reset the rotations
             rotations = 0;
 
+            // ---- Here ----
             // Layout option for each active pieace
             Control[,] pieceArray =
             {
-                { BoxH1, BoxH2, BoxH3, BoxH4 }, // I piece
-                { BoxH1, BoxH2, BoxI1, BoxI2 }, // O piece
-                { BoxH1, BoxH2, BoxI1, BoxG2 }, // S piece
-                { BoxH1, BoxI1, BoxI2, BoxJ2 }, // Z piece
-                { BoxH1, BoxH2, BoxH3, BoxI3 }, // L piece
-                { BoxI1, BoxI2, BoxI3, BoxH3 }, // J piece
-                { BoxH1, BoxH2, BoxH3, BoxI2 }  // T piece
+                { BoxF1, BoxF2, BoxF3, BoxF4 }, // I piece
+                { BoxF3, BoxF4, BoxG3, BoxG4 }, // O piece
+                { BoxF3, BoxF4, BoxG3, BoxE4 }, // S piece
+                { BoxF3, BoxG3, BoxG4, BoxH4 }, // Z piece
+                { BoxF2, BoxF3, BoxF4, BoxG4 }, // L piece
+                { BoxG2, BoxG3, BoxG4, BoxF4 }, // J piece
+                { BoxF2, BoxF3, BoxF4, BoxG3 }  // T piece
             };
 
             // Layout option for the nextPiece grid
@@ -210,17 +219,17 @@ namespace TetrisClone
         public int CheckForCompleteRows()
         {
             // For each row (there are 25 rows)
-            for (int y = 24; y >= 0; y--)
+            for (int y = 21; y >= 0; y--)
             {
                 // For each column in a row (there are 16 columns)
-                for (int x = 0; x <= 15; x++)
+                for (int x = 0; x <= 11; x++)
                 {
                     Control checkedRow = grid.GetControlFromPosition(x, y);
                     if (checkedRow.BackColor == Color.DarkSlateGray)
                     {
                         break;
                     }
-                    if (x == 15)
+                    if (x == 11)
                     {
                         // Return the number of the full row
                         return y;
@@ -243,7 +252,7 @@ namespace TetrisClone
             int completedRow = CheckForCompleteRows();
 
             // Turn the completed row back into DarkSlateGray
-            for (int x = 0; x <= 15; x++)
+            for (int x = 0; x <= 11; x++)
             {
                 Control checkedRow = grid.GetControlFromPosition(x, completedRow);
                 checkedRow.BackColor = Color.DarkSlateGray;
@@ -252,7 +261,7 @@ namespace TetrisClone
             // Move the inactive pieces above the completed row down
             for (int y = completedRow - 1; y >= 0; y--)
             {
-                for (int x = 0; x <= 15; x++)
+                for (int x = 0; x <= 11; x++)
                 {
                     // The current position of the box
                     Control currentBox = grid.GetControlFromPosition(x, y);
@@ -297,34 +306,38 @@ namespace TetrisClone
         public async void UpdateScore()
         {
             //  Five or more combos = 100 + extra 1000 points
-            if (combo >= 5)
+            if(combo > 5)
             {
                 score += 1000;
+            }
+            else if (combo == 5)
+            {
+                score += 500;
             }
             // Four combos = 500 points
             else if(combo == 4)
             {
-                score += 500;
+                score += 400;
             }
             // Three combos = 400 points
             else if(combo == 3)
             {
-                score += 400;
+                score += 300;
             }
             // Two combos = 300 points
             else if(combo == 2)
             {
-                score += 300;
+                score += 200;
             }
             // One combo = 200 points
             else if( combo == 1)
             {
-                score += 200;
+                score += 100;
             }
             // No combo = 100 points
             else if(combo == 0)
             {
-                score += 100;
+                score += 50;
             }
 
             // Update score label
@@ -337,20 +350,40 @@ namespace TetrisClone
                 pieceTimer.Interval = 200;
                 n = 1.4; 
             }
+            else if(score >= 3500)
+            {
+                pieceTimer.Interval = 300;
+                n = 1.3;
+            }
             else if(score >= 3000)
             {
                 pieceTimer.Interval = 400;
                 n = 1.3;
+            }
+            else if(score >= 2500)
+            {
+                pieceTimer.Interval = 500;
+                n = 1.2;
             }
             else if(score >= 2000)
             {
                 pieceTimer.Interval = 600;
                 n = 1.2;
             }
+            else if(score >= 1500)
+            {
+                pieceTimer.Interval = 700;
+                n = 1.1;
+            }
             else if(score >= 1000)
             {
                 pieceTimer.Interval = 800;
                 n = 1.1;
+            }
+            else if(score >= 500)
+            {
+                pieceTimer.Interval = 900;
+                n = 1;
             }
             else
             {
@@ -366,10 +399,11 @@ namespace TetrisClone
         /// Checks for game over by checking if there are any colored boxes(that's not in the current piece) in the top row
         /// </summary>
         /// <returns> true/false </returns>
+        // ----- Here ------
         public bool CheckGameOver()
         {
-            Control[] topRow = { BoxA1, BoxB1, BoxC1, BoxD1, BoxE1, BoxF1, BoxG1, BoxH1, 
-                BoxI1 , BoxJ1, BoxK1, BoxL1, BoxM1, BoxN1, BoxO1, BoxP1 }; 
+            Control[] topRow = { BoxA4, BoxB4, BoxC4, BoxD4, BoxE4, BoxF4, BoxG4, BoxH4, 
+                BoxI4 , BoxJ4, BoxK4, BoxL4}; 
             foreach (Control box in topRow)
             {
                 if((box.BackColor != Color.DarkSlateGray & box.BackColor != Color.SlateGray) & !currentPiece.Contains(box))

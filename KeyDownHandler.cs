@@ -65,9 +65,9 @@ namespace TetrisClone
         {
             // The outer bounds of the grid
             int currentTopRow = 0;
-            int currentBottomRow = 24;
+            int currentBottomRow = 21;
             int currentLeftCol = 0;
-            int currentRightCol = 15;
+            int currentRightCol = 11;
 
             int nextBox = 0;
             Control newBox = new Control();
@@ -115,12 +115,12 @@ namespace TetrisClone
                         break;
 
                     case "right":
-                        if (boxCol < 15)
+                        if (boxCol < 11)
                         {
                             newBox = grid.GetControlFromPosition(boxCol + 1, boxRow);
                             nextBox = currentRightCol;
                         }
-                        else if (boxCol == 15)
+                        else if (boxCol == 11)
                         {
                             // Out of bounds
                             return false;
@@ -128,12 +128,12 @@ namespace TetrisClone
                         break;
 
                     case "down":
-                        if (boxRow < 24)
+                        if (boxRow < 21)
                         {
                             newBox = grid.GetControlFromPosition(boxCol, boxRow + 1);
                             nextBox = currentBottomRow;
                         }
-                        else if (boxRow == 24)
+                        else if (boxRow == 21)
                         {
                             // Out of bounds
                             return false;
@@ -245,16 +245,17 @@ namespace TetrisClone
                 { boxSP31, boxSP32, boxSP33, boxSP42 } // T piece
             };
 
+            // ---- Here ----
             // Layout option for each active pieace
             Control[,] pieceArray =
             {
-                { BoxH1, BoxH2, BoxH3, BoxH4 }, // I piece
-                { BoxH1, BoxH2, BoxI1, BoxI2 }, // O piece
-                { BoxH1, BoxH2, BoxI1, BoxG2 }, // S piece
-                { BoxH1, BoxI1, BoxI2, BoxJ2 }, // Z piece
-                { BoxH1, BoxH2, BoxH3, BoxI3 }, // L piece
-                { BoxI1, BoxI2, BoxI3, BoxH3 }, // J piece
-                { BoxH1, BoxH2, BoxH3, BoxI2 }  // T piece
+                { BoxF1, BoxF2, BoxF3, BoxF4 }, // I piece
+                { BoxF3, BoxF4, BoxG3, BoxG4 }, // O piece
+                { BoxF3, BoxF4, BoxG3, BoxE4 }, // S piece
+                { BoxF3, BoxG3, BoxG4, BoxH4 }, // Z piece
+                { BoxF2, BoxF3, BoxF4, BoxG4 }, // L piece
+                { BoxG2, BoxG3, BoxG4, BoxF4 }, // J piece
+                { BoxF2, BoxF3, BoxF4, BoxG3 }  // T piece
             };
 
             // Prevents infinite swaps, only once per piece!
@@ -413,7 +414,7 @@ namespace TetrisClone
             {
                 if (rotations == 0)
                 {
-                    if (box1Col == 13)
+                    if (box1Col == 9)
                     {
                         movingPieceHolder[0] = grid.GetControlFromPosition(box1Col + 2, box1Row + 3);
                         movingPieceHolder[1] = grid.GetControlFromPosition(box2Col + 1, box2Row + 2);
@@ -429,7 +430,7 @@ namespace TetrisClone
                             return;
                         }
                     }
-                    else if (box1Col == 14)
+                    else if (box1Col == 10) 
                     {
                         movingPieceHolder[0] = grid.GetControlFromPosition(box1Col + 1, box1Row + 3);
                         movingPieceHolder[1] = grid.GetControlFromPosition(box2Col, box2Row + 2);
@@ -445,7 +446,7 @@ namespace TetrisClone
                             return;
                         }
                     }
-                    else if (box1Col == 15)
+                    else if (box1Col == 11) 
                     {
                         movingPieceHolder[0] = grid.GetControlFromPosition(box1Col, box1Row + 3);
                         movingPieceHolder[1] = grid.GetControlFromPosition(box2Col - 1, box2Row + 2);
@@ -481,7 +482,7 @@ namespace TetrisClone
 
                 else if (rotations == 1)
                 {
-                    if (box1Row == 24)
+                    if (box1Row == 21) 
                     {
                         return;
                     }
@@ -514,7 +515,7 @@ namespace TetrisClone
             {
                 if (rotations == 0)
                 {
-                    if (box3Row == 24)
+                    if (box3Row == 21) 
                     {
                         return;
                     }
@@ -538,12 +539,12 @@ namespace TetrisClone
 
                 else if (rotations == 1)
                 {
-                    if (box3Col == 15)
+                    if (box3Col == 11) 
                     {
-                        movingPieceHolder[0] = grid.GetControlFromPosition(box1Col - 1, box1Row); // P2 -> O2
-                        movingPieceHolder[1] = grid.GetControlFromPosition(box2Col, box2Row + 1); // O2 -> O3
-                        movingPieceHolder[2] = grid.GetControlFromPosition(box3Col, box3Row - 1); // P3 -> P2
-                        movingPieceHolder[3] = grid.GetControlFromPosition(box4Col - 1, box4Row + 2); // O1 -> N3
+                        movingPieceHolder[0] = grid.GetControlFromPosition(box1Col - 1, box1Row);
+                        movingPieceHolder[1] = grid.GetControlFromPosition(box2Col, box2Row + 1);
+                        movingPieceHolder[2] = grid.GetControlFromPosition(box3Col, box3Row - 1);
+                        movingPieceHolder[3] = grid.GetControlFromPosition(box4Col - 1, box4Row + 2);
 
                         if (TestOverlap() == true)
                         {
@@ -577,12 +578,12 @@ namespace TetrisClone
             {
                 if (rotations == 0)
                 {
-                    if (box3Row == 24)
+                    if (box3Row == 21)
                     {
-                        movingPieceHolder[0] = grid.GetControlFromPosition(box1Col, box1Row + 1); // M4 -> M5
-                        movingPieceHolder[1] = grid.GetControlFromPosition(box2Col - 1, box2Row); // N4 -> M4
-                        movingPieceHolder[2] = grid.GetControlFromPosition(box3Col, box3Row - 1); // N5 -> N4
-                        movingPieceHolder[3] = grid.GetControlFromPosition(box4Col - 1, box4Row - 2); // O5 -> N3
+                        movingPieceHolder[0] = grid.GetControlFromPosition(box1Col, box1Row + 1);
+                        movingPieceHolder[1] = grid.GetControlFromPosition(box2Col - 1, box2Row); 
+                        movingPieceHolder[2] = grid.GetControlFromPosition(box3Col, box3Row - 1); 
+                        movingPieceHolder[3] = grid.GetControlFromPosition(box4Col - 1, box4Row - 2); 
 
                         if (TestOverlap() == true)
                         {
@@ -652,7 +653,7 @@ namespace TetrisClone
             {
                 if (rotations == 0)
                 {
-                    if (box4Col == 15)
+                    if (box4Col == 11) 
                     {
                         movingPieceHolder[0] = grid.GetControlFromPosition(box1Col + 1, box1Row + 1);
                         movingPieceHolder[1] = grid.GetControlFromPosition(box2Col, box2Row);
@@ -688,7 +689,7 @@ namespace TetrisClone
 
                 else if (rotations == 1)
                 {
-                    if (box4Row == 24)
+                    if (box4Row == 21) 
                     {
                         return;
                     }
@@ -768,7 +769,7 @@ namespace TetrisClone
             {
                 if (rotations == 0)
                 {
-                    if (box4Col == 14)
+                    if (box4Col == 10) 
                     {
                         movingPieceHolder[0] = grid.GetControlFromPosition(box1Col, box1Row + 2);
                         movingPieceHolder[1] = grid.GetControlFromPosition(box2Col - 1, box2Row + 1);
@@ -804,7 +805,7 @@ namespace TetrisClone
 
                 else if (rotations == 1)
                 {
-                    if (box1Row == 24)
+                    if (box1Row == 21) 
                     {
                         return;
                     }
@@ -884,7 +885,7 @@ namespace TetrisClone
             {
                 if (rotations == 0)
                 {
-                    if (box4Col == 15)
+                    if (box4Col == 11) 
                     {
                         movingPieceHolder[0] = grid.GetControlFromPosition(box1Col + 1, box1Row + 1);
                         movingPieceHolder[1] = grid.GetControlFromPosition(box2Col, box2Row);
@@ -920,7 +921,7 @@ namespace TetrisClone
 
                 else if (rotations == 1)
                 {
-                    if (box4Row == 24)
+                    if (box4Row == 21)
                     {
                         return;
                     }
@@ -1102,7 +1103,7 @@ namespace TetrisClone
                 }
             }
             
-            bottom = 24;
+            bottom = 21;
         }
 
         /// <summary>
