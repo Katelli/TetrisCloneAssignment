@@ -191,8 +191,17 @@ namespace TetrisClone
                     gameOver = true;
                     pieceTimer.Stop();
                     gameTimer.Stop();
-                    MessageBox.Show("No more space", "Game Over!");
-                    Close();
+                    MessageBox.Show($"No more space \n You scored: {score.ToString()}", "Game Over!");
+                    if((MessageBox.Show("Would you like to play again?", "Continue?", MessageBoxButtons.YesNo)) ==
+                        DialogResult.Yes)
+                    {
+                        Application.Restart();
+                    }
+                    else
+                    {
+                        Close();
+                    }
+                    //Close();
                     return;
                 }
             }
@@ -435,8 +444,16 @@ namespace TetrisClone
             {
                 pieceTimer.Stop();
                 gameTimer.Stop();
-                MessageBox.Show("No more space", "Game Over!");
-                Close();
+                MessageBox.Show($"No more space \n You scored: {score.ToString()}", "Game Over!");
+                if ((MessageBox.Show("Would you like to play again?", "Continue?", MessageBoxButtons.YesNo)) ==
+                        DialogResult.Yes)
+                {
+                    Application.Restart();
+                }
+                else
+                {
+                    Close();
+                }
             }
             else
             {
@@ -451,8 +468,16 @@ namespace TetrisClone
                     {
                         pieceTimer.Stop();
                         gameTimer.Stop();
-                        MessageBox.Show("No more space", "Game Over!");
-                        Close();
+                        MessageBox.Show($"No more space \n You scored: {score.ToString()}", "Game Over!");
+                        if ((MessageBox.Show("Would you like to play again?", "Continue?", MessageBoxButtons.YesNo)) ==
+                        DialogResult.Yes)
+                        {
+                            Application.Restart();
+                        }
+                        else
+                        {
+                            Close();
+                        }
                     }
 
                     if(CheckForCompleteRows() > -1)
@@ -521,7 +546,15 @@ namespace TetrisClone
                 gameTimer.Stop();
                 pieceTimer.Stop();
                 MessageBox.Show($"You scored: {score.ToString()}", "Time's up!");
-                Close();
+                if ((MessageBox.Show("Would you like to play again?", "Continue?", MessageBoxButtons.YesNo)) ==
+                        DialogResult.Yes)
+                {
+                    Application.Restart();
+                }
+                else
+                {
+                    Close();
+                }
             }
         }
 
