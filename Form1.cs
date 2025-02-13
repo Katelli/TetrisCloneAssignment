@@ -617,43 +617,21 @@ namespace TetrisClone
 
                 playerScoreList.CreatePSList(playerName, score);
 
-                foreach (var playScore in playerScoreList.PlayerScore.OrderByDescending(i => i.Score))
+                foreach (var playScore in playerScoreList.PlayerScore)
                 {
+                    playerScoreList.PlayerScore = playerScoreList.PlayerScore.OrderByDescending(i => i.Score).ToList();
                     var scoreJson = JsonSerializer.Serialize(playerScoreList.PlayerScore, new JsonSerializerOptions { WriteIndented = true });
                     File.WriteAllText(scorePath, scoreJson);
                     Console.WriteLine(scoreJson);
                 }
 
-                for(int i = 0; i < 9; i++)
+                for(int i = 0; i < 10; i++)
                 {
                     newTop10.Add($"{scoreBoardPlace}. Place", playerScoreList.PlayerScore.GetRange(i, 1));
                     top10 = newTop10;
                     var topJson = JsonSerializer.Serialize(top10, new JsonSerializerOptions { WriteIndented = true });
                     File.WriteAllText(hiScPath, topJson);
                     scoreBoardPlace++;
-                }
-
-                foreach (var Player in playerScoreList.PlayerScore)
-                {
-                    //foreach(var hiSco in highScores[0])
-                    //{
-                    //    newTop10.Add($"{scoreBoardPlace}. Place", highScores);
-                    //    scoreBoardPlace++;
-                    //    var topJson = JsonSerializer.Serialize(newTop10, new JsonSerializerOptions { WriteIndented = true });
-                    //    Console.WriteLine(topJson);
-                    //}
-
-                    //Console.WriteLine($"{player.PlayerName}, {player.Score}");
-                    //newTop10.Add($"{scoreBoardPlace}. Place", playerScores);
-                    //foreach (var player in playerScoreList.PlayerScores)
-                    //{
-                        //newTop10.Add($"{scoreBoardPlace}. Place", playerScoreList.PlayerScore);
-                        //top10 = newTop10;
-                        //var topJson = JsonSerializer.Serialize(top10, new JsonSerializerOptions { WriteIndented = true });
-                        //File.WriteAllText(hiScPath, topJson);
-                        ////Console.WriteLine($"Top 10: {topJson}");
-                        //scoreBoardPlace++;
-                    //}
                 }
             }
 
