@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WMPLib;
@@ -17,7 +19,15 @@ namespace TetrisClone
      */
     public partial class Form1 : Form
     {
+        PlayerScoreList playerScoreList = new PlayerScoreList();
+        Player _player;
         // Global variables
+        string scorePath = "playerScores.json";
+        string hiScPath = "top10Score.json";
+        Dictionary<string, List<Player>> top10 = new Dictionary<string, List<Player>>();
+        Dictionary<string, List<Player>> newTop10 = new Dictionary<string, List<Player>>();
+        int scoreBoardPlace = 1;
+
         TimeSpan timeLeft = new TimeSpan(0, 5, 0);
         Color[] colorArray = { Color.CornflowerBlue, Color.Yellow, Color.Crimson,
             Color.Magenta, Color.Cyan, Color.SpringGreen, Color.BlueViolet };
@@ -82,6 +92,22 @@ namespace TetrisClone
                     Control topRows = grid.GetControlFromPosition(x, y);
                     topRows.Hide();
                 }
+            }
+
+            playerNamePopUp.Hide();
+
+            // Get playerScores from json file
+            string existingScoreJson = File.ReadAllText(scorePath);
+            if (!string.IsNullOrWhiteSpace(existingScoreJson))
+            {
+                playerScoreList.PlayerScore = JsonSerializer.Deserialize<List<Player>>(existingScoreJson);
+            }
+
+            // Get top10 from json file
+            string existingTopJson = File.ReadAllText(hiScPath);
+            if (!string.IsNullOrWhiteSpace(existingTopJson))
+            {
+                top10 = JsonSerializer.Deserialize<Dictionary<string, List<Player>>>(existingTopJson);
             }
         }
 
@@ -192,16 +218,9 @@ namespace TetrisClone
                     pieceTimer.Stop();
                     gameTimer.Stop();
                     MessageBox.Show($"No more space \n You scored: {score.ToString()}", "Game Over!");
-                    if((MessageBox.Show("Would you like to play again?", "Continue?", MessageBoxButtons.YesNo)) ==
-                        DialogResult.Yes)
-                    {
-                        Application.Restart();
-                    }
-                    else
-                    {
-                        Close();
-                    }
-                    //Close();
+
+                    PlayerScores();
+
                     return;
                 }
             }
@@ -445,15 +464,8 @@ namespace TetrisClone
                 pieceTimer.Stop();
                 gameTimer.Stop();
                 MessageBox.Show($"No more space \n You scored: {score.ToString()}", "Game Over!");
-                if ((MessageBox.Show("Would you like to play again?", "Continue?", MessageBoxButtons.YesNo)) ==
-                        DialogResult.Yes)
-                {
-                    Application.Restart();
-                }
-                else
-                {
-                    Close();
-                }
+
+                PlayerScores();
             }
             else
             {
@@ -469,15 +481,8 @@ namespace TetrisClone
                         pieceTimer.Stop();
                         gameTimer.Stop();
                         MessageBox.Show($"No more space \n You scored: {score.ToString()}", "Game Over!");
-                        if ((MessageBox.Show("Would you like to play again?", "Continue?", MessageBoxButtons.YesNo)) ==
-                        DialogResult.Yes)
-                        {
-                            Application.Restart();
-                        }
-                        else
-                        {
-                            Close();
-                        }
+
+                        PlayerScores();
                     }
 
                     if(CheckForCompleteRows() > -1)
@@ -528,6 +533,15 @@ namespace TetrisClone
             }
         }
 
+        private void PlayerScores()
+        {
+            if ((MessageBox.Show("Would you like to save your score?", "ScoreBoard", MessageBoxButtons.YesNo)) ==
+                        DialogResult.Yes)
+            {
+                playerNamePopUp.Show();
+            }
+        }
+
         /// <summary>
         /// The 5 minute timer I made for the game
         /// Decreases by one second at an interval of 1000 ticks (1 second)
@@ -546,15 +560,8 @@ namespace TetrisClone
                 gameTimer.Stop();
                 pieceTimer.Stop();
                 MessageBox.Show($"You scored: {score.ToString()}", "Time's up!");
-                if ((MessageBox.Show("Would you like to play again?", "Continue?", MessageBoxButtons.YesNo)) ==
-                        DialogResult.Yes)
-                {
-                    Application.Restart();
-                }
-                else
-                {
-                    Close();
-                }
+
+                PlayerScores();
             }
         }
 
@@ -591,6 +598,87 @@ namespace TetrisClone
             - Maybe I should show how many combos the user has too if I do this?
              */
             comboTimer.Stop();
+        }
+
+        private void submitBtn_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(playerNameBox.Text))
+            {
+                MessageBox.Show("Do you want to try again?", "No name was provided", MessageBoxButtons.YesNo);
+                if (DialogResult == DialogResult.Yes)
+                {
+                    playerNamePopUp.Show();
+                }
+            }
+
+            if (!string.IsNullOrWhiteSpace(playerNameBox.Text))
+            {
+                string playerName = playerNameBox.Text;
+
+                playerScoreList.CreatePSList(playerName, score);
+
+                foreach (var playScore in playerScoreList.PlayerScore.OrderByDescending(i => i.Score))
+                {
+                    var scoreJson = JsonSerializer.Serialize(playerScoreList.PlayerScore, new JsonSerializerOptions { WriteIndented = true });
+                    File.WriteAllText(scorePath, scoreJson);
+                    Console.WriteLine(scoreJson);
+                }
+
+                for(int i = 0; i < 9; i++)
+                {
+                    newTop10.Add($"{scoreBoardPlace}. Place", playerScoreList.PlayerScore.GetRange(i, 1));
+                    top10 = newTop10;
+                    var topJson = JsonSerializer.Serialize(top10, new JsonSerializerOptions { WriteIndented = true });
+                    File.WriteAllText(hiScPath, topJson);
+                    scoreBoardPlace++;
+                }
+
+                foreach (var Player in playerScoreList.PlayerScore)
+                {
+                    //foreach(var hiSco in highScores[0])
+                    //{
+                    //    newTop10.Add($"{scoreBoardPlace}. Place", highScores);
+                    //    scoreBoardPlace++;
+                    //    var topJson = JsonSerializer.Serialize(newTop10, new JsonSerializerOptions { WriteIndented = true });
+                    //    Console.WriteLine(topJson);
+                    //}
+
+                    //Console.WriteLine($"{player.PlayerName}, {player.Score}");
+                    //newTop10.Add($"{scoreBoardPlace}. Place", playerScores);
+                    //foreach (var player in playerScoreList.PlayerScores)
+                    //{
+                        //newTop10.Add($"{scoreBoardPlace}. Place", playerScoreList.PlayerScore);
+                        //top10 = newTop10;
+                        //var topJson = JsonSerializer.Serialize(top10, new JsonSerializerOptions { WriteIndented = true });
+                        //File.WriteAllText(hiScPath, topJson);
+                        ////Console.WriteLine($"Top 10: {topJson}");
+                        //scoreBoardPlace++;
+                    //}
+                }
+            }
+
+            if ((MessageBox.Show("Would you like to play again?", "Continue?", MessageBoxButtons.YesNo)) ==
+                        DialogResult.Yes)
+            {
+                Application.Restart();
+            }
+            else
+            {
+                Close();
+            }
+        }
+
+        private void cancelBtn_Click(object sender, EventArgs e)
+        {
+            if ((MessageBox.Show("Would you like to play again?", "Continue?", MessageBoxButtons.YesNo)) ==
+                        DialogResult.Yes)
+            {
+                Application.Restart();
+            }
+            else
+            {
+                Close();
+            }
         }
     }
 }

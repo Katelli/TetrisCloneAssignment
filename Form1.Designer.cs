@@ -371,6 +371,10 @@
             this.ControllersImage = new System.Windows.Forms.PictureBox();
             this.Volume = new System.Windows.Forms.CheckBox();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.playerNameBox = new System.Windows.Forms.TextBox();
+            this.playerNamePopUp = new System.Windows.Forms.FlowLayoutPanel();
+            this.submitBtn = new System.Windows.Forms.Button();
+            this.cancelBtn = new System.Windows.Forms.Button();
             this.grid.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BoxL22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BoxK22)).BeginInit();
@@ -699,6 +703,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.boxSP20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.boxSP10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ControllersImage)).BeginInit();
+            this.playerNamePopUp.SuspendLayout();
             this.SuspendLayout();
             // 
             // grid
@@ -3955,9 +3960,9 @@
             this.startGameLabel.BackColor = System.Drawing.Color.SlateGray;
             this.startGameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.startGameLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.startGameLabel.Location = new System.Drawing.Point(542, 240);
+            this.startGameLabel.Location = new System.Drawing.Point(542, 200);
             this.startGameLabel.Name = "startGameLabel";
-            this.startGameLabel.Size = new System.Drawing.Size(161, 124);
+            this.startGameLabel.Size = new System.Drawing.Size(161, 100);
             this.startGameLabel.TabIndex = 1;
             this.startGameLabel.Text = "Press Enter";
             this.startGameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4832,12 +4837,65 @@
             this.imageList1.Images.SetKeyName(0, "bx--volume-full (1).png");
             this.imageList1.Images.SetKeyName(1, "bx--volume-mute.png");
             // 
+            // playerNameBox
+            // 
+            this.playerNameBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.playerNameBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.playerNameBox.Location = new System.Drawing.Point(25, 10);
+            this.playerNameBox.Margin = new System.Windows.Forms.Padding(25, 10, 25, 10);
+            this.playerNameBox.Name = "playerNameBox";
+            this.playerNameBox.Size = new System.Drawing.Size(150, 34);
+            this.playerNameBox.TabIndex = 13;
+            // 
+            // playerNamePopUp
+            // 
+            this.playerNamePopUp.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.playerNamePopUp.BackColor = System.Drawing.Color.DarkGray;
+            this.playerNamePopUp.Controls.Add(this.playerNameBox);
+            this.playerNamePopUp.Controls.Add(this.submitBtn);
+            this.playerNamePopUp.Controls.Add(this.cancelBtn);
+            this.playerNamePopUp.Location = new System.Drawing.Point(520, 240);
+            this.playerNamePopUp.Name = "playerNamePopUp";
+            this.playerNamePopUp.Size = new System.Drawing.Size(200, 100);
+            this.playerNamePopUp.TabIndex = 14;
+            // 
+            // submitBtn
+            // 
+            this.submitBtn.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.submitBtn.Dock = System.Windows.Forms.DockStyle.Left;
+            this.submitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.submitBtn.Location = new System.Drawing.Point(15, 59);
+            this.submitBtn.Margin = new System.Windows.Forms.Padding(15, 5, 10, 5);
+            this.submitBtn.Name = "submitBtn";
+            this.submitBtn.Size = new System.Drawing.Size(75, 25);
+            this.submitBtn.TabIndex = 14;
+            this.submitBtn.Text = "Submit";
+            this.submitBtn.UseVisualStyleBackColor = false;
+            this.submitBtn.Click += new System.EventHandler(this.submitBtn_Click);
+            // 
+            // cancelBtn
+            // 
+            this.cancelBtn.BackColor = System.Drawing.Color.RosyBrown;
+            this.cancelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.cancelBtn.Location = new System.Drawing.Point(105, 59);
+            this.cancelBtn.Margin = new System.Windows.Forms.Padding(5, 5, 3, 5);
+            this.cancelBtn.Name = "cancelBtn";
+            this.cancelBtn.Size = new System.Drawing.Size(75, 25);
+            this.cancelBtn.TabIndex = 15;
+            this.cancelBtn.Text = "Cancel";
+            this.cancelBtn.UseVisualStyleBackColor = false;
+            this.cancelBtn.Click += new System.EventHandler(this.cancelBtn_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1221, 839);
+            this.Controls.Add(this.playerNamePopUp);
             this.Controls.Add(this.Volume);
             this.Controls.Add(this.ControllersImage);
             this.Controls.Add(this.savedPieceGrid);
@@ -5188,6 +5246,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.boxSP20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.boxSP10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ControllersImage)).EndInit();
+            this.playerNamePopUp.ResumeLayout(false);
+            this.playerNamePopUp.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -5535,6 +5595,10 @@
         private System.Windows.Forms.PictureBox ControllersImage;
         private System.Windows.Forms.CheckBox Volume;
         private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.TextBox playerNameBox;
+        private System.Windows.Forms.FlowLayoutPanel playerNamePopUp;
+        private System.Windows.Forms.Button submitBtn;
+        private System.Windows.Forms.Button cancelBtn;
     }
 }
 
