@@ -19,9 +19,8 @@ namespace TetrisClone
      */
     public partial class Form1 : Form
     {
-        PlayerScoreList playerScoreList = new PlayerScoreList();
-        Player _player;
         // Global variables
+        PlayerScoreList playerScoreList = new PlayerScoreList();
         string scorePath = "playerScores.json";
         string hiScPath = "top10Score.json";
         Dictionary<string, List<Player>> top10 = new Dictionary<string, List<Player>>();
@@ -94,8 +93,6 @@ namespace TetrisClone
                 }
             }
 
-            playerNamePopUp.Hide();
-
             // Get playerScores from json file
             string existingScoreJson = File.ReadAllText(scorePath);
             if (!string.IsNullOrWhiteSpace(existingScoreJson))
@@ -109,6 +106,20 @@ namespace TetrisClone
             {
                 top10 = JsonSerializer.Deserialize<Dictionary<string, List<Player>>>(existingTopJson);
             }
+
+            // Populate scoreBoard dataGrid with top10
+            var scoreBoardList = top10.Select(b => new
+            {
+                Place = b.Key,
+                PlayerName = string.Join(", ", b.Value.Select(a => a.PlayerName)),
+                Score = string.Join(", ", b.Value.Select(a => a.Score.ToString()))
+            }).ToList();
+
+            scoreBoard.DataSource = scoreBoardList;
+
+            //Display topScore
+            var top1 = top10["1. Place"].Select(x => x.Score.ToString());
+            topScore.Text = top1.FirstOrDefault();
         }
 
         /// <summary>
@@ -450,6 +461,51 @@ namespace TetrisClone
         }
 
         /// <summary>
+        /// Changes the music speed through the variable it recieves for UpdateScore()
+        /// Plays a soundeffect to signal the change
+        /// </summary>
+        /// <param name="n"></param>
+        /// <returns></returns>
+        private async Task ChangeMusicSpeed(double n)
+        {
+            if(previousN == 0)
+            {
+                previousN = n;
+                return;
+            }
+            else if(previousN == n)
+            {
+                return;
+            }
+            else if (previousN != n)
+            {
+                previousN = n;
+                player.controls.pause();
+
+                /* Credit for the music
+                Party-horn by PD music
+                Music promoted by https://www.chosic.com/free-music/all/
+                */
+                speedUpChime.URL = "Party-horn.mp3";
+                speedUpChime.settings.volume = 10;
+                speedUpChime.controls.play();
+
+                await Task.Delay(50);
+                player.settings.rate = n;
+                player.controls.play();
+            }
+        }
+
+        private void PlayerScores()
+        {
+            if ((MessageBox.Show("Would you like to save your score?", "ScoreBoard", MessageBoxButtons.YesNo)) ==
+                        DialogResult.Yes)
+            {
+                playerNamePopUp.Show();
+            }
+        }
+
+        /// <summary>
         /// A tick timer that moves the current piece down one row each tick, and drops a new piece
         /// once the current piece has gone as far down as it can go.
         /// It also checks for game over and completed rows
@@ -494,51 +550,6 @@ namespace TetrisClone
                     rotations = 0;
                     DropPiece();
                 }
-            }
-        }
-
-        /// <summary>
-        /// Changes the music speed through the variable it recieves for UpdateScore()
-        /// Plays a soundeffect to signal the change
-        /// </summary>
-        /// <param name="n"></param>
-        /// <returns></returns>
-        private async Task ChangeMusicSpeed(double n)
-        {
-            if(previousN == 0)
-            {
-                previousN = n;
-                return;
-            }
-            else if(previousN == n)
-            {
-                return;
-            }
-            else if (previousN != n)
-            {
-                previousN = n;
-                player.controls.pause();
-
-                /* Credit for the music
-                Party-horn by PD music
-                Music promoted by https://www.chosic.com/free-music/all/
-                */
-                speedUpChime.URL = "Party-horn.mp3";
-                speedUpChime.settings.volume = 10;
-                speedUpChime.controls.play();
-
-                await Task.Delay(50);
-                player.settings.rate = n;
-                player.controls.play();
-            }
-        }
-
-        private void PlayerScores()
-        {
-            if ((MessageBox.Show("Would you like to save your score?", "ScoreBoard", MessageBoxButtons.YesNo)) ==
-                        DialogResult.Yes)
-            {
-                playerNamePopUp.Show();
             }
         }
 
@@ -607,7 +618,19 @@ namespace TetrisClone
                 MessageBox.Show("Do you want to try again?", "No name was provided", MessageBoxButtons.YesNo);
                 if (DialogResult == DialogResult.Yes)
                 {
-                    playerNamePopUp.Show();
+                    PlayerScores();
+                }
+                else if(DialogResult == DialogResult.No)
+                {
+                    if ((MessageBox.Show("Would you like to play again?", "Continue?", MessageBoxButtons.YesNo)) ==
+                        DialogResult.Yes)
+                    {
+                        Application.Restart();
+                    }
+                    else
+                    {
+                        Close();
+                    }
                 }
             }
 
@@ -625,7 +648,7 @@ namespace TetrisClone
                     Console.WriteLine(scoreJson);
                 }
 
-                for(int i = 0; i < 10; i++)
+                for (int i = 0; i < 10; i++)
                 {
                     newTop10.Add($"{scoreBoardPlace}. Place", playerScoreList.PlayerScore.GetRange(i, 1));
                     top10 = newTop10;
@@ -633,16 +656,17 @@ namespace TetrisClone
                     File.WriteAllText(hiScPath, topJson);
                     scoreBoardPlace++;
                 }
-            }
 
-            if ((MessageBox.Show("Would you like to play again?", "Continue?", MessageBoxButtons.YesNo)) ==
-                        DialogResult.Yes)
-            {
-                Application.Restart();
-            }
-            else
-            {
-                Close();
+
+                if ((MessageBox.Show("Would you like to play again?", "Continue?", MessageBoxButtons.YesNo)) ==
+                            DialogResult.Yes)
+                {
+                    Application.Restart();
+                }
+                else
+                {
+                    Close();
+                }
             }
         }
 
@@ -658,5 +682,6 @@ namespace TetrisClone
                 Close();
             }
         }
+
     }
 }

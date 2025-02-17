@@ -30,6 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.grid = new System.Windows.Forms.TableLayoutPanel();
             this.BoxL22 = new System.Windows.Forms.PictureBox();
             this.BoxK22 = new System.Windows.Forms.PictureBox();
@@ -375,6 +378,17 @@
             this.playerNamePopUp = new System.Windows.Forms.FlowLayoutPanel();
             this.submitBtn = new System.Windows.Forms.Button();
             this.cancelBtn = new System.Windows.Forms.Button();
+            this.tipsLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.closeImgBtn = new System.Windows.Forms.Button();
+            this.highScorePanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.topScoreLabel = new System.Windows.Forms.Label();
+            this.topScore = new System.Windows.Forms.Label();
+            this.expandSbBtn = new System.Windows.Forms.Button();
+            this.scoreBoard = new System.Windows.Forms.DataGridView();
             this.grid.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BoxL22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BoxK22)).BeginInit();
@@ -704,6 +718,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.boxSP10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ControllersImage)).BeginInit();
             this.playerNamePopUp.SuspendLayout();
+            this.tipsLayoutPanel.SuspendLayout();
+            this.highScorePanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.scoreBoard)).BeginInit();
             this.SuspendLayout();
             // 
             // grid
@@ -3960,9 +3977,9 @@
             this.startGameLabel.BackColor = System.Drawing.Color.SlateGray;
             this.startGameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.startGameLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.startGameLabel.Location = new System.Drawing.Point(542, 200);
+            this.startGameLabel.Location = new System.Drawing.Point(540, 400);
             this.startGameLabel.Name = "startGameLabel";
-            this.startGameLabel.Size = new System.Drawing.Size(161, 100);
+            this.startGameLabel.Size = new System.Drawing.Size(162, 100);
             this.startGameLabel.TabIndex = 1;
             this.startGameLabel.Text = "Press Enter";
             this.startGameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4804,18 +4821,19 @@
             this.ControllersImage.BackColor = System.Drawing.Color.Transparent;
             this.ControllersImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ControllersImage.Image = ((System.Drawing.Image)(resources.GetObject("ControllersImage.Image")));
-            this.ControllersImage.Location = new System.Drawing.Point(356, 320);
+            this.ControllersImage.Location = new System.Drawing.Point(252, 120);
             this.ControllersImage.Margin = new System.Windows.Forms.Padding(0);
             this.ControllersImage.Name = "ControllersImage";
-            this.ControllersImage.Size = new System.Drawing.Size(533, 447);
+            this.ControllersImage.Size = new System.Drawing.Size(733, 647);
             this.ControllersImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ControllersImage.TabIndex = 11;
             this.ControllersImage.TabStop = false;
+            this.ControllersImage.Visible = false;
             // 
             // Volume
             // 
             this.Volume.Appearance = System.Windows.Forms.Appearance.Button;
-            this.Volume.BackColor = System.Drawing.Color.Black;
+            this.Volume.BackColor = System.Drawing.Color.Transparent;
             this.Volume.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Volume.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Volume.FlatAppearance.BorderSize = 0;
@@ -4842,6 +4860,7 @@
             this.playerNameBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.playerNameBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.playerNameBox.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.playerNameBox.Location = new System.Drawing.Point(25, 10);
             this.playerNameBox.Margin = new System.Windows.Forms.Padding(25, 10, 25, 10);
             this.playerNameBox.Name = "playerNameBox";
@@ -4857,10 +4876,11 @@
             this.playerNamePopUp.Controls.Add(this.playerNameBox);
             this.playerNamePopUp.Controls.Add(this.submitBtn);
             this.playerNamePopUp.Controls.Add(this.cancelBtn);
-            this.playerNamePopUp.Location = new System.Drawing.Point(520, 240);
+            this.playerNamePopUp.Location = new System.Drawing.Point(520, 340);
             this.playerNamePopUp.Name = "playerNamePopUp";
             this.playerNamePopUp.Size = new System.Drawing.Size(200, 100);
             this.playerNamePopUp.TabIndex = 14;
+            this.playerNamePopUp.Visible = false;
             // 
             // submitBtn
             // 
@@ -4889,15 +4909,211 @@
             this.cancelBtn.UseVisualStyleBackColor = false;
             this.cancelBtn.Click += new System.EventHandler(this.cancelBtn_Click);
             // 
+            // tipsLayoutPanel
+            // 
+            this.tipsLayoutPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tipsLayoutPanel.Controls.Add(this.label4);
+            this.tipsLayoutPanel.Controls.Add(this.label1);
+            this.tipsLayoutPanel.Controls.Add(this.label2);
+            this.tipsLayoutPanel.Controls.Add(this.label3);
+            this.tipsLayoutPanel.Location = new System.Drawing.Point(954, 240);
+            this.tipsLayoutPanel.Name = "tipsLayoutPanel";
+            this.tipsLayoutPanel.Size = new System.Drawing.Size(190, 100);
+            this.tipsLayoutPanel.TabIndex = 15;
+            // 
+            // label4
+            // 
+            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label4.Location = new System.Drawing.Point(0, 0);
+            this.label4.Margin = new System.Windows.Forms.Padding(0, 0, 0, 5);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(192, 23);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Tips";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label1
+            // 
+            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label1.Location = new System.Drawing.Point(3, 28);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(187, 23);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Press M to toggle music";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label2
+            // 
+            this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label2.Location = new System.Drawing.Point(3, 51);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(187, 23);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Press C to show controls";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label3
+            // 
+            this.label3.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label3.Location = new System.Drawing.Point(3, 74);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(187, 23);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Press T to show ScoreBoard";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // closeImgBtn
+            // 
+            this.closeImgBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.closeImgBtn.BackColor = System.Drawing.Color.LightCoral;
+            this.closeImgBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.closeImgBtn.FlatAppearance.BorderSize = 0;
+            this.closeImgBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Firebrick;
+            this.closeImgBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.closeImgBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.closeImgBtn.Location = new System.Drawing.Point(941, 125);
+            this.closeImgBtn.Margin = new System.Windows.Forms.Padding(0);
+            this.closeImgBtn.Name = "closeImgBtn";
+            this.closeImgBtn.Padding = new System.Windows.Forms.Padding(1, 0, 0, 0);
+            this.closeImgBtn.Size = new System.Drawing.Size(40, 40);
+            this.closeImgBtn.TabIndex = 16;
+            this.closeImgBtn.TabStop = false;
+            this.closeImgBtn.Text = "X";
+            this.closeImgBtn.UseMnemonic = false;
+            this.closeImgBtn.UseVisualStyleBackColor = false;
+            this.closeImgBtn.Visible = false;
+            this.closeImgBtn.Click += new System.EventHandler(this.closeImgBtn_Click);
+            // 
+            // highScorePanel
+            // 
+            this.highScorePanel.BackColor = System.Drawing.Color.DimGray;
+            this.highScorePanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.highScorePanel.Controls.Add(this.topScoreLabel);
+            this.highScorePanel.Controls.Add(this.topScore);
+            this.highScorePanel.Location = new System.Drawing.Point(520, 10);
+            this.highScorePanel.Margin = new System.Windows.Forms.Padding(0);
+            this.highScorePanel.Name = "highScorePanel";
+            this.highScorePanel.Size = new System.Drawing.Size(200, 88);
+            this.highScorePanel.TabIndex = 17;
+            // 
+            // topScoreLabel
+            // 
+            this.topScoreLabel.BackColor = System.Drawing.Color.DimGray;
+            this.topScoreLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.topScoreLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.topScoreLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.topScoreLabel.Location = new System.Drawing.Point(0, 0);
+            this.topScoreLabel.Margin = new System.Windows.Forms.Padding(0);
+            this.topScoreLabel.Name = "topScoreLabel";
+            this.topScoreLabel.Size = new System.Drawing.Size(198, 35);
+            this.topScoreLabel.TabIndex = 0;
+            this.topScoreLabel.Text = "High Score:";
+            this.topScoreLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // topScore
+            // 
+            this.topScore.BackColor = System.Drawing.Color.DimGray;
+            this.topScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.topScore.Location = new System.Drawing.Point(0, 35);
+            this.topScore.Margin = new System.Windows.Forms.Padding(0);
+            this.topScore.Name = "topScore";
+            this.topScore.Size = new System.Drawing.Size(200, 52);
+            this.topScore.TabIndex = 1;
+            this.topScore.Text = "0";
+            this.topScore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // expandSbBtn
+            // 
+            this.expandSbBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.expandSbBtn.BackColor = System.Drawing.Color.DarkGray;
+            this.expandSbBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.expandSbBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.expandSbBtn.FlatAppearance.BorderSize = 0;
+            this.expandSbBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.expandSbBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.expandSbBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)), true);
+            this.expandSbBtn.Location = new System.Drawing.Point(698, 10);
+            this.expandSbBtn.Margin = new System.Windows.Forms.Padding(0);
+            this.expandSbBtn.Name = "expandSbBtn";
+            this.expandSbBtn.Size = new System.Drawing.Size(20, 20);
+            this.expandSbBtn.TabIndex = 18;
+            this.expandSbBtn.TabStop = false;
+            this.expandSbBtn.Text = "V";
+            this.expandSbBtn.UseVisualStyleBackColor = false;
+            this.expandSbBtn.Click += new System.EventHandler(this.expandSbBtn_Click);
+            // 
+            // scoreBoard
+            // 
+            this.scoreBoard.AllowUserToAddRows = false;
+            this.scoreBoard.AllowUserToDeleteRows = false;
+            this.scoreBoard.AllowUserToResizeColumns = false;
+            this.scoreBoard.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DarkGray;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DarkGray;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            this.scoreBoard.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.scoreBoard.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.scoreBoard.BackgroundColor = System.Drawing.Color.DarkGray;
+            this.scoreBoard.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.scoreBoard.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedHorizontal;
+            this.scoreBoard.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkGray;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.DarkGray;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.scoreBoard.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.scoreBoard.ColumnHeadersHeight = 50;
+            this.scoreBoard.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.scoreBoard.ColumnHeadersVisible = false;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.DarkGray;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.DarkGray;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.scoreBoard.DefaultCellStyle = dataGridViewCellStyle3;
+            this.scoreBoard.EnableHeadersVisualStyles = false;
+            this.scoreBoard.GridColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.scoreBoard.Location = new System.Drawing.Point(280, 120);
+            this.scoreBoard.MultiSelect = false;
+            this.scoreBoard.Name = "scoreBoard";
+            this.scoreBoard.ReadOnly = true;
+            this.scoreBoard.RowHeadersVisible = false;
+            this.scoreBoard.RowHeadersWidth = 51;
+            this.scoreBoard.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.scoreBoard.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.scoreBoard.RowTemplate.DividerHeight = 2;
+            this.scoreBoard.RowTemplate.Height = 53;
+            this.scoreBoard.RowTemplate.ReadOnly = true;
+            this.scoreBoard.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.scoreBoard.ShowCellToolTips = false;
+            this.scoreBoard.ShowEditingIcon = false;
+            this.scoreBoard.Size = new System.Drawing.Size(680, 647);
+            this.scoreBoard.TabIndex = 19;
+            this.scoreBoard.TabStop = false;
+            this.scoreBoard.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1221, 839);
+            this.Controls.Add(this.closeImgBtn);
+            this.Controls.Add(this.ControllersImage);
+            this.Controls.Add(this.scoreBoard);
+            this.Controls.Add(this.expandSbBtn);
+            this.Controls.Add(this.highScorePanel);
+            this.Controls.Add(this.tipsLayoutPanel);
             this.Controls.Add(this.playerNamePopUp);
             this.Controls.Add(this.Volume);
-            this.Controls.Add(this.ControllersImage);
             this.Controls.Add(this.savedPieceGrid);
             this.Controls.Add(this.nextPieceGrid);
             this.Controls.Add(this.savedPieceLabel);
@@ -5248,6 +5464,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.ControllersImage)).EndInit();
             this.playerNamePopUp.ResumeLayout(false);
             this.playerNamePopUp.PerformLayout();
+            this.tipsLayoutPanel.ResumeLayout(false);
+            this.highScorePanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.scoreBoard)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -5599,6 +5818,17 @@
         private System.Windows.Forms.FlowLayoutPanel playerNamePopUp;
         private System.Windows.Forms.Button submitBtn;
         private System.Windows.Forms.Button cancelBtn;
+        private System.Windows.Forms.FlowLayoutPanel tipsLayoutPanel;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button closeImgBtn;
+        private System.Windows.Forms.FlowLayoutPanel highScorePanel;
+        private System.Windows.Forms.Label topScoreLabel;
+        private System.Windows.Forms.Label topScore;
+        private System.Windows.Forms.Button expandSbBtn;
+        private System.Windows.Forms.DataGridView scoreBoard;
     }
 }
 

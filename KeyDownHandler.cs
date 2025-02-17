@@ -1106,6 +1106,33 @@ namespace TetrisClone
             bottom = 21;
         }
 
+        private void closeImgBtn_Click(object sender, EventArgs e)
+        {
+            // Removes focusRectangle
+            expandSbBtn.NotifyDefault(false);
+            closeImgBtn.NotifyDefault(false);
+
+            closeImgBtn.Visible = false;
+            ControllersImage.Visible = false;
+            grid.Focus();
+        }
+        private void expandSbBtn_Click(object sende, EventArgs e)
+        {
+            // Removes focusRectangle
+            expandSbBtn.NotifyDefault(false);
+            closeImgBtn.NotifyDefault(false);
+
+            if (scoreBoard.Visible == false)
+            {
+                scoreBoard.Visible = true;
+            }
+            else
+            {
+                scoreBoard.Visible = false;
+            }
+            grid.Focus();
+        }
+
         /// <summary>
         /// The event handler for keys that are pressed on the keyboard.
         /// Most keys do nothing until the game timer starts, at which point the enter key will be disabled
@@ -1130,6 +1157,32 @@ namespace TetrisClone
             // Prevents DropPiece() from starting again if the timer is already running
             if (gameTimer.Enabled == false)
             {
+                // Show controllersImage
+                if(e.KeyCode == Keys.C & playerNamePopUp.Visible == false)
+                {
+                    if (ControllersImage.Visible == false)
+                    {
+                        closeImgBtn.Visible = true;
+                        ControllersImage.Visible = true;
+                    }
+                    else
+                    {
+                        closeImgBtn.Visible = false;
+                        ControllersImage.Visible = false;
+                    }
+                }
+                // Show top10 scoreBoard
+                if(e.KeyCode == Keys.T & playerNamePopUp.Visible == false)
+                {
+                    if(scoreBoard.Visible == false)
+                    {
+                        scoreBoard.Visible = true;
+                    }
+                    else
+                    {
+                        scoreBoard.Visible = false;
+                    }
+                }
                 // Starts the game
                 // Hides and disables the flashing startLabel
                 if (e.KeyCode == Keys.Enter)
@@ -1137,6 +1190,8 @@ namespace TetrisClone
                     startLabelFlash.Stop();
                     startGameLabel.Visible = false;
                     ControllersImage.Visible = false;
+                    tipsLayoutPanel.Visible = false;
+                    expandSbBtn.Visible = false;
                     gameTimer.Start();
                     DropPiece();
                     pieceTimer.Start();
