@@ -11,15 +11,10 @@ using WMPLib;
 
 namespace TetrisClone
 {
-    // --- New ToDo ---
-    /*
-    - Change it up so the piece starts dropping from above the table instead of creating it in the first
-        few rows
-    - Find a way to save the user's high score
-     */
     public partial class Form1 : Form
     {
         // Global variables
+
         PlayerScoreList playerScoreList = new PlayerScoreList();
         string scorePath = "playerScores.json";
         string hiScPath = "top10Score.json";
@@ -47,6 +42,7 @@ namespace TetrisClone
         bool gameOver = false;
         Random random = new Random();
         List<int> nextPieceList = new List<int>();
+
         WindowsMediaPlayer player = new WindowsMediaPlayer();
         WindowsMediaPlayer speedUpChime = new WindowsMediaPlayer();
         double previousN = 0;
@@ -438,7 +434,6 @@ namespace TetrisClone
         /// Checks for game over by checking if there are any colored boxes(that's not in the current piece) in the top row
         /// </summary>
         /// <returns> true/false </returns>
-        // ----- Here ------
         public bool CheckGameOver()
         {
             Control[] topRow = { BoxA4, BoxB4, BoxC4, BoxD4, BoxE4, BoxF4, BoxG4, BoxH4, 
@@ -490,18 +485,35 @@ namespace TetrisClone
                 speedUpChime.settings.volume = 10;
                 speedUpChime.controls.play();
 
-                await Task.Delay(50);
+                await Task.Delay(500);
                 player.settings.rate = n;
                 player.controls.play();
             }
         }
 
+        /// <summary>
+        /// Shows a messageBox asking the player if they wish to save their score
+        /// If yes, then it shows a textBox they can write in
+        /// </summary>
         private void PlayerScores()
         {
             if ((MessageBox.Show("Would you like to save your score?", "ScoreBoard", MessageBoxButtons.YesNo)) ==
                         DialogResult.Yes)
             {
                 playerNamePopUp.Show();
+                playerNameBox.Focus();
+            }
+            else
+            {
+                if ((MessageBox.Show("Would you like to play again?", "Continue?", MessageBoxButtons.YesNo)) ==
+                        DialogResult.Yes)
+                {
+                    Application.Restart();
+                }
+                else
+                {
+                    Close();
+                }
             }
         }
 
@@ -576,7 +588,11 @@ namespace TetrisClone
             }
         }
 
-        // Makes the startGameLabel visible/invisible every 0,4 second
+        /// <summary>
+        /// Makes the startGameLabel visible/invisible every 0,4 second
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void startLabelFlash_Tick(object sender, EventArgs e)
         {
             if(startGameLabel.ForeColor == Color.WhiteSmoke)
@@ -589,30 +605,29 @@ namespace TetrisClone
             }
         }
 
+        /// <summary>
+        /// This comboTimer gives the player 5 seconds to make a new combo 
+        /// before the combo counter resets
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void comboTimer_Tick(object sender, EventArgs e)
         {
-            /*
-             Just writing down an idea I had if I want to somehow show how much time the user has until 
-            the combo resets
-            - First set the interval to 1000 ticks, as it's currently set to 5000 ticks
-            int comboCountDown = 5
-            comboCountDown --;
-            if(comboCountDown == 0)
-            {
-                comboTimer.Stop()
-            }
-            else
-            {
-                comboCountDownLabel.Text = "combo resets in " + comboCountDown; 
-            }
-
-            - Maybe I should show how many combos the user has too if I do this?
-             */
             comboTimer.Stop();
         }
 
+        /// <summary>
+        /// Checks if the player wrote anything in the textBox, 
+        /// if not they can try again or restart/close the application.
+        /// If they wrote down a name then it will be added to the list of player scores, sorted,
+        /// and saved in a json file, it will also update the json file for the top10
+        /// Then they're asked if they want to restart/close the application
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void submitBtn_Click(object sender, EventArgs e)
         {
+            // If the textBox is empty, check with the player if they want to try again
             if (string.IsNullOrWhiteSpace(playerNameBox.Text))
             {
                 MessageBox.Show("Do you want to try again?", "No name was provided", MessageBoxButtons.YesNo);
@@ -620,6 +635,7 @@ namespace TetrisClone
                 {
                     PlayerScores();
                 }
+                // If no, then check if they want to restart/close the application
                 else if(DialogResult == DialogResult.No)
                 {
                     if ((MessageBox.Show("Would you like to play again?", "Continue?", MessageBoxButtons.YesNo)) ==
@@ -634,30 +650,40 @@ namespace TetrisClone
                 }
             }
 
+            // If the textBox is not empty
             if (!string.IsNullOrWhiteSpace(playerNameBox.Text))
             {
                 string playerName = playerNameBox.Text;
 
+                // Add the player's name and score to PlayerScoreList
                 playerScoreList.CreatePSList(playerName, score);
 
                 foreach (var playScore in playerScoreList.PlayerScore)
                 {
+                    // Sort the list by the highest score and save it in the json file "playerScores"
                     playerScoreList.PlayerScore = playerScoreList.PlayerScore.OrderByDescending(i => i.Score).ToList();
                     var scoreJson = JsonSerializer.Serialize(playerScoreList.PlayerScore, new JsonSerializerOptions { WriteIndented = true });
                     File.WriteAllText(scorePath, scoreJson);
-                    Console.WriteLine(scoreJson);
                 }
 
+                // Take the first 10 elements in the PlayerScoreList
                 for (int i = 0; i < 10; i++)
                 {
+                    // Add each element to the placeholder dictionary, with the key being which place they're in
                     newTop10.Add($"{scoreBoardPlace}. Place", playerScoreList.PlayerScore.GetRange(i, 1));
+
+                    // Update the top10 by replacing the top10 dictionary with the newTop10 dicitonary 
                     top10 = newTop10;
+
+                    // Rewrite the json file "top10Score" with the new top 10
                     var topJson = JsonSerializer.Serialize(top10, new JsonSerializerOptions { WriteIndented = true });
                     File.WriteAllText(hiScPath, topJson);
+
+                    // Increase the scoreBoard counter before it loops
                     scoreBoardPlace++;
                 }
 
-
+                // Check if they want to restart/close the application
                 if ((MessageBox.Show("Would you like to play again?", "Continue?", MessageBoxButtons.YesNo)) ==
                             DialogResult.Yes)
                 {
@@ -670,6 +696,11 @@ namespace TetrisClone
             }
         }
 
+        /// <summary>
+        /// Check if they want to restart/close the application without saving/updating the scores
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void cancelBtn_Click(object sender, EventArgs e)
         {
             if ((MessageBox.Show("Would you like to play again?", "Continue?", MessageBoxButtons.YesNo)) ==

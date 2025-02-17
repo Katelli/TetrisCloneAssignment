@@ -17,6 +17,7 @@ namespace TetrisClone
                 control.PreviewKeyDown += new PreviewKeyDownEventHandler(control_PreviewKeyDown);
             }
         }
+
         /// <summary>
         /// Prevents the arrow keys from being used to move between elements on the form, 
         /// as that would prevent them from being used in the game
@@ -25,7 +26,8 @@ namespace TetrisClone
         /// <param name="e"></param>
         private void control_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
-            if (e.KeyCode == Keys.Left || e.KeyCode == Keys.Up || e.KeyCode == Keys.Right || e.KeyCode == Keys.Down)
+            if (e.KeyCode == Keys.Left || e.KeyCode == Keys.Up ||
+                e.KeyCode == Keys.Right || e.KeyCode == Keys.Down)
             {
                 e.IsInputKey = true;
             }
@@ -357,12 +359,14 @@ namespace TetrisClone
         /// </summary>
         public void HardDrop()
         {
+            // "erase" the current piece by removing the color
             foreach (PictureBox box in currentPiece)
             {
                 box.BackColor = Color.DarkSlateGray;
             }
 
             int x = 0;
+            // "redraw" the current piece by adding color to the ghostPiece
             foreach (PictureBox box in ghostPiece)
             {
                 box.BackColor = colorArray[currentPieceInt];
@@ -379,7 +383,8 @@ namespace TetrisClone
         {
             foreach (PictureBox box in movingPieceHolder)
             {
-                if ((box.BackColor != Color.DarkSlateGray & box.BackColor != Color.SlateGray) & currentPiece.Contains(box) == false)
+                if ((box.BackColor != Color.DarkSlateGray & box.BackColor != Color.SlateGray)
+                    & currentPiece.Contains(box) == false)
                 {
                     return false;
                 }
@@ -1094,6 +1099,12 @@ namespace TetrisClone
                 }
             }
 
+            // Stops here if the bottom of the piece can't be seen on the board
+            if((box1Row | box2Row | box3Row | box4Row) <= 3)
+            {
+                return;
+            }
+            
             // Draws the GhostPiece, but won't overwrite the currentPiece's color
             foreach (PictureBox box in ghostPiece)
             {
@@ -1106,6 +1117,13 @@ namespace TetrisClone
             bottom = 21;
         }
 
+        /// <summary>
+        /// For users that would rather use a button
+        /// Hides the image of the game controls and makes sure the
+        /// focus stays on the grid
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void closeImgBtn_Click(object sender, EventArgs e)
         {
             // Removes focusRectangle
@@ -1116,6 +1134,14 @@ namespace TetrisClone
             ControllersImage.Visible = false;
             grid.Focus();
         }
+
+        /// <summary>
+        /// For users that would rather use a button
+        /// Hides/Shows the dataGrid that shows the top10 scoreBoard, and makes sure the
+        /// focus stays on the grid
+        /// </summary>
+        /// <param name="sende"></param>
+        /// <param name="e"></param>
         private void expandSbBtn_Click(object sende, EventArgs e)
         {
             // Removes focusRectangle
@@ -1157,7 +1183,7 @@ namespace TetrisClone
             // Prevents DropPiece() from starting again if the timer is already running
             if (gameTimer.Enabled == false)
             {
-                // Show controllersImage
+                // Toggle controllersImage
                 if(e.KeyCode == Keys.C & playerNamePopUp.Visible == false)
                 {
                     if (ControllersImage.Visible == false)
@@ -1171,7 +1197,7 @@ namespace TetrisClone
                         ControllersImage.Visible = false;
                     }
                 }
-                // Show top10 scoreBoard
+                // Toggle top10 scoreBoard
                 if(e.KeyCode == Keys.T & playerNamePopUp.Visible == false)
                 {
                     if(scoreBoard.Visible == false)
@@ -1184,14 +1210,17 @@ namespace TetrisClone
                     }
                 }
                 // Starts the game
-                // Hides and disables the flashing startLabel
+                // Hides and disables things that are not necessary for the game
                 if (e.KeyCode == Keys.Enter)
                 {
                     startLabelFlash.Stop();
+
                     startGameLabel.Visible = false;
                     ControllersImage.Visible = false;
+                    scoreBoard.Visible = false;
                     tipsLayoutPanel.Visible = false;
                     expandSbBtn.Visible = false;
+
                     gameTimer.Start();
                     DropPiece();
                     pieceTimer.Start();
