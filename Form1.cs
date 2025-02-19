@@ -16,8 +16,8 @@ namespace TetrisClone
         // Global variables
 
         PlayerScoreList playerScoreList = new PlayerScoreList();
-        string scorePath = "playerScores.json";
-        string hiScPath = "top10Score.json";
+        string scorePath = "Data/playerScores.json";
+        string hiScPath = "Data/top10Score.json";
         Dictionary<string, List<Player>> top10 = new Dictionary<string, List<Player>>();
         Dictionary<string, List<Player>> newTop10 = new Dictionary<string, List<Player>>();
         int scoreBoardPlace = 1;
@@ -60,7 +60,7 @@ namespace TetrisClone
             Creative Commons CC BY 3.0
             https://creativecommons.org/licenses/by/3.0/
              */
-            player.URL = "Sakura-Girl-Yay.mp3";
+            player.URL = "Data/Sakura-Girl-Yay.mp3";
             player.settings.setMode("Loop", true);
             player.settings.volume = 10;
 
@@ -481,7 +481,7 @@ namespace TetrisClone
                 Party-horn by PD music
                 Music promoted by https://www.chosic.com/free-music/all/
                 */
-                speedUpChime.URL = "Party-horn.mp3";
+                speedUpChime.URL = "Data/Party-horn.mp3";
                 speedUpChime.settings.volume = 10;
                 speedUpChime.controls.play();
 
