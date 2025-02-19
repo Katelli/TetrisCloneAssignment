@@ -7,6 +7,7 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WMPLib;
+using System.Diagnostics;
 
 
 namespace TetrisClone
@@ -21,6 +22,8 @@ namespace TetrisClone
         Dictionary<string, List<Player>> top10 = new Dictionary<string, List<Player>>();
         Dictionary<string, List<Player>> newTop10 = new Dictionary<string, List<Player>>();
         int scoreBoardPlace = 1;
+
+        int timerStart = 0;
 
         TimeSpan timeLeft = new TimeSpan(0, 5, 0);
         Color[] colorArray = { Color.CornflowerBlue, Color.Yellow, Color.Crimson,
@@ -524,7 +527,7 @@ namespace TetrisClone
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void pieceTimer_Tick(object sender, EventArgs e)
+        public void pieceTimer_Tick(object sender, EventArgs e)
         {
             // Check for game over
             if (gameOver == true)
@@ -571,7 +574,7 @@ namespace TetrisClone
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void gameTimer_Tick(object sender, EventArgs e)
+        public void gameTimer_Tick(object sender, EventArgs e)
         {            
             // Decrease the time left by 1 second and update the displayed countdown 
             timeLeft = timeLeft - new TimeSpan(0, 0, 1);
@@ -611,7 +614,7 @@ namespace TetrisClone
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void comboTimer_Tick(object sender, EventArgs e)
+        public void comboTimer_Tick(object sender, EventArgs e)
         {
             comboTimer.Stop();
         }

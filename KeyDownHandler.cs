@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace TetrisClone
 {
@@ -1181,7 +1182,7 @@ namespace TetrisClone
             }
 
             // Prevents DropPiece() from starting again if the timer is already running
-            if (gameTimer.Enabled == false)
+            if (gameTimer.Enabled == false &  timerStart == 0)
             {
                 // Toggle controllersImage
                 if(e.KeyCode == Keys.C & playerNamePopUp.Visible == false)
@@ -1218,9 +1219,11 @@ namespace TetrisClone
                     startGameLabel.Visible = false;
                     ControllersImage.Visible = false;
                     scoreBoard.Visible = false;
-                    tipsLayoutPanel.Visible = false;
+                    label2.Text = "Press P to Pause";
+                    label3.Visible = false;
                     expandSbBtn.Visible = false;
 
+                    timerStart = 1;
                     gameTimer.Start();
                     DropPiece();
                     pieceTimer.Start();
@@ -1272,7 +1275,30 @@ namespace TetrisClone
             {
                 SaveAPiece();
             }
+            // Pause
+            else if(e.KeyCode == Keys.P)
+            {
+                if (gameTimer.Enabled == true)
+                {
+                    startGameLabel.Visible = true;
+                    startGameLabel.Text = "Press P to Play";
+                    startLabelFlash.Start();
+                    gameTimer.Stop();
+                    pieceTimer.Stop();
 
+                    if (comboTimer.Enabled == true)
+                    {
+                        comboTimer.Stop();
+                    }
+                }
+                else
+                {
+                    startGameLabel.Visible = false;
+                    startLabelFlash.Stop();
+                    gameTimer.Start();
+                    pieceTimer.Start();
+                }
+            }
         }
     }
 }
